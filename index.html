@@ -2,108 +2,128 @@
 <html>
 <head>
     <style>
-        
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .row .text {
+            width: 50%;
+        }
+
+        .row .picture {
+            margin-left: 250px;
+            width: 50%;
+        }
     </style>
 </head>
 <body>
     <h1>Reijo Jaakkola</h1>
-    <h4>Email: reijo.jaakkola[at]tuni.fi</h4>
-    <p><a href="Reijo_Jaakkola_CV.pdf">Curriculum Vitae</a> | <a href="https://www.linkedin.com/in/reijo-jaakkola-a15753120/">LinkedIn</a></p>
 
-    <img src="self_portrait.jpeg" alt="Self-portrait" width="500" height="375">
+    <div class="row">
+        <div class="text">
+            <h4>Email: reijo.jaakkola[at]tuni.fi</h4>
+            <p><a href="Reijo_Jaakkola_CV.pdf">Curriculum Vitae</a> | <a href="https://www.linkedin.com/in/reijo-jaakkola-a15753120/">LinkedIn</a></p>
 
-    <div style="width: 50%;">
-        <p>
-            I'm a PhD student in mathematics at Tampere University, where I'm supervised by Antti Kuusisto and Lauri Hella.
-        </p>
-
-        <p>
-            My background is in the study of the satisfiability problems of fragments of first-order logic. More specifically, I have studied
-            the computational complexities of the satisfiability problems of various fragments using the tools of computational complexity theory. Recently
-            I have been focusing on fragments that are descentents of modal logics.
-        </p>
-
-        <p>
-            Currently I am also focusing on trying to understand algorithms and heuristics that are being used to solve real-life (industrial) instances of constraint satisfaction problems.
-            This also naturally leads to the study of the average case complexity of these problems, since industrial instances can be seen
-            as being selected according to some polynomial time samplable distribution.
-        </p>
-
-        <p>
-            <b>Research interests:</b> fragments of first-order logic, satisfiability problem, constructivism in mathematics.
-        </p>
-
-        <h3>Publications</h3>
-        <ol>
-            <li>
-                <p><b>Uniform guarded fragments</b> [<a href="https://arxiv.org/abs/2110.03821">Preprint</a>]</p>
-                <p>25th International Conference on Foundations of Software Science and Computation Structures, April 2-7, 2022, Munich (Germany)</p>
-            </li>
-            <li>
-                <p><b>Ordered fragments of first-order logic</b> [<a href="https://arxiv.org/abs/2103.08046">Preprint</a>][<a href="https://drops.dagstuhl.de/opus/volltexte/2021/14502/">Paper</a>]</p>
-                <p>46th International Symposium on Mathematical Foundations of Computer Science, August 23-27, 2021, Tallinn (Estonia)</p>
-            </li>
-        </ol>
-
-        <h3>Preprints</h3>
-        <ol>
-            <li>Expressive power versus decidability [<a href="https://arxiv.org/abs/2112.14996">Preprint</a>]</li>
-            <li>Complexity of the Ackermann fragment with one leading existential quantifier [<a href="https://arxiv.org/abs/2111.05388">Preprint</a>]</li>
-            <li>Algebraic classifications for fragments of first-order logic and beyond (Joint work with Antti Kuusisto.) [<a href="https://arxiv.org/abs/2005.01184">Preprint</a>]</li>
-        </ol>
-
-        <h3>Talks</h3>
-        <ol>
-            <li>
-                <p><b>Undecidability of the Halting Problem and Gödel's Incompleteness Theorems.</b> [<a href="Mini-course_on_computation_lecture.pdf">Slides</a>][<a href="https://www.youtube.com/watch?v=qP99a7CIQlE">Video</a>]</p>
-                <p>What is Computation? From Turing Machines to Black Holes and Neurons, Harvard GSAS Mini-Course, January 2022</p>
-                <p><a href="https://cnchou.github.io/mini-course/">Course website</a></p>
-            </li>
-            <li>
-                <p><b>Ordered fragments of first-order logic</b> [<a href="Math_Days_2022.pdf">Slides</a>]</p>
-                <p>Finnish Mathematical Days 2022</p>
-            </li>
-            <li>
-                <p><b>What is a fragment?</b> [<a href="What_Is_Fragment.pdf">Slides</a>]</p>
-                <p>Philosophy of Mathematics in Finland, Tampere, Finland, November 2021</p>
-            </li>
-            <li>
-                <p><b>Interpolation and fragments of first-order logic</b></p>
-                <p>Logic and discrete mathematics seminar, Tampere University, Finland, 24 September 2021</p>
-            </li>
-            <li>
-                <p><b>Ordered fragments of first-order logic</b> [<a href="Linear_FO_MFCS.pdf">Slides</a>]</p>
-                <p>46th International Symposium on Mathematical Foundations of Computer Science, Tallinn, Estonia, August 2021</p>
-            </li>
-            <li>
-                <p><b>Extensions of two-variable logic</b> [<a href="FO2Ext.pdf">Slides</a>]</p>
-                <p>Logic and discrete mathematics seminar, Tampere University, Finland, 11 December 2020</p>
-            </li>
-            <li>
-                <p><b>Algebraic classifications for fragments of first-order logic and beyond</b> [<a href="FO_fragments.pdf">Slides</a>]</p>
-                <p>Logicians' Spring Gathering 2020, Tampere University, Finland, 8 May 2020</p>
-            </li>
-        </ol>
-
-        <h3>Thesis</h3>
-        <ol>
-            <li>
-                <p><b>Algebraic Fragments of First-Order Logic</b> [<a href="https://trepo.tuni.fi/handle/10024/130632">Thesis</a>]</p>
-                <p>Master's thesis, Tampere University, 2021, 45 pages</p>
-            </li>
-        </ol>
-
-        <h3>Quotes</h3>
-        <ol>
-            <li>
-                <p><i>But what we can't say we can't say, and we can't whistle it either.</i></p>
-                <p>Frank Ramsey</p>
-            </li>
-            <li>
-                <p><i>The method of showing a statement to be tautologous consists merely of constructing a table under it in the usual way and observing that the column under the main connective is composed entirely of 'T's.</i></p>
-                <p>Willard V. O. Quine</p>
-            </li>
-        </ol>
+            <p>
+                I'm a PhD student in mathematics at Tampere University, where I'm supervised by Antti Kuusisto and Lauri Hella.
+            </p>
+    
+            <p>
+                My background is in the study of the satisfiability problems of fragments of first-order logic. More specifically, I have studied
+                the computational complexities of the satisfiability problems of various fragments using the tools of computational complexity theory. Recently
+                I have been focusing on fragments that are descentents of modal logics.
+            </p>
+    
+            <p>
+                Currently I am also focusing on trying to understand algorithms and heuristics that are being used to solve real-life (industrial) instances of constraint satisfaction problems.
+                This also naturally leads to the study of the average case complexity of these problems, since industrial instances can be seen
+                as being selected according to some polynomial time samplable distribution.
+            </p>
+    
+            <p>
+                <b>Research interests:</b> fragments of first-order logic, satisfiability problem, constructivism in mathematics.
+            </p>
+    
+            <h3>Publications</h3>
+            <ol>
+                <li>
+                    <p><b>Uniform guarded fragments</b> [<a href="https://arxiv.org/abs/2110.03821">Preprint</a>]</p>
+                    <p>25th International Conference on Foundations of Software Science and Computation Structures, April 2-7, 2022, Munich (Germany)</p>
+                </li>
+                <li>
+                    <p><b>Ordered fragments of first-order logic</b> [<a href="https://arxiv.org/abs/2103.08046">Preprint</a>][<a href="https://drops.dagstuhl.de/opus/volltexte/2021/14502/">Paper</a>]</p>
+                    <p>46th International Symposium on Mathematical Foundations of Computer Science, August 23-27, 2021, Tallinn (Estonia)</p>
+                </li>
+            </ol>
+    
+            <h3>Preprints</h3>
+            <ol>
+                <li>Expressive power versus decidability [<a href="https://arxiv.org/abs/2112.14996">Preprint</a>]</li>
+                <li>Complexity of the Ackermann fragment with one leading existential quantifier [<a href="https://arxiv.org/abs/2111.05388">Preprint</a>]</li>
+                <li>Algebraic classifications for fragments of first-order logic and beyond (Joint work with Antti Kuusisto.) [<a href="https://arxiv.org/abs/2005.01184">Preprint</a>]</li>
+            </ol>
+    
+            <h3>Talks</h3>
+            <ol>
+                <li>
+                    <p><b>Undecidability of the Halting Problem and Gödel's Incompleteness Theorems.</b> [<a href="Mini-course_on_computation_lecture.pdf">Slides</a>][<a href="https://www.youtube.com/watch?v=qP99a7CIQlE">Video</a>]</p>
+                    <p>What is Computation? From Turing Machines to Black Holes and Neurons, Harvard GSAS Mini-Course, January 2022</p>
+                    <p><a href="https://cnchou.github.io/mini-course/">Course website</a></p>
+                </li>
+                <li>
+                    <p><b>Ordered fragments of first-order logic</b> [<a href="Math_Days_2022.pdf">Slides</a>]</p>
+                    <p>Finnish Mathematical Days 2022</p>
+                </li>
+                <li>
+                    <p><b>What is a fragment?</b> [<a href="What_Is_Fragment.pdf">Slides</a>]</p>
+                    <p>Philosophy of Mathematics in Finland, Tampere, Finland, November 2021</p>
+                </li>
+                <li>
+                    <p><b>Interpolation and fragments of first-order logic</b></p>
+                    <p>Logic and discrete mathematics seminar, Tampere University, Finland, 24 September 2021</p>
+                </li>
+                <li>
+                    <p><b>Ordered fragments of first-order logic</b> [<a href="Linear_FO_MFCS.pdf">Slides</a>]</p>
+                    <p>46th International Symposium on Mathematical Foundations of Computer Science, Tallinn, Estonia, August 2021</p>
+                </li>
+                <li>
+                    <p><b>Extensions of two-variable logic</b> [<a href="FO2Ext.pdf">Slides</a>]</p>
+                    <p>Logic and discrete mathematics seminar, Tampere University, Finland, 11 December 2020</p>
+                </li>
+                <li>
+                    <p><b>Algebraic classifications for fragments of first-order logic and beyond</b> [<a href="FO_fragments.pdf">Slides</a>]</p>
+                    <p>Logicians' Spring Gathering 2020, Tampere University, Finland, 8 May 2020</p>
+                </li>
+            </ol>
+    
+            <h3>Thesis</h3>
+            <ol>
+                <li>
+                    <p><b>Algebraic Fragments of First-Order Logic</b> [<a href="https://trepo.tuni.fi/handle/10024/130632">Thesis</a>]</p>
+                    <p>Master's thesis, Tampere University, 2021, 45 pages</p>
+                </li>
+            </ol>
+    
+            <h3>Quotes</h3>
+            <ol>
+                <li>
+                    <p><i>But what we can't say we can't say, and we can't whistle it either.</i></p>
+                    <p>Frank Ramsey</p>
+                </li>
+                <li>
+                    <p><i>The method of showing a statement to be tautologous consists merely of constructing a table under it in the usual way and observing that the column under the main connective is composed entirely of 'T's.</i></p>
+                    <p>Willard V. O. Quine</p>
+                </li>
+                <li>
+                    <p><i>Young man, in mathematics you don't understand things. You just get used to them.</i></p>
+                    <p>John von Neumann</p>
+                </li>
+            </ol>
+        </div>
+        <div class="picture">
+            <img src="self_portrait_2.jpg" alt="Self-portrait" width="75%" height="auto">
+        </div>
     </div>
 </body>
 </html>
