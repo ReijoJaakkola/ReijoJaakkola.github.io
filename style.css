@@ -52,6 +52,10 @@ section h2 {
     border-radius: 50%;
 }
 
+.description-content p {
+    min-width: 0; /* Fix flexbox behavior causing overflow */
+}
+
 .social-links a {
     font-size: 1.5em;
     margin-right: 10px;
@@ -86,4 +90,27 @@ footer {
     padding: 1em 0;
     background-color: #003f7f; /* Dark Blue */
     color: white;
+}
+
+.email-container {
+    margin: 1em 0;
+    text-align: center; /* Center the email link */
+}
+
+.email-link {
+    font-size: 1.2em;
+    color: white; /* Deep Blue */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em; /* Spacing between the icon and text */
+}
+
+.email-link i {
+    font-size: 1.5em; /* Slightly larger icon */
+    color: white; /* Icon matches text color */
+}
+
+.email-link:hover {
+    color: #003f7f; /* Darker blue on hover */
 }
