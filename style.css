@@ -99,7 +99,7 @@ footer {
 
 .email-link {
     font-size: 1.2em;
-    color: white; /* Deep Blue */
+    color: white;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -112,5 +112,9 @@ footer {
 }
 
 .email-link:hover {
-    color: #003f7f; /* Darker blue on hover */
+    color: #003f7f;
+}
+
+.email-link:hover i {
+    color: #003f7f;
 }
