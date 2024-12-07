@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #d6eaff, #ffffff);
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 1.5em 0;
+    background-color: #0056b3; /* Deep Blue */
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Section Styles */
+section {
+    padding: 1em 2em;
+    margin: 1em auto;
+    max-width: 900px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #0056b3; /* Deep Blue */
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 0.2em;
+}
+
+.description-content {
+    display: flex;
+    align-items: center;
+}
+
+.description-content img {
+    max-width: 150px;
+    margin-right: 1em;
+    border-radius: 50%;
+}
+
+.social-links a {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #003f7f; /* Darker Blue */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5em 0;
+}
+
+blockquote {
+    font-style: italic;
+    color: #666;
+    border-left: 5px solid #0056b3;
+    padding-left: 1em;
+    margin: 1em 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #003f7f; /* Dark Blue */
+    color: white;
+}
