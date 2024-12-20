@@ -23,6 +23,16 @@
         </div>
     </header>
 
+    <div class="navbar">
+        <a href="#publications">Publications</a>
+        <a href="#software">Software</a>
+        <a href="#talks">Talks</a>
+        <a href="#theses">Theses</a>
+        <a href="#awards">Awards</a>
+        <a href="#services">Services</a>
+        <a href="#quotes">Quotes</a>
+    </div>
+
     <main>
         <!-- Center's Description -->
         <section id="description">
@@ -156,6 +166,7 @@
                     <a href="https://arxiv.org/abs/2111.05388" target="_blank">[Read Note]</a>
                 </li>
             </ol>
+            <button onclick="scrollToTop()">&#x25B2;</button>
         </section>              
 
         <!-- Software -->
@@ -171,6 +182,7 @@
                     <p>Course project that I did for the course Statistical Physics 2.</p>
                 </li>
             </ol>
+            <button onclick="scrollToTop()">&#x25B2;</button>
         </section>
 
         <!-- Talks -->
@@ -271,6 +283,7 @@
                     Logicians' Spring Gathering 2020, Tampere University, Finland, 8 May 2020
                 </li>
             </ol>
+            <button onclick="scrollToTop()">&#x25B2;</button>
         </section>
         
         <!-- Theses -->
@@ -282,6 +295,7 @@
                     Master's thesis, Tampere University, 2021
                 </li>
             </ol>
+            <button onclick="scrollToTop()">&#x25B2;</button>
         </section>
 
         <!-- Awards -->
@@ -297,6 +311,7 @@
                     Awarded for the best master's thesis in mathematics written in Finland during the academic year 2021-2022.
                 </li>
             </ol>
+            <button onclick="scrollToTop()">&#x25B2;</button>
         </section>
 
         <!-- Professional Services -->
@@ -310,6 +325,7 @@
                     I have been a reviewer for various conferences (AAMAS 2022, IJCAI 2023, KR 2023, MFCS 2023, JELIA 2023, GandALF 2023, AAAI 2024, LICS 2024, KR 2024, AAMAS 2025) and journals (LMCS).
                 </li>
             </ol>
+            <button onclick="scrollToTop()">&#x25B2;</button>
         </section>
 
         <!-- Quotes -->
@@ -324,11 +340,21 @@
             <blockquote>
                 "Bad ideas is good, good ideas is terrific, no ideas is terrible." – Leonard E. Baum
             </blockquote>
+            <button onclick="scrollToTop()">&#x25B2;</button>
         </section>
     </main>
 
     <footer>
         <p>© Reijo Jaakkola. All rights reserved.</p>
     </footer>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 </html>
