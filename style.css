@@ -166,3 +166,52 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+/* Minimal changes for dropdown button styling */
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; /* Ensure the navbar container spans full width */
+    background-color: #333; /* Match the navbar color */
+}
+
+.menu-toggle {
+    display: none; /* Hidden by default for larger screens */
+    background-color: #333; /* Same as navbar background */
+    color: white; /* Match text color of navbar */
+    border: none; /* Remove border */
+    width: 100%; /* Fill the row */
+    padding: 14px 16px; /* Match padding with navbar links */
+    text-align: left; /* Align text to the left */
+    font-size: 16px; /* Keep button text legible */
+    cursor: pointer;
+}
+
+.menu-toggle:hover {
+    background-color: #575757; /* Add hover effect similar to navbar links */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show button on smaller screens */
+    }
+
+    .navbar {
+        display: none; /* Hide navbar links initially */
+        flex-direction: column; /* Stack links vertically when visible */
+        width: 100%; /* Match the dropdown button width */
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px;
+        border-top: 1px solid #ccc; /* Add a subtle separator between links */
+        text-align: left; /* Align links to the left for dropdown */
+    }
+
+    .navbar.active {
+        display: flex; /* Show navbar links when the dropdown is active */
+    }
+}
