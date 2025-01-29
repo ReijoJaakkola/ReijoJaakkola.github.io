@@ -215,3 +215,9 @@ button:hover {
         display: flex; /* Show navbar links when the dropdown is active */
     }
 }
+
+l ul {
+    list-style-type: square; /* Options: circle, square, none */
+    margin-left: 30px;
+    padding-left: 10px;
+}
