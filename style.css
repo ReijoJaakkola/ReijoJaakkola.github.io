@@ -636,7 +636,12 @@ footer i {
     .navbar a { text-align: center; padding: 0.75rem; border-radius: 12px; }
     .navbar a:hover { transform: none; }
     main { padding: 1rem; }
-    section { padding: 1.5rem; border-radius: 20px; }
+    section { 
+        padding: 1.5rem; 
+        border-radius: 20px;
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
     .description-content { flex-direction: column; align-items: center; text-align: center; }
     .research-tags { justify-content: center; }
     ol li { padding-left: 3.5rem; }
