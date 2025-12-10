@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reijo Jaakkola</title>
+    <title>Reijo JaakkolaMathematician & Researcher</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="bg-pattern"></div>
+    <div class="grid-overlay"></div>
+    <div class="particles" id="particles"></div>
+
     <header>
-        <h1>Reijo Jaakkola</h1>
-        <div class="email-container">
-            <a href="mailto:jaakkolareijo@hotmail.com" class="email-link">
-                <i class="fas fa-envelope"></i> jaakkolareijo[...]hotmail.com
-            </a>
-        </div>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/reijo-jaakkola-a15753120/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/ReijoJaakkola" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://scholar.google.com/citations?hl=en&user=gzsiCpAAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-            <a href="https://cstheory.stackexchange.com/users/63140/reijo-jaakkola" target="_blank"><i class="fab fa-stack-exchange"></i></a>
+        <div class="header-content">
+            <h1>Reijo Jaakkola</h1>
+            <p class="tagline">&lt;<span>PhD Student</span> in Mathematics @ Tampere University /&gt;</p>
+            <div class="email-container">
+                <a href="mailto:jaakkolareijo@hotmail.com" class="email-link">
+                    <i class="fas fa-envelope"></i> jaakkolareijo[at]hotmail.com
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/reijo-jaakkola-a15753120/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ReijoJaakkola" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://scholar.google.com/citations?hl=en&user=gzsiCpAAAAAJ" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://cstheory.stackexchange.com/users/63140/reijo-jaakkola" target="_blank" aria-label="Stack Exchange"><i class="fab fa-stack-exchange"></i></a>
+            </div>
         </div>
     </header>
 
     <div class="navbar-container">
-        <button class="menu-toggle" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="navbar">
+        <button class="menu-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+        <nav class="navbar">
+            <a href="#description">About</a>
             <a href="#publications">Publications</a>
             <a href="#talks">Talks</a>
             <a href="#theses">Theses</a>
@@ -35,396 +44,324 @@
             <a href="#services">Activities</a>
             <a href="#software">Software</a>
             <a href="#quotes">Quotes</a>
-        </div>
+        </nav>
     </div>
 
     <main>
-        <!-- Center's Description -->
         <section id="description">
             <h2>About Me</h2>
             <div class="description-content">
-                <img src="profile-picture.jpg" alt="Your Picture">
-                <p>
-                    Welcome!
-                    <br><br>
-                    I'm a fourth year PhD student in mathematics at Tampere University, where I'm supervised by Antti Kuusisto and Lauri Hella. My research is guided by real-world applications, with a strong focus on machine learning, logic, and probability theory.
-                </p>
-            </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/reijo-jaakkola-a15753120/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/ReijoJaakkola" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://scholar.google.com/citations?hl=en&user=gzsiCpAAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                <div class="profile-image-container">
+                    <img src="profile-picture.jpg" alt="Reijo Jaakkola">
+                </div>
+                <div>
+                    <p>Welcome! I'm a fourth year PhD student in mathematics at Tampere University, supervised by Antti Kuusisto and Lauri Hella. I enjoy connecting theoretical foundations with real-world applications, exploring the intersections of machine learning, logic, and probability theory.</p>
+                    <div class="research-tags">
+                        <span class="research-tag">Machine Learning</span>
+                        <span class="research-tag">Mathematical Logic</span>
+                        <span class="research-tag">Probability Theory</span>
+                        <span class="research-tag">Complexity Theory</span>
+                        <span class="research-tag">Explainable AI</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Publications -->
         <section id="publications">
             <h2>Publications</h2>
-        
             <h3>Peer-reviewed</h3>
             <ol reversed>
-                <li>
-                    <strong>Why this and not that? A Logic-based Framework for Contrastive Explanations</strong>
-                    <a href="https://link.springer.com/chapter/10.1007/978-3-032-04587-4_4" target="_blank">[Publication]</a> 
+                <li><strong>Why this and not that? A Logic-based Framework for Contrastive Explanations</strong>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-032-04587-4_4" target="_blank">[Publication]</a>
                     <a href="https://arxiv.org/abs/2507.08454" target="_blank">[Preprint]</a>
                     <p>Joint work with <a href="https://informatics.tuwien.ac.at/people/tobias-geibinger">Tobias Geibinger</a>, <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a>, <a href="https://informatics.tuwien.ac.at/people/xinghan-liu">Xinghan Liu</a> and Miikka Vilander</p>
-                    <p>19th edition of the European Conference on Logics in Artificial Intelligence, 1-4 September 2025, Kutaisi, Georgia</p>
-                </li>
-                <li>
-                    <strong>Explainability via Short Formulas: the Case of Propositional Logic with Implementation</strong>
+                    <p>19th edition of the European Conference on Logics in Artificial Intelligence, 1-4 September 2025, Kutaisi, Georgia</p></li>
+                <li><strong>Explainability via Short Formulas: the Case of Propositional Logic with Implementation</strong>
                     <a href="https://www.jair.org/index.php/jair/article/view/17422">[Publication]</a>
-                    <p>Joint work with <a href="https://www.tuni.fi/en/tomi-janhunen">Tomi Janhunen</a>, 
-                    <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a>, Masood Feyzbakhsh Rankooh and Miikka Vilander</p>
+                    <p>Joint work with <a href="https://www.tuni.fi/en/tomi-janhunen">Tomi Janhunen</a>, <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a>, Masood Feyzbakhsh Rankooh and Miikka Vilander</p>
                     <p>Journal of Artificial Intelligence Research, Vol. 83 (2025), Article 8.</p>
-                    <p>Extends <a href="#rcra">this</a> workshop paper.</p>
-                </li>
-                <li>
-                    <strong>Relating Description Complexity to Entropy</strong>
+                    <p>Extends <a href="#rcra">this</a> workshop paper.</p></li>
+                <li><strong>Relating Description Complexity to Entropy</strong>
                     <a href="https://www.sciencedirect.com/science/article/pii/S0022000024001107">[Publication]</a>
                     <p>Joint work with <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a> and Miikka Vilander</p>
                     <p>Journal of Computer and System Sciences</p>
-                    <p>Journal version of <a href="#dcentropyconf">this</a> conference paper.</p>
-                </li>
-                <li>
-                    <strong>Description Complexity of Unary Structures in First-Order Logic with Links to Entropy</strong> 
+                    <p>Journal version of <a href="#dcentropyconf">this</a> conference paper.</p></li>
+                <li><strong>Description Complexity of Unary Structures in First-Order Logic with Links to Entropy</strong>
                     <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CSL.2025.17">[Publication]</a>
                     <a href="https://arxiv.org/abs/2406.02108" target="_blank">[Preprint]</a>
                     <p>Joint work with <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a> and Miikka Vilander</p>
-                    <p>Computer Science Logic 2025, February 10-14, 2025, Amsterdam, Netherlands</p>
-                </li>
-                <li>
-                    <strong>Interpretable Classifiers for Tabular Data via Feature Selection and Discretization</strong> 
-                    <a href="https://ceur-ws.org/Vol-3833/" target="_blank">[Publication]</a> 
+                    <p>Computer Science Logic 2025, February 10-14, 2025, Amsterdam, Netherlands</p></li>
+                <li><strong>Interpretable Classifiers for Tabular Data via Feature Selection and Discretization</strong>
+                    <a href="https://ceur-ws.org/Vol-3833/" target="_blank">[Publication]</a>
                     <a href="https://arxiv.org/abs/2402.05680" target="_blank">[Preprint]</a>
-                    <p>Joint work with <a href="https://www.tuni.fi/en/tomi-janhunen">Tomi Janhunen</a>, 
-                    <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a>, Masood Feyzbakhsh Rankooh and Miikka Vilander</p>
-                    <p>4th International Workshop of Data meets Applied Ontologies in Explainable AI, October 19, 2024, Santiago de Compostela, Spain</p>
-                </li>
-                <li>
-                    <strong>Short Boolean Formulas as Explanations in Practice</strong> 
+                    <p>Joint work with <a href="https://www.tuni.fi/en/tomi-janhunen">Tomi Janhunen</a>, <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a>, Masood Feyzbakhsh Rankooh and Miikka Vilander</p>
+                    <p>4th International Workshop of Data meets Applied Ontologies in Explainable AI, October 19, 2024, Santiago de Compostela, Spain</p></li>
+                <li><strong>Short Boolean Formulas as Explanations in Practice</strong>
                     <a href="https://link.springer.com/chapter/10.1007/978-3-031-43619-2_7" target="_blank">[Publication]</a>
                     <a href="https://arxiv.org/abs/2307.06971" target="_blank">[Preprint]</a>
-                    <p>Joint work with <a href="https://www.tuni.fi/en/tomi-janhunen">Tomi Janhunen</a>, 
-                    <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a>, Masood Feyzbakhsh Rankooh and Miikka Vilander</p>
-                    <p>18th Edition of the European Conference on Logics in Artificial Intelligence, September 20-22, 2023, Dresden, Germany</p>
-                </li>
-                <li id="dcentropyconf">
-                    <strong>Relating Description Complexity to Entropy</strong> 
+                    <p>Joint work with <a href="https://www.tuni.fi/en/tomi-janhunen">Tomi Janhunen</a>, <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a>, Masood Feyzbakhsh Rankooh and Miikka Vilander</p>
+                    <p>18th Edition of the European Conference on Logics in Artificial Intelligence, September 20-22, 2023, Dresden, Germany</p></li>
+                <li id="dcentropyconf"><strong>Relating Description Complexity to Entropy</strong>
                     <a href="https://drops.dagstuhl.de/opus/frontdoor.php?source_opus=17690" target="_blank">[Publication]</a>
                     <a href="https://arxiv.org/abs/2209.12564" target="_blank">[Preprint]</a>
                     <p>Joint work with <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a> and Miikka Vilander</p>
-                    <p>40th International Symposium on Theoretical Aspects of Computer Science, March 7-10, 2023, Hamburg, Germany</p>
-                </li>
-                <li>
-                    <strong>Complexity of Polyadic Boolean Modal Logics: Model Checking and Satisfiability</strong> 
+                    <p>40th International Symposium on Theoretical Aspects of Computer Science, March 7-10, 2023, Hamburg, Germany</p></li>
+                <li><strong>Complexity of Polyadic Boolean Modal Logics: Model Checking and Satisfiability</strong>
                     <a href="https://drops.dagstuhl.de/opus/volltexte/2023/17487/" target="_blank">[Publication]</a>
                     <a href="https://arxiv.org/abs/2210.01034" target="_blank">[Preprint]</a>
-                    <p>Computer Science Logic 2023, February 13-16, 2023, Warsaw, Poland</p>
-                </li>
-                <li>
-                    <strong>Complexity Classifications via Algebraic Logic</strong> 
+                    <p>Computer Science Logic 2023, February 13-16, 2023, Warsaw, Poland</p></li>
+                <li><strong>Complexity Classifications via Algebraic Logic</strong>
                     <a href="https://drops.dagstuhl.de/opus/volltexte/2023/17488/" target="_blank">[Publication]</a>
                     <a href="https://arxiv.org/abs/2005.01184" target="_blank">[Preprint]</a>
                     <p>Joint work with <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a></p>
-                    <p>Computer Science Logic 2023, February 13-16, 2023, Warsaw, Poland</p>
-                </li>
-                <li id="rcra">
-                    <strong>Explainability via Short Formulas: the Case of Propositional Logic with Implementation</strong> 
+                    <p>Computer Science Logic 2023, February 13-16, 2023, Warsaw, Poland</p></li>
+                <li id="rcra"><strong>Explainability via Short Formulas: the Case of Propositional Logic with Implementation</strong>
                     <a href="https://ceur-ws.org/Vol-3281/" target="_blank">[Publication]</a>
                     <a href="https://arxiv.org/abs/2209.01403" target="_blank">[Preprint]</a>
-                    <p>Joint work with <a href="https://www.tuni.fi/en/tomi-janhunen">Tomi Janhunen</a>, 
-                    <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a>, Masood Feyzbakhsh Rankooh and Miikka Vilander</p>
-                    <p>29th RCRA International Workshop on "Experimental Evaluation of Algorithms for solving problems with combinatorial explosion", September 5, 2022, Genova, Italy</p>
-                </li>
-                <li>
-                    <strong>Towards Model Theory of Ordered Logics: Expressivity and Interpolation</strong> 
+                    <p>Joint work with <a href="https://www.tuni.fi/en/tomi-janhunen">Tomi Janhunen</a>, <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a>, Masood Feyzbakhsh Rankooh and Miikka Vilander</p>
+                    <p>29th RCRA International Workshop on "Experimental Evaluation of Algorithms for solving problems with combinatorial explosion", September 5, 2022, Genova, Italy</p></li>
+                <li><strong>Towards Model Theory of Ordered Logics: Expressivity and Interpolation</strong>
                     <a href="https://drops.dagstuhl.de/opus/frontdoor.php?source_opus=16813" target="_blank">[Publication]</a>
                     <a href="https://arxiv.org/abs/2206.11751" target="_blank">[Preprint]</a>
                     <p>Joint work with <a href="https://bartoszjanbednarczyk.github.io/">Bartosz Bednarczyk</a></p>
-                    <p>47th International Symposium on Mathematical Foundations of Computer Science, August 22-26, 2022, Vienna, Austria</p>
-                </li>
-                <li>
-                    <strong>Uniform Guarded Fragments</strong> 
+                    <p>47th International Symposium on Mathematical Foundations of Computer Science, August 22-26, 2022, Vienna, Austria</p></li>
+                <li><strong>Uniform Guarded Fragments</strong>
                     <a href="https://link.springer.com/chapter/10.1007/978-3-030-99253-8_21" target="_blank">[Publication]</a>
                     <a href="https://arxiv.org/abs/2110.03821" target="_blank">[Preprint]</a>
-                    <p>25th International Conference on Foundations of Software Science and Computation Structures, April 2-7, 2022, Munich, Germany</p>
-                </li>
-                <li>
-                    <strong>Ordered Fragments of First-Order Logic</strong> 
+                    <p>25th International Conference on Foundations of Software Science and Computation Structures, April 2-7, 2022, Munich, Germany</p></li>
+                <li><strong>Ordered Fragments of First-Order Logic</strong>
                     <a href="https://drops.dagstuhl.de/opus/volltexte/2021/14502/" target="_blank">[Publication]</a>
                     <a href="https://arxiv.org/abs/2103.08046" target="_blank">[Preprint]</a>
-                    <p>46th International Symposium on Mathematical Foundations of Computer Science, August 23-27, 2021, Tallinn, Estonia</p>
-                </li>
+                    <p>46th International Symposium on Mathematical Foundations of Computer Science, August 23-27, 2021, Tallinn, Estonia</p></li>
             </ol>
-        
+
             <h3>Preprints</h3>
             <ol reversed>
-                <li>
-                    <strong>A monotone connection between model class size and description length</strong> 
+                <li><strong>A monotone connection between model class size and description length</strong>
                     <a href="https://arxiv.org/abs/2301.13800" target="_blank">[Preprint]</a>
-                    <p>Joint work with <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a> and Miikka Vilander</p>
-                </li>
-                <li>
-                    <strong>Convergence in the space of compact labeled metric spaces</strong> 
+                    <p>Joint work with <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a> and Miikka Vilander</p></li>
+                <li><strong>Convergence in the space of compact labeled metric spaces</strong>
                     <a href="https://arxiv.org/abs/2210.00535" target="_blank">[Preprint]</a>
-                    <p>Joint work with <a href="https://sites.google.com/view/anttikykkanen/home">Antti Kykkänen</a></p>
-                </li>
-                <li>
-                    <strong>First-order logic with self-reference</strong> 
+                    <p>Joint work with <a href="https://sites.google.com/view/anttikykkanen/home">Antti Kykkänen</a></p></li>
+                <li><strong>First-order logic with self-reference</strong>
                     <a href="https://arxiv.org/abs/2207.07397" target="_blank">[Preprint]</a>
-                    <p>Joint work with <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a></p>
-                </li>
+                    <p>Joint work with <a href="https://homepages.tuni.fi/antti.kuusisto/">Antti Kuusisto</a></p></li>
             </ol>
-        
+
             <h3>Notes</h3>
             <ol reversed>
-                <li>
-                    <strong>An Extension of Trakhtenbrot's Theorem</strong> 
-                    <a href="https://arxiv.org/abs/2112.14996" target="_blank">[Read Note]</a>
-                </li>
-                <li>
-                    <strong>Complexity of the Ackermann fragment with one leading existential quantifier</strong> 
-                    <a href="https://arxiv.org/abs/2111.05388" target="_blank">[Read Note]</a>
-                </li>
+                <li><strong>An Extension of Trakhtenbrot's Theorem</strong>
+                    <a href="https://arxiv.org/abs/2112.14996" target="_blank">[Read Note]</a></li>
+                <li><strong>Complexity of the Ackermann fragment with one leading existential quantifier</strong>
+                    <a href="https://arxiv.org/abs/2111.05388" target="_blank">[Read Note]</a></li>
             </ol>
-            <button onclick="scrollToTop()">&#x25B2;</button>
-        </section>              
+        </section>
 
-        <!-- Talks -->
         <section id="talks">
             <h2>Selected Talks</h2>
             <ol reversed>
-                <li>
-                    <strong>Moderni selitettävä tekoäly</strong> - <a href="esitelma.pdf">Slides</a><br>
-                    SOTE-tekoäly ekosysteemin AI-aamu, 10 December, 2025, Webinaari
-                </li>
-                <li>
-                    <strong>Why this and not that? A Logic-based Framework for Contrastive Explanations</strong> - <a href="jelia2025.pdf">Slides</a><br>
-                    19th edition of the European Conference on Logics in Artificial Intelligence, 1-4 September, 2025, Kutaisi, Georgia
-                </li>
-                <li>
-                    <strong>Description Complexity of Unary Structures in First-Order Logic with Links to Entropy</strong> - <a href="csl_25_talk.pdf">Slides</a><br>
-                    Computer Science Logic 2025, February 10-14, 2025, Amsterdam, the Netherlands
-                </li>
-                <li>
-                    <strong>Expressing boundedness in static computational logic</strong> - <a href="BoundednessInSCL.pdf">Slides</a><br>
-                    Logic seminar, University of Helsinki, Finland, 29 January 2025
-                </li>
-                <li>
-                    <strong>Description complexity</strong> - <a href="descriptionComplexity.pdf">Slides</a><br>
-                    Seminar for young researchers, University of Jyväskylä, Finland, 27 November 2024
-                </li>
-                <li>
-                    <strong>Uniform guarded fragments: interpolation and complexity</strong> - <a href="CIP_presentation.pdf">Slides</a><br>
-                    Workshop on Theory and Applications of Craig Interpolation and Beth Definability, April 22-23, 2024, Amsterdam, Netherlands
-                </li>
-                <li>
-                    <strong>Formulas of propositional logic as interpretable classifiers</strong> - <a href="ExplainabilityPresentation_2.pdf">Slides</a><br>
-                    Mathematical Perspective on Machine Learning, University of Helsinki, Finland, 9 April 2024
-                </li>
-                <li>
-                    <strong>Why do overparameterized neural networks generalize?</strong> - <a href="NeuralNetworkPresentation.pdf">Slides</a><br>
-                    Seminar for young researchers, University of Jyväskylä, Finland, 6 March 2024
-                </li>
-                <li>
-                    <strong>Explaining Classifiers and Data via Propositional Logic</strong> - <a href="ExplainabilityPresentation.pdf">Slides</a><br>
-                    Logic seminar, University of Helsinki, Finland, 22 November 2023
-                </li>
-                <li>
-                    <strong>First-Order Logic with Game-Theoretic Recursion</strong> - <a href="Helsinki_Seminar.pdf">Slides</a><br>
-                    Logic seminar, University of Helsinki, Finland, 20 April 2023
-                </li>
-                <li>
-                    <strong>The Asymptotic Equipartition Property</strong><br>
-                    Seminar for young researchers, University of Jyväskylä, Finland, 29 March 2023
-                </li>
-                <li>
-                    <strong>Relating Description Complexity to Entropy</strong> - <a href="Reijo_Dresden.pdf">Slides</a><br>
-                    Research Seminar Logic and AI, TU Dresden, March 16, 2023, Dresden, Germany
-                </li>
-                <li>
-                    <strong>First-Order Logic with Game-Theoretic Recursion</strong> - <a href="JAAKKOLA_FICS.pdf">Slides</a><br>
-                    Fixed Points in Computer Science 2023, February 17, 2023, Warsaw, Poland
-                </li>
-                <li>
-                    <strong>Complexity of Polyadic Boolean Modal Logics: Model Checking and Satisfiability</strong> - <a href="Boolean_Modal_CSL.pdf">Slides</a><br>
-                    Computer Science Logic 2023, February 13-16, 2023, Warsaw, Poland
-                </li>
-                <li>
-                    <strong>Complexity Classifications via Algebraic Logic</strong> - <a href="Complexity_Algebra_CSL.pdf">Slides</a><br>
-                    Computer Science Logic 2023, February 13-16, 2023, Warsaw, Poland
-                </li>
-                <li>
-                    <strong>First order logic with game-theoretic recursion II</strong><br>
-                    Logic and discrete mathematics seminar, Tampere University, Finland, 13 January 2023
-                </li>
-                <li>
-                    <strong>Nopeat algoritmit ja laskennallinen vaativuus teoria</strong> (Invited talk) - <a href="Reijo_integraatiofest2022.pdf">Slides in Finnish</a><br>
-                    IntegraatioFest 2022, October 28-30, Tampere, Finland
-                </li>
-                <li>
-                    <strong>First-order logic with self-reference</strong> - <a href="Reijo_PhDsInLogic.pdf">Slides</a><br>
-                    PhDs in Logic XIII, September 5-7, 2022, Turin, Italy
-                </li>
-                <li>
-                    <strong>Uniform Guarded Fragments</strong> - <a href="Reijo_FoSSaCS_presentation.pdf">Slides</a><br>
-                    25th International Conference on Foundations of Software Science and Computation Structures, April 2-7, 2022, Munich, Germany
-                </li>
-                <li>
-                    <strong>Complexity of Polyadic Boolean Modal Logics: Model Checking and Satisfiability</strong><br>
-                    Logic and discrete mathematics seminar, Tampere University, Finland, 25 March 2022
-                </li>
-                <li>
-                    <strong>Undecidability of the Halting Problem and Gödel's Incompleteness Theorems</strong> - <a href="Mini-course_on_computation_lecture.pdf">Slides</a> - <a href="https://www.youtube.com/watch?v=qP99a7CIQlE">Video</a><br>
-                    What is Computation? From Turing Machines to Black Holes and Neurons, Harvard GSAS Mini-Course, January 2022<br>
-                    <a href="https://cnchou.github.io/mini-course/">Course website</a>
-                </li>
-                <li>
-                    <strong>Ordered fragments of first-order logic</strong> - <a href="Math_Days_2022.pdf">Slides</a><br>
-                    Finnish Mathematical Days 2022
-                </li>
-                <li>
-                    <strong>What is a fragment?</strong> - <a href="What_Is_Fragment.pdf">Slides</a><br>
-                    Philosophy of Mathematics in Finland, Tampere, Finland, November 2021
-                </li>
-                <li>
-                    <strong>Interpolation and fragments of first-order logic</strong><br>
-                    Logic and discrete mathematics seminar, Tampere University, Finland, 24 September 2021
-                </li>
-                <li>
-                    <strong>Ordered fragments of first-order logic</strong> - <a href="Linear_FO_MFCS.pdf">Slides</a><br>
-                    46th International Symposium on Mathematical Foundations of Computer Science, Tallinn, Estonia, August 2021
-                </li>
-                <li>
-                    <strong>Extensions of two-variable logic</strong> - <a href="FO2Ext.pdf">Slides</a><br>
-                    Logic and discrete mathematics seminar, Tampere University, Finland, 11 December 2020
-                </li>
-                <li>
-                    <strong>Algebraic classifications for fragments of first-order logic and beyond</strong> - <a href="FO_fragments.pdf">Slides</a><br>
-                    Logicians' Spring Gathering 2020, Tampere University, Finland, 8 May 2020
-                </li>
+                <li><strong>Moderni selitettävä tekoäly</strong><a href="esitelma.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">SOTE-tekoäly ekosysteemin AI-aamu, 10 December, 2025, Webinaari</span></li>
+                <li><strong>Why this and not that? A Logic-based Framework for Contrastive Explanations</strong><a href="jelia2025.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">19th edition of the European Conference on Logics in Artificial Intelligence, 1-4 September, 2025, Kutaisi, Georgia</span></li>
+                <li><strong>Description Complexity of Unary Structures in First-Order Logic with Links to Entropy</strong><a href="csl_25_talk.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">Computer Science Logic 2025, February 10-14, 2025, Amsterdam, the Netherlands</span></li>
+                <li><strong>Expressing boundedness in static computational logic</strong><a href="BoundednessInSCL.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">Logic seminar, University of Helsinki, Finland, 29 January 2025</span></li>
+                <li><strong>Description complexity</strong><a href="descriptionComplexity.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">Seminar for young researchers, University of Jyväskylä, Finland, 27 November 2024</span></li>
+                <li><strong>Uniform guarded fragments: interpolation and complexity</strong><a href="CIP_presentation.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">Workshop on Theory and Applications of Craig Interpolation and Beth Definability, April 22-23, 2024, Amsterdam, Netherlands</span></li>
+                <li><strong>Formulas of propositional logic as interpretable classifiers</strong><a href="ExplainabilityPresentation_2.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">Mathematical Perspective on Machine Learning, University of Helsinki, Finland, 9 April 2024</span></li>
+                <li><strong>Why do overparameterized neural networks generalize?</strong><a href="NeuralNetworkPresentation.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">Seminar for young researchers, University of Jyväskylä, Finland, 6 March 2024</span></li>
+                <li><strong>Explaining Classifiers and Data via Propositional Logic</strong><a href="ExplainabilityPresentation.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">Logic seminar, University of Helsinki, Finland, 22 November 2023</span></li>
+                <li><strong>First-Order Logic with Game-Theoretic Recursion</strong><a href="Helsinki_Seminar.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">Logic seminar, University of Helsinki, Finland, 20 April 2023</span></li>
+                <li><strong>The Asymptotic Equipartition Property</strong><br>
+                    <span style="color: var(--text-muted);">Seminar for young researchers, University of Jyväskylä, Finland, 29 March 2023</span></li>
+                <li><strong>Relating Description Complexity to Entropy</strong><a href="Reijo_Dresden.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">Research Seminar Logic and AI, TU Dresden, March 16, 2023, Dresden, Germany</span></li>
+                <li><strong>First-Order Logic with Game-Theoretic Recursion</strong><a href="JAAKKOLA_FICS.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">Fixed Points in Computer Science 2023, February 17, 2023, Warsaw, Poland</span></li>
+                <li><strong>Complexity of Polyadic Boolean Modal Logics: Model Checking and Satisfiability</strong><a href="Boolean_Modal_CSL.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">Computer Science Logic 2023, February 13-16, 2023, Warsaw, Poland</span></li>
+                <li><strong>Complexity Classifications via Algebraic Logic</strong><a href="Complexity_Algebra_CSL.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">Computer Science Logic 2023, February 13-16, 2023, Warsaw, Poland</span></li>
+                <li><strong>First order logic with game-theoretic recursion II</strong><br>
+                    <span style="color: var(--text-muted);">Logic and discrete mathematics seminar, Tampere University, Finland, 13 January 2023</span></li>
+                <li><strong>Nopeat algoritmit ja laskennallinen vaativuus teoria</strong> (Invited talk)<a href="Reijo_integraatiofest2022.pdf">Slides in Finnish</a><br>
+                    <span style="color: var(--text-muted);">IntegraatioFest 2022, October 28-30, Tampere, Finland</span></li>
+                <li><strong>First-order logic with self-reference</strong><a href="Reijo_PhDsInLogic.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">PhDs in Logic XIII, September 5-7, 2022, Turin, Italy</span></li>
+                <li><strong>Uniform Guarded Fragments</strong><a href="Reijo_FoSSaCS_presentation.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">25th International Conference on Foundations of Software Science and Computation Structures, April 2-7, 2022, Munich, Germany</span></li>
+                <li><strong>Complexity of Polyadic Boolean Modal Logics: Model Checking and Satisfiability</strong><br>
+                    <span style="color: var(--text-muted);">Logic and discrete mathematics seminar, Tampere University, Finland, 25 March 2022</span></li>
+                <li><strong>Undecidability of the Halting Problem and Gödel's Incompleteness Theorems</strong><a href="Mini-course_on_computation_lecture.pdf">Slides</a> <a href="https://www.youtube.com/watch?v=qP99a7CIQlE">Video</a><br>
+                    <span style="color: var(--text-muted);">What is Computation? From Turing Machines to Black Holes and Neurons, Harvard GSAS Mini-Course, January 2022</span><br>
+                    <a href="https://cnchou.github.io/mini-course/">Course website</a></li>
+                <li><strong>Ordered fragments of first-order logic</strong><a href="Math_Days_2022.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">Finnish Mathematical Days 2022</span></li>
+                <li><strong>What is a fragment?</strong><a href="What_Is_Fragment.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">Philosophy of Mathematics in Finland, Tampere, Finland, November 2021</span></li>
+                <li><strong>Interpolation and fragments of first-order logic</strong><br>
+                    <span style="color: var(--text-muted);">Logic and discrete mathematics seminar, Tampere University, Finland, 24 September 2021</span></li>
+                <li><strong>Ordered fragments of first-order logic</strong><a href="Linear_FO_MFCS.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">46th International Symposium on Mathematical Foundations of Computer Science, Tallinn, Estonia, August 2021</span></li>
+                <li><strong>Extensions of two-variable logic</strong><a href="FO2Ext.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">Logic and discrete mathematics seminar, Tampere University, Finland, 11 December 2020</span></li>
+                <li><strong>Algebraic classifications for fragments of first-order logic and beyond</strong><a href="FO_fragments.pdf">Slides</a><br>
+                    <span style="color: var(--text-muted);">Logicians' Spring Gathering 2020, Tampere University, Finland, 8 May 2020</span></li>
             </ol>
-            <button onclick="scrollToTop()">&#x25B2;</button>
         </section>
-        
-        <!-- Theses -->
+
         <section id="theses">
             <h2>Theses</h2>
-            <l>
-                <li>
-                    <strong>Algebraic Fragments of First-Order Logic</strong> - <a href="https://trepo.tuni.fi/handle/10024/130632" target="_blank">[Thesis]</a><br>
-                    Master's thesis, Tampere University, 2021
-                </li>
-            </l>
-            <button onclick="scrollToTop()">&#x25B2;</button>
+            <ul>
+                <li><strong>Algebraic Fragments of First-Order Logic</strong><a href="https://trepo.tuni.fi/handle/10024/130632" target="_blank">[Thesis]</a><br>
+                    <span style="color: var(--text-muted);">Master's thesis, Tampere University, 2021</span></li>
+            </ul>
         </section>
 
-        <!-- Awards -->
         <section id="awards">
             <h2>Awards</h2>
-            <l>
-                <li>
-                    <strong>First Price - Amplifying Financial AI with Quantum Data Augmentation</strong><br>
-                    Hanken Quantum x AI Hackathon 2025 [<a href="https://new.ultrahack.org/hackathons/quantum-x-ai-hackathon">Website</a>]
-                </li>
-                <li>
-                    <strong>Best Tech Solution - Unlocking ESG Insights</strong><br>
-                    Hanken Quantum Hackathon 2023 [<a href="https://new.ultrahack.org/hackathons/hanken-quantum-hackathon-2023">Website</a>]
-                </li>
-                <li>
-                    <strong>2022 Ernst Lindelöf Prize</strong><br>
-                    Awarded for the best master's thesis in mathematics written in Finland during the academic year 2021-2022.
-                </li>
-            </l>
-            <button onclick="scrollToTop()">&#x25B2;</button>
+            <ul>
+                <li><strong>First PrizeAmplifying Financial AI with Quantum Data Augmentation</strong><br>
+                    <span style="color: var(--text-muted);">Hanken Quantum x AI Hackathon 2025</span> <a href="https://new.ultrahack.org/hackathons/quantum-x-ai-hackathon" target="_blank">[Website]</a></li>
+                <li><strong>Best Tech SolutionUnlocking ESG Insights</strong><br>
+                    <span style="color: var(--text-muted);">Hanken Quantum Hackathon 2023</span> <a href="https://new.ultrahack.org/hackathons/hanken-quantum-hackathon-2023" target="_blank">[Website]</a></li>
+                <li><strong>2022 Ernst Lindelöf Prize</strong><br>
+                    <span style="color: var(--text-muted);">Awarded for the best master's thesis in mathematics written in Finland during the academic year 2021-2022.</span></li>
+            </ul>
         </section>
 
-        <!-- Professional Activities -->
         <section id="services">
             <h2>Professional Activities</h2>
-            <l>
-                <li>
-                    Research visits:
+            <ul>
+                <li><strong>Research Visits</strong>
                     <ul>
-                        <li>
-                            <strong>TU Wien</strong>, Host: <strong>Mantas Šimkus</strong>, Topic: <strong>Interpretable graph classifiers</strong>, 14-18.7.2025
-                        </li>
-                        <li>
-                            <strong>TU Wien</strong>, Host: <strong>Magdalena Ortiz</strong>, Topic: <strong>Relating knowledge graphs and neural networks</strong>, 16-20.12.2024
-                        </li>
-                        <li>
-                            <strong>TU Wien</strong>, Host: <strong>Thomas Eiter</strong>, Topic: <strong>Explaining AI via logic</strong>, 27.11.2023 - 1.12.2023
-                        </li>
-                        <li>
-                            <strong>University of Wroclaw</strong> and <strong>TU Dresden</strong>, Host: <strong>Bartosz Bednarczyk</strong>, Topic: <strong>Model theory of ordered fragments</strong>, 10-23.3.2023
-                        </li>
+                        <li><strong>TU Wien</strong>, Host: <strong>Mantas Šimkus</strong>, Topic: <strong>Interpretable graph classifiers</strong>, 14-18.7.2025</li>
+                        <li><strong>TU Wien</strong>, Host: <strong>Magdalena Ortiz</strong>, Topic: <strong>Relating knowledge graphs and neural networks</strong>, 16-20.12.2024</li>
+                        <li><strong>TU Wien</strong>, Host: <strong>Thomas Eiter</strong>, Topic: <strong>Explaining AI via logic</strong>, 27.11.2023 - 1.12.2023</li>
+                        <li><strong>University of Wroclaw</strong> and <strong>TU Dresden</strong>, Host: <strong>Bartosz Bednarczyk</strong>, Topic: <strong>Model theory of ordered fragments</strong>, 10-23.3.2023</li>
                     </ul>
                 </li>
-                <li>
-                    I organized a session for Young Researchers at the Finnish Mathematical Days 2024. The goal of the session was twofold: (1) to provide an opportunity for PhD students to present their research area within mathematics; and (2) to showcase modern research topics in mathematics within Finland. List of talks can be found <a href="https://mathdays24.math.aalto.fi/schedole/session/12">here</a>.
-                </li>
-                <li>
-                    I have been a reviewer for various conferences (AAMAS 2022, IJCAI 2023, KR 2023, MFCS 2023, JELIA 2023, GandALF 2023, AAAI 2024, LICS 2024, KR 2024, AAMAS 2025, KR 2025, GandALF 2025) and journals (LMCS, JLC).
-                </li>
-            </l>
-            <button onclick="scrollToTop()">&#x25B2;</button>
+                <li>I organized a session for Young Researchers at the Finnish Mathematical Days 2024. The goal of the session was twofold: (1) to provide an opportunity for PhD students to present their research area within mathematics; and (2) to showcase modern research topics in mathematics within Finland. List of talks can be found <a href="https://mathdays24.math.aalto.fi/schedole/session/12">here</a>.</li>
+                <li>I have been a reviewer for various conferences (AAMAS 2022, IJCAI 2023, KR 2023, MFCS 2023, JELIA 2023, GandALF 2023, AAAI 2024, LICS 2024, KR 2024, AAMAS 2025, KR 2025, GandALF 2025) and journals (LMCS, JLC).</li>
+            </ul>
         </section>
 
-        <!-- Software -->
         <section id="software">
             <h2>Software</h2>
-            <l>
-                <li>
-                    <strong>RSCLASSIFIER</strong> - <a href="https://pypi.org/project/rsclassifier/" target="_blank">[Download]</a>
-                    <p>A Python library which implements a machine learning algorithm for learning role set classifiers for classification tasks. Easy to use, efficient and produces highly interpretable and transparent models.</p>
-                </li>
-                <li>
-                    <strong>Cont-Bouchand model</strong> - <a href="https://github.com/ReijoJaakkola/Cont-Bouchand-model" target="_blank">[Repository]</a>
-                    <p>Course project that I did for the course Statistical Physics 2.</p>
-                </li>
-            </l>
-            <button onclick="scrollToTop()">&#x25B2;</button>
+            <ul>
+                <li><strong>RSCLASSIFIER</strong> <a href="https://pypi.org/project/rsclassifier/" target="_blank">[Download]</a>
+                    <p style="color: var(--text-secondary); margin-top: 0.5rem;">A Python library which implements a machine learning algorithm for learning role set classifiers for classification tasks. Easy to use, efficient and produces highly interpretable and transparent models.</p></li>
+                <li><strong>Cont-Bouchaud model</strong> <a href="https://github.com/ReijoJaakkola/Cont-Bouchand-model" target="_blank">[Repository]</a>
+                    <p style="color: var(--text-secondary); margin-top: 0.5rem;">Course project that I did for the course Statistical Physics 2.</p></li>
+            </ul>
         </section>
 
-        <!-- Quotes -->
         <section id="quotes">
             <h2>Quotes that I Like</h2>
-            <blockquote>
-                "But what we can't say we can't say, and we can't whistle it either." – Frank Ramsey
-            </blockquote>
-            <blockquote>
-                "Young man, in mathematics you don't understand things. You just get used to them." – John von Neumann
-            </blockquote>
-            <blockquote>
-                "Bad ideas is good, good ideas is terrific, no ideas is terrible." – Leonard E. Baum
-            </blockquote>
-            <blockquote>
-                "Everybody who has worked in formal logic will confirm that it is one of the technically most refractory parts of mathematics." - John von Neumann
-            </blockquote>
-            <button onclick="scrollToTop()">&#x25B2;</button>
+            <div class="quotes-carousel">
+                <div class="quote-slide">
+                    <p class="quote-text" id="quoteText">But what we can't say we can't say, and we can't whistle it either.</p>
+                    <p class="quote-author" id="quoteAuthor">— Frank Ramsey</p>
+                </div>
+                <div class="quote-nav">
+                    <button onclick="prevQuote()" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                    <div class="quote-dots" id="quoteDots"></div>
+                    <button onclick="nextQuote()" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
         </section>
     </main>
+
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
 
     <footer>
         <p>© Reijo Jaakkola. All rights reserved.</p>
     </footer>
 
     <script>
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+        // Floating Particles
+        function createParticles() {
+            const container = document.getElementById('particles');
+            const colors = ['#10b981', '#3b82f6', '#06b6d4', '#059669', '#0ea5e9'];
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 18 + 's';
+                particle.style.animationDuration = (14 + Math.random() * 10) + 's';
+                particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+                const size = 4 + Math.random() * 6;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                container.appendChild(particle);
+            }
+        }
+
+        // Mobile menu
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', () => document.querySelector('.navbar').classList.remove('active'));
+        });
+
+        // Scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('section').forEach(section => observer.observe(section));
+
+        // Scroll to top
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+        window.addEventListener('scroll', () => {
+            document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 500);
+        });
+
+        // Quotes
+        const quotes = [
+            { text: "But what we can't say we can't say, and we can't whistle it either.", author: "Frank Ramsey" },
+            { text: "Young man, in mathematics you don't understand things. You just get used to them.", author: "John von Neumann" },
+            { text: "Bad ideas is good, good ideas is terrific, no ideas is terrible.", author: "Leonard E. Baum" },
+            { text: "Everybody who has worked in formal logic will confirm that it is one of the technically most refractory parts of mathematics.", author: "John von Neumann" }
+        ];
+        let currentQuote = 0;
+
+        function createDots() {
+            const dots = document.getElementById('quoteDots');
+            quotes.forEach((_, i) => {
+                const dot = document.createElement('span');
+                dot.className = 'quote-dot' + (i === 0 ? ' active' : '');
+                dot.onclick = () => goToQuote(i);
+                dots.appendChild(dot);
             });
         }
 
-        document.addEventListener("DOMContentLoaded", () => {
-            const menuToggle = document.querySelector(".menu-toggle");
-            const navbar = document.querySelector(".navbar");
+        function updateQuote() {
+            const text = document.getElementById('quoteText');
+            const author = document.getElementById('quoteAuthor');
+            text.style.opacity = 0;
+            setTimeout(() => {
+                text.textContent = quotes[currentQuote].text;
+                author.textContent = '— ' + quotes[currentQuote].author;
+                text.style.opacity = 1;
+            }, 200);
+            document.querySelectorAll('.quote-dot').forEach((d, i) => d.classList.toggle('active', i === currentQuote));
+        }
 
-            menuToggle.addEventListener("click", () => {
-                navbar.classList.toggle("active");
-            });
-        });
+        function nextQuote() { currentQuote = (currentQuote + 1) % quotes.length; updateQuote(); }
+        function prevQuote() { currentQuote = (currentQuote - 1 + quotes.length) % quotes.length; updateQuote(); }
+        function goToQuote(i) { currentQuote = i; updateQuote(); }
+
+        createParticles();
+        createDots();
     </script>
 </body>
 </html>
