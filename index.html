@@ -11,9 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="bg-pattern"></div>
-    <div class="grid-overlay"></div>
-    <div class="particles" id="particles"></div>
+    <canvas id="particleNetwork"></canvas>
 
     <header>
         <div class="header-content">
@@ -288,23 +286,99 @@
     </footer>
 
     <script>
-        // Floating Particles
-        function createParticles() {
-            const container = document.getElementById('particles');
-            const colors = ['#10b981', '#3b82f6', '#06b6d4', '#059669', '#0ea5e9'];
-            for (let i = 0; i < 30; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 18 + 's';
-                particle.style.animationDuration = (14 + Math.random() * 10) + 's';
-                particle.style.background = colors[Math.floor(Math.random() * colors.length)];
-                const size = 4 + Math.random() * 6;
-                particle.style.width = size + 'px';
-                particle.style.height = size + 'px';
-                container.appendChild(particle);
-            }
+        // Reversed list numbering
+        document.querySelectorAll('ol[reversed]').forEach(ol => {
+            const items = ol.querySelectorAll(':scope > li');
+            items.forEach((li, i) => {
+                li.setAttribute('data-number', items.length - i);
+            });
+        });
+
+        // Particle Network Background
+        const canvas = document.getElementById('particleNetwork');
+        const ctx = canvas.getContext('2d');
+        let mouse = { x: null, y: null };
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
         }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        document.addEventListener('mousemove', (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+        });
+
+        document.addEventListener('mouseleave', () => {
+            mouse.x = null;
+            mouse.y = null;
+        });
+
+        const particles = [];
+        const particleCount = 80;
+        const connectionDistance = 150;
+
+        for (let i = 0; i < particleCount; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                vx: (Math.random() - 0.5) * 1,
+                vy: (Math.random() - 0.5) * 1,
+                radius: Math.random() * 3 + 2,
+                color: ['#10b981', '#3b82f6', '#06b6d4'][Math.floor(Math.random() * 3)]
+            });
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            particles.forEach((p, i) => {
+                // Mouse interaction
+                if (mouse.x && mouse.y) {
+                    const dx = mouse.x - p.x;
+                    const dy = mouse.y - p.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < 200) {
+                        p.x -= dx * 0.02;
+                        p.y -= dy * 0.02;
+                    }
+                }
+
+                p.x += p.vx;
+                p.y += p.vy;
+
+                if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+                if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+                // Draw connections
+                for (let j = i + 1; j < particles.length; j++) {
+                    const p2 = particles[j];
+                    const dx = p.x - p2.x;
+                    const dy = p.y - p2.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+                    if (dist < connectionDistance) {
+                        ctx.beginPath();
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.strokeStyle = `rgba(16, 185, 129, ${1 - dist / connectionDistance})`;
+                        ctx.lineWidth = 1;
+                        ctx.stroke();
+                    }
+                }
+
+                // Draw particle
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fillStyle = p.color;
+                ctx.fill();
+            });
+
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
 
         // Mobile menu
         document.querySelector('.menu-toggle').addEventListener('click', () => {
@@ -313,12 +387,6 @@
         document.querySelectorAll('.navbar a').forEach(link => {
             link.addEventListener('click', () => document.querySelector('.navbar').classList.remove('active'));
         });
-
-        // Scroll animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('section').forEach(section => observer.observe(section));
 
         // Scroll to top
         function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
@@ -361,7 +429,6 @@
         function prevQuote() { currentQuote = (currentQuote - 1 + quotes.length) % quotes.length; updateQuote(); }
         function goToQuote(i) { currentQuote = i; updateQuote(); }
 
-        createParticles();
         createDots();
     </script>
 </body>

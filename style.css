@@ -20,52 +20,15 @@
 html { scroll-behavior: smooth; }
 body { font-family: 'Outfit', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; overflow-x: hidden; }
 
-/* Animated Background */
-.bg-pattern {
+/* Particle Network Background */
+#particleNetwork {
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     pointer-events: none;
     z-index: 0;
-    opacity: 0.5;
-    background-image: 
-        radial-gradient(circle at 15% 30%, rgba(16, 185, 129, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 85% 70%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.1) 0%, transparent 60%);
-}
-
-.grid-overlay {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    pointer-events: none;
-    z-index: 0;
-    background-image: radial-gradient(circle, rgba(16, 185, 129, 0.06) 1px, transparent 1px);
-    background-size: 40px 40px;
-}
-
-/* Floating Particles */
-.particles {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    pointer-events: none;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.particle {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.7;
-    animation: floatUp 18s infinite ease-in-out;
-}
-
-@keyframes floatUp {
-    0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-    10% { opacity: 0.7; }
-    90% { opacity: 0.7; }
-    100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
 }
 
 @keyframes fadeInUp {
@@ -240,14 +203,7 @@ section {
     padding: 2rem;
     margin-bottom: 2rem;
     transition: all 0.4s ease;
-    opacity: 0;
-    transform: translateY(20px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-}
-
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 section:hover {
@@ -342,7 +298,6 @@ section h3 {
 /* Publications & Talks Lists */
 ol {
     list-style: none;
-    counter-reset: list-counter;
 }
 
 ol li {
@@ -354,11 +309,10 @@ ol li {
     border-radius: 16px;
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
-    counter-increment: list-counter;
 }
 
 ol li::before {
-    content: counter(list-counter);
+    content: attr(data-number);
     position: absolute;
     left: 1rem;
     top: 1.5rem;

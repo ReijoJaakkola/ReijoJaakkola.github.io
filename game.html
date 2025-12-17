@@ -15,250 +15,432 @@
             --accent-secondary: #3b82f6;
             --accent-dark: #059669;
             --accent-danger: #ef4444;
+            --accent-warning: #f59e0b;
             --text-primary: #1e293b;
             --text-secondary: #475569;
             --text-muted: #94a3b8;
             --border-color: #d1fae5;
-            --glow-primary: rgba(16, 185, 129, 0.2);
+            --glow-primary: rgba(16, 185, 129, 0.3);
+            --glow-danger: rgba(239, 68, 68, 0.3);
             --gradient-main: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
             --gradient-light: linear-gradient(135deg, #d1fae5 0%, #dbeafe 100%);
         }
+        
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Outfit', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; min-height: 100vh; }
-        .bg-pattern { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; opacity: 0.5; background-image: radial-gradient(circle at 15% 30%, rgba(16, 185, 129, 0.15) 0%, transparent 50%), radial-gradient(circle at 85% 70%, rgba(59, 130, 246, 0.15) 0%, transparent 50%); }
-        header { position: relative; z-index: 10; padding: 2rem; text-align: center; background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(240,249,244,0.8) 100%); border-bottom: 1px solid var(--border-color); }
+        body { font-family: 'Outfit', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; min-height: 100vh; }
+        
+        #particleNetwork { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
+        
+        header { position: relative; z-index: 10; padding: 1.5rem 2rem; text-align: center; background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(240,249,244,0.8) 100%); border-bottom: 1px solid var(--border-color); }
         .back-link { position: absolute; left: 2rem; top: 50%; transform: translateY(-50%); color: var(--text-secondary); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; transition: color 0.3s; }
         .back-link:hover { color: var(--accent-primary); }
-        header h1 { font-size: 2rem; font-weight: 700; background: var(--gradient-main); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        header p { color: var(--text-secondary); margin-top: 0.5rem; }
-        main { position: relative; z-index: 10; max-width: 900px; margin: 0 auto; padding: 2rem; }
-        .game-container { background: white; border: 1px solid var(--border-color); border-radius: 24px; padding: 2rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); }
-        .game-stats { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding: 1rem 1.5rem; background: var(--gradient-light); border-radius: 16px; flex-wrap: wrap; gap: 1rem; }
-        .stat { text-align: center; }
-        .stat-value { font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; font-weight: 700; color: var(--accent-primary); }
-        .stat-label { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; }
-        .game-intro { text-align: center; padding: 2rem; }
-        .game-intro h2 { font-size: 1.5rem; margin-bottom: 1rem; }
-        .game-intro p { color: var(--text-secondary); max-width: 600px; margin: 0 auto 1.5rem; }
-        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; border: none; border-radius: 50px; font-family: 'Outfit', sans-serif; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
+        header h1 { font-size: 1.75rem; font-weight: 700; background: var(--gradient-main); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        header p { color: var(--text-secondary); font-size: 0.9rem; }
+        
+        main { position: relative; z-index: 10; max-width: 1200px; margin: 0 auto; padding: 1.5rem; }
+        
+        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.25rem; border: none; border-radius: 50px; font-family: 'Outfit', sans-serif; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
         .btn-primary { background: var(--gradient-main); color: white; box-shadow: 0 4px 15px var(--glow-primary); }
         .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 25px var(--glow-primary); }
         .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
         .btn-secondary { background: white; color: var(--text-secondary); border: 2px solid var(--border-color); }
         .btn-secondary:hover { border-color: var(--accent-primary); color: var(--accent-primary); }
-        .alien-display { text-align: center; padding: 1.5rem; }
-        .alien-card { display: inline-block; background: white; border: 3px solid var(--border-color); border-radius: 24px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); }
-        .alien-svg { width: 140px; height: 180px; }
-        .decision-text { font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; font-weight: 700; margin: 0.5rem 0; padding: 0.4rem 1rem; border-radius: 50px; display: inline-block; }
-        .decision-text.approved { background: rgba(16, 185, 129, 0.15); color: var(--accent-dark); }
-        .decision-text.rejected { background: rgba(239, 68, 68, 0.15); color: var(--accent-danger); }
-        .alien-features { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-top: 1rem; max-width: 350px; }
-        .feature-tag { padding: 0.3rem 0.6rem; border-radius: 50px; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; }
-        .feature-tag.positive { background: rgba(16, 185, 129, 0.15); color: var(--accent-dark); }
-        .feature-tag.negative { background: rgba(239, 68, 68, 0.1); color: var(--accent-danger); }
-        .decision-buttons { display: flex; justify-content: center; gap: 1rem; margin-top: 1rem; }
-        .examples-section { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color); }
-        .examples-section h3 { font-size: 1rem; color: var(--text-primary); margin-bottom: 1rem; }
-        .examples-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); gap: 0.75rem; }
-        .example-card { background: white; border: 2px solid var(--border-color); border-radius: 12px; padding: 0.5rem; text-align: center; }
-        .example-card.approved { border-color: var(--accent-primary); background: rgba(16, 185, 129, 0.05); }
-        .example-card.rejected { border-color: var(--accent-danger); background: rgba(239, 68, 68, 0.05); }
-        .example-card .mini-alien { width: 45px; height: 58px; }
-        .example-card .status { font-size: 0.65rem; font-weight: 600; text-transform: uppercase; }
-        .example-card.approved .status { color: var(--accent-primary); }
-        .example-card.rejected .status { color: var(--accent-danger); }
-        .guess-section { margin-top: 1.5rem; padding: 1.5rem; background: var(--gradient-light); border-radius: 16px; }
-        .guess-section h3 { font-size: 1rem; margin-bottom: 1rem; }
-        .rule-builder { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1rem; }
-        .feature-pairs { display: flex; flex-direction: column; gap: 0.5rem; }
-        .feature-pair { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
-        .pair-label { font-size: 0.8rem; color: var(--text-muted); min-width: 50px; }
-        .pair-or { font-size: 0.75rem; color: var(--text-muted); font-style: italic; }
-        .operators { display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap; }
-        .rule-option { padding: 0.5rem 1rem; background: white; border: 2px solid var(--border-color); border-radius: 50px; cursor: pointer; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; transition: all 0.3s; }
-        .rule-option:hover { border-color: var(--accent-secondary); }
-        .rule-option.operator { background: var(--text-muted); color: white; border-color: var(--text-muted); }
-        .current-guess { padding: 1rem; background: white; border-radius: 12px; font-family: 'JetBrains Mono', monospace; margin-bottom: 1rem; min-height: 50px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0.5rem; }
-        .guess-token { padding: 0.3rem 0.6rem; background: var(--gradient-light); border-radius: 6px; font-size: 0.85rem; }
-        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1000; align-items: center; justify-content: center; }
-        .modal-overlay.active { display: flex; }
-        .modal { background: white; border-radius: 24px; padding: 2rem; max-width: 450px; width: 90%; text-align: center; }
-        .modal h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
-        .modal .result-icon { font-size: 3rem; margin-bottom: 0.5rem; }
-        .modal .score-display { font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; color: var(--accent-primary); margin: 0.5rem 0; }
-        .modal p { color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.95rem; }
-        .modal .actual-rule { background: var(--gradient-light); padding: 0.75rem; border-radius: 12px; font-family: 'JetBrains Mono', monospace; margin-bottom: 1rem; font-size: 0.85rem; }
-        .modal-buttons { display: flex; justify-content: center; gap: 1rem; }
-        .feedback { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 4rem; z-index: 100; animation: feedbackPop 0.6s ease forwards; pointer-events: none; }
-        @keyframes feedbackPop { 0% { transform: translate(-50%, -50%) scale(0); opacity: 1; } 50% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; } 100% { transform: translate(-50%, -50%) scale(1); opacity: 0; } }
+        .btn-danger { background: var(--accent-danger); color: white; }
+        .btn-small { padding: 0.4rem 0.8rem; font-size: 0.8rem; }
+        
+        /* Intro Screen */
+        .game-intro { background: white; border-radius: 24px; padding: 2.5rem; text-align: center; border: 1px solid var(--border-color); box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
+        .game-intro h2 { font-size: 1.75rem; margin-bottom: 0.75rem; }
+        .game-intro > p { color: var(--text-secondary); max-width: 600px; margin: 0 auto 1.5rem; }
+        .alien-preview-container { display: flex; justify-content: center; gap: 1rem; margin: 1.5rem 0; flex-wrap: wrap; }
+        .alien-preview-container svg { width: 70px; height: 90px; }
+        
         .difficulty-select { display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; }
-        .difficulty-btn { padding: 0.75rem 1.5rem; background: white; border: 2px solid var(--border-color); border-radius: 12px; cursor: pointer; transition: all 0.3s; }
-        .difficulty-btn:hover { border-color: var(--accent-primary); }
-        .difficulty-btn .diff-name { font-weight: 600; }
-        .difficulty-btn .diff-desc { font-size: 0.8rem; color: var(--text-muted); }
-        .difficulty-btn .diff-example { font-size: 0.75rem; color: var(--accent-secondary); font-family: 'JetBrains Mono', monospace; margin-top: 0.25rem; }
-        .how-to-play { margin-top: 1.5rem; padding: 1.25rem; background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 16px; }
-        .how-to-play h3 { color: var(--accent-secondary); margin-bottom: 0.5rem; font-size: 0.95rem; }
-        .how-to-play ol { color: var(--text-secondary); padding-left: 1.25rem; font-size: 0.85rem; }
-        .how-to-play li { margin-bottom: 0.3rem; }
-        .alien-preview-container { display: flex; justify-content: center; gap: 0.75rem; margin: 1rem 0; }
-        .alien-preview-container svg { width: 60px; height: 77px; }
+        .difficulty-btn { padding: 1rem 1.5rem; background: white; border: 2px solid var(--border-color); border-radius: 16px; cursor: pointer; transition: all 0.3s; text-align: left; min-width: 180px; }
+        .difficulty-btn:hover { border-color: var(--accent-primary); transform: translateY(-2px); box-shadow: 0 4px 15px var(--glow-primary); }
+        .difficulty-btn .diff-name { font-weight: 700; font-size: 1.1rem; margin-bottom: 0.25rem; }
+        .difficulty-btn .diff-desc { font-size: 0.85rem; color: var(--text-muted); }
+        .difficulty-btn .diff-example { font-size: 0.75rem; color: var(--accent-secondary); font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem; }
+        
+        .how-to-play { margin-top: 2rem; padding: 1.5rem; background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 16px; text-align: left; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .how-to-play h3 { color: var(--accent-secondary); margin-bottom: 0.75rem; font-size: 1rem; }
+        .how-to-play ol { color: var(--text-secondary); padding-left: 1.5rem; font-size: 0.9rem; }
+        .how-to-play li { margin-bottom: 0.4rem; }
+        
+        /* Game Layout */
+        .game-layout { display: grid; grid-template-columns: 1fr 350px; gap: 1.5rem; }
+        @media (max-width: 900px) { .game-layout { grid-template-columns: 1fr; } }
+        
+        .game-main { display: flex; flex-direction: column; gap: 1.5rem; }
+        
+        /* Stats Bar */
+        .game-stats { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: white; border-radius: 16px; border: 1px solid var(--border-color); flex-wrap: wrap; gap: 1rem; }
+        .stat { text-align: center; }
+        .stat-value { font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; font-weight: 700; color: var(--accent-primary); }
+        .stat-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; }
+        
+        /* Current Alien Display */
+        .current-alien-section { background: white; border-radius: 20px; padding: 1.5rem; border: 1px solid var(--border-color); text-align: center; }
+        .current-alien-section h3 { font-size: 1rem; color: var(--text-muted); margin-bottom: 1rem; }
+        .alien-card { display: inline-block; background: var(--gradient-light); border-radius: 20px; padding: 1.5rem 2rem; margin-bottom: 1rem; }
+        .alien-svg { width: 120px; height: 154px; }
+        .decision-badge { display: inline-block; padding: 0.4rem 1rem; border-radius: 50px; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; font-weight: 700; margin-top: 0.5rem; }
+        .decision-badge.approved { background: rgba(16, 185, 129, 0.2); color: var(--accent-dark); }
+        .decision-badge.rejected { background: rgba(239, 68, 68, 0.2); color: var(--accent-danger); }
+        .decision-badge.unknown { background: rgba(148, 163, 184, 0.2); color: var(--text-muted); }
+        
+        .feature-list { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-top: 1rem; }
+        .feature-tag { padding: 0.4rem 0.8rem; border-radius: 50px; font-size: 0.8rem; font-family: 'JetBrains Mono', monospace; }
+        .feature-tag.positive { background: rgba(16, 185, 129, 0.2); color: var(--accent-dark); }
+        .feature-tag.negative { background: rgba(239, 68, 68, 0.15); color: var(--accent-danger); }
+        
+        /* Split View - Approved vs Rejected */
+        .split-view { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .split-column { background: white; border-radius: 16px; padding: 1rem; border: 1px solid var(--border-color); min-height: 200px; }
+        .split-column h4 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid; display: flex; align-items: center; gap: 0.5rem; }
+        .split-column.approved-col h4 { color: var(--accent-primary); border-color: var(--accent-primary); }
+        .split-column.rejected-col h4 { color: var(--accent-danger); border-color: var(--accent-danger); }
+        .alien-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(55px, 1fr)); gap: 0.5rem; }
+        .mini-alien-card { background: var(--gradient-light); border-radius: 10px; padding: 0.4rem; cursor: pointer; transition: all 0.2s; border: 2px solid transparent; }
+        .mini-alien-card:hover { transform: scale(1.05); border-color: var(--accent-secondary); }
+        .mini-alien-card.highlighted { border-color: var(--accent-warning); box-shadow: 0 0 10px rgba(245, 158, 11, 0.4); }
+        .mini-alien-card svg { width: 45px; height: 58px; display: block; margin: 0 auto; }
+        
+        /* Rule Builder Panel */
+        .rule-builder-panel { background: white; border-radius: 20px; padding: 1.5rem; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 1rem; }
+        .rule-builder-panel h3 { font-size: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        
+        /* Drag tokens */
+        .token-palette { display: flex; flex-direction: column; gap: 0.75rem; }
+        .token-group { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+        .token-group-label { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.25rem; width: 100%; }
+        
+        .drag-token { padding: 0.4rem 0.75rem; border-radius: 8px; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; cursor: grab; transition: all 0.2s; user-select: none; border: 2px solid transparent; }
+        .drag-token:hover { transform: translateY(-1px); }
+        .drag-token:active { cursor: grabbing; }
+        .drag-token.feature-true { background: rgba(16, 185, 129, 0.15); color: var(--accent-dark); }
+        .drag-token.feature-true:hover { border-color: var(--accent-primary); }
+        .drag-token.feature-false { background: rgba(239, 68, 68, 0.1); color: var(--accent-danger); }
+        .drag-token.feature-false:hover { border-color: var(--accent-danger); }
+        .drag-token.operator { background: var(--accent-secondary); color: white; }
+        .drag-token.operator:hover { background: #2563eb; }
+        .drag-token.paren { background: var(--text-muted); color: white; }
+        
+        /* Drop Zone */
+        .drop-zone { min-height: 60px; background: #f8fafc; border: 2px dashed var(--border-color); border-radius: 12px; padding: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; transition: all 0.2s; }
+        .drop-zone.drag-over { border-color: var(--accent-secondary); background: rgba(59, 130, 246, 0.05); }
+        .drop-zone.valid { border-color: var(--accent-primary); background: rgba(16, 185, 129, 0.05); }
+        .drop-zone.invalid { border-color: var(--accent-danger); background: rgba(239, 68, 68, 0.05); }
+        .drop-zone-placeholder { color: var(--text-muted); font-size: 0.85rem; width: 100%; text-align: center; }
+        
+        .placed-token { padding: 0.4rem 0.75rem; border-radius: 8px; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; display: inline-flex; align-items: center; gap: 0.4rem; cursor: pointer; transition: all 0.2s; }
+        .placed-token:hover { opacity: 0.8; }
+        .placed-token .remove-token { font-size: 0.7rem; opacity: 0.6; }
+        .placed-token .remove-token:hover { opacity: 1; }
+        .placed-token.feature-true { background: rgba(16, 185, 129, 0.15); color: var(--accent-dark); }
+        .placed-token.feature-false { background: rgba(239, 68, 68, 0.1); color: var(--accent-danger); }
+        .placed-token.operator { background: var(--accent-secondary); color: white; }
+        .placed-token.paren { background: var(--text-muted); color: white; }
+        
+        /* Validation Message */
+        .validation-msg { font-size: 0.8rem; padding: 0.5rem 0.75rem; border-radius: 8px; display: flex; align-items: center; gap: 0.5rem; }
+        .validation-msg.valid { background: rgba(16, 185, 129, 0.1); color: var(--accent-dark); }
+        .validation-msg.invalid { background: rgba(239, 68, 68, 0.1); color: var(--accent-danger); }
+        .validation-msg.empty { background: rgba(148, 163, 184, 0.1); color: var(--text-muted); }
+        
+        /* Rule Preview */
+        .rule-preview { background: #f8fafc; border-radius: 12px; padding: 1rem; }
+        .rule-preview h4 { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+        .preview-aliens { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .preview-alien { width: 36px; height: 46px; border-radius: 6px; overflow: hidden; border: 2px solid; }
+        .preview-alien.would-approve { border-color: var(--accent-primary); background: rgba(16, 185, 129, 0.1); }
+        .preview-alien.would-reject { border-color: var(--accent-danger); background: rgba(239, 68, 68, 0.1); }
+        .preview-alien svg { width: 100%; height: 100%; }
+        .preview-stats { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; }
+        
+        /* Builder Actions */
+        .builder-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        
+        /* Modal */
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1000; align-items: center; justify-content: center; padding: 1rem; }
+        .modal-overlay.active { display: flex; }
+        .modal { background: white; border-radius: 24px; padding: 2rem; max-width: 450px; width: 100%; text-align: center; max-height: 90vh; overflow-y: auto; }
+        .modal h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .modal .result-icon { font-size: 3.5rem; margin-bottom: 0.5rem; }
+        .modal .score-display { font-family: 'JetBrains Mono', monospace; font-size: 1.25rem; color: var(--accent-primary); margin: 0.5rem 0; }
+        .modal p { color: var(--text-secondary); margin-bottom: 1rem; }
+        .modal .actual-rule { background: var(--gradient-light); padding: 1rem; border-radius: 12px; font-family: 'JetBrains Mono', monospace; margin-bottom: 1.5rem; font-size: 0.9rem; }
+        .modal-buttons { display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; }
+        
+
+        /* Animations */
+        @keyframes pop { 0% { transform: scale(0.8); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+        @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+        .animate-pop { animation: pop 0.3s ease; }
+        .animate-shake { animation: shake 0.3s ease; }
+        
+        /* Responsive */
         @media (max-width: 768px) {
-            header { padding: 1.5rem 1rem; }
-            .back-link { position: static; transform: none; justify-content: center; margin-bottom: 1rem; }
+            header { padding: 1rem; }
+            .back-link { position: static; transform: none; justify-content: center; margin-bottom: 0.75rem; }
             main { padding: 1rem; }
-            .game-container { padding: 1.25rem; }
-            .alien-svg { width: 110px; height: 142px; }
-            .decision-buttons { flex-direction: column; }
-            .decision-buttons .btn { width: 100%; justify-content: center; }
+            .split-view { grid-template-columns: 1fr; }
+            .game-stats { justify-content: center; }
+            .difficulty-btn { min-width: 100%; }
         }
     </style>
 </head>
 <body>
-    <div class="bg-pattern"></div>
+    <canvas id="particleNetwork"></canvas>
+    
     <header>
         <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
         <h1>🛸 Explain This!</h1>
-        <p>Can you discover the hidden rule?</p>
+        <p>Discover the hidden rule behind alien visa approvals</p>
     </header>
+    
     <main>
-        <div class="game-container">
-            <div class="game-stats" id="gameStats" style="display: none;">
-                <div class="stat">
-                    <div class="stat-value" id="examplesDisplay">0</div>
-                    <div class="stat-label">Examples</div>
-                </div>
-                <button class="btn btn-secondary" onclick="makeGuess()">
-                    <i class="fas fa-lightbulb"></i> Guess Rule
+        <!-- Intro Screen -->
+        <div class="game-intro" id="introScreen">
+            <div class="alien-preview-container" id="previewAliens"></div>
+            <h2>Welcome to Galactic Immigration!</h2>
+            <p>Aliens want Earth visas, but the approval rules are SECRET. Study the approved and rejected cases, find the pattern, and build a Boolean rule to crack the code!</p>
+            
+            <div class="difficulty-select">
+                <button class="difficulty-btn" onclick="startGame('easy')">
+                    <div class="diff-name">🌱 Easy</div>
+                    <div class="diff-desc">Single feature rules</div>
+                    <div class="diff-example">e.g., "Green"</div>
+                </button>
+                <button class="difficulty-btn" onclick="startGame('medium')">
+                    <div class="diff-name">🌿 Medium</div>
+                    <div class="diff-desc">Two features with AND/OR</div>
+                    <div class="diff-example">e.g., "Green AND Horns"</div>
+                </button>
+                <button class="difficulty-btn" onclick="startGame('hard')">
+                    <div class="diff-name">🌳 Hard</div>
+                    <div class="diff-desc">Complex nested logic</div>
+                    <div class="diff-example">e.g., "(Green AND Antenna) OR Horns"</div>
                 </button>
             </div>
-
-            <div class="game-intro" id="introScreen">
-                <div class="alien-preview-container" id="previewAliens"></div>
-                <h2>Welcome to Galactic Immigration!</h2>
-                <p>Aliens want Earth visas, but the rules are SECRET. Study approved/rejected cases and figure out the Boolean rule. Can you solve it with the fewest examples?</p>
-                
-                <div class="difficulty-select">
-                    <button class="difficulty-btn" onclick="startGame('easy')">
-                        <div class="diff-name">🌱 Easy</div>
-                        <div class="diff-desc">Single feature rules</div>
-                        <div class="diff-example">e.g., "Green" or "Smiling"</div>
-                    </button>
-                    <button class="difficulty-btn" onclick="startGame('medium')">
-                        <div class="diff-name">🌿 Medium</div>
-                        <div class="diff-desc">AND/OR rules</div>
-                        <div class="diff-example">e.g., "Green AND Horns"</div>
-                    </button>
-                    <button class="difficulty-btn" onclick="startGame('hard')">
-                        <div class="diff-name">🌳 Hard</div>
-                        <div class="diff-desc">Complex nested logic</div>
-                        <div class="diff-example">e.g., "(Green AND Antenna) OR Horns"</div>
-                    </button>
-                </div>
-
-                <div class="how-to-play">
-                    <h3><i class="fas fa-question-circle"></i> How to Play</h3>
-                    <ol>
-                        <li>Click "Show Next Alien" to see applicants</li>
-                        <li>Study 6 features and visa outcomes</li>
-                        <li>Click "Guess Rule" when ready</li>
-                        <li>Build your Boolean formula!</li>
-                    </ol>
-                </div>
+            
+            <div class="how-to-play">
+                <h3><i class="fas fa-question-circle"></i> How to Play</h3>
+                <ol>
+                    <li>Click "Next Alien" to reveal applicants one by one</li>
+                    <li>Study the features and compare approved vs rejected aliens</li>
+                    <li>Drag & drop tokens to build your rule hypothesis</li>
+                    <li>Watch the preview to see if your rule matches the pattern</li>
+                    <li>Submit when confident — fewer examples = better score!</li>
+                </ol>
             </div>
-
-            <div class="alien-display" id="gameScreen" style="display: none;">
-                <div class="alien-card" id="alienCard">
-                    <div id="alienSvgContainer"></div>
-                    <div id="decisionText" class="decision-text"></div>
-                    <div class="alien-features" id="alienFeatures"></div>
-                </div>
-                <div class="decision-buttons">
+        </div>
+        
+        <!-- Game Screen -->
+        <div class="game-layout" id="gameScreen" style="display: none;">
+            <div class="game-main">
+                <!-- Stats -->
+                <div class="game-stats">
+                    <div class="stat">
+                        <div class="stat-value" id="examplesCount">0</div>
+                        <div class="stat-label">Examples Seen</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value" id="approvedCount">0</div>
+                        <div class="stat-label">Approved</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value" id="rejectedCount">0</div>
+                        <div class="stat-label">Rejected</div>
+                    </div>
                     <button class="btn btn-primary" onclick="showNextAlien()">
-                        <i class="fas fa-arrow-right"></i> Show Next Alien
+                        <i class="fas fa-arrow-right"></i> Next Alien
                     </button>
                 </div>
-                <div class="examples-section">
-                    <h3><i class="fas fa-history"></i> Previous Applicants</h3>
-                    <div class="examples-grid" id="examplesGrid"></div>
+                
+                <!-- Current Alien -->
+                <div class="current-alien-section" id="currentAlienSection">
+                    <h3 id="currentAlienTitle">Current Applicant</h3>
+                    <div class="alien-card" id="currentAlienCard">
+                        <div id="currentAlienSvg"></div>
+                    </div>
+                    <div id="currentDecision"></div>
+                    <div class="feature-list" id="currentFeatures"></div>
+                </div>
+                
+                <!-- Split View -->
+                <div class="split-view">
+                    <div class="split-column approved-col">
+                        <h4><i class="fas fa-check-circle"></i> Approved</h4>
+                        <div class="alien-grid" id="approvedGrid"></div>
+                    </div>
+                    <div class="split-column rejected-col">
+                        <h4><i class="fas fa-times-circle"></i> Rejected</h4>
+                        <div class="alien-grid" id="rejectedGrid"></div>
+                    </div>
                 </div>
             </div>
-
-            <div class="guess-section" id="guessScreen" style="display: none;">
+            
+            <!-- Rule Builder Sidebar -->
+            <div class="rule-builder-panel">
                 <h3><i class="fas fa-lightbulb"></i> Build Your Rule</h3>
-                <div class="rule-builder" id="ruleBuilder"></div>
-                <div class="current-guess" id="currentGuess">
-                    <span style="color: var(--text-muted);">Click features to build rule...</span>
+                
+                <!-- Token Palette -->
+                <div class="token-palette">
+                    <div class="token-group">
+                        <div class="token-group-label">Features (has)</div>
+                        <div class="drag-token feature-true" draggable="true" data-type="feature" data-key="green" data-value="true">Green</div>
+                        <div class="drag-token feature-true" draggable="true" data-type="feature" data-key="threeEyes" data-value="true">3 Eyes</div>
+                        <div class="drag-token feature-true" draggable="true" data-type="feature" data-key="hasAntenna" data-value="true">Antenna</div>
+                        <div class="drag-token feature-true" draggable="true" data-type="feature" data-key="hasLegs" data-value="true">Legs</div>
+                        <div class="drag-token feature-true" draggable="true" data-type="feature" data-key="hasHorns" data-value="true">Horns</div>
+                        <div class="drag-token feature-true" draggable="true" data-type="feature" data-key="isSmiling" data-value="true">Smiling</div>
+                    </div>
+                    <div class="token-group">
+                        <div class="token-group-label">Features (lacks)</div>
+                        <div class="drag-token feature-false" draggable="true" data-type="feature" data-key="green" data-value="false">Not Green</div>
+                        <div class="drag-token feature-false" draggable="true" data-type="feature" data-key="threeEyes" data-value="false">Two Eyes</div>
+                        <div class="drag-token feature-false" draggable="true" data-type="feature" data-key="hasAntenna" data-value="false">No Antenna</div>
+                        <div class="drag-token feature-false" draggable="true" data-type="feature" data-key="hasLegs" data-value="false">No Legs</div>
+                        <div class="drag-token feature-false" draggable="true" data-type="feature" data-key="hasHorns" data-value="false">No Horns</div>
+                        <div class="drag-token feature-false" draggable="true" data-type="feature" data-key="isSmiling" data-value="false">Not Smiling</div>
+                    </div>
+                    <div class="token-group">
+                        <div class="token-group-label">Operators</div>
+                        <div class="drag-token operator" draggable="true" data-type="operator" data-value="AND">AND</div>
+                        <div class="drag-token operator" draggable="true" data-type="operator" data-value="OR">OR</div>
+                        <div class="drag-token paren" draggable="true" data-type="paren" data-value="(">(</div>
+                        <div class="drag-token paren" draggable="true" data-type="paren" data-value=")">)</div>
+                    </div>
                 </div>
-                <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
-                    <button class="btn btn-secondary" onclick="clearGuess()"><i class="fas fa-eraser"></i> Clear</button>
-                    <button class="btn btn-secondary" onclick="cancelGuess()"><i class="fas fa-times"></i> Back</button>
-                    <button class="btn btn-primary" onclick="submitGuess()"><i class="fas fa-check"></i> Submit</button>
+                
+                <!-- Drop Zone -->
+                <div class="drop-zone" id="dropZone">
+                    <span class="drop-zone-placeholder">Drag tokens here to build your rule...</span>
+                </div>
+                
+                <!-- Validation -->
+                <div class="validation-msg empty" id="validationMsg">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Start building your rule</span>
+                </div>
+                
+                <!-- Rule Preview -->
+                <div class="rule-preview" id="rulePreview">
+                    <h4><i class="fas fa-eye"></i> Preview: Which aliens would match?</h4>
+                    <div class="preview-aliens" id="previewAliens2"></div>
+                    <div class="preview-stats" id="previewStats">Build a valid rule to see preview</div>
+                </div>
+                
+                <!-- Actions -->
+                <div class="builder-actions">
+                    <button class="btn btn-secondary btn-small" onclick="undoToken()">
+                        <i class="fas fa-undo"></i> Undo
+                    </button>
+                    <button class="btn btn-secondary btn-small" onclick="clearRule()">
+                        <i class="fas fa-trash"></i> Clear
+                    </button>
+                    <button class="btn btn-primary" onclick="submitRule()" id="submitBtn" disabled>
+                        <i class="fas fa-check"></i> Submit Rule
+                    </button>
                 </div>
             </div>
         </div>
     </main>
-
+    
+    <!-- Result Modal -->
     <div class="modal-overlay" id="resultModal">
         <div class="modal">
             <div class="result-icon" id="resultIcon">🎉</div>
             <h2 id="resultTitle">Correct!</h2>
-            <div class="score-display" id="resultScore">+100 points</div>
-            <p id="resultMessage">You figured out the rule!</p>
-            <div class="actual-rule"><strong>Rule:</strong> <span id="actualRule"></span></div>
+            <div class="score-display" id="resultScore"></div>
+            <p id="resultMessage"></p>
+            <div class="actual-rule">
+                <strong>The Rule:</strong><br>
+                <span id="actualRule"></span>
+            </div>
             <div class="modal-buttons">
-                <button class="btn btn-primary" onclick="restartLevel()"><i class="fas fa-redo"></i> Play Again</button>
+                <button class="btn btn-secondary" onclick="backToMenu()">
+                    <i class="fas fa-home"></i> Menu
+                </button>
+                <button class="btn btn-primary" onclick="playAgain()">
+                    <i class="fas fa-redo"></i> Play Again
+                </button>
             </div>
         </div>
     </div>
+    
+
 
     <script>
-        const MAX_EXAMPLES = 64; // All unique aliens available
-        
+        // Game State
         let gameState = {
-            difficulty: 'easy', examplesSeen: 0,
-            currentRule: null, examples: [], guessTokens: [], shownCombos: new Set()
-        };
-
-        // 6 binary features = 64 unique aliens
-        // Each feature is presence/absence based
-        const features = {
-            green: { name: 'Green', displayTrue: 'Green', displayFalse: 'Not Green' },
-            threeEyes: { name: 'Three Eyes', displayTrue: 'Three Eyes', displayFalse: 'No Three Eyes' },
-            hasAntenna: { name: 'Antenna', displayTrue: 'Antenna', displayFalse: 'No Antenna' },
-            hasLegs: { name: 'Legs', displayTrue: 'Legs', displayFalse: 'No Legs' },
-            hasHorns: { name: 'Horns', displayTrue: 'Horns', displayFalse: 'No Horns' },
-            isSmiling: { name: 'Smiling', displayTrue: 'Smiling', displayFalse: 'Not Smiling' }
+            difficulty: 'easy',
+            currentRule: null,
+            examples: [],
+            ruleTokens: [],
+            shownCombos: new Set(),
+            highlightedFeatures: null
         };
         
-        // For rule building - all possible atoms, grouped as pairs
-        const ruleAtoms = [
-            { key: 'green', value: true, name: 'Green', pair: 'color' },
-            { key: 'green', value: false, name: 'Not Green', pair: 'color' },
-            { key: 'threeEyes', value: true, name: 'Three Eyes', pair: 'eyes' },
-            { key: 'threeEyes', value: false, name: 'No Three Eyes', pair: 'eyes' },
-            { key: 'hasAntenna', value: true, name: 'Antenna', pair: 'antenna' },
-            { key: 'hasAntenna', value: false, name: 'No Antenna', pair: 'antenna' },
-            { key: 'hasLegs', value: true, name: 'Legs', pair: 'limbs' },
-            { key: 'hasLegs', value: false, name: 'No Legs', pair: 'limbs' },
-            { key: 'hasHorns', value: true, name: 'Horns', pair: 'horns' },
-            { key: 'hasHorns', value: false, name: 'No Horns', pair: 'horns' },
-            { key: 'isSmiling', value: true, name: 'Smiling', pair: 'mouth' },
-            { key: 'isSmiling', value: false, name: 'Not Smiling', pair: 'mouth' },
-        ];
-
+        // Features
+        const features = {
+            green: { name: 'Green', trueLabel: 'Green', falseLabel: 'Not Green' },
+            threeEyes: { name: '3 Eyes', trueLabel: 'Three Eyes', falseLabel: 'Two Eyes' },
+            hasAntenna: { name: 'Antenna', trueLabel: 'Has Antenna', falseLabel: 'No Antenna' },
+            hasLegs: { name: 'Legs', trueLabel: 'Has Legs', falseLabel: 'No Legs (Tentacles)' },
+            hasHorns: { name: 'Horns', trueLabel: 'Has Horns', falseLabel: 'No Horns' },
+            isSmiling: { name: 'Smiling', trueLabel: 'Smiling', falseLabel: 'Not Smiling' }
+        };
+        
+        // Rule Templates
+        const ruleTemplates = {
+            easy: [
+                { rule: a => a.green, description: 'Green' },
+                { rule: a => !a.green, description: 'Not Green' },
+                { rule: a => a.threeEyes, description: 'Three Eyes' },
+                { rule: a => a.hasAntenna, description: 'Antenna' },
+                { rule: a => a.hasLegs, description: 'Legs' },
+                { rule: a => a.hasHorns, description: 'Horns' },
+                { rule: a => a.isSmiling, description: 'Smiling' },
+                { rule: a => !a.isSmiling, description: 'Not Smiling' },
+            ],
+            medium: [
+                { rule: a => a.green && a.hasAntenna, description: 'Green AND Antenna' },
+                { rule: a => a.threeEyes || a.hasLegs, description: 'Three Eyes OR Legs' },
+                { rule: a => a.hasHorns && a.isSmiling, description: 'Horns AND Smiling' },
+                { rule: a => a.green && a.threeEyes, description: 'Green AND Three Eyes' },
+                { rule: a => a.hasAntenna || a.hasHorns, description: 'Antenna OR Horns' },
+                { rule: a => !a.green && a.isSmiling, description: 'Not Green AND Smiling' },
+                { rule: a => a.threeEyes && a.hasHorns, description: 'Three Eyes AND Horns' },
+                { rule: a => a.green || a.hasAntenna, description: 'Green OR Antenna' },
+                { rule: a => !a.hasLegs && a.hasHorns, description: 'No Legs AND Horns' },
+            ],
+            hard: [
+                { rule: a => (a.green && a.hasAntenna) || a.threeEyes, description: '(Green AND Antenna) OR Three Eyes' },
+                { rule: a => a.hasLegs && (a.green || a.hasHorns), description: 'Legs AND (Green OR Horns)' },
+                { rule: a => (a.isSmiling || a.hasAntenna) && a.threeEyes, description: '(Smiling OR Antenna) AND Three Eyes' },
+                { rule: a => (a.hasHorns && a.threeEyes) || (a.green && a.isSmiling), description: '(Horns AND Three Eyes) OR (Green AND Smiling)' },
+                { rule: a => a.green && a.hasHorns && a.hasAntenna, description: 'Green AND Horns AND Antenna' },
+                { rule: a => (a.hasLegs || a.threeEyes) && a.isSmiling, description: '(Legs OR Three Eyes) AND Smiling' },
+                { rule: a => (a.green || a.hasHorns) && (a.hasAntenna || a.isSmiling), description: '(Green OR Horns) AND (Antenna OR Smiling)' },
+                { rule: a => (!a.green && a.hasAntenna) || a.hasHorns, description: '(Not Green AND Antenna) OR Horns' },
+            ]
+        };
+        
+        // Alien Generation
         function alienToKey(a) {
             return `${a.green}-${a.threeEyes}-${a.hasAntenna}-${a.hasLegs}-${a.hasHorns}-${a.isSmiling}`;
         }
-
+        
         function generateAlien() {
             if (gameState.shownCombos.size >= 64) gameState.shownCombos.clear();
             let alien, key, attempts = 0;
             do {
-                alien = { 
-                    green: Math.random() > 0.5, 
-                    threeEyes: Math.random() > 0.5, 
-                    hasAntenna: Math.random() > 0.5, 
+                alien = {
+                    green: Math.random() > 0.5,
+                    threeEyes: Math.random() > 0.5,
+                    hasAntenna: Math.random() > 0.5,
                     hasLegs: Math.random() > 0.5,
                     hasHorns: Math.random() > 0.5,
                     isSmiling: Math.random() > 0.5
@@ -269,247 +451,528 @@
             gameState.shownCombos.add(key);
             return alien;
         }
-
+        
         function generateAlienSVG(alien, size = 'normal') {
-            const w = size === 'mini' ? 45 : 140;
-            const h = size === 'mini' ? 58 : 180;
-            const cls = size === 'mini' ? 'mini-alien' : 'alien-svg';
+            const w = size === 'mini' ? 45 : size === 'preview' ? 36 : 120;
+            const h = size === 'mini' ? 58 : size === 'preview' ? 46 : 154;
             
-            // More color options - green variants and non-green variants
             const greenColors = [
-                { body: '#10b981', dark: '#059669', light: '#6ee7b7' }, // emerald
-                { body: '#22c55e', dark: '#16a34a', light: '#86efac' }, // green
-                { body: '#14b8a6', dark: '#0d9488', light: '#5eead4' }, // teal
-                { body: '#84cc16', dark: '#65a30d', light: '#bef264' }, // lime
+                { body: '#10b981', dark: '#059669', light: '#6ee7b7' },
+                { body: '#22c55e', dark: '#16a34a', light: '#86efac' },
+                { body: '#14b8a6', dark: '#0d9488', light: '#5eead4' },
             ];
             const otherColors = [
-                { body: '#8b5cf6', dark: '#7c3aed', light: '#c4b5fd' }, // purple
-                { body: '#ec4899', dark: '#db2777', light: '#f9a8d4' }, // pink
-                { body: '#f97316', dark: '#ea580c', light: '#fdba74' }, // orange
-                { body: '#ef4444', dark: '#dc2626', light: '#fca5a5' }, // red
-                { body: '#3b82f6', dark: '#2563eb', light: '#93c5fd' }, // blue
-                { body: '#eab308', dark: '#ca8a04', light: '#fde047' }, // yellow
+                { body: '#8b5cf6', dark: '#7c3aed', light: '#c4b5fd' },
+                { body: '#ec4899', dark: '#db2777', light: '#f9a8d4' },
+                { body: '#f97316', dark: '#ea580c', light: '#fdba74' },
+                { body: '#ef4444', dark: '#dc2626', light: '#fca5a5' },
+                { body: '#3b82f6', dark: '#2563eb', light: '#93c5fd' },
             ];
             
-            // Use alien properties to seed random cosmetic variations
             const seed = (alien.green ? 1 : 0) + (alien.threeEyes ? 2 : 0) + (alien.hasAntenna ? 4 : 0) + 
                         (alien.hasLegs ? 8 : 0) + (alien.hasHorns ? 16 : 0) + (alien.isSmiling ? 32 : 0);
             
-            // Pick color based on green status + seed for variety within each category
-            const colorSet = alien.green 
-                ? greenColors[seed % greenColors.length]
-                : otherColors[seed % otherColors.length];
-            const body = colorSet.body;
-            const dark = colorSet.dark;
-            const light = colorSet.light;
+            const colorSet = alien.green ? greenColors[seed % greenColors.length] : otherColors[seed % otherColors.length];
+            const { body, dark, light } = colorSet;
             
-            // Cosmetic variations based on seed
-            const hasSpots = seed % 3 === 0;
-            const hasStripes = seed % 5 === 0;
-            const hasCheeks = seed % 4 === 0;
-            const bodyWidth = 42 + (seed % 8);  // 42-49
-            const bodyHeight = 52 + (seed % 10); // 52-61
-            const earType = seed % 4; // 0=none, 1=round, 2=pointy, 3=droopy
-            const armType = seed % 3; // 0=none, 1=short, 2=wavy
-            const hasFreckles = seed % 7 === 0;
-            const eyeStyle = seed % 3; // varies pupil size/position
-            
-            let svg = `<svg width="${w}" height="${h}" viewBox="0 0 140 180" class="${cls}">`;
-            
-            // Ears (cosmetic only)
-            if (earType === 1) {
-                svg += `<circle cx="28" cy="75" r="10" fill="${body}"/>
-                        <circle cx="112" cy="75" r="10" fill="${body}"/>`;
-            } else if (earType === 2) {
-                svg += `<path d="M 30 85 L 18 60 L 35 70 Z" fill="${body}"/>
-                        <path d="M 110 85 L 122 60 L 105 70 Z" fill="${body}"/>`;
-            } else if (earType === 3) {
-                svg += `<ellipse cx="25" cy="85" rx="8" ry="15" fill="${body}" transform="rotate(-20 25 85)"/>
-                        <ellipse cx="115" cy="85" rx="8" ry="15" fill="${body}" transform="rotate(20 115 85)"/>`;
-            }
+            let svg = `<svg width="${w}" height="${h}" viewBox="0 0 120 154">`;
             
             // Horns
             if (alien.hasHorns) {
-                const hornStyle = seed % 2;
-                if (hornStyle === 0) {
-                    svg += `<path d="M 35 50 Q 25 30 35 20" stroke="${dark}" stroke-width="6" fill="none" stroke-linecap="round"/>
-                            <path d="M 105 50 Q 115 30 105 20" stroke="${dark}" stroke-width="6" fill="none" stroke-linecap="round"/>`;
-                } else {
-                    svg += `<path d="M 40 48 L 30 18" stroke="${dark}" stroke-width="5" fill="none" stroke-linecap="round"/>
-                            <path d="M 100 48 L 110 18" stroke="${dark}" stroke-width="5" fill="none" stroke-linecap="round"/>`;
-                }
+                svg += `<path d="M 30 42 Q 20 22 30 12" stroke="${dark}" stroke-width="5" fill="none" stroke-linecap="round"/>
+                        <path d="M 90 42 Q 100 22 90 12" stroke="${dark}" stroke-width="5" fill="none" stroke-linecap="round"/>`;
             }
             
             // Antenna
             if (alien.hasAntenna) {
-                const antennaStyle = seed % 3;
-                if (antennaStyle === 0) {
-                    svg += `<line x1="70" y1="45" x2="70" y2="15" stroke="${dark}" stroke-width="4"/>
-                            <circle cx="70" cy="12" r="7" fill="${dark}"/>`;
-                } else if (antennaStyle === 1) {
-                    svg += `<line x1="55" y1="48" x2="45" y2="18" stroke="${dark}" stroke-width="3"/>
-                            <line x1="85" y1="48" x2="95" y2="18" stroke="${dark}" stroke-width="3"/>
-                            <circle cx="45" cy="15" r="5" fill="${dark}"/>
-                            <circle cx="95" cy="15" r="5" fill="${dark}"/>`;
-                } else {
-                    svg += `<path d="M 70 45 Q 60 25 70 12" stroke="${dark}" stroke-width="3" fill="none"/>
-                            <circle cx="70" cy="10" r="6" fill="${light}"/>`;
-                }
-            }
-            
-            // Arms (cosmetic only)
-            if (armType === 1) {
-                svg += `<ellipse cx="22" cy="95" rx="8" ry="12" fill="${body}"/>
-                        <ellipse cx="118" cy="95" rx="8" ry="12" fill="${body}"/>`;
-            } else if (armType === 2) {
-                svg += `<path d="M 28 85 Q 10 95 15 115" stroke="${body}" stroke-width="8" fill="none" stroke-linecap="round"/>
-                        <path d="M 112 85 Q 130 95 125 115" stroke="${body}" stroke-width="8" fill="none" stroke-linecap="round"/>`;
+                svg += `<line x1="60" y1="38" x2="60" y2="12" stroke="${dark}" stroke-width="3"/>
+                        <circle cx="60" cy="10" r="6" fill="${dark}"/>`;
             }
             
             // Body
-            svg += `<ellipse cx="70" cy="95" rx="${bodyWidth}" ry="${bodyHeight}" fill="${body}"/>
-                    <ellipse cx="70" cy="90" rx="${bodyWidth - 7}" ry="${bodyHeight - 10}" fill="${dark}" opacity="0.2"/>`;
-            
-            // Body patterns (cosmetic)
-            if (hasSpots) {
-                svg += `<circle cx="55" cy="110" r="5" fill="${dark}" opacity="0.3"/>
-                        <circle cx="80" cy="118" r="4" fill="${dark}" opacity="0.3"/>
-                        <circle cx="65" cy="125" r="3" fill="${dark}" opacity="0.3"/>`;
-            }
-            if (hasStripes) {
-                svg += `<path d="M 45 100 Q 70 95 95 100" stroke="${dark}" stroke-width="3" fill="none" opacity="0.25"/>
-                        <path d="M 48 115 Q 70 110 92 115" stroke="${dark}" stroke-width="3" fill="none" opacity="0.25"/>`;
-            }
-            
-            // Cheeks (cosmetic)
-            if (hasCheeks) {
-                svg += `<ellipse cx="38" cy="95" rx="8" ry="5" fill="${light}" opacity="0.5"/>
-                        <ellipse cx="102" cy="95" rx="8" ry="5" fill="${light}" opacity="0.5"/>`;
-            }
-            
-            // Freckles (cosmetic)
-            if (hasFreckles) {
-                svg += `<circle cx="42" cy="90" r="2" fill="${dark}" opacity="0.4"/>
-                        <circle cx="48" cy="94" r="2" fill="${dark}" opacity="0.4"/>
-                        <circle cx="92" cy="90" r="2" fill="${dark}" opacity="0.4"/>
-                        <circle cx="98" cy="94" r="2" fill="${dark}" opacity="0.4"/>`;
-            }
+            svg += `<ellipse cx="60" cy="82" rx="38" ry="45" fill="${body}"/>
+                    <ellipse cx="60" cy="78" rx="30" ry="36" fill="${dark}" opacity="0.15"/>`;
             
             // Eyes
-            const pupilOffset = eyeStyle === 0 ? 0 : (eyeStyle === 1 ? -2 : 2);
-            const pupilSize = 5 + (eyeStyle === 2 ? 1 : 0);
             if (alien.threeEyes) {
-                svg += `<ellipse cx="45" cy="78" rx="10" ry="12" fill="white"/>
-                        <ellipse cx="70" cy="68" rx="10" ry="12" fill="white"/>
-                        <ellipse cx="95" cy="78" rx="10" ry="12" fill="white"/>
-                        <circle cx="${45 + pupilOffset}" cy="80" r="${pupilSize}" fill="#1e293b"/>
-                        <circle cx="${70 + pupilOffset}" cy="70" r="${pupilSize}" fill="#1e293b"/>
-                        <circle cx="${95 + pupilOffset}" cy="80" r="${pupilSize}" fill="#1e293b"/>
-                        <circle cx="${47 + pupilOffset}" cy="78" r="2" fill="white"/>
-                        <circle cx="${72 + pupilOffset}" cy="68" r="2" fill="white"/>
-                        <circle cx="${97 + pupilOffset}" cy="78" r="2" fill="white"/>`;
+                svg += `<ellipse cx="40" cy="68" rx="9" ry="10" fill="white"/>
+                        <ellipse cx="60" cy="60" rx="9" ry="10" fill="white"/>
+                        <ellipse cx="80" cy="68" rx="9" ry="10" fill="white"/>
+                        <circle cx="40" cy="70" r="4" fill="#1e293b"/>
+                        <circle cx="60" cy="62" r="4" fill="#1e293b"/>
+                        <circle cx="80" cy="70" r="4" fill="#1e293b"/>`;
             } else {
-                svg += `<ellipse cx="50" cy="78" rx="12" ry="14" fill="white"/>
-                        <ellipse cx="90" cy="78" rx="12" ry="14" fill="white"/>
-                        <circle cx="${50 + pupilOffset}" cy="80" r="${pupilSize + 1}" fill="#1e293b"/>
-                        <circle cx="${90 + pupilOffset}" cy="80" r="${pupilSize + 1}" fill="#1e293b"/>
-                        <circle cx="${52 + pupilOffset}" cy="78" r="2" fill="white"/>
-                        <circle cx="${92 + pupilOffset}" cy="78" r="2" fill="white"/>`;
+                svg += `<ellipse cx="45" cy="68" rx="10" ry="12" fill="white"/>
+                        <ellipse cx="75" cy="68" rx="10" ry="12" fill="white"/>
+                        <circle cx="45" cy="70" r="5" fill="#1e293b"/>
+                        <circle cx="75" cy="70" r="5" fill="#1e293b"/>`;
             }
             
-            // Mouth - smiling or neutral
+            // Mouth
             if (alien.isSmiling) {
-                const smileStyle = seed % 2;
-                if (smileStyle === 0) {
-                    svg += `<path d="M 50 108 Q 70 125 90 108" stroke="${dark}" stroke-width="3" fill="none" stroke-linecap="round"/>`;
-                } else {
-                    svg += `<path d="M 52 105 Q 70 120 88 105" stroke="${dark}" stroke-width="3" fill="none" stroke-linecap="round"/>
-                            <line x1="48" y1="103" x2="52" y2="106" stroke="${dark}" stroke-width="2" stroke-linecap="round"/>
-                            <line x1="92" y1="103" x2="88" y2="106" stroke="${dark}" stroke-width="2" stroke-linecap="round"/>`;
-                }
+                svg += `<path d="M 45 95 Q 60 110 75 95" stroke="${dark}" stroke-width="3" fill="none" stroke-linecap="round"/>`;
             } else {
-                const neutralStyle = seed % 3;
-                if (neutralStyle === 0) {
-                    svg += `<line x1="55" y1="112" x2="85" y2="112" stroke="${dark}" stroke-width="3" stroke-linecap="round"/>`;
-                } else if (neutralStyle === 1) {
-                    svg += `<ellipse cx="70" cy="110" rx="8" ry="6" fill="${dark}" opacity="0.8"/>`;
-                } else {
-                    svg += `<path d="M 55 115 Q 70 108 85 115" stroke="${dark}" stroke-width="3" fill="none" stroke-linecap="round"/>`;
-                }
+                svg += `<line x1="48" y1="98" x2="72" y2="98" stroke="${dark}" stroke-width="3" stroke-linecap="round"/>`;
             }
             
-            // Legs or Tentacles (no legs)
+            // Legs or Tentacles
             if (alien.hasLegs) {
-                const legStyle = seed % 2;
-                if (legStyle === 0) {
-                    svg += `<rect x="52" y="143" width="11" height="28" rx="5" fill="${body}"/>
-                            <rect x="77" y="143" width="11" height="28" rx="5" fill="${body}"/>
-                            <ellipse cx="57" cy="172" rx="8" ry="4" fill="${dark}"/>
-                            <ellipse cx="83" cy="172" rx="8" ry="4" fill="${dark}"/>`;
-                } else {
-                    svg += `<path d="M 55 143 L 50 170" stroke="${body}" stroke-width="10" fill="none" stroke-linecap="round"/>
-                            <path d="M 85 143 L 90 170" stroke="${body}" stroke-width="10" fill="none" stroke-linecap="round"/>
-                            <ellipse cx="50" cy="172" rx="7" ry="4" fill="${dark}"/>
-                            <ellipse cx="90" cy="172" rx="7" ry="4" fill="${dark}"/>`;
-                }
+                svg += `<rect x="45" y="123" width="10" height="24" rx="5" fill="${body}"/>
+                        <rect x="65" y="123" width="10" height="24" rx="5" fill="${body}"/>
+                        <ellipse cx="50" cy="148" rx="7" ry="4" fill="${dark}"/>
+                        <ellipse cx="70" cy="148" rx="7" ry="4" fill="${dark}"/>`;
             } else {
-                // Tentacles
-                const tentacleStyle = seed % 2;
-                if (tentacleStyle === 0) {
-                    svg += `<path d="M 40 143 Q 28 158 40 172" stroke="${body}" stroke-width="7" fill="none" stroke-linecap="round"/>
-                            <path d="M 58 147 Q 48 162 58 175" stroke="${body}" stroke-width="7" fill="none" stroke-linecap="round"/>
-                            <path d="M 82 147 Q 92 162 82 175" stroke="${body}" stroke-width="7" fill="none" stroke-linecap="round"/>
-                            <path d="M 100 143 Q 112 158 100 172" stroke="${body}" stroke-width="7" fill="none" stroke-linecap="round"/>`;
-                } else {
-                    svg += `<path d="M 42 143 Q 30 155 38 172" stroke="${body}" stroke-width="6" fill="none" stroke-linecap="round"/>
-                            <path d="M 56 145 Q 50 165 56 178" stroke="${body}" stroke-width="6" fill="none" stroke-linecap="round"/>
-                            <path d="M 70 147 Q 70 165 70 178" stroke="${body}" stroke-width="6" fill="none" stroke-linecap="round"/>
-                            <path d="M 84 145 Q 90 165 84 178" stroke="${body}" stroke-width="6" fill="none" stroke-linecap="round"/>
-                            <path d="M 98 143 Q 110 155 102 172" stroke="${body}" stroke-width="6" fill="none" stroke-linecap="round"/>`;
-                }
+                svg += `<path d="M 35 123 Q 25 138 35 150" stroke="${body}" stroke-width="6" fill="none" stroke-linecap="round"/>
+                        <path d="M 50 125 Q 45 140 50 152" stroke="${body}" stroke-width="6" fill="none" stroke-linecap="round"/>
+                        <path d="M 70 125 Q 75 140 70 152" stroke="${body}" stroke-width="6" fill="none" stroke-linecap="round"/>
+                        <path d="M 85 123 Q 95 138 85 150" stroke="${body}" stroke-width="6" fill="none" stroke-linecap="round"/>`;
             }
             
             return svg + '</svg>';
         }
+        
+        // Game Functions
+        function startGame(difficulty) {
+            gameState = {
+                difficulty,
+                currentRule: null,
+                examples: [],
+                ruleTokens: [],
+                shownCombos: new Set(),
+                highlightedFeatures: null
+            };
+            
+            const templates = ruleTemplates[difficulty];
+            gameState.currentRule = templates[Math.floor(Math.random() * templates.length)];
+            
+            document.getElementById('introScreen').style.display = 'none';
+            document.getElementById('gameScreen').style.display = 'grid';
+            
+            updateStats();
+            clearRule();
+            document.getElementById('approvedGrid').innerHTML = '';
+            document.getElementById('rejectedGrid').innerHTML = '';
+            document.getElementById('currentAlienSvg').innerHTML = '<div style="color: var(--text-muted); padding: 2rem;">Click "Next Alien" to start!</div>';
+            document.getElementById('currentDecision').innerHTML = '';
+            document.getElementById('currentFeatures').innerHTML = '';
+            document.getElementById('currentAlienTitle').textContent = 'Current Applicant';
+        }
+        
+        function showNextAlien() {
+            if (gameState.shownCombos.size >= 64) {
+                alert("You've seen all 64 unique aliens!");
+                return;
+            }
+            
+            const alien = generateAlien();
+            const approved = gameState.currentRule.rule(alien);
+            alien.approved = approved;
+            alien.id = gameState.examples.length;
+            gameState.examples.push(alien);
+            
+            // Show current alien with features
+            displayAlienInMain(alien, 'Current Applicant');
+            
+            // Add to split view
+            const grid = approved ? document.getElementById('approvedGrid') : document.getElementById('rejectedGrid');
+            const card = document.createElement('div');
+            card.className = 'mini-alien-card';
+            card.innerHTML = generateAlienSVG(alien, 'mini');
+            card.onclick = () => displayAlienInMain(alien, 'Selected Applicant');
+            card.onmouseenter = () => highlightSimilarFeatures(alien);
+            card.onmouseleave = () => clearHighlights();
+            card.dataset.alienId = alien.id;
+            grid.appendChild(card);
+            
+            updateStats();
+            updateRulePreview();
+        }
+        
+        function displayAlienInMain(alien, title) {
+            document.getElementById('currentAlienTitle').textContent = title;
+            document.getElementById('currentAlienSvg').innerHTML = generateAlienSVG(alien);
+            document.getElementById('currentDecision').innerHTML = `
+                <div class="decision-badge ${alien.approved ? 'approved' : 'rejected'}">
+                    ${alien.approved ? '✓ APPROVED' : '✗ REJECTED'}
+                </div>`;
+            
+            document.getElementById('currentFeatures').innerHTML = Object.keys(features).map(key => {
+                const hasFeature = alien[key];
+                return `<span class="feature-tag ${hasFeature ? 'positive' : 'negative'}">
+                    ${hasFeature ? features[key].trueLabel : features[key].falseLabel}
+                </span>`;
+            }).join('');
+            
+            document.getElementById('currentAlienSection').classList.add('animate-pop');
+            setTimeout(() => document.getElementById('currentAlienSection').classList.remove('animate-pop'), 300);
+        }
+        
+        function updateStats() {
+            const approved = gameState.examples.filter(e => e.approved).length;
+            const rejected = gameState.examples.filter(e => !e.approved).length;
+            document.getElementById('examplesCount').textContent = gameState.examples.length;
+            document.getElementById('approvedCount').textContent = approved;
+            document.getElementById('rejectedCount').textContent = rejected;
+        }
+        
+        // Feature Highlighting (#13)
+        function highlightSimilarFeatures(alien) {
+            const relevantExamples = gameState.examples.filter(e => e.approved === alien.approved && e.id !== alien.id);
+            
+            document.querySelectorAll('.mini-alien-card').forEach(card => {
+                const id = parseInt(card.dataset.alienId);
+                const ex = gameState.examples.find(e => e.id === id);
+                if (!ex || ex.id === alien.id) return;
+                
+                if (ex.approved === alien.approved) {
+                    // Count shared features
+                    let shared = 0;
+                    Object.keys(features).forEach(key => {
+                        if (alien[key] === ex[key]) shared++;
+                    });
+                    if (shared >= 4) card.classList.add('highlighted');
+                }
+            });
+        }
+        
+        function clearHighlights() {
+            document.querySelectorAll('.mini-alien-card.highlighted').forEach(card => {
+                card.classList.remove('highlighted');
+            });
+        }
+        
 
-        const ruleTemplates = {
-            easy: [
-                { rule: (a) => a.green, description: 'Green' },
-                { rule: (a) => !a.green, description: 'Not Green' },
-                { rule: (a) => a.threeEyes, description: 'Three Eyes' },
-                { rule: (a) => !a.threeEyes, description: 'No Three Eyes' },
-                { rule: (a) => a.hasAntenna, description: 'Antenna' },
-                { rule: (a) => a.hasLegs, description: 'Legs' },
-                { rule: (a) => !a.hasLegs, description: 'No Legs' },
-                { rule: (a) => a.hasHorns, description: 'Horns' },
-                { rule: (a) => a.isSmiling, description: 'Smiling' },
-                { rule: (a) => !a.isSmiling, description: 'Not Smiling' },
-            ],
-            medium: [
-                { rule: (a) => a.green && a.hasAntenna, description: 'Green AND Antenna' },
-                { rule: (a) => a.threeEyes || a.hasLegs, description: 'Three Eyes OR Legs' },
-                { rule: (a) => a.hasHorns && a.isSmiling, description: 'Horns AND Smiling' },
-                { rule: (a) => a.green && a.threeEyes, description: 'Green AND Three Eyes' },
-                { rule: (a) => a.hasAntenna || a.hasHorns, description: 'Antenna OR Horns' },
-                { rule: (a) => !a.green && a.isSmiling, description: 'Not Green AND Smiling' },
-                { rule: (a) => a.threeEyes && a.hasHorns, description: 'Three Eyes AND Horns' },
-                { rule: (a) => a.green || a.hasAntenna, description: 'Green OR Antenna' },
-                { rule: (a) => !a.hasLegs && a.hasHorns, description: 'No Legs AND Horns' },
-                { rule: (a) => a.isSmiling || !a.threeEyes, description: 'Smiling OR No Three Eyes' },
-            ],
-            hard: [
-                { rule: (a) => (a.green && a.hasAntenna) || a.threeEyes, description: '(Green AND Antenna) OR Three Eyes' },
-                { rule: (a) => a.hasLegs && (a.green || a.hasHorns), description: 'Legs AND (Green OR Horns)' },
-                { rule: (a) => (a.isSmiling || a.hasAntenna) && a.threeEyes, description: '(Smiling OR Antenna) AND Three Eyes' },
-                { rule: (a) => (a.hasHorns && a.threeEyes) || (a.green && a.isSmiling), description: '(Horns AND Three Eyes) OR (Green AND Smiling)' },
-                { rule: (a) => a.green && a.hasHorns && a.hasAntenna, description: 'Green AND Horns AND Antenna' },
-                { rule: (a) => (a.hasLegs || a.threeEyes) && a.isSmiling, description: '(Legs OR Three Eyes) AND Smiling' },
-                { rule: (a) => (a.green || a.hasHorns) && (a.hasAntenna || a.isSmiling), description: '(Green OR Horns) AND (Antenna OR Smiling)' },
-                { rule: (a) => (!a.green && a.hasAntenna) || a.hasHorns, description: '(Not Green AND Antenna) OR Horns' },
-                { rule: (a) => a.threeEyes && (!a.hasLegs || a.isSmiling), description: 'Three Eyes AND (No Legs OR Smiling)' },
-            ]
-        };
-
+        // Drag & Drop Rule Builder (#3)
+        let draggedToken = null;
+        
+        document.querySelectorAll('.drag-token').forEach(token => {
+            token.addEventListener('dragstart', e => {
+                draggedToken = {
+                    type: token.dataset.type,
+                    key: token.dataset.key,
+                    value: token.dataset.value,
+                    label: token.textContent
+                };
+                token.style.opacity = '0.5';
+            });
+            
+            token.addEventListener('dragend', e => {
+                token.style.opacity = '1';
+                draggedToken = null;
+            });
+            
+            // Also allow click to add
+            token.addEventListener('click', () => {
+                addToken({
+                    type: token.dataset.type,
+                    key: token.dataset.key,
+                    value: token.dataset.value,
+                    label: token.textContent
+                });
+            });
+        });
+        
+        const dropZone = document.getElementById('dropZone');
+        
+        dropZone.addEventListener('dragover', e => {
+            e.preventDefault();
+            dropZone.classList.add('drag-over');
+        });
+        
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('drag-over');
+        });
+        
+        dropZone.addEventListener('drop', e => {
+            e.preventDefault();
+            dropZone.classList.remove('drag-over');
+            if (draggedToken) {
+                addToken(draggedToken);
+            }
+        });
+        
+        function addToken(token) {
+            gameState.ruleTokens.push(token);
+            renderRuleTokens();
+            validateRule();
+            updateRulePreview();
+        }
+        
+        function removeToken(index) {
+            gameState.ruleTokens.splice(index, 1);
+            renderRuleTokens();
+            validateRule();
+            updateRulePreview();
+        }
+        
+        function undoToken() {
+            if (gameState.ruleTokens.length > 0) {
+                gameState.ruleTokens.pop();
+                renderRuleTokens();
+                validateRule();
+                updateRulePreview();
+            }
+        }
+        
+        function clearRule() {
+            gameState.ruleTokens = [];
+            renderRuleTokens();
+            validateRule();
+            updateRulePreview();
+        }
+        
+        function renderRuleTokens() {
+            const dropZone = document.getElementById('dropZone');
+            
+            if (gameState.ruleTokens.length === 0) {
+                dropZone.innerHTML = '<span class="drop-zone-placeholder">Drag tokens here to build your rule...</span>';
+                return;
+            }
+            
+            dropZone.innerHTML = gameState.ruleTokens.map((token, index) => {
+                let className = 'placed-token ';
+                if (token.type === 'feature') {
+                    className += token.value === 'true' ? 'feature-true' : 'feature-false';
+                } else if (token.type === 'operator') {
+                    className += 'operator';
+                } else {
+                    className += 'paren';
+                }
+                
+                return `<span class="${className}" onclick="removeToken(${index})">
+                    ${token.label}
+                    <span class="remove-token">×</span>
+                </span>`;
+            }).join('');
+        }
+        
+        // Rule Validation (#16)
+        function validateRule() {
+            const tokens = gameState.ruleTokens;
+            const msgEl = document.getElementById('validationMsg');
+            const submitBtn = document.getElementById('submitBtn');
+            
+            if (tokens.length === 0) {
+                msgEl.className = 'validation-msg empty';
+                msgEl.innerHTML = '<i class="fas fa-info-circle"></i><span>Start building your rule</span>';
+                submitBtn.disabled = true;
+                dropZone.classList.remove('valid', 'invalid');
+                return false;
+            }
+            
+            // Check parentheses balance
+            let parenCount = 0;
+            for (const token of tokens) {
+                if (token.value === '(') parenCount++;
+                if (token.value === ')') parenCount--;
+                if (parenCount < 0) {
+                    msgEl.className = 'validation-msg invalid';
+                    msgEl.innerHTML = '<i class="fas fa-exclamation-circle"></i><span>Unexpected closing parenthesis</span>';
+                    submitBtn.disabled = true;
+                    dropZone.classList.remove('valid');
+                    dropZone.classList.add('invalid');
+                    return false;
+                }
+            }
+            
+            if (parenCount !== 0) {
+                msgEl.className = 'validation-msg invalid';
+                msgEl.innerHTML = '<i class="fas fa-exclamation-circle"></i><span>Unclosed parenthesis</span>';
+                submitBtn.disabled = true;
+                dropZone.classList.remove('valid');
+                dropZone.classList.add('invalid');
+                return false;
+            }
+            
+            // Check structure: can't have two operators or two features in a row
+            for (let i = 0; i < tokens.length - 1; i++) {
+                const curr = tokens[i];
+                const next = tokens[i + 1];
+                
+                if (curr.type === 'operator' && next.type === 'operator') {
+                    msgEl.className = 'validation-msg invalid';
+                    msgEl.innerHTML = '<i class="fas fa-exclamation-circle"></i><span>Two operators in a row</span>';
+                    submitBtn.disabled = true;
+                    dropZone.classList.remove('valid');
+                    dropZone.classList.add('invalid');
+                    return false;
+                }
+                
+                if (curr.type === 'feature' && next.type === 'feature') {
+                    msgEl.className = 'validation-msg invalid';
+                    msgEl.innerHTML = '<i class="fas fa-exclamation-circle"></i><span>Missing operator between features</span>';
+                    submitBtn.disabled = true;
+                    dropZone.classList.remove('valid');
+                    dropZone.classList.add('invalid');
+                    return false;
+                }
+            }
+            
+            // Can't start or end with operator
+            if (tokens[0].type === 'operator') {
+                msgEl.className = 'validation-msg invalid';
+                msgEl.innerHTML = '<i class="fas fa-exclamation-circle"></i><span>Can\'t start with an operator</span>';
+                submitBtn.disabled = true;
+                dropZone.classList.remove('valid');
+                dropZone.classList.add('invalid');
+                return false;
+            }
+            
+            const lastToken = tokens[tokens.length - 1];
+            if (lastToken.type === 'operator') {
+                msgEl.className = 'validation-msg invalid';
+                msgEl.innerHTML = '<i class="fas fa-exclamation-circle"></i><span>Can\'t end with an operator</span>';
+                submitBtn.disabled = true;
+                dropZone.classList.remove('valid');
+                dropZone.classList.add('invalid');
+                return false;
+            }
+            
+            // Must have at least one feature
+            if (!tokens.some(t => t.type === 'feature')) {
+                msgEl.className = 'validation-msg invalid';
+                msgEl.innerHTML = '<i class="fas fa-exclamation-circle"></i><span>Rule needs at least one feature</span>';
+                submitBtn.disabled = true;
+                dropZone.classList.remove('valid');
+                dropZone.classList.add('invalid');
+                return false;
+            }
+            
+            // Try to compile it
+            try {
+                buildRuleFunction();
+                msgEl.className = 'validation-msg valid';
+                msgEl.innerHTML = '<i class="fas fa-check-circle"></i><span>Valid rule!</span>';
+                submitBtn.disabled = false;
+                dropZone.classList.remove('invalid');
+                dropZone.classList.add('valid');
+                return true;
+            } catch (e) {
+                msgEl.className = 'validation-msg invalid';
+                msgEl.innerHTML = '<i class="fas fa-exclamation-circle"></i><span>Invalid rule structure</span>';
+                submitBtn.disabled = true;
+                dropZone.classList.remove('valid');
+                dropZone.classList.add('invalid');
+                return false;
+            }
+        }
+        
+        function buildRuleFunction() {
+            const expr = gameState.ruleTokens.map(t => {
+                if (t.type === 'feature') {
+                    return t.value === 'true' ? `a.${t.key}` : `!a.${t.key}`;
+                } else if (t.type === 'operator') {
+                    return t.value === 'AND' ? '&&' : '||';
+                } else {
+                    return t.value;
+                }
+            }).join(' ');
+            
+            return new Function('a', `return ${expr};`);
+        }
+        
+        // Rule Preview (#21)
+        function updateRulePreview() {
+            const previewEl = document.getElementById('previewAliens2');
+            const statsEl = document.getElementById('previewStats');
+            
+            if (gameState.ruleTokens.length === 0 || !validateRule()) {
+                previewEl.innerHTML = '';
+                statsEl.textContent = 'Build a valid rule to see preview';
+                return;
+            }
+            
+            try {
+                const ruleFn = buildRuleFunction();
+                
+                // Test against seen examples
+                let correctCount = 0;
+                previewEl.innerHTML = gameState.examples.slice(-8).map(alien => {
+                    const wouldApprove = ruleFn(alien);
+                    const isCorrect = wouldApprove === alien.approved;
+                    if (isCorrect) correctCount++;
+                    
+                    return `<div class="preview-alien ${wouldApprove ? 'would-approve' : 'would-reject'}" 
+                                style="${!isCorrect ? 'opacity: 0.5;' : ''}">
+                        ${generateAlienSVG(alien, 'preview')}
+                    </div>`;
+                }).join('');
+                
+                const total = Math.min(8, gameState.examples.length);
+                if (total > 0) {
+                    const pct = Math.round(correctCount / total * 100);
+                    statsEl.innerHTML = `Matches <strong>${correctCount}/${total}</strong> recent examples (${pct}%)`;
+                } else {
+                    statsEl.textContent = 'See more aliens to test your rule';
+                }
+            } catch (e) {
+                previewEl.innerHTML = '';
+                statsEl.textContent = 'Invalid rule';
+            }
+        }
+        
+        // Submit & Check
+        function submitRule() {
+            if (!validateRule()) return;
+            
+            try {
+                const playerRule = buildRuleFunction();
+                
+                // Test against all seen examples
+                for (const ex of gameState.examples) {
+                    if (playerRule(ex) !== ex.approved) {
+                        showResult(false);
+                        return;
+                    }
+                }
+                
+                // Test against random unseen aliens
+                for (let i = 0; i < 50; i++) {
+                    const testAlien = {
+                        green: Math.random() > 0.5,
+                        threeEyes: Math.random() > 0.5,
+                        hasAntenna: Math.random() > 0.5,
+                        hasLegs: Math.random() > 0.5,
+                        hasHorns: Math.random() > 0.5,
+                        isSmiling: Math.random() > 0.5
+                    };
+                    if (playerRule(testAlien) !== gameState.currentRule.rule(testAlien)) {
+                        showResult(false);
+                        return;
+                    }
+                }
+                
+                showResult(true);
+            } catch (e) {
+                showResult(false);
+            }
+        }
+        
+        function showResult(correct) {
+            document.getElementById('resultIcon').textContent = correct ? '🎉' : '😢';
+            document.getElementById('resultTitle').textContent = correct ? 'Correct!' : 'Not Quite...';
+            document.getElementById('resultScore').textContent = correct 
+                ? `Solved in ${gameState.examples.length} examples!` 
+                : 'Your rule didn\'t match the pattern';
+            document.getElementById('resultMessage').textContent = correct
+                ? 'You cracked the code! Can you do it with fewer examples?'
+                : 'The rule was different from your guess. Try again!';
+            document.getElementById('actualRule').textContent = gameState.currentRule.description;
+            document.getElementById('resultModal').classList.add('active');
+        }
+        
+        function playAgain() {
+            document.getElementById('resultModal').classList.remove('active');
+            startGame(gameState.difficulty);
+        }
+        
+        function backToMenu() {
+            document.getElementById('resultModal').classList.remove('active');
+            document.getElementById('gameScreen').style.display = 'none';
+            document.getElementById('introScreen').style.display = 'block';
+        }
+        
+        // Preview aliens for intro
         function showPreviewAliens() {
             const samples = [
                 { green: true, threeEyes: false, hasAntenna: true, hasLegs: true, hasHorns: false, isSmiling: true },
@@ -517,212 +980,71 @@
                 { green: true, threeEyes: true, hasAntenna: true, hasLegs: false, hasHorns: true, isSmiling: true },
                 { green: false, threeEyes: false, hasAntenna: false, hasLegs: true, hasHorns: false, isSmiling: false },
             ];
-            document.getElementById('previewAliens').innerHTML = samples.map(a => generateAlienSVG(a, 'normal')).join('');
+            document.getElementById('previewAliens').innerHTML = samples.map(a => generateAlienSVG(a)).join('');
         }
+        
+        // Particle Background
+        const canvas = document.getElementById('particleNetwork');
+        const ctx = canvas.getContext('2d');
+        let mouse = { x: null, y: null };
 
-        function startGame(difficulty) {
-            gameState = { 
-                difficulty, examplesSeen: 0, 
-                currentRule: null, examples: [], guessTokens: [], shownCombos: new Set() 
-            };
-            selectNewRule();
-            document.getElementById('introScreen').style.display = 'none';
-            document.getElementById('gameScreen').style.display = 'block';
-            document.getElementById('gameStats').style.display = 'flex';
-            updateStats();
-            showNextAlien();
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
         }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
 
-        function selectNewRule() {
-            const templates = ruleTemplates[gameState.difficulty];
-            gameState.currentRule = templates[Math.floor(Math.random() * templates.length)];
-        }
+        document.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+        document.addEventListener('mouseleave', () => { mouse.x = null; mouse.y = null; });
 
-        function showNextAlien() {
-            if (gameState.shownCombos.size >= 64) {
-                alert('You\'ve seen all 64 unique aliens! Time to guess.');
-                return;
-            }
-            
-            const alien = generateAlien();
-            const approved = gameState.currentRule.rule(alien);
-            gameState.examples.push({ ...alien, approved });
-            gameState.examplesSeen++;
-            
-            document.getElementById('alienSvgContainer').innerHTML = generateAlienSVG(alien);
-            document.getElementById('alienFeatures').innerHTML = Object.keys(features).map(key => {
-                const f = features[key];
-                const val = alien[key];
-                return `<span class="feature-tag ${val ? 'positive' : 'negative'}">${val ? f.displayTrue : f.displayFalse}</span>`;
-            }).join('');
-            
-            // Show decision text
-            document.getElementById('decisionText').textContent = approved ? '✓ APPROVED' : '✗ REJECTED';
-            document.getElementById('decisionText').className = 'decision-text ' + (approved ? 'approved' : 'rejected');
-            
-            const card = document.getElementById('alienCard');
-            card.style.borderColor = approved ? 'var(--accent-primary)' : 'var(--accent-danger)';
-            card.style.background = approved ? 'rgba(16,185,129,0.05)' : 'rgba(239,68,68,0.05)';
-            
-            showFeedback(approved ? '✅' : '❌');
-            updateExamplesGrid();
-            updateStats();
-        }
-
-        function showFeedback(emoji) {
-            const fb = document.createElement('div');
-            fb.className = 'feedback';
-            fb.textContent = emoji;
-            document.body.appendChild(fb);
-            setTimeout(() => fb.remove(), 600);
-        }
-
-        function updateExamplesGrid() {
-            document.getElementById('examplesGrid').innerHTML = gameState.examples.map(ex => 
-                `<div class="example-card ${ex.approved ? 'approved' : 'rejected'}">
-                    ${generateAlienSVG(ex, 'mini')}
-                    <div class="status">${ex.approved ? '✓' : '✗'}</div>
-                </div>`
-            ).join('');
-        }
-
-        function updateStats() {
-            document.getElementById('examplesDisplay').textContent = gameState.examplesSeen;
-        }
-
-        function makeGuess() {
-            document.getElementById('gameScreen').style.display = 'none';
-            document.getElementById('guessScreen').style.display = 'block';
-            buildRuleBuilder();
-            gameState.guessTokens = [];
-            updateGuessDisplay();
-        }
-
-        function buildRuleBuilder() {
-            const builder = document.getElementById('ruleBuilder');
-            
-            // Group atoms into pairs
-            const pairs = [
-                { label: 'Color', atoms: ruleAtoms.filter(a => a.pair === 'color') },
-                { label: 'Eyes', atoms: ruleAtoms.filter(a => a.pair === 'eyes') },
-                { label: 'Head', atoms: ruleAtoms.filter(a => a.pair === 'antenna') },
-                { label: 'Limbs', atoms: ruleAtoms.filter(a => a.pair === 'limbs') },
-                { label: 'Horns', atoms: ruleAtoms.filter(a => a.pair === 'horns') },
-                { label: 'Mouth', atoms: ruleAtoms.filter(a => a.pair === 'mouth') },
-            ];
-            
-            let html = '<div class="feature-pairs">';
-            pairs.forEach(pair => {
-                html += `<div class="feature-pair">
-                    <span class="pair-label">${pair.label}:</span>
-                    ${pair.atoms.map(atom => 
-                        `<button class="rule-option" data-type="atom" data-key="${atom.key}" data-value="${atom.value}">${atom.name}</button>`
-                    ).join('<span class="pair-or">or</span>')}
-                </div>`;
-            });
-            html += '</div>';
-            
-            html += `<div class="operators">
-                <button class="rule-option operator" data-type="operator" data-value="AND">AND</button>
-                <button class="rule-option operator" data-type="operator" data-value="OR">OR</button>
-                <button class="rule-option operator" data-type="operator" data-value="(">(</button>
-                <button class="rule-option operator" data-type="operator" data-value=")">)</button>
-            </div>`;
-            
-            builder.innerHTML = html;
-            builder.querySelectorAll('.rule-option').forEach(btn => {
-                btn.onclick = () => { 
-                    if (btn.dataset.type === 'atom') {
-                        gameState.guessTokens.push({ 
-                            type: 'atom', 
-                            key: btn.dataset.key, 
-                            value: btn.dataset.value === 'true',
-                            name: btn.textContent 
-                        });
-                    } else {
-                        gameState.guessTokens.push({ type: 'operator', value: btn.dataset.value });
-                    }
-                    updateGuessDisplay(); 
-                };
+        const particles = [];
+        for (let i = 0; i < 60; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                vx: (Math.random() - 0.5) * 0.8,
+                vy: (Math.random() - 0.5) * 0.8,
+                radius: Math.random() * 2.5 + 1.5,
+                color: ['#10b981', '#3b82f6', '#06b6d4'][Math.floor(Math.random() * 3)]
             });
         }
 
-        function updateGuessDisplay() {
-            const display = document.getElementById('currentGuess');
-            display.innerHTML = gameState.guessTokens.length === 0 
-                ? '<span style="color: var(--text-muted);">Click features to build rule...</span>'
-                : gameState.guessTokens.map(t => `<span class="guess-token">${t.type === 'atom' ? t.name : t.value}</span>`).join('');
-        }
-
-        function clearGuess() { gameState.guessTokens = []; updateGuessDisplay(); }
-        function cancelGuess() { document.getElementById('guessScreen').style.display = 'none'; document.getElementById('gameScreen').style.display = 'block'; }
-
-        function submitGuess() {
-            const correct = checkGuess();
-            showResult(correct);
-        }
-
-        function checkGuess() {
-            try {
-                if (gameState.guessTokens.length === 0) return false;
-                let expr = gameState.guessTokens.map(t => {
-                    if (t.type === 'atom') {
-                        return t.value ? `a.${t.key}` : `!a.${t.key}`;
-                    } else {
-                        return t.value === 'AND' ? '&&' : t.value === 'OR' ? '||' : t.value;
-                    }
-                }).join(' ');
-                const testFn = new Function('a', `return ${expr};`);
-                for (const ex of gameState.examples) if (testFn(ex) !== ex.approved) return false;
-                for (let i = 0; i < 30; i++) { 
-                    const t = generateAlien(); 
-                    if (gameState.currentRule.rule(t) !== testFn(t)) return false; 
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach((p, i) => {
+                if (mouse.x && mouse.y) {
+                    const dx = mouse.x - p.x, dy = mouse.y - p.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < 150) { p.x -= dx * 0.015; p.y -= dy * 0.015; }
                 }
-                return true;
-            } catch { return false; }
+                p.x += p.vx; p.y += p.vy;
+                if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+                if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+                
+                for (let j = i + 1; j < particles.length; j++) {
+                    const p2 = particles[j];
+                    const dx = p.x - p2.x, dy = p.y - p2.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < 120) {
+                        ctx.beginPath();
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.strokeStyle = `rgba(16, 185, 129, ${1 - dist / 120})`;
+                        ctx.stroke();
+                    }
+                }
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fillStyle = p.color;
+                ctx.fill();
+            });
+            requestAnimationFrame(animateParticles);
         }
-
-        function showResult(correct) {
-            document.getElementById('resultIcon').textContent = correct ? '🎉' : '😵';
-            document.getElementById('resultTitle').textContent = correct ? 'Correct!' : 'Wrong!';
-            document.getElementById('resultScore').textContent = correct 
-                ? `Solved in ${gameState.examplesSeen} example${gameState.examplesSeen !== 1 ? 's' : ''}!`
-                : 'Game Over';
-            document.getElementById('resultMessage').textContent = correct 
-                ? 'You figured out the rule!' 
-                : 'That wasn\'t the rule.';
-            
-            // Only show the rule (always show on game over so they can learn)
-            const ruleDiv = document.querySelector('.actual-rule');
-            ruleDiv.style.display = 'block';
-            document.getElementById('actualRule').textContent = gameState.currentRule.description;
-            
-            const btn = document.querySelector('#resultModal .btn-primary');
-            btn.innerHTML = '<i class="fas fa-redo"></i> Play Again';
-            btn.onclick = restartLevel;
-            document.getElementById('resultModal').classList.add('active');
-        }
-
-        function restartLevel() {
-            gameState.examplesSeen = 0;
-            gameState.examples = [];
-            gameState.shownCombos.clear();
-            selectNewRule();
-            closeModal();
-            document.getElementById('guessScreen').style.display = 'none';
-            document.getElementById('gameScreen').style.display = 'block';
-            document.getElementById('examplesGrid').innerHTML = '';
-            updateStats();
-            showNextAlien();
-        }
-
-        function closeModal() {
-            document.getElementById('resultModal').classList.remove('active');
-            document.getElementById('guessScreen').style.display = 'none';
-            document.getElementById('gameScreen').style.display = 'block';
-        }
-
+        
+        // Init
         showPreviewAliens();
+        animateParticles();
     </script>
 </body>
 </html>
