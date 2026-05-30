@@ -1,0 +1,73 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nodeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"></stop>
+      <stop offset="100%" style="stop-color:#0ea5e9"></stop>
+    </linearGradient>
+    <linearGradient id="boxLeft" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#818cf8"></stop>
+      <stop offset="100%" style="stop-color:#6366f1"></stop>
+    </linearGradient>
+    <linearGradient id="boxRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"></stop>
+      <stop offset="100%" style="stop-color:#3730a3"></stop>
+    </linearGradient>
+    <linearGradient id="boxTop" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#a5b4fc"></stop>
+      <stop offset="100%" style="stop-color:#c7d2fe"></stop>
+    </linearGradient>
+  </defs>
+  
+  <g transform="translate(5, 8)">
+    
+    <path d="M15 70 L50 53 L85 70 L50 87 Z" fill="#312e81"></path>
+    
+    
+    <path d="M15 70 L15 95 L50 112 L50 87 Z" fill="url(#boxLeft)"></path>
+    <path d="M50 87 L50 112 L85 95 L85 70 Z" fill="url(#boxRight)"></path>
+    
+    
+    
+    <line x1="28" y1="54" x2="50" y2="48" stroke="#f59e0b" stroke-width="1.5"></line>
+    <line x1="28" y1="54" x2="50" y2="61" stroke="#f59e0b" stroke-width="1.5"></line>
+    <line x1="28" y1="68" x2="50" y2="61" stroke="#f59e0b" stroke-width="1.5"></line>
+    <line x1="28" y1="68" x2="50" y2="74" stroke="#f59e0b" stroke-width="1.5"></line>
+    
+    
+    <line x1="50" y1="48" x2="72" y2="54" stroke="#f59e0b" stroke-width="1.5"></line>
+    <line x1="50" y1="61" x2="72" y2="54" stroke="#f59e0b" stroke-width="1.5"></line>
+    <line x1="50" y1="61" x2="72" y2="68" stroke="#f59e0b" stroke-width="1.5"></line>
+    <line x1="50" y1="74" x2="72" y2="68" stroke="#f59e0b" stroke-width="1.5"></line>
+    
+    
+    <g>
+      
+      <circle cx="28" cy="54" r="4" fill="#f59e0b"></circle>
+      <circle cx="28" cy="68" r="4" fill="#f59e0b"></circle>
+      
+      
+      <circle cx="50" cy="48" r="5" fill="#f59e0b"></circle>
+      <circle cx="50" cy="61" r="5" fill="#f59e0b"></circle>
+      <circle cx="50" cy="74" r="5" fill="#f59e0b"></circle>
+      
+      
+      <circle cx="72" cy="54" r="4" fill="#f59e0b"></circle>
+      <circle cx="72" cy="68" r="4" fill="#f59e0b"></circle>
+    </g>
+    
+    
+    <path d="M17 22 L50 7 L83 22 L50 37 Z" fill="url(#boxTop)"></path>
+    <path d="M17 22 L50 37 L50 42 L17 27 Z" fill="url(#boxLeft)"></path>
+    <path d="M50 37 L83 22 L83 27 L50 42 Z" fill="url(#boxRight)"></path>
+  </g>
+  
+  
+  <text x="115" y="72" font-family="system-ui, -apple-system, &#39;Segoe UI&#39;, sans-serif" font-size="38" font-weight="600" fill="#1e293b">
+    Explained<tspan fill="url(#nodeGradient)">AI</tspan>
+  </text>
+  
+  
+  <text x="117" y="95" font-family="system-ui, -apple-system, &#39;Segoe UI&#39;, sans-serif" font-size="12" font-weight="400" fill="#64748b" letter-spacing="0.5">
+    Human Understandable AI
+  </text>
+</svg>
