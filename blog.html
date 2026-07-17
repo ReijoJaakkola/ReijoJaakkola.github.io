@@ -1,0 +1,38 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>Blog — Reijo Jaakkola</title>
+<link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="/styles.css">
+<style>
+  .blog { max-width: 720px; margin: 0 auto; padding: 120px var(--gutter) 96px; }
+  .blog > .back { font-family: var(--sans); font-size: .95rem; color: var(--muted); }
+  .blog h1 { font-family: var(--serif); font-size: clamp(2.2rem, 6vw, 3.4rem); margin: .5em 0 1.2em; }
+  .blog ul { list-style: none; padding: 0; margin: 0; }
+  .blog li { padding: 1.2em 0; border-top: 1px solid var(--hairline); }
+  .blog a.title { font-family: var(--serif); font-size: 1.4rem; color: var(--ink); }
+  .blog a.title:hover { color: var(--accent); }
+  .blog .date { font-family: var(--sans); color: var(--muted); font-size: .95rem; margin-top: .3em; }
+</style>
+</head>
+<body style="opacity:1">
+<section class="blog">
+  <a class="back" href="/">← Home</a>
+  <h1>Blog</h1>
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+      <div class="date">{{ post.date | date: "%B %-d, %Y" }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+</body>
+</html>

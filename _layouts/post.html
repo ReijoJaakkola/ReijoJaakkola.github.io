@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>{{ page.title }} — Reijo Jaakkola</title>
+<meta name="description" content="{{ page.description | default: page.title }}">
+<link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="/styles.css">
+<style>
+  .post { max-width: 720px; margin: 0 auto; padding: 120px var(--gutter) 96px; }
+  .post .back { font-family: var(--sans); font-size: .95rem; color: var(--muted); }
+  .post h1 { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3rem); margin: .6em 0 .2em; }
+  .post .meta { font-family: var(--sans); color: var(--muted); margin-bottom: 2.4em; }
+  .post .body { font-family: var(--serif); font-size: 1.18rem; line-height: 1.7; color: var(--ink-soft); }
+  .post .body h2 { font-family: var(--sans); font-size: 1.5rem; margin: 1.8em 0 .5em; }
+  .post .body p { margin: 0 0 1.2em; }
+  .post .body pre { background: var(--paper-2); padding: 1em; border-radius: 10px; overflow-x: auto; font-size: .95rem; }
+  .post .body code { font-size: .95em; }
+  .post .body img { max-width: 100%; border-radius: 10px; }
+  .post .body sup a { text-decoration: none; }
+  .post-callout { border: 1px solid rgba(26, 79, 196, 0.35); border-left: 3px solid var(--accent);
+             background: #EDF1FB; color: var(--ink);
+             padding: 1em 1.2em; border-radius: 0 10px 10px 0; margin: 1.6em 0;
+             font-family: var(--sans); font-size: 1.05rem; }
+  .post-callout p:last-child { margin-bottom: 0; }
+  .post-callout mjx-container[display="true"] { text-align: left !important; margin: 0.5em 0 !important; }
+  .footnotes { font-size: .95rem; color: var(--muted); border-top: 1px solid var(--hairline);
+               margin-top: 3em; padding-top: 1em; }
+  .references { font-family: var(--sans); font-size: .95rem; margin-top: 3em; }
+  .references h2 { font-size: 1.2rem; }
+  .references ol { padding-left: 1.4em; }
+  .references li { margin-bottom: .8em; word-break: break-word; }
+  mjx-container { overflow-x: auto; overflow-y: hidden; max-width: 100%; }
+</style>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$']],
+      displayMath: [['$$', '$$']],
+      processEscapes: true,
+      macros: { godel: ['{\\ulcorner #1 \\urcorner}', 1] }
+    }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</head>
+<body style="opacity:1">
+<article class="post">
+  <a class="back" href="/blog.html">← All posts</a>
+  <h1>{{ page.title }}</h1>
+  <div class="meta">{{ page.date | date: "%B %-d, %Y" }}</div>
+  <div class="body">
+    {{ content }}
+  </div>
+</article>
+</body>
+</html>
