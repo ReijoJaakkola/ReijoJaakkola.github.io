@@ -53,9 +53,7 @@ that the LLM gives answer $$y$$ on input $$x$$.
 
 Two remarks are in order. First, typically LLMs do not generate the whole
 answer at once but rather they generate the answer one token at a time.
-However, this is only a cosmetic difference. To see this, let
-$$\Pr(y|x,y_1,\dots,y_n)$$ denote the probability that the LLM outputs $$y$$ in
-context $$x,y_1,\dots,y_n$$. If the answer $$y$$ consists of tokens
+However, this is only a cosmetic difference. Indeed, if the answer $$y$$ consists of tokens
 $$y_1,\dots,y_m$$, then the probability that the answer $$y$$ is given to
 prompt $$x$$ can be calculated via
 
@@ -87,7 +85,7 @@ fixed effective proof calculus. The exact choice of the background theory of
 mathematics does not matter as long as we can effectively decide whether a
 string is a valid proof.
 
-Let $$\godel{\varphi}$$ be a binary encoding of the prompt "Give me a proof of
+Let $$\godel{\varphi}$$ be a binary encoding of the prompt "Prove
 $$\varphi$$". We suggest the following informal definition.
 
 <div class="post-callout" markdown="1">
