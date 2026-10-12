@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UFC Predictions · Prior Cage</title>
+<meta name="description" content="Model picks for the next UFC card, plus a live track record graded after every event.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap">
+<style>
+  /* Prior Cage brand: night-arena hero, glass panels, neon purple favourite. One dark look on purpose. */
+  :root {
+    --bg: #07080F;
+    --glass: rgba(14, 17, 32, 0.78);
+    --line: rgba(255, 255, 255, 0.10);
+    --line-2: rgba(255, 255, 255, 0.06);
+    --text: #F3F4F6;
+    --muted: #A3ABBD;
+    --magenta: #D640E6;
+    --neon: #409CFF;
+    --blue: #387AF5;
+    --gold: #F4C454;
+    --green: #4ADE80;
+    --amber: #FBBF24;
+    --miss: #FF6B6B;
+    --font: 'Manrope', 'Segoe UI', system-ui, sans-serif;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  html { background: var(--bg); }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 500 16px/1.4 var(--font); }
+  .num { font-variant-numeric: tabular-nums; }
+
+  .hero { padding: clamp(20px, 4vw, 36px) max(16px, calc((100vw - 1000px) / 2 + 48px)) clamp(28px, 5vw, 44px);
+          background: linear-gradient(180deg, rgba(7,8,15,.25) 0%, rgba(7,8,15,.55) 55%, var(--bg) 100%), url("cage.jpg") center 30% / cover no-repeat; }
+  .hero h1 { font-weight: 800; text-transform: uppercase; line-height: .92; font-size: clamp(2.3rem, 8.5vw, 5rem);
+             margin: clamp(2.2em, 9vw, 3.4em) 0 .3em; letter-spacing: -.01em; text-wrap: balance; text-shadow: 0 2px 24px rgba(0,0,0,.6); }
+  .hero h1 em { font-style: normal; color: transparent; -webkit-text-stroke: 1.5px var(--magenta); text-shadow: 0 0 22px rgba(214,64,230,.55); }
+  .hero p { margin: 0; max-width: 54ch; color: #D6DAE4; line-height: 1.5; }
+  .hero .fine { margin-top: .5em; font-size: .82rem; color: var(--muted); }
+  main { max-width: 1000px; margin: 0 auto; padding: 0 clamp(16px, 5vw, 48px) 64px; display: grid; gap: 26px; }
+
+  .glass { background: var(--glass); border: 1px solid var(--line); border-radius: 18px; }
+  h2 { font-weight: 800; font-size: 1.3rem; margin: 0; line-height: 1.1; text-wrap: balance; }
+  .meta { font-size: .86rem; color: var(--muted); }
+  .chip { font: 700 .76rem var(--font); padding: .22em .7em; border-radius: 999px; color: var(--bg);
+          border: 1px solid currentColor; white-space: nowrap; display: inline-block; }
+  .chip.live { background: var(--neon); border-color: var(--neon); box-shadow: 0 0 12px -3px var(--neon); }
+  .chip.gold { background: var(--gold); border-color: var(--gold); }
+  .chip.warn { background: var(--amber); border-color: var(--amber); }
+  .chip.yes { background: var(--green); border-color: var(--green); }
+  .chip.no { background: var(--miss); border-color: var(--miss); }
+  .chip.dim { color: var(--muted); }
+  .hit { color: var(--green); } .miss { color: var(--miss); }
+
+  .event { text-align: center; display: grid; gap: .35em; justify-items: center; }
+  .event h2 { font-size: clamp(1.4rem, 4.5vw, 2.1rem); }
+  .grid { display: grid; gap: 14px; grid-template-columns: minmax(0, 1fr); }
+  @media (min-width: 760px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .bout.main { grid-column: 1 / -1; } }
+  .bout { padding: 1.1em 1.2em; display: grid; gap: .8em; }
+  .bout.main { padding: 1.5em; border-color: rgba(244,196,84,.45); box-shadow: 0 0 32px -14px rgba(244,196,84,.55); }
+  .bout.ok, .bout.main.ok { border: 2px solid var(--green); }
+  .bout.no, .bout.main.no { border: 2px solid var(--miss); }
+  .top { display: flex; justify-content: space-between; gap: .5em; flex-wrap: wrap; align-items: center; }
+  .top .wc { font-weight: 700; font-size: .8rem; color: var(--muted); }
+  .tags { display: flex; gap: .4em; }
+  .tape { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: end; gap: .8em; }
+  .f { display: grid; gap: .15em; }
+  .f:last-child { text-align: right; }
+  .f .pc { font-weight: 800; font-size: 2.1rem; line-height: 1; color: var(--blue); }
+  .f .n { font-weight: 600; font-size: 1.02rem; line-height: 1.2; overflow-wrap: anywhere; }
+  .f.lose { opacity: .55; }
+  .f:not(.lose) .pc { color: var(--magenta); text-shadow: 0 0 18px rgba(214,64,230,.45); }
+  .main .f .pc { font-size: clamp(2.4rem, 7vw, 3.6rem); } .main .f .n { font-size: 1.25rem; }
+  .vs { font-weight: 700; font-size: .9rem; color: var(--muted); padding-bottom: .3em; }
+  .bar { display: flex; height: 8px; border-radius: 4px; overflow: hidden; gap: 2px; }
+  .bar b { display: block; border-radius: 4px; background: var(--blue); opacity: .35; }
+  .bar b.fav { background: var(--magenta); opacity: 1; box-shadow: 0 0 10px rgba(214,64,230,.6); }
+  .call { display: flex; justify-content: center; }
+  .pickbar { display: inline-flex; align-items: stretch; max-width: 100%; border: 1.5px solid var(--magenta); border-radius: 999px; overflow: hidden; font-weight: 700; font-size: .92rem; }
+  .pickbar .tag { background: var(--magenta); color: var(--bg); padding: .35em .8em; display: grid; place-items: center; }
+  .pickbar .what { padding: .35em .95em; min-width: 0; }
+  .res { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .45em; }
+
+  .record { padding: 1.1em 1.3em; }
+  .strip { display: flex; flex-wrap: wrap; gap: .6em 2em; padding: .7em 0 1em; }
+  .strip div { display: flex; align-items: baseline; gap: .4em; color: var(--muted); font-size: .9rem; }
+  .strip b { font-weight: 800; font-size: 1.5rem; color: var(--text); }
+  details { border-top: 1px solid var(--line-2); }
+  summary { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: .9em; padding: .85em 0; cursor: pointer; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary:focus-visible { outline: 2px solid var(--neon); outline-offset: 2px; border-radius: 6px; }
+  .chev { width: .55em; height: .55em; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(-45deg); transition: transform .15s; }
+  details[open] .chev { transform: rotate(45deg); border-color: var(--text); }
+  .ev-name { display: block; font-weight: 700; }
+  .ev-date { display: block; color: var(--muted); font-size: .82rem; }
+  .score { font-weight: 800; font-size: 1.15rem; }
+  .score small { font-weight: 700; font-size: .72rem; color: var(--muted); margin-left: .35em; }
+  details .grid { padding: .2em 0 1.2em; }
+  .empty { text-align: center; color: var(--muted); padding: 1.5em; }
+  footer { text-align: center; font-size: .82rem; color: var(--muted); }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<header class="hero">
+  <h1>UFC <em>predictions</em></h1>
+  <p id="blurb">Powered by TabICL v2, a tabular foundation model reading the full modern history of the UFC.</p>
+  <p class="fine" id="disclaimer">Not betting advice. 18+.</p>
+</header>
+<main>
+  <section id="upcoming" aria-live="polite"><p class="empty">Loading picks…</p></section>
+  <section class="glass record" id="record" hidden></section>
+  <footer><a href="/">reijojaakkola.github.io</a></footer>
+</main>
+
+<script>
+(async () => {
+  const METHOD = { KO: 'KO/TKO', SUB: 'Submission', DEC: 'Decision' };
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const pct = (x, d = 0) => (x * 100).toFixed(d) + '%';
+  const day = (iso, o = { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' }) =>
+    iso ? new Date(iso.length === 10 ? iso + 'T12:00:00Z' : iso).toLocaleDateString('en-GB', o) : '';
+  const getJSON = async (p) => { const r = await fetch(p, { cache: 'no-cache' }); if (!r.ok) throw new Error(p + ': ' + r.status); return r.json(); };
+
+  const howWon = (r) => (METHOD[r.actual_method] || r.method_raw || 'Result') + (r.finished && r.actual_round ? ' in round ' + r.actual_round : '');
+  const bout = (b) => {
+    const f1w = b.p_f1 >= 0.5, r = b.result, main = b.order === 1;
+    const graded = r && r.winner_correct !== null && r.winner_correct !== undefined;
+    const cls = graded ? (r.winner_correct ? ' ok' : ' no') : '';
+    const call = METHOD[b.method_pick] + (b.method_pick !== 'DEC' && b.round_pick ? ' in round ' + b.round_pick : '');
+    const tail = r
+      ? `<div class="res">${r.actual_winner
+          ? `<span class="chip ${r.winner_correct ? 'yes' : 'no'}">${esc(r.actual_winner)}</span><span class="chip ${r.method_hit ? 'yes' : 'no'}">${esc(howWon(r))}</span>`
+          : `<span class="chip dim">${esc(r.method_raw || 'No contest')}</span>`}</div>`
+      : `<div class="call"><div class="pickbar"><span class="tag">Pick</span><span class="what">${esc(b.pick)} by ${esc(call)}</span></div></div>`;
+    return `<article class="glass bout${main ? ' main' : ''}${cls}">
+      <div class="top"><span class="wc">${esc(b.weightclass)}</span><span class="tags">${main ? '<span class="chip gold">Main event</span>' : ''}${b.low_data ? '<span class="chip warn">Limited data</span>' : ''}</span></div>
+      <div class="tape num"><div class="f${f1w ? '' : ' lose'}"><span class="pc">${pct(b.p_f1)}</span><span class="n">${esc(b.f1)}</span></div>
+        <span class="vs">VS</span>
+        <div class="f${f1w ? ' lose' : ''}"><span class="pc">${pct(1 - b.p_f1)}</span><span class="n">${esc(b.f2)}</span></div></div>
+      <div class="bar" role="img" aria-label="${esc(b.f1)} ${pct(b.p_f1)}, ${esc(b.f2)} ${pct(1 - b.p_f1)}"><b class="${f1w ? 'fav' : ''}" style="flex:${b.p_f1}"></b><b class="${f1w ? '' : 'fav'}" style="flex:${1 - b.p_f1}"></b></div>
+      ${tail}</article>`;
+  };
+  const grid = (c) => `<div class="grid">${c.bouts.map(bout).join('')}</div>`;
+
+  try {
+    const idx = await getJSON('data/index.json');
+    if (idx.blurb) document.getElementById('blurb').textContent = idx.blurb;
+    if (idx.disclaimer) document.getElementById('disclaimer').textContent = idx.disclaimer;
+
+    // ponytail: newest ungraded card is "upcoming"; the pipeline only predicts future cards.
+    const next = idx.cards.find((c) => !c.graded);
+    const past = idx.cards.filter((c) => c.graded).slice(0, 5);
+    const [nextCard, ...pastCards] = await Promise.all([next, ...past].map((c) => c ? getJSON(`data/cards/${encodeURIComponent(c.slug)}.json`) : null));
+
+    document.getElementById('upcoming').innerHTML = nextCard
+      ? `<div class="event" style="margin-bottom:18px"><span class="chip live">Upcoming</span><h2>${esc(nextCard.event.name)}</h2>
+           <div class="meta">${esc(day(nextCard.event.date))}${nextCard.generated_at ? ' · picks updated ' + esc(day(nextCard.generated_at, { day: 'numeric', month: 'short' })) : ''}</div></div>${grid(nextCard)}`
+      : `<p class="empty">Picks for the next card land midweek once the bouts are announced.</p>`;
+
+    const rec = idx.record;
+    if (rec || pastCards.length) {
+      const el = document.getElementById('record');
+      el.innerHTML = `<h2>Track record</h2>
+        ${rec ? `<div class="strip num"><div><b>${pct(rec.accuracy, 1)}</b>winners correct</div><div><b>${rec.n_correct}/${rec.n_bouts}</b>fights graded</div>
+          <div><b>${rec.n_events}</b>events</div><div><b>${pct(rec.parlay_accuracy)}</b>winner + method</div></div>` : ''}
+        ${pastCards.map((c, i) => {
+          const s = c.summary.winner;
+          return `<details id="${esc(c.slug)}"${i === 0 ? ' open' : ''}><summary class="num"><span class="chev" aria-hidden="true"></span>
+            <span><span class="ev-name">${esc(c.event.name)}</span><span class="ev-date">${esc(day(c.event.date))}</span></span>
+            <span class="score ${s.n_correct * 2 >= s.n ? 'hit' : 'miss'}">${s.n_correct}/${s.n}<small>correct</small></span></summary>${grid(c)}</details>`;
+        }).join('')}`;
+      el.hidden = false;
+      const target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      if (target && target.tagName === 'DETAILS') { target.open = true; target.scrollIntoView(); }
+    }
+  } catch (err) {
+    document.getElementById('upcoming').innerHTML = `<p class="empty">Couldn't load the picks right now. Try again in a minute.</p>`;
+    console.error(err);
+  }
+})();
+</script>
+</body>
+</html>
