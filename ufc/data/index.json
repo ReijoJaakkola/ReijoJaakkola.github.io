@@ -1,0 +1,19 @@
+{
+ "updated_at": "2026-10-12T14:53:22+00:00",
+ "brand": "Prior Cage",
+ "handle": "@priorcage",
+ "blurb": "Powered by TabICL v2 \u2014 a tabular foundation model reading the full modern history of the UFC.",
+ "disclaimer": "Not betting advice. 18+.",
+ "record": null,
+ "cards": [
+  {
+   "slug": "2026-10-17_ufc-fight-night-buckley-vs-malott",
+   "name": "UFC Fight Night: Buckley vs. Malott",
+   "date": "2026-10-17",
+   "n_bouts": 13,
+   "graded": false,
+   "n_correct": null,
+   "n_graded": null
+  }
+ ]
+}
