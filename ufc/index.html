@@ -85,6 +85,15 @@
   .pickbar .what { padding: .35em .95em; min-width: 0; }
   .res { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .45em; }
 
+  .tabs { display: flex; justify-content: center; margin-bottom: 8px; }
+  .tabbar { display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 4px; padding: 4px; border: 1px solid var(--line); border-radius: 999px; background: var(--glass); }
+  .tabbar button { font: 700 .92rem var(--font); color: var(--muted); background: none; border: 0; padding: .55em 1.1em; border-radius: 999px; cursor: pointer; }
+  .tabbar button .n { opacity: .7; margin-left: .3em; }
+  .tabbar button[aria-selected="true"] { color: var(--bg); background: var(--magenta); box-shadow: 0 0 16px -4px var(--magenta); }
+  .tabbar button:focus-visible { outline: 2px solid var(--neon); outline-offset: 2px; }
+  .when-line { text-align: center; color: var(--muted); font-size: .86rem; font-weight: 600; margin: 4px 0 16px; }
+  details .tabs { margin-top: .4em; }
+
   .record { padding: 1.1em 1.3em; }
   .strip { display: flex; flex-wrap: wrap; gap: .6em 2em; padding: .7em 0 1em; }
   .strip div { display: flex; align-items: baseline; gap: .4em; color: var(--muted); font-size: .9rem; }
@@ -145,7 +154,38 @@
       <div class="bar" role="img" aria-label="${esc(b.f1)} ${pct(b.p_f1)}, ${esc(b.f2)} ${pct(1 - b.p_f1)}"><b class="${f1w ? 'fav' : ''}" style="flex:${b.p_f1}"></b><b class="${f1w ? '' : 'fav'}" style="flex:${1 - b.p_f1}"></b></div>
       ${tail}</article>`;
   };
-  const grid = (c) => `<div class="grid">${c.bouts.map(bout).join('')}</div>`;
+  const grid = (bouts) => `<div class="grid">${bouts.map(bout).join('')}</div>`;
+  const SECTIONS = [['main', 'Main card'], ['prelims', 'Prelims'], ['early', 'Early prelims']];
+  const when = (ts) => new Intl.DateTimeFormat('en-GB', { weekday: 'short', hour: '2-digit', minute: '2-digit' }).format(new Date(ts * 1000));
+  // Main card / prelims / early prelims as tabs; one plain list when the split is unknown.
+  const cardBody = (c, showTimes) => {
+    const groups = SECTIONS.map(([k, label]) => ({ k, label, bouts: c.bouts.filter((b) => b.section === k) }))
+      .filter((g) => g.bouts.length);
+    if (groups.length < 2 || groups.reduce((n, g) => n + g.bouts.length, 0) !== c.bouts.length) return grid(c.bouts);
+    const id = 'card-' + c.slug.replace(/[^a-z0-9-]/gi, '');
+    const times = (showTimes && c.sections) || {};
+    return `<div class="tabs"><div class="tabbar" role="tablist" aria-label="Card section">${groups.map((g, i) =>
+        `<button type="button" role="tab" id="${id}-${g.k}-tab" aria-controls="${id}-${g.k}" aria-selected="${i === 0}" tabindex="${i ? -1 : 0}">${g.label}<span class="n">${g.bouts.length}</span></button>`).join('')}</div></div>
+      ${groups.map((g, i) => `<div role="tabpanel" id="${id}-${g.k}" aria-labelledby="${id}-${g.k}-tab"${i ? ' hidden' : ''}>${
+        times[g.k] ? `<div class="when-line" title="Your time zone">Starts ${esc(when(times[g.k]))}</div>` : ''}${grid(g.bouts)}</div>`).join('')}`;
+  };
+  const selectTab = (tab) => {
+    tab.closest('[role="tablist"]').querySelectorAll('[role="tab"]').forEach((t) => {
+      const on = t === tab;
+      t.setAttribute('aria-selected', String(on));
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+  };
+  document.addEventListener('click', (e) => { const t = e.target.closest('[role="tab"]'); if (t) selectTab(t); });
+  document.addEventListener('keydown', (e) => {
+    const t = e.target.closest && e.target.closest('[role="tab"]');
+    if (!t || (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft')) return;
+    const tabs = [...t.closest('[role="tablist"]').querySelectorAll('[role="tab"]')];
+    const next = tabs[(tabs.indexOf(t) + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+    selectTab(next);
+    next.focus();
+  });
 
   try {
     const idx = await getJSON('data/index.json');
@@ -159,7 +199,7 @@
 
     document.getElementById('upcoming').innerHTML = nextCard
       ? `<div class="event" style="margin-bottom:18px"><span class="chip live">Upcoming</span><h2>${esc(nextCard.event.name)}</h2>
-           <div class="meta">${esc(day(nextCard.event.date))}${nextCard.generated_at ? ' · picks updated ' + esc(day(nextCard.generated_at, { day: 'numeric', month: 'short' })) : ''}</div></div>${grid(nextCard)}`
+           <div class="meta">${esc(day(nextCard.event.date))}${nextCard.generated_at ? ' · picks updated ' + esc(day(nextCard.generated_at, { day: 'numeric', month: 'short' })) : ''}</div></div>${cardBody(nextCard, true)}`
       : `<p class="empty">Picks for the next card land midweek once the bouts are announced.</p>`;
 
     const rec = idx.record;
@@ -172,7 +212,7 @@
           const s = c.summary.winner;
           return `<details id="${esc(c.slug)}"${i === 0 ? ' open' : ''}><summary class="num"><span class="chev" aria-hidden="true"></span>
             <span><span class="ev-name">${esc(c.event.name)}</span><span class="ev-date">${esc(day(c.event.date))}</span></span>
-            <span class="score ${s.n_correct * 2 >= s.n ? 'hit' : 'miss'}">${s.n_correct}/${s.n}<small>correct</small></span></summary>${grid(c)}</details>`;
+            <span class="score ${s.n_correct * 2 >= s.n ? 'hit' : 'miss'}">${s.n_correct}/${s.n}<small>correct</small></span></summary>${cardBody(c, false)}</details>`;
         }).join('')}`;
       el.hidden = false;
       const target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
