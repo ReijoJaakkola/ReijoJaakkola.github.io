@@ -91,7 +91,10 @@
   .tabbar button .n { opacity: .7; margin-left: .3em; }
   .tabbar button[aria-selected="true"] { color: var(--bg); background: var(--magenta); box-shadow: 0 0 16px -4px var(--magenta); }
   .tabbar button:focus-visible { outline: 2px solid var(--neon); outline-offset: 2px; }
-  .when-line { text-align: center; color: var(--muted); font-size: .86rem; font-weight: 600; margin: 4px 0 16px; }
+  .when-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; margin: 6px 0 18px; color: var(--muted); font-size: .86rem; font-weight: 600; }
+  .tpill { display: inline-flex; align-items: baseline; gap: .45em; padding: .32em .85em; border: 1px solid var(--line); border-radius: 999px; background: var(--glass); color: var(--text); font-weight: 700; }
+  .tpill small { color: var(--muted); font-weight: 600; font-size: .78rem; }
+  .tpill.me { border-color: var(--magenta); box-shadow: 0 0 12px -6px var(--magenta); }
   details .tabs { margin-top: .4em; }
 
   .record { padding: 1.1em 1.3em; }
@@ -156,7 +159,16 @@
   };
   const grid = (bouts) => `<div class="grid">${bouts.map(bout).join('')}</div>`;
   const SECTIONS = [['main', 'Main card'], ['prelims', 'Prelims'], ['early', 'Early prelims']];
-  const when = (ts) => new Intl.DateTimeFormat('en-GB', { weekday: 'short', hour: '2-digit', minute: '2-digit' }).format(new Date(ts * 1000));
+  // Section start in the visitor's own time zone (their device's setting) and in ET,
+  // the zone UFC announces in. "Your time" follows the device's 12 h / 24 h clock.
+  const H12 = new Intl.DateTimeFormat(undefined, { hour: 'numeric' }).resolvedOptions().hour12;
+  const clock = (ts, h12, timeZone) => new Intl.DateTimeFormat(h12 ? 'en-US' : 'en-GB',
+    { weekday: 'short', hour: 'numeric', minute: '2-digit', timeZone }).format(new Date(ts * 1000));
+  const startRow = (ts) => {
+    const et = clock(ts, true, 'America/New_York');
+    return `<div class="when-row num"><span>Starts</span><span class="tpill me">${esc(clock(ts, H12))}<small>your time</small></span>${
+      clock(ts, true) === et ? '' : `<span class="tpill">${esc(et)}<small>ET</small></span>`}</div>`;   // no ET pill for ET visitors
+  };
   // Main card / prelims / early prelims as tabs; one plain list when the split is unknown.
   const cardBody = (c, showTimes) => {
     const groups = SECTIONS.map(([k, label]) => ({ k, label, bouts: c.bouts.filter((b) => b.section === k) }))
@@ -167,7 +179,7 @@
     return `<div class="tabs"><div class="tabbar" role="tablist" aria-label="Card section">${groups.map((g, i) =>
         `<button type="button" role="tab" id="${id}-${g.k}-tab" aria-controls="${id}-${g.k}" aria-selected="${i === 0}" tabindex="${i ? -1 : 0}">${g.label}<span class="n">${g.bouts.length}</span></button>`).join('')}</div></div>
       ${groups.map((g, i) => `<div role="tabpanel" id="${id}-${g.k}" aria-labelledby="${id}-${g.k}-tab"${i ? ' hidden' : ''}>${
-        times[g.k] ? `<div class="when-line" title="Your time zone">Starts ${esc(when(times[g.k]))}</div>` : ''}${grid(g.bouts)}</div>`).join('')}`;
+        times[g.k] ? startRow(times[g.k]) : ''}${grid(g.bouts)}</div>`).join('')}`;
   };
   const selectTab = (tab) => {
     tab.closest('[role="tablist"]').querySelectorAll('[role="tab"]').forEach((t) => {
