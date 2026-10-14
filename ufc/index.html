@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>UFC Predictions · Prior Cage</title>
+<title>UFC Predictions | Prior Cage</title>
 <meta name="description" content="Model picks for the next UFC card, plus a live track record graded after every event.">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
     --line: rgba(255, 255, 255, 0.10);
     --line-2: rgba(255, 255, 255, 0.06);
     --text: #F3F4F6;
-    --muted: #A3ABBD;
+    --muted: var(--text);
     --magenta: #D640E6;
     --neon: #409CFF;
     --blue: #387AF5;
@@ -39,7 +39,7 @@
   .hero h1 { font-weight: 800; text-transform: uppercase; line-height: .92; font-size: clamp(2.3rem, 8.5vw, 5rem);
              margin: clamp(2.2em, 9vw, 3.4em) 0 .3em; letter-spacing: -.01em; text-wrap: balance; text-shadow: 0 2px 24px rgba(0,0,0,.6); }
   .hero h1 em { font-style: normal; color: transparent; -webkit-text-stroke: 1.5px var(--magenta); text-shadow: 0 0 22px rgba(214,64,230,.55); }
-  .hero p { margin: 0; max-width: 54ch; color: #D6DAE4; line-height: 1.5; }
+  .hero p { margin: 0; max-width: 54ch; color: var(--text); line-height: 1.5; }
   .hero .fine { margin-top: .5em; font-size: .82rem; color: var(--muted); }
   main { max-width: 1000px; margin: 0 auto; padding: 0 clamp(16px, 5vw, 48px) 64px; display: grid; gap: 26px; }
 
@@ -115,6 +115,98 @@
   .empty { text-align: center; color: var(--muted); padding: 1.5em; }
   footer { text-align: center; font-size: .82rem; color: var(--muted); }
   footer a { color: var(--muted); }
+  /* ---- Fight details (full-page story) ---- */
+  .bout[data-fd] { cursor: pointer; }
+  .bout[data-fd]:hover { transform: translateY(-2px); box-shadow: 0 0 40px -12px rgba(244,196,84,.75); }
+  .fd-cta { text-align: center; }
+  .bk { display: flex; justify-content: space-between; align-items: baseline; font-weight: 800; font-size: .9rem; margin-bottom: -.5em; }
+  .bk .bk-l { font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; }
+  .bar.bk-bar { height: 4px; }
+  .fd-btn { display: inline-flex; align-items: center; gap: .4em; font: 700 .86rem var(--font); color: var(--text); background: var(--glass); border: 1px solid var(--magenta); border-radius: 999px; padding: .45em 1.1em; cursor: pointer; text-decoration: none; white-space: nowrap; }
+  .fd-btn:hover { background: rgba(214,64,230,.16); box-shadow: 0 0 14px -4px var(--magenta); }
+  .fd-btn:focus-visible { outline: 2px solid var(--neon); outline-offset: 2px; }
+  .fd-btn.quiet, footer a.fd-btn { color: var(--muted); border-color: var(--line); }
+  .fd-btn.quiet:hover, footer a.fd-btn:hover { color: var(--text); }
+  .fd-btn.sm { font-size: .78rem; padding: .3em .9em; margin-top: .6em; }
+  #fd { position: fixed; inset: 0; z-index: 50; overflow: auto; background: radial-gradient(900px 480px at 50% -8%, rgba(214,64,230,.16), transparent 62%), var(--bg); }
+  #fd .fd-top { position: sticky; top: 0; z-index: 1; display: flex; align-items: center; gap: 12px; padding: 10px max(16px, calc((100vw - 760px) / 2)); background: rgba(7,8,15,.86); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line-2); }
+  #fd .fd-top span { margin-left: auto; color: var(--muted); font-size: .8rem; text-align: right; }
+  #fd .fd-in { max-width: 760px; margin: 0 auto; padding: 0 16px 64px; }
+  #fd .fd-hero { text-align: center; padding: 30px 0 24px; }
+  #fd .fd-hero .meta { margin-bottom: 10px; }
+  #fd .fd-big { font-size: clamp(2.4rem, 10vw, 3.8rem); font-weight: 800; line-height: 1; text-transform: uppercase; color: var(--magenta); text-shadow: 0 0 22px rgba(214,64,230,.45); }
+  #fd .fd-call { font-size: 1.1rem; margin-top: 10px; }
+  #fd .fd-tug { display: flex; height: 8px; gap: 2px; border-radius: 4px; overflow: hidden; }
+  #fd .fd-odds { max-width: 460px; margin: 20px auto 0; }
+  #fd .fd-lab { font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 800; margin: 10px 0 4px; }
+  #fd .fd-line { display: grid; grid-template-columns: 3em 1fr 3em; align-items: center; gap: 10px; font-weight: 800; }
+  #fd .fd-line span:first-child { text-align: left; } #fd .fd-line span:last-child { text-align: right; }
+  #fd .fd-tug b { display: block; border-radius: 4px; background: var(--blue); opacity: .35; }
+  #fd .fd-tug b.fav { background: var(--magenta); opacity: 1; box-shadow: 0 0 10px rgba(214,64,230,.6); }
+  #fd .fd-names { display: flex; justify-content: space-between; gap: 12px; font-weight: 700; }
+  #fd .blk { padding: 1.1em 1.2em; margin-bottom: 14px; }
+  #fd h3 { font-size: .78rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); margin: 0 0 10px; font-weight: 800; }
+  #fd h3 small { text-transform: none; letter-spacing: 0; font-weight: 500; }
+  #fd .A { color: var(--ca); } #fd .B { color: var(--cb); }
+  #fd .note { font-size: .78rem; color: var(--muted); margin: 6px 0 0; }
+  #fd .fd-tape { width: 100%; border-collapse: collapse; font-size: .84rem; }
+  #fd .fd-tape th { font-size: .86rem; padding: 0 4px 6px; text-align: left; } #fd .fd-tape th:last-child { text-align: right; }
+  #fd .fd-tape td { padding: 4px; border-top: 1px solid var(--line-2); }
+  #fd .fd-tape td:nth-child(2) { text-align: center; color: var(--muted); font-size: .78rem; }
+  #fd .fd-tape td:last-child { text-align: right; }
+  #fd .fd-tape td.w { font-weight: 800; color: var(--green); }
+  #fd .fd-tape td.l { color: var(--miss); }
+  #fd .fd-tape tr.x { display: none; } #fd .fd-tape.all tr.x { display: table-row; }
+  #fd .fd-foot { display: flex; justify-content: flex-end; align-items: center; gap: 12px; }
+  #fd .fd-foot .fd-btn { margin-top: .6em; }
+  #fd .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 640px) { #fd .cols { grid-template-columns: 1fr; } }
+  #fd .who { margin: 0 0 6px; font-weight: 800; } #fd .who small { color: var(--muted); font-weight: 600; margin-left: .4em; }
+  #fd .fd-form { display: flex; gap: 3px; margin-bottom: 8px; }
+  #fd .fd-form i { width: 15px; height: 15px; border-radius: 3px; display: grid; place-items: center; font: 800 .55rem var(--font); font-style: normal; color: var(--bg); background: var(--muted); }
+  #fd .fd-form i.W { background: var(--green); } #fd .fd-form i.L { background: var(--miss); }
+  #fd .fl { display: grid; gap: 4px; font-size: .84rem; }
+  #fd .fd-f { display: grid; grid-template-columns: 24px minmax(0, 1fr) auto; gap: 8px; align-items: center; padding: 6px 8px; border-radius: 8px; background: rgba(255,255,255,.04); }
+  #fd .fd-r { font-size: .7rem; font-weight: 800; text-align: center; border-radius: 5px; padding: 2px 0; color: var(--muted); background: rgba(255,255,255,.08); }
+  #fd .fd-r.W { color: var(--green); background: rgba(74,222,128,.15); } #fd .fd-r.L { color: var(--miss); background: rgba(255,107,107,.15); }
+  #fd .opp { font-weight: 700; } #fd .how { display: block; color: var(--muted); font-size: .76rem; }
+  #fd .when { color: var(--muted); font-size: .74rem; white-space: nowrap; }
+  #fd .whyhead span:last-child { text-align: right; }
+  #fd .whyhead { display: flex; justify-content: space-between; gap: 16px; font-size: .78rem; font-weight: 700; margin-bottom: 6px; }
+  #fd .why { display: grid; gap: 6px; font-size: .85rem; }
+  #fd .why .row { display: grid; grid-template-columns: 1fr 1fr; }
+  #fd .why .side { display: flex; align-items: center; gap: 8px; min-height: 28px; }
+  #fd .why .l { justify-content: flex-end; text-align: right; border-right: 1px solid var(--line); }
+  #fd .why .bar { height: 10px; flex: none; }
+  #fd .why .l .bar { border-radius: 3px 0 0 3px; background: var(--ca); } #fd .why .r .bar { border-radius: 0 3px 3px 0; background: var(--cb); }
+  #fd .why small { display: block; color: var(--muted); font-size: .74rem; }
+  #fd .pp { font-weight: 800; font-size: .78rem; white-space: nowrap; }
+  #fd .lede { margin: 0 0 8px; font-weight: 600; }
+  #fd .stack { display: flex; height: 40px; gap: 2px; border-radius: 6px; overflow: hidden; }
+  #fd .stack i { display: flex; flex-direction: column; line-height: 1.15; align-items: center; justify-content: center; font: 700 .76rem var(--font); font-style: normal; color: #fff; min-width: 0; white-space: nowrap; }
+  #fd .rounds { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; height: 96px; margin-top: 8px; }
+  #fd .rounds div { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; font-size: .72rem; color: var(--muted); }
+  #fd .rounds b { width: 100%; border-radius: 4px 4px 0 0; background: var(--magenta); opacity: .85; }
+  #fd .rounds span { color: var(--text); font-weight: 700; }
+  /* Motion: story slides up in / down out, cards and sections rise in as they scroll into view, bars grow. */
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+    #fd:not([hidden]) { animation: fd-in .34s cubic-bezier(.2,.8,.2,1); }
+    #fd.out { animation: fd-out .2s ease-in forwards; }
+    @keyframes fd-in { from { opacity: 0; transform: translateY(28px); } }
+    @keyframes fd-out { to { opacity: 0; transform: translateY(28px); } }
+    @keyframes fd-fade { from { opacity: 0; transform: translateY(6px); } }
+    .rv { opacity: 0; transform: translateY(18px); transition: opacity .5s ease, transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .15s; }
+    .rv.in { opacity: 1; transform: none; }
+    .rv .grow { transform: scaleX(0); transition: transform .8s cubic-bezier(.2,.8,.2,1) .15s; }
+    .rv .growy { transform: scaleY(0); transform-origin: bottom; transition: transform .8s cubic-bezier(.2,.8,.2,1) .15s; }
+    .rv.in .grow, .rv.in .growy { transform: none; }
+    #fd .why .l .grow, #fd .fd-tug .grow:last-child { transform-origin: right; }
+    #fd .why .r .grow, #fd .fd-tug .grow:first-child, #fd .stack .grow { transform-origin: left; }
+    [role="tabpanel"]:not([hidden]), #fd .fd-tape.all tr.x, #fd .fl:not([hidden]) { animation: fd-fade .3s ease; }
+    .fd-btn { transition: background .15s, box-shadow .15s, transform .1s; }
+    .fd-btn:active { transform: scale(.96); }
+  }
 </style>
 </head>
 <body>
@@ -126,7 +218,7 @@
 <main>
   <section id="upcoming" aria-live="polite"><p class="empty">Loading picks…</p></section>
   <section class="glass record" id="record" hidden></section>
-  <footer><a href="/">reijojaakkola.github.io</a></footer>
+  <footer><a class="fd-btn" href="/">reijojaakkola.github.io</a></footer>
 </main>
 
 <script>
@@ -138,6 +230,9 @@
     iso ? new Date(iso.length === 10 ? iso + 'T12:00:00Z' : iso).toLocaleDateString('en-GB', o) : '';
   const getJSON = async (p) => { const r = await fetch(p, { cache: 'no-cache' }); if (!r.ok) throw new Error(p + ': ' + r.status); return r.json(); };
 
+  const bkRow = (b, f1w) => { const q = b.book_p_f1; return q === null || q === undefined || b.result ? '' :
+    `<div class="bk num"><span>${pct(q)}</span><span class="bk-l">Bookmakers</span><span>${pct(1 - q)}</span></div>`
+    + `<div class="bar bk-bar" role="img" aria-label="Bookmakers: ${esc(b.f1)} ${pct(q)}, ${esc(b.f2)} ${pct(1 - q)}"><b class="${f1w ? 'fav' : ''}" style="flex:${q}"></b><b class="${f1w ? '' : 'fav'}" style="flex:${1 - q}"></b></div>`; };
   const howWon = (r) => (METHOD[r.actual_method] || r.method_raw || 'Result') + (r.finished && r.actual_round ? ' in round ' + r.actual_round : '');
   const bout = (b) => {
     const f1w = b.p_f1 >= 0.5, r = b.result, main = b.order === 1;
@@ -149,13 +244,14 @@
           ? `<span class="chip ${r.winner_correct ? 'yes' : 'no'}">${esc(r.actual_winner)}</span><span class="chip ${r.method_hit ? 'yes' : 'no'}">${esc(howWon(r))}</span>`
           : `<span class="chip dim">${esc(r.method_raw || 'No contest')}</span>`}</div>`
       : `<div class="call"><div class="pickbar"><span class="tag">Pick</span><span class="what">${esc(b.pick)} by ${esc(call)}</span></div></div>`;
-    return `<article class="glass bout${main ? ' main' : ''}${cls}">
+    const fd = !r && b.stats;  // fight details for every upcoming bout
+    return `<article class="glass bout${main ? ' main' : ''}${cls}"${fd ? ` data-fd="${b.order}"` : ''}>
       <div class="top"><span class="wc">${esc(b.weightclass)}</span><span class="tags">${main ? '<span class="chip gold">Main event</span>' : ''}${b.low_data ? '<span class="chip warn">Limited data</span>' : ''}</span></div>
       <div class="tape num"><div class="f${f1w ? '' : ' lose'}"><span class="pc">${pct(b.p_f1)}</span><span class="n">${esc(b.f1)}</span></div>
         <span class="vs">VS</span>
         <div class="f${f1w ? ' lose' : ''}"><span class="pc">${pct(1 - b.p_f1)}</span><span class="n">${esc(b.f2)}</span></div></div>
-      <div class="bar" role="img" aria-label="${esc(b.f1)} ${pct(b.p_f1)}, ${esc(b.f2)} ${pct(1 - b.p_f1)}"><b class="${f1w ? 'fav' : ''}" style="flex:${b.p_f1}"></b><b class="${f1w ? '' : 'fav'}" style="flex:${1 - b.p_f1}"></b></div>
-      ${tail}</article>`;
+      <div class="bar" role="img" aria-label="${esc(b.f1)} ${pct(b.p_f1)}, ${esc(b.f2)} ${pct(1 - b.p_f1)}"><b class="${f1w ? 'fav' : ''}" style="flex:${b.p_f1}"></b><b class="${f1w ? '' : 'fav'}" style="flex:${1 - b.p_f1}"></b></div>${bkRow(b, f1w)}
+      ${tail}${fd ? `<div class="fd-cta"><button type="button" class="fd-btn" data-fd-open aria-label="Fight details: ${esc(b.f1)} vs ${esc(b.f2)}">Fight details</button></div>` : ''}</article>`;
   };
   const grid = (bouts) => `<div class="grid">${bouts.map(bout).join('')}</div>`;
   const SECTIONS = [['main', 'Main card'], ['prelims', 'Prelims'], ['early', 'Early prelims']];
@@ -211,8 +307,9 @@
 
     document.getElementById('upcoming').innerHTML = nextCard
       ? `<div class="event" style="margin-bottom:18px"><span class="chip live">Upcoming</span><h2>${esc(nextCard.event.name)}</h2>
-           <div class="meta">${esc(day(nextCard.event.date))}${nextCard.generated_at ? ' · picks updated ' + esc(day(nextCard.generated_at, { day: 'numeric', month: 'short' })) : ''}</div></div>${cardBody(nextCard, true)}`
+           <div class="meta">${esc(day(nextCard.event.date))}${nextCard.generated_at ? ', picks updated ' + esc(day(nextCard.generated_at, { day: 'numeric', month: 'short' })) : ''}</div></div>${cardBody(nextCard, true)}`
       : `<p class="empty">Picks for the next card land midweek once the bouts are announced.</p>`;
+    if (nextCard && window.fdCard) window.fdCard(nextCard);
 
     const rec = idx.record;
     if (rec || pastCards.length) {
@@ -234,6 +331,144 @@
     document.getElementById('upcoming').innerHTML = `<p class="empty">Couldn't load the picks right now. Try again in a minute.</p>`;
     console.error(err);
   }
+})();
+</script>
+<script>
+// ---- Fight details: a full-page story per upcoming bout (#fight-N). ----
+(() => {
+  let FD = null, BY = {};
+  const last = (n) => n.split(' ').slice(-1)[0];
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const pct = (x) => Math.round(x * 100) + '%';
+  const rec = (r) => `${r.W}-${r.L}${r.D ? '-' + r.D : ''}`;
+  const age = (dob) => (dob ? Math.floor((new Date(FD.event.date) - new Date(dob)) / 3.15576e10) : null);
+  const METHOD = { DEC: 'decision', KO: 'KO/TKO', SUB: 'submission' };
+  const P = pct, F = (x) => x.toFixed(1), IN = (x) => x + ' in', ST = (x) => (x > 0 ? 'W' + x : x < 0 ? 'L' + -x : 'none');
+  // [label, stat key, format, higher is better (1 / -1 / null), shown by default]
+  const TAPE = [
+    ['Record', 'rec', null, null, 1], ['Age', 'age', String, -1, 1], ['Reach', 'reach', IN, 1, 1], ['Height', 'height', IN, null, 0],
+    ['Stance', 'stance', null, null, 0], ['Streak', 'streak', ST, 1, 1],
+    ['Win rate', 'winpct', P, 1, 1], ['Finish rate', 'finish_rate', P, 1, 0], ['Strikes landed / min', 'slpm', F, 1, 1],
+    ['Strike accuracy', 'str_acc', P, 1, 1], ['Strikes absorbed / min', 'sapm', F, -1, 0], ['Strike defence', 'str_def', P, 1, 0],
+    ['Takedowns / 15 min', 'td_per15', F, 1, 0], ['Takedown defence', 'td_def', P, 1, 1], ['Sub attempts / 15 min', 'sub_per15', F, 1, 0],
+    ['Knockdowns / 15 min', 'kd_per15', F, 1, 0], ['Days since last fight', 'days_since', String, null, 0],
+  ];
+  // Plain-English name and value format for each fact behind a pick.
+  const FACT = {
+    reach: ['Reach', IN], height: ['Height', IN], age: ['Age', (x) => String(Math.floor(x))], winpct: ['Win rate', P],
+    finish_rate: ['Finish rate', P], streak: ['Current streak', ST], experience: ['Experience', (x) => x + ' fights'],
+    slpm: ['Strikes landed per minute', F], sapm: ['Strikes absorbed per minute', F], str_acc: ['Striking accuracy', P],
+    str_def: ['Striking defence', P], td_per15: ['Takedowns per 15 min', F], td_acc: ['Takedown accuracy', P], td_def: ['Takedown defence', P],
+    sub_per15: ['Submission attempts per 15 min', F], ctrl_frac: ['Control time', P], kd_per15: ['Knockdowns per 15 min', F],
+    days_since: ['Time since last fight', (x) => x + ' days'], activity365: ['Fights in the last year', String],
+    southpaw: ['Stance', (x) => (x ? 'southpaw' : 'orthodox')], ko_win_share: ['Wins by KO/TKO', P], sub_win_share: ['Wins by submission', P],
+    koed_rate: ['Times knocked out', P], subbed_rate: ['Times submitted', P], avg_fight_min: ['Average fight length', (x) => F(x) + ' min'],
+    early_win_share: ['First-round wins', P],
+  };
+
+  function render(b) {
+    const A = FD.fighters[b.f1], B = FD.fighters[b.f2], S = { ...b.stats };
+    S.rec = [rec(A.rec), rec(B.rec)]; S.age = [age(A.dob), age(B.dob)]; S.stance = [A.stance, B.stance];
+    const pA = b.p_f1, pB = 1 - pA, favA = pA >= 0.5, sched = b.order === 1 ? 5 : 3;  // main event = 5 rounds; title fights aren't flagged in the data yet
+    const nameA = esc(b.f1), nameB = esc(b.f2), pick = favA ? b.f1 : b.f2;
+    const colA = favA ? 'Purple' : 'Blue', colB = favA ? 'Blue' : 'Purple';
+    const call = METHOD[b.method_pick] + (b.method_pick !== 'DEC' && b.round_pick ? ' in round ' + b.round_pick : '');
+
+    const tape = `<table class="fd-tape"><tr><th class="A">${esc(last(b.f1))}</th><th></th><th class="B">${esc(last(b.f2))}</th></tr>${TAPE.map(([lab, k, fmt, dir, show]) => {
+        const raw = S[k] || [null, null], v = raw.map((x) => (x === null || x === undefined ? 'n/a' : fmt ? fmt(x) : x));
+        const w = dir && raw[0] !== null && raw[1] !== null && raw[0] !== raw[1] ? ((raw[0] > raw[1]) === (dir > 0) ? 0 : 1) : -1;
+        return `<tr class="${show ? '' : 'x'}"><td class="${w < 0 ? '' : w === 0 ? 'w' : 'l'}">${esc(v[0])}</td><td>${lab}</td><td class="${w < 0 ? '' : w === 1 ? 'w' : 'l'}">${esc(v[1])}</td></tr>`;
+      }).join('')}</table><div class="fd-foot"><button type="button" class="fd-btn quiet sm" data-toggle="tape">All ${TAPE.length} stats</button></div>`;
+
+    const row = (x) => `<div class="fd-f"><span class="fd-r ${x.r}">${x.r}</span><span><span class="opp">${esc(x.opp)}</span><span class="how">${
+      esc([x.how, x.rd ? 'round ' + x.rd + (x.t ? ' at ' + x.t : '') : '', x.ufc ? '' : 'pre-UFC'].filter(Boolean).join(', '))}</span></span><span class="when">${x.d.slice(0, 7)}</span></div>`;
+    const fights = (f, name, cls) => `<div><p class="who ${cls}">${name}<small>${rec(f.rec)}</small></p>
+      <div class="fd-form">${f.fights.slice(0, 10).map((x) => `<i class="${x.r}">${x.r[0]}</i>`).join('')}</div>
+      <div class="fl">${f.fights.slice(0, 3).map(row).join('')}</div>${f.fights.length > 3 ? `<div class="fl" hidden style="margin-top:4px">${f.fights.slice(3).map(row).join('')}</div>
+      <button type="button" class="fd-btn quiet sm" data-toggle="fights" data-n="${f.fights.length}">All ${f.fights.length} fights</button>` : ''}</div>`;
+
+    const facts = (b.why || []).filter((f) => FACT[f.m]);
+    const mx = Math.max(0.1, ...facts.map((f) => Math.abs(f.v)));
+    const why = facts.length ? `<div class="whyhead"><span class="A">${colA} factors favor ${esc(last(b.f1))}</span><span class="B">${colB} factors favor ${esc(last(b.f2))}</span></div><div class="why">${facts.map(({ m, v }) => {
+        const s = v > 0 ? 'A' : 'B', [lab, fmt] = FACT[m], [a, c] = S[m] || [null, null];
+        const d = a === null || c === null || a === undefined || c === undefined ? '' : s === 'A' ? `${fmt(a)} vs ${fmt(c)}` : `${fmt(c)} vs ${fmt(a)}`;
+        const bar = `<span class="bar grow" style="width:${Math.abs(v) / mx * 36}%"></span>`, pp = `<span class="pp ${s}">+${Math.abs(v).toFixed(1)}</span>`, l = `<span>${lab}<small>${esc(d)}</small></span>`;
+        return `<div class="row"><div class="side l">${s === 'A' ? l + pp + bar : ''}</div><div class="side r">${s === 'B' ? bar + pp + l : ''}</div></div>`;
+      }).join('')}</div>` : '';
+
+    const mp = b.method_probs, rp = Object.entries(b.round_probs).filter(([r]) => r <= sched), rmx = Math.max(...rp.map(([, v]) => v));
+    const col = { DEC: '#D640E6', KO: '#9D33AA', SUB: '#6B2475' }, lab = { DEC: 'Decision', KO: 'KO/TKO', SUB: 'Sub' };
+    const odds = `<p class="lede">If ${esc(last(pick))} wins, how?</p><div class="stack">${['DEC', 'KO', 'SUB'].map((k) =>
+        `<i class="grow" style="width:${mp[k] * 100}%;background:${col[k]}"><span>${lab[k]}</span><span>${pct(mp[k])}</span></i>`).join('')}</div>
+      <p class="lede" style="margin-top:16px">If it ends early, which round?</p>
+      <div class="rounds" style="grid-template-columns:repeat(${sched},1fr)">${rp.map(([r, v]) => `<div><span>${pct(v)}</span><b class="growy" style="height:${v / rmx * 60}px"></b>R${r}</div>`).join('')}</div>`;
+
+    const bkA = b.book_p_f1 ?? null;
+    const line = (l, p) => `<div class="fd-lab">${l}</div><div class="fd-line"><span class="A">${pct(p)}</span><div class="fd-tug"><b class="grow${favA ? ' fav' : ''}" style="flex:${p}"></b><b class="grow${favA ? '' : ' fav'}" style="flex:${1 - p}"></b></div><span class="B">${pct(1 - p)}</span></div>`;
+
+    el.style.setProperty('--ca', favA ? 'var(--magenta)' : 'var(--blue)');
+    el.style.setProperty('--cb', favA ? 'var(--blue)' : 'var(--magenta)');
+    return `<div class="fd-top"><button type="button" class="fd-btn quiet fd-back">Back to the card</button><span>${esc(FD.event.name)}</span></div><div class="fd-in">
+      <div class="fd-hero rv"><div class="meta">${b.order === 1 ? 'Main event, ' : ''}${esc(b.weightclass)}, ${sched} rounds</div><div class="fd-big">${esc(last(pick))}</div>
+        <div class="fd-call">by ${call}, <b>${pct(Math.max(pA, pB))}</b> to win</div>
+        <div class="fd-odds"><div class="fd-names"><span class="A">${nameA}</span><span class="B">${nameB}</span></div>${line('Model', pA)}${bkA === null ? '' : line('Bookmakers', bkA)}</div></div>
+      <section class="glass blk rv"><h3>Tale of the tape</h3>${tape}</section>
+      <section class="glass blk rv"><h3>Last fights</h3><div class="cols">${fights(A, nameA, 'A')}${fights(B, nameB, 'B')}</div></section>
+      ${why ? `<section class="glass blk rv"><h3>Why</h3>${why}</section>` : ''}
+      <section class="glass blk rv"><h3>How it ends</h3>${odds}</section></div>`;
+  }
+
+  const el = document.createElement('div');
+  el.id = 'fd'; el.hidden = true;
+  el.setAttribute('role', 'dialog'); el.setAttribute('aria-modal', 'true'); el.setAttribute('aria-label', 'Fight details');
+  document.body.appendChild(el);
+  let opener = null;
+  // Reveal-on-scroll: anything with .rv rises in the first time it enters the viewport.
+  const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
+  const tag = () => document.querySelectorAll('main .event, main .bout, main .record:not([hidden]) > h2, main .strip, main details').forEach((n) => {
+    if (!n.classList.contains('rv')) { n.classList.add('rv'); io.observe(n); }
+  });
+  tag();
+  new MutationObserver(tag).observe(document.querySelector('main'), { childList: true, subtree: true });
+
+  const show = (b) => {
+    el.innerHTML = render(b);
+    el.classList.remove('out'); el.hidden = false; document.body.style.overflow = 'hidden'; el.scrollTop = 0; el.querySelector('.fd-back').focus();
+    el.querySelectorAll('.rv').forEach((n) => io.observe(n));
+  };
+  const still = matchMedia('(prefers-reduced-motion: reduce)');
+  const hide = () => {
+    el.classList.add('out');
+    setTimeout(() => { el.hidden = true; el.classList.remove('out'); el.innerHTML = ''; document.body.style.overflow = ''; if (opener) opener.focus(); }, still.matches ? 0 : 200);
+  };
+  const sync = () => {
+    const m = location.hash.match(/^#fight-(\d+)$/), b = m && BY[m[1]];
+    if (b) show(b); else if (!el.hidden) hide();
+  };
+  const open = (card) => { opener = card.querySelector('[data-fd-open]') || card; location.hash = 'fight-' + card.dataset.fd; };
+  // The card is clickable too; the button is the keyboard / screen-reader control.
+  // history.back() assumes we pushed the hash; a deep link to #fight-N just clears it instead.
+  const close = () => (opener ? history.back() : (location.hash = ''));
+  addEventListener('hashchange', sync);
+  addEventListener('keydown', (e) => { if (e.key === 'Escape' && !el.hidden) close(); });
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('.fd-back')) return close();
+    const t = e.target.closest('[data-toggle]');
+    if (t && t.dataset.toggle === 'tape') {
+      t.textContent = t.parentNode.previousElementSibling.classList.toggle('all') ? 'Fewer stats' : `All ${TAPE.length} stats`;
+    } else if (t) {
+      const h = t.previousElementSibling; h.hidden = !h.hidden;
+      t.textContent = h.hidden ? `All ${t.dataset.n} fights` : 'Fewer fights';
+    }
+    const card = e.target.closest('[data-fd]');
+    if (card && BY[card.dataset.fd]) open(card);
+  });
+  // Called by the page once the upcoming card has loaded.
+  window.fdCard = (card) => {
+    FD = card;
+    BY = card.fighters ? Object.fromEntries(card.bouts.filter((b) => b.stats && !b.result && card.fighters[b.f1] && card.fighters[b.f2]).map((b) => [b.order, b])) : {};
+    sync();
+  };
 })();
 </script>
 </body>
