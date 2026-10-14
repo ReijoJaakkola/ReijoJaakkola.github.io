@@ -173,6 +173,7 @@
   #fd .when { color: var(--muted); font-size: .74rem; white-space: nowrap; }
   #fd .whyhead span:last-child { text-align: right; }
   #fd .whyhead { display: flex; justify-content: space-between; gap: 16px; font-size: .78rem; font-weight: 700; margin-bottom: 6px; }
+  #fd .why .row.x { display: none; } #fd .why.all .row.x { display: grid; }
   #fd .why { display: grid; gap: 6px; font-size: .85rem; }
   #fd .why .row { display: grid; grid-template-columns: 1fr 1fr; }
   #fd .why .side { display: flex; align-items: center; gap: 8px; min-height: 28px; }
@@ -203,7 +204,7 @@
     .rv.in .grow, .rv.in .growy { transform: none; }
     #fd .why .l .grow, #fd .fd-tug .grow:last-child { transform-origin: right; }
     #fd .why .r .grow, #fd .fd-tug .grow:first-child, #fd .stack .grow { transform-origin: left; }
-    [role="tabpanel"]:not([hidden]), #fd .fd-tape.all tr.x, #fd .fl:not([hidden]) { animation: fd-fade .3s ease; }
+    [role="tabpanel"]:not([hidden]), #fd .fd-tape.all tr.x, #fd .why.all .row.x, #fd .fl:not([hidden]) { animation: fd-fade .3s ease; }
     .fd-btn { transition: background .15s, box-shadow .15s, transform .1s; }
     .fd-btn:active { transform: scale(.96); }
   }
@@ -389,12 +390,12 @@
 
     const facts = (b.why || []).filter((f) => FACT[f.m]);
     const mx = Math.max(0.1, ...facts.map((f) => Math.abs(f.v)));
-    const why = facts.length ? `<div class="whyhead"><span class="A">${colA} factors favor ${esc(last(b.f1))}</span><span class="B">${colB} factors favor ${esc(last(b.f2))}</span></div><div class="why">${facts.map(({ m, v }) => {
+    const why = facts.length ? `<div class="whyhead"><span class="A">${colA} factors favor ${esc(last(b.f1))}</span><span class="B">${colB} factors favor ${esc(last(b.f2))}</span></div><div class="why">${facts.map(({ m, v }, i) => {
         const s = v > 0 ? 'A' : 'B', [lab, fmt] = FACT[m], [a, c] = S[m] || [null, null];
         const d = a === null || c === null || a === undefined || c === undefined ? '' : s === 'A' ? `${fmt(a)} vs ${fmt(c)}` : `${fmt(c)} vs ${fmt(a)}`;
-        const bar = `<span class="bar grow" style="width:${Math.abs(v) / mx * 36}%"></span>`, pp = `<span class="pp ${s}">+${Math.abs(v).toFixed(1)}</span>`, l = `<span>${lab}<small>${esc(d)}</small></span>`;
-        return `<div class="row"><div class="side l">${s === 'A' ? l + pp + bar : ''}</div><div class="side r">${s === 'B' ? bar + pp + l : ''}</div></div>`;
-      }).join('')}</div>` : '';
+        const bar = `<span class="bar grow" style="width:max(3px, ${Math.abs(v) / mx * 36}%)"></span>`, pp = `<span class="pp ${s}">+${Math.abs(v).toFixed(1)}</span>`, l = `<span>${lab}<small>${esc(d)}</small></span>`;
+        return `<div class="row${i >= 7 ? ' x' : ''}"><div class="side l">${s === 'A' ? l + pp + bar : ''}</div><div class="side r">${s === 'B' ? bar + pp + l : ''}</div></div>`;
+      }).join('')}</div>${facts.length > 7 ? `<div class="fd-foot"><button type="button" class="fd-btn quiet sm" data-toggle="why" data-n="${facts.length}">All ${facts.length} factors</button></div>` : ''}` : '';
 
     const mp = b.method_probs, rp = Object.entries(b.round_probs).filter(([r]) => r <= sched), rmx = Math.max(...rp.map(([, v]) => v));
     const col = { DEC: '#D640E6', KO: '#9D33AA', SUB: '#6B2475' }, lab = { DEC: 'Decision', KO: 'KO/TKO', SUB: 'Sub' };
@@ -454,7 +455,9 @@
   document.addEventListener('click', (e) => {
     if (e.target.closest('.fd-back')) return close();
     const t = e.target.closest('[data-toggle]');
-    if (t && t.dataset.toggle === 'tape') {
+    if (t && t.dataset.toggle === 'why') {
+      t.textContent = t.parentNode.previousElementSibling.classList.toggle('all') ? 'Fewer factors' : `All ${t.dataset.n} factors`;
+    } else if (t && t.dataset.toggle === 'tape') {
       t.textContent = t.parentNode.previousElementSibling.classList.toggle('all') ? 'Fewer stats' : `All ${TAPE.length} stats`;
     } else if (t) {
       const h = t.previousElementSibling; h.hidden = !h.hidden;
