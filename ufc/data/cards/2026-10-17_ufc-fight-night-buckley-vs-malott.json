@@ -4,7 +4,7 @@
   "name": "UFC Fight Night: Buckley vs. Malott",
   "date": "2026-10-17"
  },
- "generated_at": "2026-10-14T19:52:31+00:00",
+ "generated_at": "2026-10-14T21:42:11+00:00",
  "sections": {
   "main": 1792281600,
   "prelims": 1792270800
@@ -4357,6 +4357,82 @@
     {
      "m": "finish_rate",
      "v": -1.38
+    },
+    {
+     "m": "sapm",
+     "v": -0.91
+    },
+    {
+     "m": "avg_fight_min",
+     "v": 0.87
+    },
+    {
+     "m": "slpm",
+     "v": -0.74
+    },
+    {
+     "m": "str_def",
+     "v": 0.73
+    },
+    {
+     "m": "southpaw",
+     "v": 0.51
+    },
+    {
+     "m": "kd_per15",
+     "v": -0.5
+    },
+    {
+     "m": "sub_per15",
+     "v": -0.48
+    },
+    {
+     "m": "reach",
+     "v": 0.44
+    },
+    {
+     "m": "ctrl_frac",
+     "v": 0.39
+    },
+    {
+     "m": "td_def",
+     "v": -0.37
+    },
+    {
+     "m": "koed_rate",
+     "v": -0.37
+    },
+    {
+     "m": "early_win_share",
+     "v": -0.29
+    },
+    {
+     "m": "days_since",
+     "v": -0.28
+    },
+    {
+     "m": "height",
+     "v": -0.21
+    },
+    {
+     "m": "subbed_rate",
+     "v": 0.16
+    },
+    {
+     "m": "td_per15",
+     "v": -0.08
+    },
+    {
+     "m": "streak",
+     "v": 0.08
+    },
+    {
+     "m": "td_acc",
+     "v": -0.05
+    },
+    {
+     "m": "ko_win_share",
+     "v": 0.02
     }
    ]
   },
@@ -4522,6 +4598,82 @@
     {
      "m": "reach",
      "v": 1.26
+    },
+    {
+     "m": "activity365",
+     "v": -1.14
+    },
+    {
+     "m": "sapm",
+     "v": -1.13
+    },
+    {
+     "m": "koed_rate",
+     "v": 1.07
+    },
+    {
+     "m": "height",
+     "v": -0.78
+    },
+    {
+     "m": "experience",
+     "v": -0.73
+    },
+    {
+     "m": "days_since",
+     "v": -0.58
+    },
+    {
+     "m": "sub_win_share",
+     "v": -0.47
+    },
+    {
+     "m": "ko_win_share",
+     "v": 0.4
+    },
+    {
+     "m": "sub_per15",
+     "v": 0.39
+    },
+    {
+     "m": "td_acc",
+     "v": 0.32
+    },
+    {
+     "m": "td_per15",
+     "v": -0.31
+    },
+    {
+     "m": "streak",
+     "v": 0.31
+    },
+    {
+     "m": "avg_fight_min",
+     "v": 0.31
+    },
+    {
+     "m": "southpaw",
+     "v": 0.26
+    },
+    {
+     "m": "td_def",
+     "v": 0.19
+    },
+    {
+     "m": "kd_per15",
+     "v": -0.18
+    },
+    {
+     "m": "str_acc",
+     "v": -0.07
+    },
+    {
+     "m": "early_win_share",
+     "v": 0.05
+    },
+    {
+     "m": "subbed_rate",
+     "v": -0.04
     }
    ]
   },
@@ -4687,6 +4839,82 @@
     {
      "m": "experience",
      "v": 1.34
+    },
+    {
+     "m": "subbed_rate",
+     "v": -1.14
+    },
+    {
+     "m": "sub_win_share",
+     "v": 1.0
+    },
+    {
+     "m": "early_win_share",
+     "v": 0.97
+    },
+    {
+     "m": "ctrl_frac",
+     "v": 0.93
+    },
+    {
+     "m": "td_acc",
+     "v": 0.82
+    },
+    {
+     "m": "td_def",
+     "v": 0.75
+    },
+    {
+     "m": "reach",
+     "v": 0.74
+    },
+    {
+     "m": "str_acc",
+     "v": 0.59
+    },
+    {
+     "m": "slpm",
+     "v": 0.44
+    },
+    {
+     "m": "height",
+     "v": 0.26
+    },
+    {
+     "m": "ko_win_share",
+     "v": -0.26
+    },
+    {
+     "m": "activity365",
+     "v": -0.25
+    },
+    {
+     "m": "sub_per15",
+     "v": 0.2
+    },
+    {
+     "m": "streak",
+     "v": -0.15
+    },
+    {
+     "m": "td_per15",
+     "v": 0.1
+    },
+    {
+     "m": "southpaw",
+     "v": -0.09
+    },
+    {
+     "m": "avg_fight_min",
+     "v": 0.09
+    },
+    {
+     "m": "kd_per15",
+     "v": -0.08
+    },
+    {
+     "m": "str_def",
+     "v": -0.05
     }
    ]
   },
@@ -4852,6 +5080,82 @@
     {
      "m": "finish_rate",
      "v": -1.9
+    },
+    {
+     "m": "sub_per15",
+     "v": -1.49
+    },
+    {
+     "m": "koed_rate",
+     "v": 1.37
+    },
+    {
+     "m": "activity365",
+     "v": -1.18
+    },
+    {
+     "m": "reach",
+     "v": -1.16
+    },
+    {
+     "m": "str_def",
+     "v": 1.08
+    },
+    {
+     "m": "avg_fight_min",
+     "v": 0.92
+    },
+    {
+     "m": "str_acc",
+     "v": -0.89
+    },
+    {
+     "m": "subbed_rate",
+     "v": -0.85
+    },
+    {
+     "m": "experience",
+     "v": 0.82
+    },
+    {
+     "m": "ctrl_frac",
+     "v": -0.64
+    },
+    {
+     "m": "early_win_share",
+     "v": -0.63
+    },
+    {
+     "m": "southpaw",
+     "v": -0.5
+    },
+    {
+     "m": "td_def",
+     "v": -0.44
+    },
+    {
+     "m": "streak",
+     "v": -0.43
+    },
+    {
+     "m": "days_since",
+     "v": 0.38
+    },
+    {
+     "m": "kd_per15",
+     "v": -0.27
+    },
+    {
+     "m": "td_acc",
+     "v": 0.18
+    },
+    {
+     "m": "ko_win_share",
+     "v": 0.09
+    },
+    {
+     "m": "height",
+     "v": -0.02
     }
    ]
   },
@@ -4862,7 +5166,7 @@
    "weightclass": "Bantamweight",
    "section": "main",
    "p_f1": 0.3532,
-   "book_p_f1": 0.6387,
+   "book_p_f1": 0.6296,
    "book_n": 5,
    "pick": "Timmy Cuamba",
    "confidence": 0.6468,
@@ -5017,6 +5321,82 @@
     {
      "m": "td_acc",
      "v": -1.13
+    },
+    {
+     "m": "winpct",
+     "v": 1.1
+    },
+    {
+     "m": "avg_fight_min",
+     "v": -1.09
+    },
+    {
+     "m": "sub_per15",
+     "v": 1.02
+    },
+    {
+     "m": "td_def",
+     "v": -0.86
+    },
+    {
+     "m": "slpm",
+     "v": 0.83
+    },
+    {
+     "m": "ctrl_frac",
+     "v": -0.82
+    },
+    {
+     "m": "subbed_rate",
+     "v": -0.82
+    },
+    {
+     "m": "str_acc",
+     "v": -0.78
+    },
+    {
+     "m": "td_per15",
+     "v": -0.51
+    },
+    {
+     "m": "southpaw",
+     "v": -0.36
+    },
+    {
+     "m": "experience",
+     "v": -0.34
+    },
+    {
+     "m": "ko_win_share",
+     "v": -0.19
+    },
+    {
+     "m": "early_win_share",
+     "v": -0.17
+    },
+    {
+     "m": "kd_per15",
+     "v": 0.12
+    },
+    {
+     "m": "sapm",
+     "v": 0.09
+    },
+    {
+     "m": "koed_rate",
+     "v": -0.08
+    },
+    {
+     "m": "days_since",
+     "v": 0.06
+    },
+    {
+     "m": "streak",
+     "v": 0.06
+    },
+    {
+     "m": "height",
+     "v": -0.05
     }
    ]
   },
@@ -5182,6 +5562,82 @@
     {
      "m": "winpct",
      "v": 1.88
+    },
+    {
+     "m": "kd_per15",
+     "v": 1.73
+    },
+    {
+     "m": "sub_win_share",
+     "v": -1.57
+    },
+    {
+     "m": "reach",
+     "v": 1.37
+    },
+    {
+     "m": "experience",
+     "v": -1.17
+    },
+    {
+     "m": "td_def",
+     "v": -1.05
+    },
+    {
+     "m": "streak",
+     "v": 0.89
+    },
+    {
+     "m": "sub_per15",
+     "v": -0.83
+    },
+    {
+     "m": "koed_rate",
+     "v": 0.61
+    },
+    {
+     "m": "height",
+     "v": 0.54
+    },
+    {
+     "m": "sapm",
+     "v": -0.41
+    },
+    {
+     "m": "early_win_share",
+     "v": -0.34
+    },
+    {
+     "m": "subbed_rate",
+     "v": -0.33
+    },
+    {
+     "m": "ctrl_frac",
+     "v": 0.27
+    },
+    {
+     "m": "southpaw",
+     "v": -0.18
+    },
+    {
+     "m": "activity365",
+     "v": -0.15
+    },
+    {
+     "m": "td_acc",
+     "v": -0.13
+    },
+    {
+     "m": "slpm",
+     "v": 0.1
+    },
+    {
+     "m": "ko_win_share",
+     "v": -0.08
+    },
+    {
+     "m": "days_since",
+     "v": 0.08
     }
    ]
   },
@@ -5347,6 +5803,82 @@
     {
      "m": "days_since",
      "v": 1.6
+    },
+    {
+     "m": "activity365",
+     "v": 1.4
+    },
+    {
+     "m": "koed_rate",
+     "v": 1.27
+    },
+    {
+     "m": "slpm",
+     "v": 1.04
+    },
+    {
+     "m": "str_acc",
+     "v": -0.97
+    },
+    {
+     "m": "ctrl_frac",
+     "v": -0.72
+    },
+    {
+     "m": "ko_win_share",
+     "v": -0.56
+    },
+    {
+     "m": "early_win_share",
+     "v": 0.53
+    },
+    {
+     "m": "height",
+     "v": -0.5
+    },
+    {
+     "m": "str_def",
+     "v": -0.4
+    },
+    {
+     "m": "age",
+     "v": -0.4
+    },
+    {
+     "m": "sub_per15",
+     "v": -0.31
+    },
+    {
+     "m": "subbed_rate",
+     "v": 0.27
+    },
+    {
+     "m": "sub_win_share",
+     "v": -0.26
+    },
+    {
+     "m": "southpaw",
+     "v": 0.26
+    },
+    {
+     "m": "td_def",
+     "v": -0.08
+    },
+    {
+     "m": "kd_per15",
+     "v": 0.07
+    },
+    {
+     "m": "td_per15",
+     "v": -0.05
+    },
+    {
+     "m": "avg_fight_min",
+     "v": -0.05
+    },
+    {
+     "m": "streak",
+     "v": 0.0
     }
    ]
   },
@@ -5512,6 +6044,82 @@
     {
      "m": "subbed_rate",
      "v": -2.05
+    },
+    {
+     "m": "experience",
+     "v": 1.98
+    },
+    {
+     "m": "avg_fight_min",
+     "v": -1.95
+    },
+    {
+     "m": "td_def",
+     "v": -1.76
+    },
+    {
+     "m": "slpm",
+     "v": -1.6
+    },
+    {
+     "m": "td_per15",
+     "v": -1.45
+    },
+    {
+     "m": "str_def",
+     "v": -1.16
+    },
+    {
+     "m": "kd_per15",
+     "v": -0.88
+    },
+    {
+     "m": "sub_per15",
+     "v": -0.67
+    },
+    {
+     "m": "ko_win_share",
+     "v": 0.52
+    },
+    {
+     "m": "koed_rate",
+     "v": -0.5
+    },
+    {
+     "m": "sub_win_share",
+     "v": 0.47
+    },
+    {
+     "m": "southpaw",
+     "v": -0.47
+    },
+    {
+     "m": "activity365",
+     "v": -0.24
+    },
+    {
+     "m": "streak",
+     "v": -0.11
+    },
+    {
+     "m": "finish_rate",
+     "v": 0.08
+    },
+    {
+     "m": "reach",
+     "v": 0.0
+    },
+    {
+     "m": "height",
+     "v": 0.0
+    },
+    {
+     "m": "td_acc",
+     "v": 0.0
+    },
+    {
+     "m": "early_win_share",
+     "v": 0.0
     }
    ]
   },
@@ -5677,6 +6285,82 @@
     {
      "m": "streak",
      "v": -0.62
+    },
+    {
+     "m": "subbed_rate",
+     "v": -0.26
+    },
+    {
+     "m": "southpaw",
+     "v": -0.16
+    },
+    {
+     "m": "koed_rate",
+     "v": -0.12
+    },
+    {
+     "m": "activity365",
+     "v": -0.09
+    },
+    {
+     "m": "days_since",
+     "v": -0.06
+    },
+    {
+     "m": "reach",
+     "v": 0.0
+    },
+    {
+     "m": "height",
+     "v": 0.0
+    },
+    {
+     "m": "slpm",
+     "v": 0.0
+    },
+    {
+     "m": "sapm",
+     "v": 0.0
+    },
+    {
+     "m": "str_acc",
+     "v": 0.0
+    },
+    {
+     "m": "str_def",
+     "v": 0.0
+    },
+    {
+     "m": "td_per15",
+     "v": 0.0
+    },
+    {
+     "m": "td_acc",
+     "v": 0.0
+    },
+    {
+     "m": "td_def",
+     "v": 0.0
+    },
+    {
+     "m": "sub_per15",
+     "v": 0.0
+    },
+    {
+     "m": "ctrl_frac",
+     "v": 0.0
+    },
+    {
+     "m": "kd_per15",
+     "v": 0.0
+    },
+    {
+     "m": "avg_fight_min",
+     "v": 0.0
+    },
+    {
+     "m": "early_win_share",
+     "v": 0.0
     }
    ]
   },
@@ -5842,6 +6526,82 @@
     {
      "m": "sub_win_share",
      "v": 2.34
+    },
+    {
+     "m": "activity365",
+     "v": -1.95
+    },
+    {
+     "m": "winpct",
+     "v": -1.9
+    },
+    {
+     "m": "sapm",
+     "v": -1.89
+    },
+    {
+     "m": "koed_rate",
+     "v": 1.63
+    },
+    {
+     "m": "avg_fight_min",
+     "v": 1.47
+    },
+    {
+     "m": "td_per15",
+     "v": -1.46
+    },
+    {
+     "m": "td_acc",
+     "v": 1.19
+    },
+    {
+     "m": "slpm",
+     "v": 0.94
+    },
+    {
+     "m": "str_acc",
+     "v": -0.83
+    },
+    {
+     "m": "ko_win_share",
+     "v": 0.54
+    },
+    {
+     "m": "kd_per15",
+     "v": -0.44
+    },
+    {
+     "m": "ctrl_frac",
+     "v": 0.43
+    },
+    {
+     "m": "td_def",
+     "v": -0.25
+    },
+    {
+     "m": "streak",
+     "v": -0.2
+    },
+    {
+     "m": "height",
+     "v": -0.17
+    },
+    {
+     "m": "subbed_rate",
+     "v": 0.15
+    },
+    {
+     "m": "southpaw",
+     "v": 0.13
+    },
+    {
+     "m": "sub_per15",
+     "v": -0.07
+    },
+    {
+     "m": "early_win_share",
+     "v": -0.06
     }
    ]
   },
@@ -6007,6 +6767,82 @@
     {
      "m": "sapm",
      "v": 2.98
+    },
+    {
+     "m": "experience",
+     "v": 2.74
+    },
+    {
+     "m": "str_def",
+     "v": 2.33
+    },
+    {
+     "m": "finish_rate",
+     "v": -2.31
+    },
+    {
+     "m": "ko_win_share",
+     "v": 2.01
+    },
+    {
+     "m": "reach",
+     "v": -1.76
+    },
+    {
+     "m": "td_def",
+     "v": -1.17
+    },
+    {
+     "m": "sub_win_share",
+     "v": 1.16
+    },
+    {
+     "m": "ctrl_frac",
+     "v": -1.07
+    },
+    {
+     "m": "sub_per15",
+     "v": -0.8
+    },
+    {
+     "m": "activity365",
+     "v": -0.52
+    },
+    {
+     "m": "streak",
+     "v": 0.43
+    },
+    {
+     "m": "str_acc",
+     "v": 0.41
+    },
+    {
+     "m": "td_acc",
+     "v": 0.38
+    },
+    {
+     "m": "kd_per15",
+     "v": 0.28
+    },
+    {
+     "m": "early_win_share",
+     "v": 0.23
+    },
+    {
+     "m": "avg_fight_min",
+     "v": 0.17
+    },
+    {
+     "m": "height",
+     "v": 0.16
+    },
+    {
+     "m": "southpaw",
+     "v": -0.13
+    },
+    {
+     "m": "days_since",
+     "v": 0.08
     }
    ]
   },
@@ -6172,6 +7008,82 @@
     {
      "m": "koed_rate",
      "v": 2.01
+    },
+    {
+     "m": "str_acc",
+     "v": 1.55
+    },
+    {
+     "m": "sub_win_share",
+     "v": 1.36
+    },
+    {
+     "m": "activity365",
+     "v": 1.3
+    },
+    {
+     "m": "winpct",
+     "v": 1.19
+    },
+    {
+     "m": "slpm",
+     "v": 1.0
+    },
+    {
+     "m": "avg_fight_min",
+     "v": 0.83
+    },
+    {
+     "m": "early_win_share",
+     "v": -0.56
+    },
+    {
+     "m": "experience",
+     "v": -0.51
+    },
+    {
+     "m": "ko_win_share",
+     "v": 0.5
+    },
+    {
+     "m": "age",
+     "v": 0.45
+    },
+    {
+     "m": "subbed_rate",
+     "v": -0.35
+    },
+    {
+     "m": "southpaw",
+     "v": -0.25
+    },
+    {
+     "m": "sub_per15",
+     "v": 0.24
+    },
+    {
+     "m": "kd_per15",
+     "v": 0.21
+    },
+    {
+     "m": "td_acc",
+     "v": 0.14
+    },
+    {
+     "m": "height",
+     "v": 0.11
+    },
+    {
+     "m": "ctrl_frac",
+     "v": 0.07
+    },
+    {
+     "m": "days_since",
+     "v": 0.06
+    },
+    {
+     "m": "streak",
+     "v": 0.03
     }
    ]
   },
@@ -6337,6 +7249,82 @@
     {
      "m": "experience",
      "v": -2.81
+    },
+    {
+     "m": "slpm",
+     "v": 2.67
+    },
+    {
+     "m": "finish_rate",
+     "v": 2.54
+    },
+    {
+     "m": "activity365",
+     "v": -2.42
+    },
+    {
+     "m": "td_def",
+     "v": 1.46
+    },
+    {
+     "m": "ctrl_frac",
+     "v": -1.45
+    },
+    {
+     "m": "avg_fight_min",
+     "v": -1.41
+    },
+    {
+     "m": "koed_rate",
+     "v": 1.33
+    },
+    {
+     "m": "streak",
+     "v": 1.12
+    },
+    {
+     "m": "subbed_rate",
+     "v": 1.06
+    },
+    {
+     "m": "reach",
+     "v": 0.63
+    },
+    {
+     "m": "td_acc",
+     "v": -0.55
+    },
+    {
+     "m": "kd_per15",
+     "v": 0.49
+    },
+    {
+     "m": "sub_win_share",
+     "v": 0.48
+    },
+    {
+     "m": "ko_win_share",
+     "v": 0.46
+    },
+    {
+     "m": "sub_per15",
+     "v": 0.26
+    },
+    {
+     "m": "southpaw",
+     "v": -0.2
+    },
+    {
+     "m": "early_win_share",
+     "v": 0.14
+    },
+    {
+     "m": "height",
+     "v": -0.1
+    },
+    {
+     "m": "days_since",
+     "v": -0.05
     }
    ]
   }
