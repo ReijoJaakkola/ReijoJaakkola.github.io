@@ -1,19 +1,82 @@
 {
- "updated_at": "2026-10-16T11:07:06+00:00",
+ "updated_at": "2026-10-18T07:24:41+00:00",
  "brand": "Prior Cage",
  "handle": "@priorcage",
  "blurb": "Powered by TabICL v2 \u2014 a tabular foundation model reading the full modern history of the UFC.",
  "disclaimer": "Not betting advice. 18+.",
- "record": null,
+ "record": {
+  "n_events": 1,
+  "n_bouts": 13,
+  "n_correct": 8,
+  "accuracy": 0.6154,
+  "accuracy_ci95": [
+   0.3552,
+   0.8229
+  ],
+  "parlay_accuracy": 0.2308,
+  "confidence_buckets": [
+   {
+    "min_confidence": 0.5,
+    "n": 13,
+    "coverage": 1.0,
+    "accuracy": 0.615
+   },
+   {
+    "min_confidence": 0.55,
+    "n": 9,
+    "coverage": 0.692,
+    "accuracy": 0.556
+   },
+   {
+    "min_confidence": 0.6,
+    "n": 7,
+    "coverage": 0.538,
+    "accuracy": 0.571
+   },
+   {
+    "min_confidence": 0.65,
+    "n": 4,
+    "coverage": 0.308,
+    "accuracy": 0.25
+   },
+   {
+    "min_confidence": 0.7,
+    "n": 2,
+    "coverage": 0.154,
+    "accuracy": 0.0
+   },
+   {
+    "min_confidence": 0.75,
+    "n": 1,
+    "coverage": 0.077,
+    "accuracy": 0.0
+   },
+   {
+    "min_confidence": 0.8,
+    "n": 0,
+    "coverage": 0.0,
+    "accuracy": null
+   }
+  ]
+ },
  "cards": [
+  {
+   "slug": "2026-10-24_ufc-333-volkanovski-vs-evloev",
+   "name": "UFC 333: Volkanovski vs. Evloev",
+   "date": "2026-10-24",
+   "n_bouts": 11,
+   "graded": false,
+   "n_correct": null,
+   "n_graded": null
+  },
   {
    "slug": "2026-10-17_ufc-fight-night-buckley-vs-malott",
    "name": "UFC Fight Night: Buckley vs. Malott",
    "date": "2026-10-17",
    "n_bouts": 13,
-   "graded": false,
-   "n_correct": null,
-   "n_graded": null
+   "graded": true,
+   "n_correct": 8,
+   "n_graded": 13
   }
  ]
 }
