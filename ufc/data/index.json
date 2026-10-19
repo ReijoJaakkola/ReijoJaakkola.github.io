@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-19T08:01:21+00:00",
+ "updated_at": "2026-10-19T18:56:12+00:00",
  "brand": "Prior Cage",
  "handle": "@priorcage",
  "blurb": "Powered by TabICL v2 \u2014 a tabular foundation model reading the full modern history of the UFC.",
@@ -64,7 +64,7 @@
    "slug": "2026-10-24_ufc-333-volkanovski-vs-evloev",
    "name": "UFC 333: Volkanovski vs. Evloev",
    "date": "2026-10-24",
-   "n_bouts": 11,
+   "n_bouts": 14,
    "graded": false,
    "n_correct": null,
    "n_graded": null
