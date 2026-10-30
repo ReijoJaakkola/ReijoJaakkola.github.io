@@ -364,13 +364,14 @@
     days_since: ['Time since last fight', (x) => x + ' days'], activity365: ['Fights in the last year', String],
     southpaw: ['Stance', (x) => (x ? 'southpaw' : 'orthodox')], ko_win_share: ['Wins by KO/TKO', P], sub_win_share: ['Wins by submission', P],
     koed_rate: ['Times knocked out', P], subbed_rate: ['Times submitted', P], avg_fight_min: ['Average fight length', (x) => F(x) + ' min'],
-    early_win_share: ['First-round wins', P],
+    early_win_share: ['First-round wins', P], ufc_n: ['UFC fights', String], dwcs: ['Contender Series wins', String],
+    major_share: ['Pre-UFC fights in major promotions', P], ufcvet_wins: ['Pre-UFC wins over UFC fighters', String],
   };
 
   function render(b) {
     const A = FD.fighters[b.f1], B = FD.fighters[b.f2], S = { ...b.stats };
     S.rec = [rec(A.rec), rec(B.rec)]; S.age = [age(A.dob), age(B.dob)]; S.stance = [A.stance, B.stance];
-    const pA = b.p_f1, pB = 1 - pA, favA = pA >= 0.5, sched = b.order === 1 ? 5 : 3;  // main event = 5 rounds; title fights aren't flagged in the data yet
+    const pA = b.p_f1, pB = 1 - pA, favA = pA >= 0.5, sched = b.scheduled_rounds || (b.order === 1 ? 5 : 3);  // older cards: main event = 5 rounds
     const nameA = esc(b.f1), nameB = esc(b.f2), pick = favA ? b.f1 : b.f2;
     const colA = favA ? 'Purple' : 'Blue', colB = favA ? 'Blue' : 'Purple';
     const call = METHOD[b.method_pick] + (b.method_pick !== 'DEC' && b.round_pick ? ' in round ' + b.round_pick : '');
@@ -410,7 +411,7 @@
     el.style.setProperty('--ca', favA ? 'var(--magenta)' : 'var(--blue)');
     el.style.setProperty('--cb', favA ? 'var(--blue)' : 'var(--magenta)');
     return `<div class="fd-top"><button type="button" class="fd-btn quiet fd-back">Back to the card</button><span>${esc(FD.event.name)}</span></div><div class="fd-in">
-      <div class="fd-hero rv"><div class="meta">${b.order === 1 ? 'Main event, ' : ''}${esc(b.weightclass)}, ${sched} rounds</div><div class="fd-big">${esc(last(pick))}</div>
+      <div class="fd-hero rv"><div class="meta">${b.order === 1 ? 'Main event, ' : ''}${b.is_title ? 'Title fight, ' : ''}${esc(b.weightclass)}, ${sched} rounds</div><div class="fd-big">${esc(last(pick))}</div>
         <div class="fd-call">by ${call}, <b>${pct(Math.max(pA, pB))}</b> to win</div>
         <div class="fd-odds"><div class="fd-names"><span class="A">${nameA}</span><span class="B">${nameB}</span></div>${line('Model', pA)}${bkA === null ? '' : line('Bookmakers', bkA)}</div></div>
       <section class="glass blk rv"><h3>Tale of the tape</h3>${tape}</section>
