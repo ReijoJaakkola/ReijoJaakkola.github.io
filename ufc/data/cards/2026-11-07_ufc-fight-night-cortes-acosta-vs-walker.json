@@ -4,7 +4,7 @@
   "name": "UFC Fight Night: Cortes Acosta vs. Walker",
   "date": "2026-11-07"
  },
- "generated_at": "2026-11-03T09:52:46+00:00",
+ "generated_at": "2026-11-03T10:25:26+00:00",
  "sections": {
   "main": 1794099600,
   "prelims": 1794088800
@@ -4415,26 +4415,26 @@
    "is_title": false,
    "scheduled_rounds": 5,
    "section": "main",
-   "p_f1": 0.615,
+   "p_f1": 0.6147,
    "book_p_f1": 0.6413,
    "book_n": 5,
    "pick": "Waldo Cortes Acosta",
-   "confidence": 0.615,
+   "confidence": 0.6147,
    "low_data": false,
    "method_pick": "KO",
    "method_probs": {
-    "KO": 0.6204,
-    "SUB": 0.0302,
-    "DEC": 0.3494
+    "KO": 0.6214,
+    "SUB": 0.0305,
+    "DEC": 0.3481
    },
-   "finish_prob": 0.6506,
+   "finish_prob": 0.6519,
    "round_pick": 4,
    "round_probs": {
-    "1": 0.3779,
-    "2": 0.2795,
-    "3": 0.1563,
-    "4": 0.1095,
-    "5": 0.0769
+    "1": 0.376,
+    "2": 0.2786,
+    "3": 0.1595,
+    "4": 0.1094,
+    "5": 0.0765
    },
    "stats": {
     "reach": [
@@ -4561,55 +4561,55 @@
    "why": [
     {
      "m": "age",
-     "v": 0.2451
+     "v": 0.2455
     },
     {
      "m": "koed_rate",
-     "v": 0.1683
+     "v": 0.1686
     },
     {
      "m": "reach",
-     "v": -0.1675
+     "v": -0.1673
     },
     {
      "m": "major_share",
-     "v": 0.1274
+     "v": 0.1276
     },
     {
      "m": "winpct",
-     "v": 0.113
+     "v": 0.1127
     },
     {
      "m": "ko_win_share",
-     "v": -0.0801
+     "v": -0.0794
     },
     {
      "m": "sapm",
-     "v": -0.0764
+     "v": -0.0761
     },
     {
      "m": "avg_fight_min",
-     "v": 0.0697
+     "v": 0.0703
     },
     {
      "m": "td_def",
-     "v": 0.0647
+     "v": 0.0645
     },
     {
      "m": "str_def",
-     "v": 0.0614
+     "v": 0.0613
     },
     {
      "m": "days_since",
-     "v": 0.0523
+     "v": 0.0519
     },
     {
      "m": "streak",
-     "v": -0.0496
+     "v": -0.0501
     },
     {
      "m": "subbed_rate",
-     "v": 0.0427
+     "v": 0.0426
     },
     {
      "m": "ufc_n",
@@ -4617,7 +4617,7 @@
     },
     {
      "m": "slpm",
-     "v": 0.035
+     "v": 0.0349
     },
     {
      "m": "ufcvet_wins",
@@ -4625,35 +4625,35 @@
     },
     {
      "m": "str_acc",
-     "v": -0.0285
+     "v": -0.0283
     },
     {
      "m": "sub_per15",
-     "v": -0.0252
+     "v": -0.025
     },
     {
      "m": "within:finish_ratexdwcs",
-     "v": -0.0231,
+     "v": -0.0234,
      "pair": [
       "finish_rate",
       "dwcs"
      ]
     },
     {
-     "m": "activity365",
-     "v": 0.0201
-    },
-    {
      "m": "kd_per15",
-     "v": -0.02
+     "v": -0.0199
     },
     {
      "m": "td_acc",
-     "v": -0.0194
+     "v": -0.0192
+    },
+    {
+     "m": "activity365",
+     "v": 0.0191
     },
     {
      "m": "within:agexctrl_frac",
-     "v": 0.0152,
+     "v": 0.015,
      "pair": [
       "age",
       "ctrl_frac"
@@ -4669,27 +4669,27 @@
     },
     {
      "m": "finish_rate",
-     "v": -0.0114
+     "v": -0.0121
     },
     {
      "m": "southpaw",
-     "v": 0.0114
+     "v": 0.0115
     },
     {
      "m": "td_per15",
-     "v": 0.0099
+     "v": 0.0098
     },
     {
      "m": "sub_win_share",
-     "v": 0.0084
+     "v": 0.0086
     },
     {
      "m": "height",
-     "v": 0.0078
+     "v": 0.0075
     },
     {
      "m": "within:agexactivity365",
-     "v": -0.0051,
+     "v": -0.0049,
      "pair": [
       "age",
       "activity365"
@@ -4697,7 +4697,7 @@
     },
     {
      "m": "experience",
-     "v": 0.0035
+     "v": 0.0034
     },
     {
      "m": "ctrl_frac",
@@ -4713,7 +4713,7 @@
     },
     {
      "m": "early_win_share",
-     "v": 0.002
+     "v": 0.0015
     },
     {
      "m": "dwcs",
@@ -4730,24 +4730,24 @@
    "is_title": false,
    "scheduled_rounds": 3,
    "section": "main",
-   "p_f1": 0.5706,
+   "p_f1": 0.5709,
    "book_p_f1": 0.6387,
    "book_n": 5,
    "pick": "Tatiana Suarez",
-   "confidence": 0.5706,
+   "confidence": 0.5709,
    "low_data": false,
    "method_pick": "DEC",
    "method_probs": {
-    "KO": 0.0859,
-    "SUB": 0.1338,
-    "DEC": 0.7803
+    "KO": 0.0855,
+    "SUB": 0.1325,
+    "DEC": 0.782
    },
-   "finish_prob": 0.2197,
+   "finish_prob": 0.218,
    "round_pick": null,
    "round_probs": {
-    "1": 0.4177,
-    "2": 0.3711,
-    "3": 0.2112,
+    "1": 0.4194,
+    "2": 0.3698,
+    "3": 0.2108,
     "4": 0.0,
     "5": 0.0
    },
@@ -4876,19 +4876,19 @@
    "why": [
     {
      "m": "sapm",
-     "v": 0.1899
+     "v": 0.19
     },
     {
      "m": "major_share",
-     "v": -0.1597
+     "v": -0.1596
     },
     {
      "m": "age",
-     "v": 0.1531
+     "v": 0.153
     },
     {
      "m": "str_def",
-     "v": -0.0809
+     "v": -0.0812
     },
     {
      "m": "str_acc",
@@ -4896,39 +4896,39 @@
     },
     {
      "m": "winpct",
-     "v": 0.0701
+     "v": 0.0698
     },
     {
      "m": "td_per15",
-     "v": 0.0679
+     "v": 0.068
     },
     {
      "m": "southpaw",
-     "v": 0.0589
+     "v": 0.059
     },
     {
      "m": "td_def",
-     "v": -0.0526
+     "v": -0.0525
     },
     {
      "m": "ufc_n",
-     "v": -0.0468
+     "v": -0.0467
     },
     {
      "m": "experience",
-     "v": -0.0463
+     "v": -0.0459
     },
     {
      "m": "ko_win_share",
-     "v": 0.0397
+     "v": 0.0398
     },
     {
      "m": "ufcvet_wins",
-     "v": -0.0375
+     "v": -0.0377
     },
     {
      "m": "slpm",
-     "v": 0.0362
+     "v": 0.0363
     },
     {
      "m": "sub_per15",
@@ -4936,7 +4936,7 @@
     },
     {
      "m": "reach",
-     "v": 0.0256
+     "v": 0.0254
     },
     {
      "m": "within:agexfinish_rate",
@@ -4952,11 +4952,11 @@
     },
     {
      "m": "td_acc",
-     "v": -0.0155
+     "v": -0.0152
     },
     {
      "m": "cross:slpmxtd_per15",
-     "v": -0.0135,
+     "v": -0.0142,
      "pair": [
       "slpm",
       "td_per15"
@@ -4964,19 +4964,19 @@
     },
     {
      "m": "early_win_share",
-     "v": 0.0099
-    },
-    {
-     "m": "avg_fight_min",
-     "v": -0.0076
+     "v": 0.01
     },
     {
      "m": "height",
-     "v": 0.0075
+     "v": 0.0079
+    },
+    {
+     "m": "avg_fight_min",
+     "v": -0.0072
     },
     {
      "m": "within:agexactivity365",
-     "v": 0.0072,
+     "v": 0.0071,
      "pair": [
       "age",
       "activity365"
@@ -4984,11 +4984,11 @@
     },
     {
      "m": "kd_per15",
-     "v": -0.0054
+     "v": -0.0057
     },
     {
      "m": "ctrl_frac",
-     "v": -0.0049
+     "v": -0.005
     },
     {
      "m": "sub_win_share",
@@ -4996,7 +4996,7 @@
     },
     {
      "m": "within:agexctrl_frac",
-     "v": 0.0042,
+     "v": 0.0044,
      "pair": [
       "age",
       "ctrl_frac"
@@ -5008,7 +5008,7 @@
     },
     {
      "m": "within:finish_ratexdwcs",
-     "v": -0.0016,
+     "v": -0.0017,
      "pair": [
       "finish_rate",
       "dwcs"
@@ -5016,7 +5016,7 @@
     },
     {
      "m": "finish_rate",
-     "v": -0.0009
+     "v": -0.0001
     },
     {
      "m": "activity365",
@@ -5045,23 +5045,23 @@
    "is_title": false,
    "scheduled_rounds": 3,
    "section": "main",
-   "p_f1": 0.1773,
+   "p_f1": 0.1772,
    "book_p_f1": 0.2916,
    "book_n": 5,
    "pick": "Elijah Smith",
-   "confidence": 0.8227,
+   "confidence": 0.8228,
    "low_data": false,
    "method_pick": "DEC",
    "method_probs": {
-    "KO": 0.3064,
-    "SUB": 0.269,
-    "DEC": 0.4247
+    "KO": 0.3111,
+    "SUB": 0.2651,
+    "DEC": 0.4238
    },
-   "finish_prob": 0.5753,
+   "finish_prob": 0.5762,
    "round_pick": null,
    "round_probs": {
-    "1": 0.5915,
-    "2": 0.2882,
+    "1": 0.5932,
+    "2": 0.2865,
     "3": 0.1203,
     "4": 0.0,
     "5": 0.0
@@ -5191,43 +5191,43 @@
    "why": [
     {
      "m": "age",
-     "v": -1.0155
+     "v": -1.0158
     },
     {
      "m": "sapm",
-     "v": -0.3173
+     "v": -0.317
     },
     {
      "m": "ufc_n",
-     "v": 0.2879
+     "v": 0.2882
     },
     {
      "m": "winpct",
-     "v": -0.2119
+     "v": -0.2114
     },
     {
      "m": "subbed_rate",
-     "v": -0.1739
+     "v": -0.174
     },
     {
      "m": "koed_rate",
-     "v": 0.0965
+     "v": 0.0968
     },
     {
      "m": "streak",
-     "v": -0.0938
+     "v": -0.0939
     },
     {
      "m": "td_per15",
-     "v": -0.0869
+     "v": -0.0868
     },
     {
      "m": "ko_win_share",
-     "v": -0.0759
+     "v": -0.0745
     },
     {
      "m": "ctrl_frac",
-     "v": 0.072
+     "v": 0.0716
     },
     {
      "m": "experience",
@@ -5235,63 +5235,63 @@
     },
     {
      "m": "slpm",
-     "v": 0.0605
+     "v": 0.0603
     },
     {
      "m": "td_acc",
-     "v": 0.0594
+     "v": 0.0587
     },
     {
      "m": "sub_per15",
-     "v": -0.0522
+     "v": -0.0524
     },
     {
      "m": "str_acc",
-     "v": -0.0518
+     "v": -0.0517
     },
     {
      "m": "reach",
-     "v": -0.047
+     "v": -0.0472
     },
     {
      "m": "avg_fight_min",
-     "v": 0.047
+     "v": 0.0472
     },
     {
      "m": "td_def",
-     "v": 0.0455
+     "v": 0.0454
     },
     {
      "m": "within:agexactivity365",
-     "v": -0.0316,
+     "v": -0.0312,
      "pair": [
       "age",
       "activity365"
      ]
     },
     {
+     "m": "early_win_share",
+     "v": -0.0258
+    },
+    {
      "m": "within:agexfinish_rate",
-     "v": -0.0262,
+     "v": -0.0256,
      "pair": [
       "age",
       "finish_rate"
      ]
     },
     {
-     "m": "early_win_share",
-     "v": -0.0259
+     "m": "dwcs",
+     "v": -0.0242
     },
     {
      "m": "str_def",
-     "v": 0.0245
-    },
-    {
-     "m": "dwcs",
-     "v": -0.0243
+     "v": 0.0239
     },
     {
      "m": "within:agexctrl_frac",
-     "v": -0.021,
+     "v": -0.0203,
      "pair": [
       "age",
       "ctrl_frac"
@@ -5303,7 +5303,7 @@
     },
     {
      "m": "within:finish_ratexdwcs",
-     "v": -0.0094,
+     "v": -0.0095,
      "pair": [
       "finish_rate",
       "dwcs"
@@ -5311,11 +5311,11 @@
     },
     {
      "m": "sub_win_share",
-     "v": -0.0059
+     "v": -0.0071
     },
     {
      "m": "finish_rate",
-     "v": -0.0054
+     "v": -0.0065
     },
     {
      "m": "cross:slpmxtd_per15",
@@ -5327,11 +5327,11 @@
     },
     {
      "m": "height",
-     "v": 0.0009
+     "v": 0.0004
     },
     {
      "m": "kd_per15",
-     "v": 0.0001
+     "v": 0.0002
     },
     {
      "m": "activity365",
@@ -5360,24 +5360,24 @@
    "is_title": false,
    "scheduled_rounds": 3,
    "section": "main",
-   "p_f1": 0.6096,
+   "p_f1": 0.6094,
    "book_p_f1": 0.8135,
    "book_n": 5,
    "pick": "Seokhyeon Ko",
-   "confidence": 0.6096,
+   "confidence": 0.6094,
    "low_data": false,
    "method_pick": "DEC",
    "method_probs": {
-    "KO": 0.148,
-    "SUB": 0.0489,
-    "DEC": 0.8032
+    "KO": 0.1499,
+    "SUB": 0.0488,
+    "DEC": 0.8013
    },
-   "finish_prob": 0.1968,
+   "finish_prob": 0.1987,
    "round_pick": null,
    "round_probs": {
-    "1": 0.5432,
-    "2": 0.3107,
-    "3": 0.1461,
+    "1": 0.543,
+    "2": 0.3105,
+    "3": 0.1465,
     "4": 0.0,
     "5": 0.0
    },
@@ -5506,15 +5506,15 @@
    "why": [
     {
      "m": "sapm",
-     "v": 0.35
+     "v": 0.3497
     },
     {
      "m": "str_def",
-     "v": 0.2582
+     "v": 0.2587
     },
     {
      "m": "ufc_n",
-     "v": -0.1701
+     "v": -0.1704
     },
     {
      "m": "age",
@@ -5526,43 +5526,43 @@
     },
     {
      "m": "days_since",
-     "v": -0.1192
+     "v": -0.121
     },
     {
      "m": "koed_rate",
-     "v": -0.0968
+     "v": -0.0967
     },
     {
      "m": "winpct",
-     "v": 0.0937
+     "v": 0.0932
     },
     {
      "m": "activity365",
-     "v": 0.0713
+     "v": 0.0726
     },
     {
      "m": "td_acc",
-     "v": -0.0709
+     "v": -0.0702
     },
     {
      "m": "streak",
-     "v": 0.0597
+     "v": 0.0604
     },
     {
      "m": "southpaw",
-     "v": 0.0589
+     "v": 0.059
     },
     {
      "m": "subbed_rate",
-     "v": 0.0581
+     "v": 0.058
     },
     {
      "m": "ko_win_share",
-     "v": 0.0531
+     "v": 0.0519
     },
     {
      "m": "major_share",
-     "v": -0.0456
+     "v": -0.0454
     },
     {
      "m": "within:agexctrl_frac",
@@ -5574,31 +5574,31 @@
     },
     {
      "m": "reach",
-     "v": -0.0265
-    },
-    {
-     "m": "td_def",
-     "v": 0.0252
+     "v": -0.0264
     },
     {
      "m": "sub_per15",
-     "v": -0.0252
+     "v": -0.0255
     },
     {
      "m": "experience",
      "v": -0.0249
     },
     {
+     "m": "td_def",
+     "v": 0.0248
+    },
+    {
      "m": "dwcs",
-     "v": 0.0243
+     "v": 0.0242
     },
     {
      "m": "slpm",
-     "v": -0.0228
+     "v": -0.0229
     },
     {
      "m": "avg_fight_min",
-     "v": 0.0207
+     "v": 0.0202
     },
     {
      "m": "within:agexfinish_rate",
@@ -5610,7 +5610,7 @@
     },
     {
      "m": "within:finish_ratexdwcs",
-     "v": -0.0153,
+     "v": -0.0151,
      "pair": [
       "finish_rate",
       "dwcs"
@@ -5618,7 +5618,7 @@
     },
     {
      "m": "sub_win_share",
-     "v": 0.0129
+     "v": 0.0143
     },
     {
      "m": "height",
@@ -5626,11 +5626,11 @@
     },
     {
      "m": "finish_rate",
-     "v": -0.0097
+     "v": -0.0102
     },
     {
      "m": "cross:slpmxtd_per15",
-     "v": -0.009,
+     "v": -0.0089,
      "pair": [
       "slpm",
       "td_per15"
@@ -5638,11 +5638,11 @@
     },
     {
      "m": "ctrl_frac",
-     "v": -0.0085
+     "v": -0.0086
     },
     {
      "m": "within:agexactivity365",
-     "v": -0.0068,
+     "v": -0.0067,
      "pair": [
       "age",
       "activity365"
@@ -5675,24 +5675,24 @@
    "is_title": false,
    "scheduled_rounds": 3,
    "section": "main",
-   "p_f1": 0.3239,
+   "p_f1": 0.3238,
    "book_p_f1": 0.2918,
    "book_n": 5,
    "pick": "Lucas Fernando",
-   "confidence": 0.6761,
+   "confidence": 0.6762,
    "low_data": false,
    "method_pick": "KO",
    "method_probs": {
-    "KO": 0.5358,
-    "SUB": 0.0769,
-    "DEC": 0.3873
+    "KO": 0.5342,
+    "SUB": 0.0773,
+    "DEC": 0.3885
    },
-   "finish_prob": 0.6127,
+   "finish_prob": 0.6115,
    "round_pick": 1,
    "round_probs": {
-    "1": 0.5283,
-    "2": 0.3188,
-    "3": 0.1529,
+    "1": 0.5297,
+    "2": 0.3181,
+    "3": 0.1522,
     "4": 0.0,
     "5": 0.0
    },
@@ -5821,7 +5821,7 @@
    "why": [
     {
      "m": "str_def",
-     "v": -0.3357
+     "v": -0.3362
     },
     {
      "m": "sapm",
@@ -5833,67 +5833,67 @@
     },
     {
      "m": "days_since",
-     "v": 0.1633
+     "v": 0.1626
     },
     {
      "m": "slpm",
-     "v": -0.1397
+     "v": -0.1398
     },
     {
      "m": "activity365",
-     "v": -0.1026
+     "v": -0.1028
     },
     {
      "m": "reach",
-     "v": -0.1005
+     "v": -0.1004
     },
     {
      "m": "age",
-     "v": -0.0969
+     "v": -0.0968
     },
     {
      "m": "td_def",
-     "v": 0.0955
+     "v": 0.0954
     },
     {
      "m": "subbed_rate",
-     "v": -0.0933
+     "v": -0.0932
     },
     {
      "m": "td_per15",
-     "v": 0.0842
+     "v": 0.0841
     },
     {
      "m": "ctrl_frac",
-     "v": -0.0781
+     "v": -0.078
     },
     {
      "m": "ko_win_share",
-     "v": -0.0683
+     "v": -0.0674
     },
     {
      "m": "sub_per15",
-     "v": 0.0661
+     "v": 0.0659
     },
     {
      "m": "td_acc",
-     "v": 0.0607
+     "v": 0.0608
     },
     {
      "m": "southpaw",
-     "v": 0.0589
-    },
-    {
-     "m": "experience",
-     "v": -0.0346
+     "v": 0.059
     },
     {
      "m": "avg_fight_min",
-     "v": -0.0345
+     "v": -0.0347
+    },
+    {
+     "m": "experience",
+     "v": -0.0341
     },
     {
      "m": "early_win_share",
-     "v": 0.0259
+     "v": 0.0258
     },
     {
      "m": "major_share",
@@ -5901,11 +5901,11 @@
     },
     {
      "m": "streak",
-     "v": -0.0176
+     "v": -0.0177
     },
     {
      "m": "cross:slpmxtd_per15",
-     "v": -0.0133,
+     "v": -0.0136,
      "pair": [
       "slpm",
       "td_per15"
@@ -5913,7 +5913,7 @@
     },
     {
      "m": "finish_rate",
-     "v": -0.0078
+     "v": -0.0083
     },
     {
      "m": "winpct",
@@ -5921,7 +5921,7 @@
     },
     {
      "m": "sub_win_share",
-     "v": -0.0064
+     "v": -0.0067
     },
     {
      "m": "within:agexctrl_frac",
@@ -5933,11 +5933,11 @@
     },
     {
      "m": "str_acc",
-     "v": -0.0037
+     "v": -0.0038
     },
     {
      "m": "within:finish_ratexdwcs",
-     "v": 0.0024,
+     "v": 0.0025,
      "pair": [
       "finish_rate",
       "dwcs"
@@ -5953,7 +5953,7 @@
     },
     {
      "m": "kd_per15",
-     "v": -0.0017
+     "v": -0.0011
     },
     {
      "m": "height",
@@ -5990,24 +5990,24 @@
    "is_title": false,
    "scheduled_rounds": 3,
    "section": "main",
-   "p_f1": 0.72,
+   "p_f1": 0.7203,
    "book_p_f1": 0.7054,
    "book_n": 5,
    "pick": "Mantas Kondratavicius",
-   "confidence": 0.72,
+   "confidence": 0.7203,
    "low_data": false,
    "method_pick": "KO",
    "method_probs": {
-    "KO": 0.6317,
-    "SUB": 0.0685,
-    "DEC": 0.2998
+    "KO": 0.6247,
+    "SUB": 0.0704,
+    "DEC": 0.3049
    },
-   "finish_prob": 0.7002,
+   "finish_prob": 0.6951,
    "round_pick": 1,
    "round_probs": {
-    "1": 0.6367,
-    "2": 0.263,
-    "3": 0.1003,
+    "1": 0.6346,
+    "2": 0.2638,
+    "3": 0.1016,
     "4": 0.0,
     "5": 0.0
    },
@@ -6136,71 +6136,71 @@
    "why": [
     {
      "m": "age",
-     "v": 0.5099
+     "v": 0.5107
     },
     {
      "m": "ufc_n",
-     "v": -0.4094
+     "v": -0.4098
     },
     {
      "m": "sapm",
-     "v": 0.2607
+     "v": 0.261
     },
     {
      "m": "koed_rate",
-     "v": 0.217
+     "v": 0.2179
     },
     {
      "m": "winpct",
-     "v": 0.2083
+     "v": 0.2079
     },
     {
      "m": "streak",
-     "v": 0.1235
+     "v": 0.1243
     },
     {
      "m": "subbed_rate",
-     "v": -0.1179
+     "v": -0.1178
     },
     {
      "m": "slpm",
-     "v": 0.1169
+     "v": 0.1172
     },
     {
      "m": "major_share",
-     "v": -0.1131
+     "v": -0.1128
     },
     {
      "m": "td_per15",
-     "v": -0.1116
+     "v": -0.1114
     },
     {
      "m": "ko_win_share",
-     "v": 0.0981
+     "v": 0.097
     },
     {
      "m": "experience",
-     "v": -0.0587
+     "v": -0.0591
     },
     {
      "m": "str_def",
-     "v": 0.0573
+     "v": 0.0568
     },
     {
      "m": "str_acc",
-     "v": 0.0444
+     "v": 0.0448
     },
     {
      "m": "avg_fight_min",
-     "v": 0.0431
+     "v": 0.0426
     },
     {
      "m": "reach",
-     "v": 0.0391
+     "v": 0.0394
     },
     {
      "m": "within:finish_ratexdwcs",
-     "v": 0.0381,
+     "v": 0.0384,
      "pair": [
       "finish_rate",
       "dwcs"
@@ -6208,7 +6208,7 @@
     },
     {
      "m": "within:agexctrl_frac",
-     "v": -0.0378,
+     "v": -0.0377,
      "pair": [
       "age",
       "ctrl_frac"
@@ -6220,19 +6220,19 @@
     },
     {
      "m": "kd_per15",
-     "v": 0.0322
+     "v": 0.0319
     },
     {
      "m": "days_since",
-     "v": 0.0274
+     "v": 0.0273
     },
     {
      "m": "dwcs",
-     "v": 0.0243
+     "v": 0.0242
     },
     {
      "m": "cross:slpmxtd_per15",
-     "v": -0.0238,
+     "v": -0.0233,
      "pair": [
       "slpm",
       "td_per15"
@@ -6240,15 +6240,15 @@
     },
     {
      "m": "finish_rate",
-     "v": 0.02
+     "v": 0.0216
     },
     {
      "m": "early_win_share",
-     "v": -0.0183
+     "v": -0.0182
     },
     {
      "m": "within:agexactivity365",
-     "v": 0.0119,
+     "v": 0.0115,
      "pair": [
       "age",
       "activity365"
@@ -6256,7 +6256,7 @@
     },
     {
      "m": "td_def",
-     "v": 0.0085
+     "v": 0.0083
     },
     {
      "m": "sub_per15",
@@ -6264,27 +6264,27 @@
     },
     {
      "m": "height",
-     "v": -0.0052
+     "v": -0.0056
     },
     {
      "m": "td_acc",
-     "v": 0.0023
+     "v": 0.0022
     },
     {
-     "m": "sub_win_share",
-     "v": -0.0004
+     "m": "within:agexfinish_rate",
+     "v": -0.0007,
+     "pair": [
+      "age",
+      "finish_rate"
+     ]
     },
     {
      "m": "ctrl_frac",
      "v": -0.0003
     },
     {
-     "m": "within:agexfinish_rate",
-     "v": -0.0003,
-     "pair": [
-      "age",
-      "finish_rate"
-     ]
+     "m": "sub_win_share",
+     "v": -0.0003
     },
     {
      "m": "activity365",
@@ -6305,24 +6305,24 @@
    "is_title": false,
    "scheduled_rounds": 3,
    "section": "prelims",
-   "p_f1": 0.3144,
+   "p_f1": 0.3138,
    "book_p_f1": 0.3977,
    "book_n": 5,
    "pick": "Thomas Petersen",
-   "confidence": 0.6856,
+   "confidence": 0.6862,
    "low_data": true,
    "method_pick": "DEC",
    "method_probs": {
-    "KO": 0.3957,
-    "SUB": 0.1295,
-    "DEC": 0.4748
+    "KO": 0.3931,
+    "SUB": 0.1298,
+    "DEC": 0.477
    },
-   "finish_prob": 0.5252,
+   "finish_prob": 0.523,
    "round_pick": null,
    "round_probs": {
-    "1": 0.5473,
-    "2": 0.3012,
-    "3": 0.1515,
+    "1": 0.5435,
+    "2": 0.3023,
+    "3": 0.1543,
     "4": 0.0,
     "5": 0.0
    },
@@ -6451,7 +6451,7 @@
    "why": [
     {
      "m": "ufc_n",
-     "v": -0.6659
+     "v": -0.6651
     },
     {
      "m": "age",
@@ -6459,55 +6459,55 @@
     },
     {
      "m": "major_share",
-     "v": -0.2276
+     "v": -0.228
     },
     {
      "m": "activity365",
-     "v": -0.1739
+     "v": -0.1754
     },
     {
      "m": "sapm",
-     "v": -0.156
+     "v": -0.1564
     },
     {
      "m": "koed_rate",
-     "v": 0.1259
+     "v": 0.1261
     },
     {
      "m": "winpct",
-     "v": 0.1101
+     "v": 0.11
     },
     {
      "m": "days_since",
-     "v": 0.1029
+     "v": 0.1025
     },
     {
      "m": "td_per15",
-     "v": -0.0975
+     "v": -0.0973
     },
     {
      "m": "experience",
-     "v": -0.0794
+     "v": -0.08
     },
     {
      "m": "reach",
-     "v": 0.0729
+     "v": 0.0723
     },
     {
      "m": "slpm",
-     "v": 0.0655
+     "v": 0.0658
     },
     {
      "m": "td_def",
-     "v": -0.0639
+     "v": -0.0643
     },
     {
      "m": "southpaw",
-     "v": -0.0589
+     "v": -0.059
     },
     {
      "m": "ko_win_share",
-     "v": -0.0519
+     "v": -0.0517
     },
     {
      "m": "str_acc",
@@ -6519,11 +6519,11 @@
     },
     {
      "m": "sub_per15",
-     "v": 0.0254
+     "v": 0.0257
     },
     {
      "m": "within:agexactivity365",
-     "v": 0.0251,
+     "v": 0.0256,
      "pair": [
       "age",
       "activity365"
@@ -6531,19 +6531,19 @@
     },
     {
      "m": "dwcs",
-     "v": -0.0243
+     "v": -0.0242
     },
     {
      "m": "ctrl_frac",
-     "v": 0.0216
+     "v": 0.0211
     },
     {
      "m": "td_acc",
-     "v": -0.0115
+     "v": -0.0113
     },
     {
      "m": "within:finish_ratexdwcs",
-     "v": 0.011,
+     "v": 0.0112,
      "pair": [
       "finish_rate",
       "dwcs"
@@ -6551,7 +6551,7 @@
     },
     {
      "m": "sub_win_share",
-     "v": -0.01
+     "v": -0.0104
     },
     {
      "m": "streak",
@@ -6559,23 +6559,23 @@
     },
     {
      "m": "finish_rate",
-     "v": 0.0078
-    },
-    {
-     "m": "kd_per15",
-     "v": 0.0064
+     "v": 0.0079
     },
     {
      "m": "subbed_rate",
      "v": 0.0063
     },
     {
+     "m": "kd_per15",
+     "v": 0.0061
+    },
+    {
      "m": "height",
-     "v": -0.0052
+     "v": -0.0053
     },
     {
      "m": "str_def",
-     "v": 0.0051
+     "v": 0.0049
     },
     {
      "m": "within:agexfinish_rate",
@@ -6587,7 +6587,7 @@
     },
     {
      "m": "within:agexctrl_frac",
-     "v": -0.0042,
+     "v": -0.0041,
      "pair": [
       "age",
       "ctrl_frac"
@@ -6620,24 +6620,24 @@
    "is_title": false,
    "scheduled_rounds": 3,
    "section": "prelims",
-   "p_f1": 0.5477,
+   "p_f1": 0.5479,
    "book_p_f1": 0.6499,
    "book_n": 5,
    "pick": "Karine Silva",
-   "confidence": 0.5477,
+   "confidence": 0.5479,
    "low_data": false,
    "method_pick": "DEC",
    "method_probs": {
-    "KO": 0.1963,
+    "KO": 0.1962,
     "SUB": 0.1915,
     "DEC": 0.6122
    },
    "finish_prob": 0.3878,
    "round_pick": null,
    "round_probs": {
-    "1": 0.5395,
-    "2": 0.3189,
-    "3": 0.1416,
+    "1": 0.5422,
+    "2": 0.3172,
+    "3": 0.1407,
     "4": 0.0,
     "5": 0.0
    },
@@ -6766,63 +6766,59 @@
    "why": [
     {
      "m": "sapm",
-     "v": 0.2478
+     "v": 0.2476
     },
     {
      "m": "major_share",
-     "v": -0.1793
+     "v": -0.1792
     },
     {
      "m": "td_per15",
-     "v": 0.1755
+     "v": 0.1754
     },
     {
      "m": "activity365",
-     "v": 0.1026
+     "v": 0.1028
     },
     {
      "m": "td_def",
-     "v": -0.0971
-    },
-    {
-     "m": "ko_win_share",
-     "v": 0.0901
+     "v": -0.0965
     },
     {
      "m": "td_acc",
      "v": -0.0889
     },
     {
+     "m": "ko_win_share",
+     "v": 0.0886
+    },
+    {
      "m": "subbed_rate",
-     "v": -0.0838
+     "v": -0.0837
     },
     {
      "m": "ctrl_frac",
-     "v": -0.0822
+     "v": -0.0823
     },
     {
      "m": "slpm",
-     "v": -0.0796
+     "v": -0.0799
     },
     {
      "m": "ufc_n",
-     "v": 0.0611
+     "v": 0.0613
     },
     {
      "m": "southpaw",
-     "v": -0.0589
+     "v": -0.059
     },
     {
      "m": "sub_per15",
-     "v": 0.0507
+     "v": 0.051
     },
     {
      "m": "early_win_share",
-     "v": 0.0323
-    },
-    {
-     "m": "experience",
-     "v": 0.0315
+     "v": 0.0329
     },
     {
      "m": "within:agexfinish_rate",
@@ -6833,59 +6829,63 @@
      ]
     },
     {
+     "m": "experience",
+     "v": 0.0314
+    },
+    {
      "m": "str_acc",
-     "v": -0.0313
+     "v": -0.0312
     },
     {
      "m": "koed_rate",
-     "v": 0.0306
+     "v": 0.0309
     },
     {
      "m": "streak",
-     "v": -0.0299
+     "v": -0.0302
     },
     {
      "m": "dwcs",
-     "v": 0.0243
+     "v": 0.0242
     },
     {
      "m": "age",
-     "v": 0.0211
+     "v": 0.0212
     },
     {
      "m": "finish_rate",
-     "v": 0.0163
+     "v": 0.0178
     },
     {
      "m": "reach",
-     "v": 0.0128
-    },
-    {
-     "m": "avg_fight_min",
-     "v": -0.012
+     "v": 0.0127
     },
     {
      "m": "within:finish_ratexdwcs",
-     "v": 0.0118,
+     "v": 0.012,
      "pair": [
       "finish_rate",
       "dwcs"
      ]
     },
     {
-     "m": "cross:slpmxtd_per15",
-     "v": -0.0086,
-     "pair": [
-      "slpm",
-      "td_per15"
-     ]
+     "m": "avg_fight_min",
+     "v": -0.0119
     },
     {
      "m": "within:agexctrl_frac",
-     "v": 0.0085,
+     "v": 0.0084,
      "pair": [
       "age",
       "ctrl_frac"
+     ]
+    },
+    {
+     "m": "cross:slpmxtd_per15",
+     "v": -0.0082,
+     "pair": [
+      "slpm",
+      "td_per15"
      ]
     },
     {
@@ -6894,30 +6894,30 @@
     },
     {
      "m": "str_def",
-     "v": 0.0052
+     "v": 0.0051
+    },
+    {
+     "m": "height",
+     "v": -0.004
     },
     {
      "m": "within:agexactivity365",
-     "v": 0.004,
+     "v": 0.0037,
      "pair": [
       "age",
       "activity365"
      ]
     },
     {
-     "m": "height",
-     "v": -0.0038
-    },
-    {
      "m": "winpct",
-     "v": -0.0025
-    },
-    {
-     "m": "kd_per15",
-     "v": -0.0012
+     "v": -0.0026
     },
     {
      "m": "sub_win_share",
+     "v": -0.0017
+    },
+    {
+     "m": "kd_per15",
      "v": -0.0011
     },
     {
@@ -6935,24 +6935,24 @@
    "is_title": false,
    "scheduled_rounds": 3,
    "section": "prelims",
-   "p_f1": 0.5207,
+   "p_f1": 0.5199,
    "book_p_f1": 0.3299,
    "book_n": 5,
    "pick": "Mitch Raposo",
-   "confidence": 0.5207,
+   "confidence": 0.5199,
    "low_data": false,
    "method_pick": "DEC",
    "method_probs": {
     "KO": 0.1614,
-    "SUB": 0.1027,
-    "DEC": 0.7358
+    "SUB": 0.1029,
+    "DEC": 0.7357
    },
-   "finish_prob": 0.2642,
+   "finish_prob": 0.2643,
    "round_pick": null,
    "round_probs": {
-    "1": 0.4206,
-    "2": 0.358,
-    "3": 0.2215,
+    "1": 0.4197,
+    "2": 0.3577,
+    "3": 0.2226,
     "4": 0.0,
     "5": 0.0
    },
@@ -7081,63 +7081,63 @@
    "why": [
     {
      "m": "ufc_n",
-     "v": 0.5656
+     "v": 0.5646
     },
     {
      "m": "major_share",
-     "v": -0.2023
+     "v": -0.2021
     },
     {
      "m": "days_since",
-     "v": 0.1982
+     "v": 0.1971
     },
     {
      "m": "streak",
-     "v": -0.1568
+     "v": -0.157
     },
     {
      "m": "slpm",
-     "v": -0.1272
+     "v": -0.1275
     },
     {
      "m": "activity365",
-     "v": -0.1026
+     "v": -0.1028
     },
     {
      "m": "age",
-     "v": -0.0925
+     "v": -0.0923
     },
     {
      "m": "str_def",
-     "v": 0.089
+     "v": 0.0893
     },
     {
      "m": "sapm",
-     "v": 0.0806
+     "v": 0.0807
     },
     {
      "m": "ctrl_frac",
-     "v": 0.0583
+     "v": 0.0584
     },
     {
      "m": "sub_per15",
-     "v": -0.0577
+     "v": -0.0574
     },
     {
      "m": "ko_win_share",
-     "v": -0.0569
-    },
-    {
-     "m": "reach",
      "v": -0.0565
     },
     {
+     "m": "reach",
+     "v": -0.0561
+    },
+    {
      "m": "winpct",
-     "v": -0.0483
+     "v": -0.0478
     },
     {
      "m": "within:agexfinish_rate",
-     "v": 0.0407,
+     "v": 0.0412,
      "pair": [
       "age",
       "finish_rate"
@@ -7145,15 +7145,15 @@
     },
     {
      "m": "td_def",
-     "v": 0.0392
+     "v": 0.0388
     },
     {
      "m": "avg_fight_min",
-     "v": 0.0381
+     "v": 0.0376
     },
     {
      "m": "within:finish_ratexdwcs",
-     "v": -0.0346,
+     "v": -0.0348,
      "pair": [
       "finish_rate",
       "dwcs"
@@ -7161,7 +7161,7 @@
     },
     {
      "m": "td_acc",
-     "v": 0.031
+     "v": 0.0305
     },
     {
      "m": "early_win_share",
@@ -7169,27 +7169,27 @@
     },
     {
      "m": "experience",
-     "v": -0.0265
+     "v": -0.0262
     },
     {
      "m": "dwcs",
-     "v": -0.0243
+     "v": -0.0242
     },
     {
      "m": "str_acc",
-     "v": -0.0215
+     "v": -0.0216
     },
     {
      "m": "kd_per15",
-     "v": -0.0177
+     "v": -0.0178
     },
     {
      "m": "finish_rate",
-     "v": -0.0092
+     "v": -0.0106
     },
     {
      "m": "td_per15",
-     "v": 0.0087
+     "v": 0.0085
     },
     {
      "m": "subbed_rate",
@@ -7197,7 +7197,7 @@
     },
     {
      "m": "within:agexactivity365",
-     "v": 0.0055,
+     "v": 0.0054,
      "pair": [
       "age",
       "activity365"
@@ -7205,7 +7205,7 @@
     },
     {
      "m": "within:agexctrl_frac",
-     "v": 0.0046,
+     "v": 0.0045,
      "pair": [
       "age",
       "ctrl_frac"
@@ -7213,11 +7213,11 @@
     },
     {
      "m": "height",
-     "v": -0.0038
+     "v": -0.004
     },
     {
      "m": "sub_win_share",
-     "v": -0.0027
+     "v": -0.0028
     },
     {
      "m": "southpaw",
@@ -7250,24 +7250,24 @@
    "is_title": false,
    "scheduled_rounds": 3,
    "section": "prelims",
-   "p_f1": 0.2933,
+   "p_f1": 0.2929,
    "book_p_f1": 0.4947,
    "book_n": 5,
    "pick": "Murtazali Magomedov",
-   "confidence": 0.7067,
+   "confidence": 0.7071,
    "low_data": false,
    "method_pick": "DEC",
    "method_probs": {
-    "KO": 0.1926,
-    "SUB": 0.3005,
-    "DEC": 0.5069
+    "KO": 0.1937,
+    "SUB": 0.2989,
+    "DEC": 0.5074
    },
-   "finish_prob": 0.4931,
+   "finish_prob": 0.4926,
    "round_pick": null,
    "round_probs": {
-    "1": 0.6158,
-    "2": 0.2695,
-    "3": 0.1147,
+    "1": 0.6171,
+    "2": 0.2688,
+    "3": 0.1141,
     "4": 0.0,
     "5": 0.0
    },
@@ -7396,23 +7396,23 @@
    "why": [
     {
      "m": "td_per15",
-     "v": -0.5155
+     "v": -0.5159
     },
     {
      "m": "sapm",
-     "v": -0.2819
+     "v": -0.2817
     },
     {
      "m": "major_share",
-     "v": 0.2578
+     "v": 0.2577
     },
     {
      "m": "age",
-     "v": -0.184
+     "v": -0.1841
     },
     {
      "m": "cross:slpmxtd_per15",
-     "v": -0.1406,
+     "v": -0.1394,
      "pair": [
       "slpm",
       "td_per15"
@@ -7424,19 +7424,19 @@
     },
     {
      "m": "ctrl_frac",
-     "v": 0.1057
+     "v": 0.1053
     },
     {
      "m": "avg_fight_min",
-     "v": 0.1032
+     "v": 0.1022
     },
     {
      "m": "winpct",
-     "v": -0.0923
+     "v": -0.0927
     },
     {
      "m": "within:finish_ratexdwcs",
-     "v": -0.0916,
+     "v": -0.0922,
      "pair": [
       "finish_rate",
       "dwcs"
@@ -7444,15 +7444,15 @@
     },
     {
      "m": "streak",
-     "v": -0.0893
+     "v": -0.0895
     },
     {
      "m": "td_def",
-     "v": 0.0871
+     "v": 0.0867
     },
     {
      "m": "sub_per15",
-     "v": -0.0846
+     "v": -0.0837
     },
     {
      "m": "str_def",
@@ -7460,15 +7460,15 @@
     },
     {
      "m": "slpm",
-     "v": 0.0699
+     "v": 0.0695
     },
     {
      "m": "subbed_rate",
-     "v": -0.0681
+     "v": -0.068
     },
     {
      "m": "ko_win_share",
-     "v": -0.0678
+     "v": -0.0664
     },
     {
      "m": "experience",
@@ -7476,7 +7476,7 @@
     },
     {
      "m": "days_since",
-     "v": 0.0504
+     "v": 0.0501
     },
     {
      "m": "koed_rate",
@@ -7484,7 +7484,7 @@
     },
     {
      "m": "within:agexfinish_rate",
-     "v": 0.0453,
+     "v": 0.0458,
      "pair": [
       "age",
       "finish_rate"
@@ -7492,11 +7492,11 @@
     },
     {
      "m": "finish_rate",
-     "v": -0.0234
+     "v": -0.0249
     },
     {
      "m": "early_win_share",
-     "v": -0.0171
+     "v": -0.0175
     },
     {
      "m": "within:agexctrl_frac",
@@ -7508,15 +7508,15 @@
     },
     {
      "m": "str_acc",
-     "v": -0.0096
+     "v": -0.01
     },
     {
      "m": "sub_win_share",
-     "v": 0.0063
+     "v": 0.0074
     },
     {
      "m": "within:agexactivity365",
-     "v": -0.0029,
+     "v": -0.0028,
      "pair": [
       "age",
       "activity365"
@@ -7524,7 +7524,7 @@
     },
     {
      "m": "height",
-     "v": 0.0009
+     "v": 0.0004
     },
     {
      "m": "reach",
@@ -7565,24 +7565,24 @@
    "is_title": false,
    "scheduled_rounds": 3,
    "section": "prelims",
-   "p_f1": 0.652,
+   "p_f1": 0.6521,
    "book_p_f1": 0.7447,
    "book_n": 5,
    "pick": "Keiichiro Nakamura",
-   "confidence": 0.652,
+   "confidence": 0.6521,
    "low_data": false,
    "method_pick": "KO",
    "method_probs": {
-    "KO": 0.6343,
-    "SUB": 0.0567,
+    "KO": 0.6341,
+    "SUB": 0.057,
     "DEC": 0.3089
    },
    "finish_prob": 0.6911,
    "round_pick": 1,
    "round_probs": {
-    "1": 0.6194,
-    "2": 0.2686,
-    "3": 0.112,
+    "1": 0.6197,
+    "2": 0.2687,
+    "3": 0.1116,
     "4": 0.0,
     "5": 0.0
    },
@@ -7711,47 +7711,47 @@
    "why": [
     {
      "m": "winpct",
-     "v": 0.2465
+     "v": 0.2457
     },
     {
      "m": "koed_rate",
-     "v": 0.217
+     "v": 0.2179
     },
     {
      "m": "str_def",
-     "v": 0.1815
+     "v": 0.182
     },
     {
      "m": "age",
-     "v": -0.1198
+     "v": -0.1196
     },
     {
      "m": "streak",
-     "v": 0.1136
+     "v": 0.1138
     },
     {
      "m": "activity365",
-     "v": -0.1026
+     "v": -0.1028
     },
     {
      "m": "td_def",
-     "v": -0.0955
+     "v": -0.0954
     },
     {
      "m": "avg_fight_min",
-     "v": 0.0874
+     "v": 0.0868
     },
     {
      "m": "reach",
-     "v": -0.082
+     "v": -0.0821
     },
     {
      "m": "southpaw",
-     "v": 0.0589
+     "v": 0.059
     },
     {
      "m": "within:agexfinish_rate",
-     "v": -0.0392,
+     "v": -0.0397,
      "pair": [
       "age",
       "finish_rate"
@@ -7763,7 +7763,7 @@
     },
     {
      "m": "ko_win_share",
-     "v": 0.037
+     "v": 0.0366
     },
     {
      "m": "early_win_share",
@@ -7771,11 +7771,11 @@
     },
     {
      "m": "sapm",
-     "v": 0.0265
+     "v": 0.0266
     },
     {
      "m": "finish_rate",
-     "v": 0.0187
+     "v": 0.0201
     },
     {
      "m": "days_since",
@@ -7783,19 +7783,19 @@
     },
     {
      "m": "subbed_rate",
-     "v": 0.0155
+     "v": 0.0156
     },
     {
      "m": "height",
-     "v": 0.0147
+     "v": 0.0149
     },
     {
      "m": "experience",
-     "v": 0.0116
+     "v": 0.0114
     },
     {
      "m": "within:finish_ratexdwcs",
-     "v": -0.0085,
+     "v": -0.0086,
      "pair": [
       "finish_rate",
       "dwcs"
@@ -7803,11 +7803,11 @@
     },
     {
      "m": "str_acc",
-     "v": 0.0081
+     "v": 0.0079
     },
     {
      "m": "within:agexctrl_frac",
-     "v": 0.0069,
+     "v": 0.0066,
      "pair": [
       "age",
       "ctrl_frac"
@@ -7815,7 +7815,7 @@
     },
     {
      "m": "within:agexactivity365",
-     "v": 0.0064,
+     "v": 0.0063,
      "pair": [
       "age",
       "activity365"
@@ -7880,24 +7880,24 @@
    "is_title": false,
    "scheduled_rounds": 3,
    "section": "prelims",
-   "p_f1": 0.5078,
+   "p_f1": 0.5071,
    "book_p_f1": null,
    "book_n": null,
    "pick": "Austin Bashi",
-   "confidence": 0.5078,
+   "confidence": 0.5071,
    "low_data": false,
    "method_pick": "DEC",
    "method_probs": {
-    "KO": 0.11,
-    "SUB": 0.1576,
-    "DEC": 0.7324
+    "KO": 0.1114,
+    "SUB": 0.1569,
+    "DEC": 0.7318
    },
-   "finish_prob": 0.2676,
+   "finish_prob": 0.2682,
    "round_pick": null,
    "round_probs": {
-    "1": 0.5283,
-    "2": 0.3173,
-    "3": 0.1544,
+    "1": 0.5303,
+    "2": 0.3158,
+    "3": 0.1539,
     "4": 0.0,
     "5": 0.0
    },
@@ -8026,51 +8026,51 @@
    "why": [
     {
      "m": "major_share",
-     "v": -0.3471
+     "v": -0.3473
     },
     {
      "m": "td_per15",
-     "v": 0.3175
+     "v": 0.3171
     },
     {
      "m": "ufc_n",
-     "v": 0.1579
+     "v": 0.158
     },
     {
      "m": "ctrl_frac",
-     "v": -0.0985
+     "v": -0.098
     },
     {
      "m": "winpct",
-     "v": 0.0855
+     "v": 0.0851
     },
     {
      "m": "days_since",
-     "v": -0.0836
+     "v": -0.0832
     },
     {
      "m": "age",
-     "v": 0.0735
+     "v": 0.0734
     },
     {
      "m": "southpaw",
-     "v": -0.0589
+     "v": -0.059
     },
     {
      "m": "reach",
-     "v": -0.0555
+     "v": -0.0557
     },
     {
      "m": "td_def",
-     "v": 0.0417
+     "v": 0.0413
     },
     {
      "m": "slpm",
-     "v": 0.0414
+     "v": 0.0411
     },
     {
      "m": "within:agexctrl_frac",
-     "v": -0.0391,
+     "v": -0.0393,
      "pair": [
       "age",
       "ctrl_frac"
@@ -8086,15 +8086,15 @@
     },
     {
      "m": "avg_fight_min",
-     "v": -0.026
+     "v": -0.0255
     },
     {
      "m": "dwcs",
-     "v": 0.0243
+     "v": 0.0242
     },
     {
      "m": "within:agexfinish_rate",
-     "v": 0.0232,
+     "v": 0.0236,
      "pair": [
       "age",
       "finish_rate"
@@ -8102,7 +8102,7 @@
     },
     {
      "m": "cross:slpmxtd_per15",
-     "v": -0.0211,
+     "v": -0.0216,
      "pair": [
       "slpm",
       "td_per15"
@@ -8118,27 +8118,27 @@
     },
     {
      "m": "str_acc",
-     "v": 0.0163
+     "v": 0.0159
     },
     {
      "m": "str_def",
-     "v": 0.0149
+     "v": 0.0145
     },
     {
      "m": "experience",
-     "v": 0.0137
+     "v": 0.0135
     },
     {
      "m": "ko_win_share",
-     "v": 0.0128
+     "v": 0.0127
     },
     {
      "m": "sub_win_share",
-     "v": 0.0111
+     "v": 0.0112
     },
     {
      "m": "early_win_share",
-     "v": -0.0109
+     "v": -0.0105
     },
     {
      "m": "sub_per15",
@@ -8154,7 +8154,7 @@
     },
     {
      "m": "within:agexactivity365",
-     "v": 0.0018,
+     "v": 0.0019,
      "pair": [
       "age",
       "activity365"
@@ -8162,7 +8162,7 @@
     },
     {
      "m": "finish_rate",
-     "v": 0.0014
+     "v": 0.0
     },
     {
      "m": "streak",
@@ -8195,24 +8195,24 @@
    "is_title": false,
    "scheduled_rounds": 3,
    "section": "prelims",
-   "p_f1": 0.2232,
+   "p_f1": 0.2233,
    "book_p_f1": 0.2174,
    "book_n": 5,
    "pick": "Nina Milosevic",
-   "confidence": 0.7768,
+   "confidence": 0.7767,
    "low_data": false,
    "method_pick": "DEC",
    "method_probs": {
-    "KO": 0.3984,
-    "SUB": 0.1895,
-    "DEC": 0.4121
+    "KO": 0.403,
+    "SUB": 0.1857,
+    "DEC": 0.4113
    },
-   "finish_prob": 0.5879,
+   "finish_prob": 0.5887,
    "round_pick": null,
    "round_probs": {
-    "1": 0.67,
+    "1": 0.6696,
     "2": 0.2481,
-    "3": 0.0819,
+    "3": 0.0823,
     "4": 0.0,
     "5": 0.0
    },
@@ -8341,71 +8341,71 @@
    "why": [
     {
      "m": "age",
-     "v": -0.4953
+     "v": -0.4959
     },
     {
      "m": "ufc_n",
-     "v": 0.4215
+     "v": 0.4219
     },
     {
      "m": "str_def",
-     "v": -0.3098
+     "v": -0.3103
     },
     {
      "m": "winpct",
-     "v": -0.2499
+     "v": -0.2491
     },
     {
      "m": "subbed_rate",
-     "v": -0.191
+     "v": -0.1912
     },
     {
      "m": "streak",
-     "v": -0.1895
+     "v": -0.1904
     },
     {
      "m": "sapm",
-     "v": -0.1228
+     "v": -0.1226
     },
     {
      "m": "major_share",
-     "v": -0.0862
+     "v": -0.0858
     },
     {
      "m": "days_since",
-     "v": 0.0769
+     "v": 0.0766
     },
     {
      "m": "experience",
-     "v": 0.0672
+     "v": 0.0677
     },
     {
      "m": "str_acc",
-     "v": -0.0574
+     "v": -0.0575
     },
     {
      "m": "td_def",
-     "v": -0.0479
+     "v": -0.048
+    },
+    {
+     "m": "koed_rate",
+     "v": -0.0426
     },
     {
      "m": "within:agexctrl_frac",
-     "v": -0.0428,
+     "v": -0.0423,
      "pair": [
       "age",
       "ctrl_frac"
      ]
     },
     {
-     "m": "koed_rate",
-     "v": -0.0425
-    },
-    {
      "m": "slpm",
-     "v": -0.0383
+     "v": -0.0384
     },
     {
      "m": "within:agexfinish_rate",
-     "v": -0.0379,
+     "v": -0.0378,
      "pair": [
       "age",
       "finish_rate"
@@ -8413,31 +8413,31 @@
     },
     {
      "m": "td_per15",
-     "v": 0.0353
+     "v": 0.0351
     },
     {
      "m": "ko_win_share",
-     "v": 0.0342
-    },
-    {
-     "m": "avg_fight_min",
-     "v": 0.0332
+     "v": 0.0341
     },
     {
      "m": "sub_win_share",
-     "v": 0.0325
+     "v": 0.0335
+    },
+    {
+     "m": "avg_fight_min",
+     "v": 0.0329
     },
     {
      "m": "reach",
-     "v": -0.0256
+     "v": -0.0254
     },
     {
      "m": "finish_rate",
-     "v": -0.0224
+     "v": -0.0233
     },
     {
      "m": "kd_per15",
-     "v": 0.0201
+     "v": 0.021
     },
     {
      "m": "ctrl_frac",
@@ -8445,15 +8445,15 @@
     },
     {
      "m": "early_win_share",
-     "v": 0.0153
+     "v": 0.0154
     },
     {
      "m": "td_acc",
-     "v": -0.0152
+     "v": -0.0151
     },
     {
      "m": "within:agexactivity365",
-     "v": 0.0134,
+     "v": 0.013,
      "pair": [
       "age",
       "activity365"
@@ -8461,7 +8461,7 @@
     },
     {
      "m": "cross:slpmxtd_per15",
-     "v": -0.0074,
+     "v": -0.0076,
      "pair": [
       "slpm",
       "td_per15"
@@ -8510,23 +8510,23 @@
    "is_title": false,
    "scheduled_rounds": 3,
    "section": "prelims",
-   "p_f1": 0.369,
+   "p_f1": 0.3694,
    "book_p_f1": 0.3411,
    "book_n": 4,
    "pick": "Jose Souza",
-   "confidence": 0.631,
+   "confidence": 0.6306,
    "low_data": false,
    "method_pick": "DEC",
    "method_probs": {
-    "KO": 0.4802,
+    "KO": 0.479,
     "SUB": 0.028,
-    "DEC": 0.4918
+    "DEC": 0.493
    },
-   "finish_prob": 0.5082,
+   "finish_prob": 0.507,
    "round_pick": null,
    "round_probs": {
-    "1": 0.5479,
-    "2": 0.2999,
+    "1": 0.5485,
+    "2": 0.2993,
     "3": 0.1523,
     "4": 0.0,
     "5": 0.0
@@ -8656,75 +8656,75 @@
    "why": [
     {
      "m": "age",
-     "v": -0.2832
+     "v": -0.2838
     },
     {
      "m": "major_share",
-     "v": -0.1793
+     "v": -0.1792
     },
     {
      "m": "str_def",
-     "v": 0.1634
+     "v": 0.1636
     },
     {
      "m": "winpct",
-     "v": -0.1464
+     "v": -0.1456
     },
     {
      "m": "reach",
-     "v": -0.1001
+     "v": -0.1
     },
     {
      "m": "td_def",
-     "v": 0.0871
+     "v": 0.0867
     },
     {
      "m": "ctrl_frac",
-     "v": -0.0785
+     "v": -0.0784
     },
     {
      "m": "activity365",
-     "v": -0.0713
+     "v": -0.0726
     },
     {
      "m": "days_since",
-     "v": 0.0675
+     "v": 0.0694
     },
     {
      "m": "koed_rate",
-     "v": -0.0542
+     "v": -0.0543
     },
     {
      "m": "avg_fight_min",
-     "v": -0.0482
+     "v": -0.0478
     },
     {
      "m": "ufcvet_wins",
      "v": 0.034
     },
     {
-     "m": "slpm",
+     "m": "height",
      "v": 0.0298
     },
     {
-     "m": "height",
-     "v": 0.0294
-    },
-    {
-     "m": "dwcs",
-     "v": 0.0243
+     "m": "slpm",
+     "v": 0.0297
     },
     {
      "m": "sub_win_share",
-     "v": -0.0235
+     "v": -0.0242
+    },
+    {
+     "m": "dwcs",
+     "v": 0.0242
     },
     {
      "m": "str_acc",
-     "v": 0.0184
+     "v": 0.0186
     },
     {
      "m": "within:agexactivity365",
-     "v": -0.0181,
+     "v": -0.018,
      "pair": [
       "age",
       "activity365"
@@ -8736,15 +8736,15 @@
     },
     {
      "m": "streak",
-     "v": 0.0176
+     "v": 0.0177
     },
     {
      "m": "experience",
-     "v": 0.0148
+     "v": 0.0158
     },
     {
      "m": "within:agexctrl_frac",
-     "v": -0.0119,
+     "v": -0.0117,
      "pair": [
       "age",
       "ctrl_frac"
@@ -8752,11 +8752,11 @@
     },
     {
      "m": "southpaw",
-     "v": -0.0114
+     "v": -0.0115
     },
     {
      "m": "kd_per15",
-     "v": 0.0098
+     "v": 0.0092
     },
     {
      "m": "within:agexfinish_rate",
@@ -8764,6 +8764,14 @@
      "pair": [
       "age",
       "finish_rate"
+     ]
+    },
+    {
+     "m": "cross:slpmxtd_per15",
+     "v": 0.0037,
+     "pair": [
+      "slpm",
+      "td_per15"
      ]
     },
     {
@@ -8775,16 +8783,8 @@
      ]
     },
     {
-     "m": "cross:slpmxtd_per15",
-     "v": 0.0034,
-     "pair": [
-      "slpm",
-      "td_per15"
-     ]
-    },
-    {
      "m": "finish_rate",
-     "v": -0.0
+     "v": -0.0003
     },
     {
      "m": "td_per15",
