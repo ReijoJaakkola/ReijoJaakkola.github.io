@@ -366,7 +366,12 @@
     koed_rate: ['Times knocked out', P], subbed_rate: ['Times submitted', P], avg_fight_min: ['Average fight length', (x) => F(x) + ' min'],
     early_win_share: ['First-round wins', P], ufc_n: ['UFC fights', String], dwcs: ['Contender Series wins', String],
     major_share: ['Pre-UFC fights in major promotions', P], ufcvet_wins: ['Pre-UFC wins over UFC fighters', String],
+    is_title: ['Title fight', (x) => (x ? 'yes' : 'no')], scheduled_rounds: ['Scheduled rounds', String],
+    is_womens: ["Women's bout", (x) => (x ? 'yes' : 'no')], weightclass_lbs: ['Weight class', (x) => x + ' lb'],
   };
+  // A why row is one fact, or a pair of facts the model reads together (f.pair = their keys).
+  const factLabel = (f) => (f.pair ? (f.pair.every((k) => FACT[k]) ? f.pair.map((k) => FACT[k][0]).join(' × ') : null)
+    : FACT[f.m] ? FACT[f.m][0] : null);
 
   function render(b) {
     const A = FD.fighters[b.f1], B = FD.fighters[b.f2], S = { ...b.stats };
@@ -389,12 +394,12 @@
       <div class="fl">${f.fights.slice(0, 3).map(row).join('')}</div>${f.fights.length > 3 ? `<div class="fl" hidden style="margin-top:4px">${f.fights.slice(3).map(row).join('')}</div>
       <button type="button" class="fd-btn quiet sm" data-toggle="fights" data-n="${f.fights.length}">All ${f.fights.length} fights</button>` : ''}</div>`;
 
-    const facts = (b.why || []).filter((f) => FACT[f.m]);
-    const mx = Math.max(0.1, ...facts.map((f) => Math.abs(f.v)));
-    const why = facts.length ? `<div class="whyhead"><span class="A">${colA} factors favor ${esc(last(b.f1))}</span><span class="B">${colB} factors favor ${esc(last(b.f2))}</span></div><div class="why">${facts.map(({ m, v }, i) => {
-        const s = v > 0 ? 'A' : 'B', [lab, fmt] = FACT[m], [a, c] = S[m] || [null, null];
+    const facts = (b.why || []).filter(factLabel);
+    const mx = Math.max(0.01, ...facts.map((f) => Math.abs(f.v)));
+    const why = facts.length ? `<div class="whyhead"><span class="A">${colA} factors favor ${esc(last(b.f1))}</span><span class="B">${colB} factors favor ${esc(last(b.f2))}</span></div><div class="why">${facts.map((f, i) => {
+        const { m, v } = f, s = v > 0 ? 'A' : 'B', lab = factLabel(f), fmt = f.pair ? null : FACT[m][1], [a, c] = f.pair ? [null, null] : S[m] || [null, null];
         const d = a === null || c === null || a === undefined || c === undefined ? '' : s === 'A' ? `${fmt(a)} vs ${fmt(c)}` : `${fmt(c)} vs ${fmt(a)}`;
-        const bar = `<span class="bar grow" style="width:max(3px, ${Math.abs(v) / mx * 36}%)"></span>`, pp = `<span class="pp ${s}">+${Math.abs(v).toFixed(1)}</span>`, l = `<span>${lab}<small>${esc(d)}</small></span>`;
+        const bar = `<span class="bar grow" style="width:max(3px, ${Math.abs(v) / mx * 36}%)"></span>`, pp = `<span class="pp ${s}">+${Math.abs(v).toFixed(2)}</span>`, l = `<span>${lab}<small>${esc(d)}</small></span>`;
         return `<div class="row${i >= 7 ? ' x' : ''}"><div class="side l">${s === 'A' ? l + pp + bar : ''}</div><div class="side r">${s === 'B' ? bar + pp + l : ''}</div></div>`;
       }).join('')}</div>${facts.length > 7 ? `<div class="fd-foot"><button type="button" class="fd-btn quiet sm" data-toggle="why" data-n="${facts.length}">All ${facts.length} factors</button></div>` : ''}` : '';
 
