@@ -366,6 +366,7 @@
     koed_rate: ['Times knocked out', P], subbed_rate: ['Times submitted', P], avg_fight_min: ['Average fight length', (x) => F(x) + ' min'],
     early_win_share: ['First-round wins', P], ufc_n: ['UFC fights', String], dwcs: ['Contender Series wins', String],
     major_share: ['Pre-UFC fights in major promotions', P], ufcvet_wins: ['Pre-UFC wins over UFC fighters', String],
+    elo: ['Elo rating', (x) => String(Math.round(x))],
     is_title: ['Title fight', (x) => (x ? 'yes' : 'no')], scheduled_rounds: ['Scheduled rounds', String],
     is_womens: ["Women's bout", (x) => (x ? 'yes' : 'no')], weightclass_lbs: ['Weight class', (x) => x + ' lb'],
   };
