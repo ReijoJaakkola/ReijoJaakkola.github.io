@@ -25,6 +25,7 @@
     --green: #4ADE80;
     --amber: #FBBF24;
     --miss: #FF6B6B;
+    --menu: rgba(14, 17, 32, 0.98);
     --font: 'Manrope', 'Segoe UI', system-ui, sans-serif;
     color-scheme: dark;
   }
@@ -40,7 +41,6 @@
              margin: clamp(2.2em, 9vw, 3.4em) 0 .3em; letter-spacing: -.01em; text-wrap: balance; text-shadow: 0 2px 24px rgba(0,0,0,.6); }
   .hero h1 em { font-style: normal; color: transparent; -webkit-text-stroke: 1.5px var(--magenta); text-shadow: 0 0 22px rgba(214,64,230,.55); }
   .hero p { margin: 0; max-width: 54ch; color: var(--text); line-height: 1.5; }
-  .hero .fine { margin-top: .5em; font-size: .82rem; color: var(--muted); }
   main { max-width: 1000px; margin: 0 auto; padding: 0 clamp(16px, 5vw, 48px) 64px; display: grid; gap: 26px; }
 
   .glass { background: var(--glass); border: 1px solid var(--line); border-radius: 18px; }
@@ -189,6 +189,43 @@
   #fd .rounds div { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; font-size: .72rem; color: var(--muted); }
   #fd .rounds b { width: 100%; border-radius: 4px 4px 0 0; background: var(--magenta); opacity: .85; }
   #fd .rounds span { color: var(--text); font-weight: 700; }
+  /* ---- Views: the picks (default) and What if, switched from the header ---- */
+  .view { display: grid; gap: 26px; }
+  .views { margin-top: 1.2em; }
+  .views .tabbar { background: rgba(7,8,15,.55); backdrop-filter: blur(6px); }
+  .views .tabbar a { font: 700 .95rem var(--font); color: var(--text); text-decoration: none; padding: .55em 1.25em; border-radius: 999px; }
+  .views .tabbar a:hover { background: rgba(214,64,230,.16); }
+  .views .tabbar a[aria-current="page"] { color: var(--bg); background: var(--magenta); box-shadow: 0 0 16px -4px var(--magenta); }
+  .views .tabbar a:focus-visible { outline: 2px solid var(--neon); outline-offset: 2px; }
+  /* ---- What if: any two active fighters, scored in the browser ---- */
+  .whatif { padding: 1.1em 1.3em 1.3em; display: grid; gap: 16px; }
+  .wi-head { display: grid; gap: .3em; }
+  .wi-pickers { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: start; gap: .8em; }
+  .wi-pickers > .vs { padding: .8em 0 0; }
+  .wi-pick { display: grid; gap: .35em; min-width: 0; }
+  .wi-box { position: relative; }
+  .wi-in { display: block; width: 100%; font: 700 1rem var(--font); color: var(--text); background: var(--glass); border: 1px solid var(--line); border-radius: 999px; padding: .65em 1.15em; text-overflow: ellipsis; }
+  .wi-in::placeholder { color: var(--text); opacity: .7; }
+  .wi-in:hover { border-color: rgba(214,64,230,.55); }
+  .wi-in:focus { outline: none; border-color: var(--magenta); box-shadow: 0 0 14px -4px var(--magenta); }
+  .wi-sub { font-size: .8rem; font-weight: 600; padding: 0 1.2em; min-height: 1.15em; }
+  .wi-pick.r .wi-sub { text-align: right; }
+  .wi-pop { position: absolute; z-index: 30; top: calc(100% + 6px); left: 0; right: 0; display: flex; flex-direction: column; max-height: min(400px, 60vh); background: var(--menu); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; box-shadow: 0 20px 44px -14px rgba(0,0,0,.85); }
+  .wi-list { position: relative; flex: 1 1 auto; min-height: 0; overflow: auto; overscroll-behavior: contain; padding: 6px; }
+  .wi-grp { position: sticky; top: -6px; z-index: 1; background: var(--menu); font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 800; padding: .8em .9em .35em; }
+  .wi-opt { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: .45em .9em; border-radius: 999px; cursor: pointer; font-weight: 600; scroll-margin-top: 2.4em; }
+  .wi-opt span { min-width: 0; overflow-wrap: anywhere; }
+  .wi-opt small { font-size: .76rem; font-weight: 600; white-space: nowrap; }
+  .wi-opt.on { background: rgba(214,64,230,.18); box-shadow: inset 0 0 0 1px rgba(214,64,230,.55); }
+  .wi-none { padding: .6em .9em; font-weight: 600; }
+  .wi-card .f .pc { font-size: clamp(2.4rem, 7vw, 3.4rem); } .wi-card .f .n { font-size: 1.2rem; }
+  .bout[data-wi] { cursor: pointer; }
+  .bout[data-wi]:hover { transform: translateY(-2px); box-shadow: 0 0 40px -12px rgba(214,64,230,.6); }
+  @media (max-width: 640px) {
+    .wi-pickers { grid-template-columns: minmax(0, 1fr); gap: .5em; }
+    .wi-pickers > .vs { padding: 0; text-align: center; }
+    .wi-pick.r .wi-sub { text-align: left; }
+  }
   /* Motion: story slides up in / down out, cards and sections rise in as they scroll into view, bars grow. */
   @media (prefers-reduced-motion: no-preference) {
     html { scroll-behavior: smooth; }
@@ -207,6 +244,13 @@
     [role="tabpanel"]:not([hidden]), #fd .fd-tape.all tr.x, #fd .why.all .row.x, #fd .fl:not([hidden]) { animation: fd-fade .3s ease; }
     .fd-btn { transition: background .15s, box-shadow .15s, transform .1s; }
     .fd-btn:active { transform: scale(.96); }
+    /* What if: the bar slides to each new pairing's split; the menu fades in. */
+    .wi-card { transition: transform .15s, box-shadow .15s; }
+    .wi-card .bar b.grow { transition: flex-grow .7s cubic-bezier(.2,.8,.2,1), transform .8s cubic-bezier(.2,.8,.2,1) .15s, opacity .3s, box-shadow .3s; }
+    .wi-card .bar .grow:first-child { transform-origin: left; } .wi-card .bar .grow:last-child { transform-origin: right; }
+    .wi-card .pc, .wi-card .n, .wi-card .what { transition: opacity .2s; }
+    .wi-pop:not([hidden]) { animation: fd-fade .18s ease; }
+    .wi-in { transition: border-color .15s, box-shadow .15s; }
   }
 </style>
 </head>
@@ -214,11 +258,16 @@
 <header class="hero">
   <h1>UFC <em>predictions</em></h1>
   <p id="blurb">Powered by TabICL v2, a tabular foundation model reading the full modern history of the UFC.</p>
-  <p class="fine" id="disclaimer">Not betting advice. 18+.</p>
+  <nav class="views" aria-label="Sections"><div class="tabbar"><a href="#" data-view="picks" aria-current="page">Picks</a><a href="#whatif" data-view="whatif">What if</a></div></nav>
 </header>
 <main>
-  <section id="upcoming" aria-live="polite"><p class="empty">Loading picks…</p></section>
-  <section class="glass record" id="record" hidden></section>
+  <div class="view" id="view-picks">
+    <section id="upcoming" aria-live="polite"><p class="empty">Loading picks…</p></section>
+    <section class="glass record" id="record" hidden></section>
+  </div>
+  <div class="view" id="view-whatif" hidden>
+    <section class="glass whatif" id="whatif" aria-labelledby="wi-h"><p class="empty">Loading fighters…</p></section>
+  </div>
   <footer><a class="fd-btn" href="/">reijojaakkola.github.io</a></footer>
 </main>
 
@@ -299,7 +348,6 @@
   try {
     const idx = await getJSON('data/index.json');
     if (idx.blurb) document.getElementById('blurb').textContent = idx.blurb;
-    if (idx.disclaimer) document.getElementById('disclaimer').textContent = idx.disclaimer;
 
     // ponytail: newest ungraded card is "upcoming"; the pipeline only predicts future cards.
     const next = idx.cards.find((c) => !c.graded);
@@ -335,14 +383,13 @@
 })();
 </script>
 <script>
-// ---- Fight details: a full-page story per upcoming bout (#fight-N). ----
+// ---- Fight details: a full-page story per upcoming bout (#fight-N) and per what-if pairing (#whatif-A--B). ----
 (() => {
   let FD = null, BY = {};
   const last = (n) => n.split(' ').slice(-1)[0];
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const pct = (x) => Math.round(x * 100) + '%';
   const rec = (r) => `${r.W}-${r.L}${r.D ? '-' + r.D : ''}`;
-  const age = (dob) => (dob ? Math.floor((new Date(FD.event.date) - new Date(dob)) / 3.15576e10) : null);
   const METHOD = { DEC: 'decision', KO: 'KO/TKO', SUB: 'submission' };
   const P = pct, F = (x) => x.toFixed(1), IN = (x) => x + ' in', ST = (x) => (x > 0 ? 'W' + x : x < 0 ? 'L' + -x : 'none');
   // [label, stat key, format, higher is better (1 / -1 / null), shown by default]
@@ -375,12 +422,14 @@
     : FACT[f.m] ? FACT[f.m][0] : null);
 
   function render(b) {
-    const A = FD.fighters[b.f1], B = FD.fighters[b.f2], S = { ...b.stats };
+    const W = !!b.whatif;   // a what-if pairing: no bookmakers, no method or round, ages on the data date
+    const A = W ? b.fa : FD.fighters[b.f1], B = W ? b.fb : FD.fighters[b.f2], S = { ...b.stats };
+    const on = W ? b.date : FD.event.date;
+    const age = (dob) => (dob ? Math.floor((new Date(on) - new Date(dob)) / 3.15576e10) : null);
     S.rec = [rec(A.rec), rec(B.rec)]; S.age = [age(A.dob), age(B.dob)]; S.stance = [A.stance, B.stance];
     const pA = b.p_f1, pB = 1 - pA, favA = pA >= 0.5, sched = b.scheduled_rounds || (b.order === 1 ? 5 : 3);  // older cards: main event = 5 rounds
     const nameA = esc(b.f1), nameB = esc(b.f2), pick = favA ? b.f1 : b.f2;
     const colA = favA ? 'Purple' : 'Blue', colB = favA ? 'Blue' : 'Purple';
-    const call = METHOD[b.method_pick] + (b.method_pick !== 'DEC' && b.round_pick ? ' in round ' + b.round_pick : '');
 
     const tape = `<table class="fd-tape"><tr><th class="A">${esc(last(b.f1))}</th><th></th><th class="B">${esc(last(b.f2))}</th></tr>${TAPE.map(([lab, k, fmt, dir, show]) => {
         const raw = S[k] || [null, null], v = raw.map((x) => (x === null || x === undefined ? 'n/a' : fmt ? fmt(x) : x));
@@ -404,26 +453,31 @@
         return `<div class="row${i >= 7 ? ' x' : ''}"><div class="side l">${s === 'A' ? l + pp + bar : ''}</div><div class="side r">${s === 'B' ? bar + pp + l : ''}</div></div>`;
       }).join('')}</div>${facts.length > 7 ? `<div class="fd-foot"><button type="button" class="fd-btn quiet sm" data-toggle="why" data-n="${facts.length}">All ${facts.length} factors</button></div>` : ''}` : '';
 
-    const mp = b.method_probs, rp = Object.entries(b.round_probs).filter(([r]) => r <= sched), rmx = Math.max(...rp.map(([, v]) => v));
-    const col = { DEC: '#D640E6', KO: '#9D33AA', SUB: '#6B2475' }, lab = { DEC: 'Decision', KO: 'KO/TKO', SUB: 'Sub' };
-    const odds = `<p class="lede">If ${esc(last(pick))} wins, how?</p><div class="stack">${['DEC', 'KO', 'SUB'].map((k) =>
-        `<i class="grow" style="width:${mp[k] * 100}%;background:${col[k]}"><span>${lab[k]}</span><span>${pct(mp[k])}</span></i>`).join('')}</div>
-      <p class="lede" style="margin-top:16px">If it ends early, which round?</p>
-      <div class="rounds" style="grid-template-columns:repeat(${sched},1fr)">${rp.map(([r, v]) => `<div><span>${pct(v)}</span><b class="growy" style="height:${v / rmx * 60}px"></b>R${r}</div>`).join('')}</div>`;
+    let call = '', odds = '';
+    if (!W) {
+      call = METHOD[b.method_pick] + (b.method_pick !== 'DEC' && b.round_pick ? ' in round ' + b.round_pick : '');
+      const mp = b.method_probs, rp = Object.entries(b.round_probs).filter(([r]) => r <= sched), rmx = Math.max(...rp.map(([, v]) => v));
+      const col = { DEC: '#D640E6', KO: '#9D33AA', SUB: '#6B2475' }, lab = { DEC: 'Decision', KO: 'KO/TKO', SUB: 'Sub' };
+      odds = `<p class="lede">If ${esc(last(pick))} wins, how?</p><div class="stack">${['DEC', 'KO', 'SUB'].map((k) =>
+          `<i class="grow" style="width:${mp[k] * 100}%;background:${col[k]}"><span>${lab[k]}</span><span>${pct(mp[k])}</span></i>`).join('')}</div>
+        <p class="lede" style="margin-top:16px">If it ends early, which round?</p>
+        <div class="rounds" style="grid-template-columns:repeat(${sched},1fr)">${rp.map(([r, v]) => `<div><span>${pct(v)}</span><b class="growy" style="height:${v / rmx * 60}px"></b>R${r}</div>`).join('')}</div>`;
+    }
 
-    const bkA = b.book_p_f1 ?? null;
+    const bkA = W ? null : b.book_p_f1 ?? null;
     const line = (l, p) => `<div class="fd-lab">${l}</div><div class="fd-line"><span class="A">${pct(p)}</span><div class="fd-tug"><b class="grow${favA ? ' fav' : ''}" style="flex:${p}"></b><b class="grow${favA ? '' : ' fav'}" style="flex:${1 - p}"></b></div><span class="B">${pct(1 - p)}</span></div>`;
+    const meta = W ? `What if, ${esc(b.weightclass)}` : `${b.order === 1 ? 'Main event, ' : ''}${b.is_title ? 'Title fight, ' : ''}${esc(b.weightclass)}, ${sched} rounds`;
 
     el.style.setProperty('--ca', favA ? 'var(--magenta)' : 'var(--blue)');
     el.style.setProperty('--cb', favA ? 'var(--blue)' : 'var(--magenta)');
-    return `<div class="fd-top"><button type="button" class="fd-btn quiet fd-back">Back to the card</button><span>${esc(FD.event.name)}</span></div><div class="fd-in">
-      <div class="fd-hero rv"><div class="meta">${b.order === 1 ? 'Main event, ' : ''}${b.is_title ? 'Title fight, ' : ''}${esc(b.weightclass)}, ${sched} rounds</div><div class="fd-big">${esc(last(pick))}</div>
-        <div class="fd-call">by ${call}, <b>${pct(Math.max(pA, pB))}</b> to win</div>
+    return `<div class="fd-top"><button type="button" class="fd-btn quiet fd-back">${W ? 'Back' : 'Back to the card'}</button><span>${W ? 'What if' : esc(FD.event.name)}</span></div><div class="fd-in">
+      <div class="fd-hero rv"><div class="meta">${meta}</div><div class="fd-big">${esc(last(pick))}</div>
+        <div class="fd-call">${W ? '' : `by ${call}, `}<b>${pct(Math.max(pA, pB))}</b> to win</div>
         <div class="fd-odds"><div class="fd-names"><span class="A">${nameA}</span><span class="B">${nameB}</span></div>${line('Model', pA)}${bkA === null ? '' : line('Bookmakers', bkA)}</div></div>
       <section class="glass blk rv"><h3>Tale of the tape</h3>${tape}</section>
       <section class="glass blk rv"><h3>Last fights</h3><div class="cols">${fights(A, nameA, 'A')}${fights(B, nameB, 'B')}</div></section>
       ${why ? `<section class="glass blk rv"><h3>Why</h3>${why}</section>` : ''}
-      <section class="glass blk rv"><h3>How it ends</h3>${odds}</section></div>`;
+      ${W ? '' : `<section class="glass blk rv"><h3>How it ends</h3>${odds}</section>`}</div>`;
   }
 
   const el = document.createElement('div');
@@ -433,7 +487,7 @@
   let opener = null;
   // Reveal-on-scroll: anything with .rv rises in the first time it enters the viewport.
   const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
-  const tag = () => document.querySelectorAll('main .event, main .bout, main .record:not([hidden]) > h2, main .strip, main details').forEach((n) => {
+  const tag = () => document.querySelectorAll('main .event, main .bout:not(.wi-card), main .whatif, main .record:not([hidden]) > h2, main .strip, main details').forEach((n) => {
     if (!n.classList.contains('rv')) { n.classList.add('rv'); io.observe(n); }
   });
   tag();
@@ -450,13 +504,15 @@
     setTimeout(() => { el.hidden = true; el.classList.remove('out'); el.innerHTML = ''; document.body.style.overflow = ''; if (opener) opener.focus(); }, still.matches ? 0 : 200);
   };
   const sync = () => {
-    const m = location.hash.match(/^#fight-(\d+)$/), b = m && BY[m[1]];
+    const h = location.hash, m = h.match(/^#fight-(\d+)$/);
+    const b = (m && BY[m[1]]) || (h.startsWith('#whatif-') && window.wiFind ? window.wiFind(h.slice(8)) : null);
     if (b) show(b); else if (!el.hidden) hide();
   };
   const open = (card) => { opener = card.querySelector('[data-fd-open]') || card; location.hash = 'fight-' + card.dataset.fd; };
   // The card is clickable too; the button is the keyboard / screen-reader control.
-  // history.back() assumes we pushed the hash; a deep link to #fight-N just clears it instead.
-  const close = () => (opener ? history.back() : (location.hash = ''));
+  // history.back() assumes we pushed the hash; a deep link just clears it instead
+  // (a what-if pairing's story goes back to the What if view).
+  const close = () => (opener ? history.back() : (location.hash = location.hash.startsWith('#whatif-') ? 'whatif' : ''));
   addEventListener('hashchange', sync);
   addEventListener('keydown', (e) => { if (e.key === 'Escape' && !el.hidden) close(); });
   document.addEventListener('click', (e) => {
@@ -479,6 +535,184 @@
     BY = card.fighters ? Object.fromEntries(card.bouts.filter((b) => b.stats && !b.result && card.fighters[b.f1] && card.fighters[b.f2]).map((b) => [b.order, b])) : {};
     sync();
   };
+  // Used by the what-if section: open a pairing's story, and re-read the hash once its data has loaded.
+  window.fdOpen = (hash, from) => { opener = from || null; location.hash = hash; };
+  window.fdSync = sync;
+})();
+</script>
+<script>
+// ---- What if: any two active fighters, scored in the browser from each fighter's per-stat values. ----
+(() => {
+  const ORDER = ['Flyweight', 'Bantamweight', 'Featherweight', 'Lightweight', 'Welterweight', 'Middleweight', 'Light Heavyweight',
+    'Heavyweight', "Women's Strawweight", "Women's Flyweight", "Women's Bantamweight", "Women's Featherweight"];
+  const OPENING = ['Ilia Topuria', 'Islam Makhachev'];   // the pairing the section opens with
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const pct = (x) => Math.round(x * 100) + '%';
+  const norm = (s) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+    .replace(/['’.]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  const slug = (s) => norm(s).replace(/ /g, '-');
+  const rec = (r) => `${r.W}-${r.L}${r.D ? '-' + r.D : ''}`;
+  const sub = (f) => `${f.d}, ${rec(f.rec)}`;
+  const day = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+  const sec = document.getElementById('whatif');
+  let D = null, BY = {}, sel = [null, null], card = null;
+  const opts = [[], []], act = [0, 0];
+  const input = (i) => document.getElementById('wi-in-' + i), list = (i) => document.getElementById('wi-list-' + i);
+  const pop = (i) => document.getElementById('wi-pop-' + i);
+
+  // P(fighter 1 wins): the logistic of the summed differences over the stats both fighters have; the why rows are those differences.
+  function score(a, b) {
+    let z = 0;
+    const why = [];
+    D.m.forEach((m, k) => { const x = a.g[k], y = b.g[k]; if (x !== null && y !== null) { z += x - y; why.push({ m, v: x - y }); } });
+    why.sort((u, v) => Math.abs(v.v) - Math.abs(u.v));
+    const p = 1 / (1 + Math.exp(-z));
+    return { whatif: true, date: D.date, f1: a.n, f2: b.n, fa: a, fb: b, p_f1: p, pick: p >= 0.5 ? a.n : b.n,
+      weightclass: a.d === b.d ? a.d : `${a.d} vs ${b.d}`, stats: Object.fromEntries(D.m.map((m, k) => [m, [a.s[k], b.s[k]]])), why };
+  }
+
+  const pickerHTML = (i) => `<div class="wi-pick${i ? ' r' : ''}"><div class="wi-box">
+      <input id="wi-in-${i}" class="wi-in" type="text" role="combobox" aria-expanded="false" aria-controls="wi-list-${i}" aria-autocomplete="list"
+        aria-label="${i ? 'Second' : 'First'} fighter" autocomplete="off" spellcheck="false" placeholder="Search a fighter">
+      <div class="wi-pop" id="wi-pop-${i}" hidden><div class="wi-list" id="wi-list-${i}" role="listbox" aria-label="Active fighters"></div></div></div>
+      <div class="wi-sub" id="wi-sub-${i}"></div></div>`;
+
+  // The menu: every active fighter by division while the field shows the chosen name; matches as soon as the visitor types.
+  function fill(i) {
+    const raw = input(i).value.trim(), browse = !raw || (sel[i] && raw === sel[i].n), q = norm(raw), other = sel[1 - i];
+    const o = [], opt = (f) => { o.push(f); return `<div class="wi-opt" role="option" id="wi-o-${i}-${o.length - 1}" data-k="${o.length - 1}" aria-selected="false"><span>${esc(f.n)}</span><small>${esc(sub(f))}</small></div>`; };
+    let html = '';
+    if (browse) {
+      for (const d of ORDER) {
+        const fs = D.f.filter((f) => f.d === d && f !== other);
+        if (fs.length) html += `<div class="wi-grp" role="presentation">${esc(d)}</div>` + fs.map(opt).join('');
+      }
+    } else {
+      const qc = q.replace(/ /g, '');
+      const rank = (f) => (f.q.startsWith(q) ? 0 : (' ' + f.q).includes(' ' + q) ? 1 : f.q.includes(q) ? 2 : f.q.replace(/ /g, '').includes(qc) ? 3 : 9);
+      const hits = D.f.filter((f) => f !== other).map((f) => [rank(f), f]).filter(([r]) => r < 9)
+        .sort((x, y) => x[0] - y[0] || x[1].n.localeCompare(y[1].n)).slice(0, 60);
+      html = hits.length ? hits.map(([, f]) => opt(f)).join('') : '<div class="wi-none">No active fighter by that name</div>';
+    }
+    list(i).innerHTML = html;
+    opts[i] = o;
+    activate(i, browse ? Math.max(0, o.indexOf(sel[i])) : 0, browse ? 'center' : 'nearest');
+  }
+  function activate(i, k, scroll = 'nearest') {
+    const L = list(i), o = opts[i], inp = input(i), was = L.querySelector('.wi-opt.on');
+    if (was) { was.classList.remove('on'); was.setAttribute('aria-selected', 'false'); }
+    if (!o.length) { inp.removeAttribute('aria-activedescendant'); return; }
+    act[i] = Math.max(0, Math.min(o.length - 1, k));
+    const n = document.getElementById(`wi-o-${i}-${act[i]}`);
+    n.classList.add('on'); n.setAttribute('aria-selected', 'true'); inp.setAttribute('aria-activedescendant', n.id);
+    if (scroll === 'center') L.scrollTop = n.offsetTop - (L.clientHeight - n.offsetHeight) / 2;
+    else if (scroll === 'nearest') n.scrollIntoView({ block: 'nearest' });
+  }
+  function openList(i) { pop(i).hidden = false; input(i).setAttribute('aria-expanded', 'true'); fill(i); }
+  function closeList(i) {
+    const inp = input(i);
+    pop(i).hidden = true; inp.setAttribute('aria-expanded', 'false'); inp.removeAttribute('aria-activedescendant');
+    inp.value = sel[i] ? sel[i].n : '';
+  }
+  function choose(i, f) { sel[i] = f; closeList(i); paint(); }
+
+  function paint() {
+    const B = score(sel[0], sel[1]), f1w = B.p_f1 >= 0.5;
+    sel.forEach((f, i) => { if (document.activeElement !== input(i)) input(i).value = f.n; document.getElementById('wi-sub-' + i).textContent = sub(f); });
+    if (!card) {
+      const box = document.getElementById('wi-result');
+      box.innerHTML = `<article class="glass bout wi-card" data-wi><div class="top"><span class="wc"></span></div>
+        <div class="tape num"><div class="f"><span class="pc"></span><span class="n"></span></div><span class="vs">VS</span><div class="f"><span class="pc"></span><span class="n"></span></div></div>
+        <div class="bar" role="img"><b class="grow"></b><b class="grow"></b></div>
+        <div class="call"><div class="pickbar"><span class="tag">Pick</span><span class="what"></span></div></div>
+        <div class="fd-cta"><button type="button" class="fd-btn" data-wi-open>Fight details</button></div></article>`;
+      card = box.firstElementChild;
+    }
+    const [fa, fb] = card.querySelectorAll('.tape .f'), [ba, bb] = card.querySelectorAll('.bar b');
+    card.querySelector('.wc').textContent = B.weightclass;
+    fa.classList.toggle('lose', !f1w); fb.classList.toggle('lose', f1w);
+    fa.querySelector('.pc').textContent = pct(B.p_f1); fa.querySelector('.n').textContent = B.f1;
+    fb.querySelector('.pc').textContent = pct(1 - B.p_f1); fb.querySelector('.n').textContent = B.f2;
+    ba.classList.toggle('fav', f1w); bb.classList.toggle('fav', !f1w);
+    ba.style.flex = `${B.p_f1} 1 0%`; bb.style.flex = `${1 - B.p_f1} 1 0%`;
+    card.querySelector('.bar').setAttribute('aria-label', `${B.f1} ${pct(B.p_f1)}, ${B.f2} ${pct(1 - B.p_f1)}`);
+    card.querySelector('.what').textContent = B.pick;
+    card.querySelector('[data-wi-open]').setAttribute('aria-label', `Fight details: ${B.f1} vs ${B.f2}`);
+  }
+
+  // A deep link #whatif-<a>--<b> selects that pairing and returns its bout for the story.
+  function find(k) {
+    const [a, b] = k.split('--').map((s) => BY[s]);
+    if (!a || !b || a === b) return null;
+    if (sel[0] !== a || sel[1] !== b) { sel = [a, b]; paint(); }
+    return score(a, b);
+  }
+
+  function wire() {
+    for (const i of [0, 1]) {
+      const inp = input(i), L = list(i), Pp = pop(i);
+      inp.addEventListener('focus', () => { openList(i); inp.select(); });
+      inp.addEventListener('input', () => { if (Pp.hidden) { Pp.hidden = false; inp.setAttribute('aria-expanded', 'true'); } fill(i); });
+      inp.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          if (Pp.hidden) openList(i); else activate(i, act[i] + (e.key === 'ArrowDown' ? 1 : -1));
+        } else if (e.key === 'Enter') {
+          e.preventDefault();
+          if (!Pp.hidden && opts[i].length) choose(i, opts[i][act[i]]);
+        } else if (e.key === 'Escape' && !Pp.hidden) {
+          e.preventDefault(); e.stopPropagation(); closeList(i);
+        }
+      });
+      inp.addEventListener('blur', () => closeList(i));
+      Pp.addEventListener('mousedown', (e) => e.preventDefault());   // keep the field focused while choosing
+      Pp.addEventListener('click', (e) => { const o = e.target.closest('.wi-opt'); if (o) { choose(i, opts[i][+o.dataset.k]); inp.blur(); } });
+      L.addEventListener('mousemove', (e) => { const o = e.target.closest('.wi-opt'); if (o && +o.dataset.k !== act[i]) activate(i, +o.dataset.k, 'none'); });
+    }
+    sec.addEventListener('click', (e) => {
+      if (!card || e.target.closest('.wi-pick') || !e.target.closest('[data-wi]')) return;
+      window.fdOpen('whatif-' + slug(sel[0].n) + '--' + slug(sel[1].n), card.querySelector('[data-wi-open]'));
+    });
+  }
+
+  // The fighters file (about 2 MB) loads only when the What if view is first opened.
+  let loading = null;
+  window.wiLoad = () => loading || (loading = (async () => {
+    try {
+      const r = await fetch('data/whatif.json', { cache: 'no-cache' });
+      if (!r.ok) throw new Error('data/whatif.json: ' + r.status);
+      D = await r.json();
+      const byName = {}, elo = D.m.indexOf('elo');
+      D.f.forEach((f) => { f.q = norm(f.n); f.e = f.s[elo]; BY[slug(f.n)] = f; byName[f.n] = f; });
+      const top = [...D.f].sort((a, b) => (b.e ?? -1e9) - (a.e ?? -1e9));
+      sel = OPENING.every((n) => byName[n]) ? OPENING.map((n) => byName[n]) : top.slice(0, 2);
+      sec.innerHTML = `<div class="wi-head"><h2 id="wi-h">What if</h2><div class="meta num">${D.f.length} active fighters, stats as of ${esc(day(D.date))}</div></div>
+        <div class="wi-pickers">${pickerHTML(0)}<span class="vs">VS</span>${pickerHTML(1)}</div><div id="wi-result" aria-live="polite"></div>`;
+      wire();
+      paint();
+      window.wiFind = find;
+      sec.hidden = false;
+      if (window.fdSync) window.fdSync();
+    } catch (err) {
+      sec.innerHTML = `<p class="empty">Couldn't load the fighters right now. Try again in a minute.</p>`;
+      loading = null;   // try again the next time the view opens
+      console.error(err);
+    }
+  })());
+
+  // Views: the picks (default) and What if (#whatif; #whatif-<a>--<b> is a matchup's story on top of it).
+  const views = { picks: document.getElementById('view-picks'), whatif: document.getElementById('view-whatif') };
+  const route = () => {
+    const v = location.hash.startsWith('#whatif') ? 'whatif' : 'picks';
+    views.picks.hidden = v !== 'picks';
+    views.whatif.hidden = v !== 'whatif';
+    document.querySelectorAll('.views [data-view]').forEach((a) => {
+      if (a.dataset.view === v) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+    });
+    if (v === 'whatif') window.wiLoad();
+  };
+  addEventListener('hashchange', route);
+  route();
 })();
 </script>
 </body>
