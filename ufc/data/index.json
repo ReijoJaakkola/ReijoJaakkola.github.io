@@ -1,73 +1,82 @@
 {
- "updated_at": "2026-11-06T18:54:50+00:00",
+ "updated_at": "2026-11-09T22:28:22+00:00",
  "brand": "Prior Cage",
  "handle": "@priorcage",
  "blurb": "Powered by TabICL v2, a tabular foundation model reading the full modern history of the UFC.",
  "disclaimer": "Not betting advice. 18+.",
  "record": {
-  "n_events": 3,
-  "n_bouts": 39,
-  "n_correct": 23,
-  "accuracy": 0.5897,
+  "n_events": 4,
+  "n_bouts": 53,
+  "n_correct": 34,
+  "accuracy": 0.6415,
   "accuracy_ci95": [
-   0.4342,
-   0.7292
+   0.5069,
+   0.757
   ],
-  "parlay_accuracy": 0.2821,
+  "parlay_accuracy": 0.3208,
   "confidence_buckets": [
    {
     "min_confidence": 0.5,
-    "n": 39,
+    "n": 53,
     "coverage": 1.0,
-    "accuracy": 0.59
+    "accuracy": 0.642
    },
    {
     "min_confidence": 0.55,
-    "n": 27,
-    "coverage": 0.692,
-    "accuracy": 0.556
-   },
-   {
-    "min_confidence": 0.6,
-    "n": 18,
-    "coverage": 0.462,
-    "accuracy": 0.611
-   },
-   {
-    "min_confidence": 0.65,
-    "n": 14,
-    "coverage": 0.359,
-    "accuracy": 0.571
-   },
-   {
-    "min_confidence": 0.7,
-    "n": 8,
-    "coverage": 0.205,
+    "n": 40,
+    "coverage": 0.755,
     "accuracy": 0.625
    },
    {
+    "min_confidence": 0.6,
+    "n": 27,
+    "coverage": 0.509,
+    "accuracy": 0.667
+   },
+   {
+    "min_confidence": 0.65,
+    "n": 23,
+    "coverage": 0.434,
+    "accuracy": 0.652
+   },
+   {
+    "min_confidence": 0.7,
+    "n": 12,
+    "coverage": 0.226,
+    "accuracy": 0.583
+   },
+   {
     "min_confidence": 0.75,
-    "n": 4,
-    "coverage": 0.103,
-    "accuracy": 0.75
+    "n": 6,
+    "coverage": 0.113,
+    "accuracy": 0.833
    },
    {
     "min_confidence": 0.8,
-    "n": 3,
-    "coverage": 0.077,
+    "n": 5,
+    "coverage": 0.094,
     "accuracy": 1.0
    }
   ]
  },
  "cards": [
   {
+   "slug": "2026-11-14_ufc-334-gane-vs-hokit",
+   "name": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "n_bouts": 13,
+   "graded": false,
+   "n_correct": null,
+   "n_graded": null
+  },
+  {
    "slug": "2026-11-07_ufc-fight-night-cortes-acosta-vs-walker",
    "name": "UFC Fight Night: Cortes Acosta vs. Walker",
    "date": "2026-11-07",
    "n_bouts": 14,
-   "graded": false,
-   "n_correct": null,
-   "n_graded": null
+   "graded": true,
+   "n_correct": 11,
+   "n_graded": 14
   },
   {
    "slug": "2026-10-31_ufc-fight-night-moicano-vs-nolan",

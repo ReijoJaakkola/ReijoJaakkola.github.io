@@ -1,0 +1,9030 @@
+{
+ "slug": "2026-11-14_ufc-334-gane-vs-hokit",
+ "event": {
+  "name": "UFC 334: Gane vs. Hokit",
+  "date": "2026-11-14"
+ },
+ "generated_at": "2026-11-09T22:28:16+00:00",
+ "sections": {
+  "main": 1794708000,
+  "prelims": 1794700800,
+  "early": 1794693600
+ },
+ "summary": null,
+ "fighters": {
+  "Ciryl Gane": {
+   "rec": {
+    "W": 14,
+    "L": 2,
+    "D": 0,
+    "NC": 1
+   },
+   "stance": "Orthodox",
+   "dob": "1990-04-12",
+   "fights": [
+    {
+     "d": "2026-06-14",
+     "opp": "Alex Pereira",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 2,
+     "t": "1:27",
+     "ufc": true
+    },
+    {
+     "d": "2025-10-25",
+     "opp": "Tom Aspinall",
+     "r": "NC",
+     "how": "Could Not Continue, eye poke by gane",
+     "rd": 1,
+     "t": "4:35",
+     "ufc": true
+    },
+    {
+     "d": "2024-12-07",
+     "opp": "Alexander Volkov",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2023-09-02",
+     "opp": "Serghei Spivac",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 2,
+     "t": "3:44",
+     "ufc": true
+    },
+    {
+     "d": "2023-03-04",
+     "opp": "Jon Jones",
+     "r": "L",
+     "how": "Submission, guillotine choke on ground",
+     "rd": 1,
+     "t": "2:04",
+     "ufc": true
+    },
+    {
+     "d": "2022-09-03",
+     "opp": "Tai Tuivasa",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 3,
+     "t": "4:23",
+     "ufc": true
+    },
+    {
+     "d": "2022-01-22",
+     "opp": "Francis Ngannou",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2021-08-07",
+     "opp": "Derrick Lewis",
+     "r": "W",
+     "how": "KO/TKO, punches to head on ground",
+     "rd": 3,
+     "t": "4:11",
+     "ufc": true
+    },
+    {
+     "d": "2021-06-26",
+     "opp": "Alexander Volkov",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2021-02-27",
+     "opp": "Jairzinho Rozenstruik",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2020-12-12",
+     "opp": "Junior Dos Santos",
+     "r": "W",
+     "how": "KO/TKO, elbow to head in clinch",
+     "rd": 2,
+     "t": "2:34",
+     "ufc": true
+    },
+    {
+     "d": "2019-12-21",
+     "opp": "Tanner Boser",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2019-10-26",
+     "opp": "Don'Tale Mayes",
+     "r": "W",
+     "how": "Submission, heel hook from guard",
+     "rd": 3,
+     "t": "4:46",
+     "ufc": true
+    },
+    {
+     "d": "2019-08-10",
+     "opp": "Raphael Pessoa",
+     "r": "W",
+     "how": "Submission, arm triangle from side control",
+     "rd": 1,
+     "t": "4:12",
+     "ufc": true
+    },
+    {
+     "d": "2019-05-24",
+     "opp": "Roggers Souza",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-09-21",
+     "opp": "Adam Dyczka",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-08-02",
+     "opp": "Bobby Sullivan",
+     "r": "W",
+     "how": "Submission, guillotine choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Josh Hokit": {
+   "rec": {
+    "W": 10,
+    "L": 0,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Orthodox",
+   "dob": "1997-11-12",
+   "fights": [
+    {
+     "d": "2026-06-14",
+     "opp": "Derrick Lewis",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 2,
+     "t": "4:09",
+     "ufc": true
+    },
+    {
+     "d": "2026-04-11",
+     "opp": "Curtis Blaydes",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2026-01-24",
+     "opp": "Denzel Freeman",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 1,
+     "t": "4:59",
+     "ufc": true
+    },
+    {
+     "d": "2025-11-08",
+     "opp": "Max Gimenis",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 1,
+     "t": "0:56",
+     "ufc": true
+    },
+    {
+     "d": "2025-08-19",
+     "opp": "Guilherme Uriel",
+     "r": "W",
+     "how": "TKO, elbows",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2025-05-09",
+     "opp": "Eric Lunsford",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2025-03-06",
+     "opp": "Ezekiel Latu",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2025-01-10",
+     "opp": "John Lopez",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-09-07",
+     "opp": "Sean Rose",
+     "r": "W",
+     "how": "Submission, armbar",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-10-07",
+     "opp": "Spencer Smith",
+     "r": "W",
+     "how": "Submission, arm-triangle choke",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Kayla Harrison": {
+   "rec": {
+    "W": 19,
+    "L": 1,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Southpaw",
+   "dob": "1990-07-02",
+   "fights": [
+    {
+     "d": "2025-06-07",
+     "opp": "Julianna Pena",
+     "r": "W",
+     "how": "Submission, kimura from side control",
+     "rd": 2,
+     "t": "4:55",
+     "ufc": true
+    },
+    {
+     "d": "2024-10-05",
+     "opp": "Ketlen Vieira",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2024-04-13",
+     "opp": "Holly Holm",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 2,
+     "t": "1:47",
+     "ufc": true
+    },
+    {
+     "d": "2023-11-24",
+     "opp": "Aspen Ladd",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-11-25",
+     "opp": "Larissa Pacheco",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-08-20",
+     "opp": "Martina Jindrova",
+     "r": "W",
+     "how": "Submission, arm-triangle choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-07-01",
+     "opp": "Kaitlin Young",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-05-06",
+     "opp": "Marina Spivac",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-10-27",
+     "opp": "Taylor Guardado",
+     "r": "W",
+     "how": "Submission, armbar",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-08-19",
+     "opp": "Genah Fabian",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-06-25",
+     "opp": "Cindy Dandois",
+     "r": "W",
+     "how": "Submission, armbar",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-05-06",
+     "opp": "Mariana Morais",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2020-11-20",
+     "opp": "Courtney King",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-12-31",
+     "opp": "Larissa Pacheco",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-10-11",
+     "opp": "Bobbi Jo Dalziel",
+     "r": "W",
+     "how": "Submission, armbar",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-07-11",
+     "opp": "Morgan Frier",
+     "r": "W",
+     "how": "Submission, keylock",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-05-09",
+     "opp": "Larissa Pacheco",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-12-31",
+     "opp": "Moriel Charneski",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-08-16",
+     "opp": "Jozette Cotton",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-06-21",
+     "opp": "Brittney Elkin",
+     "r": "W",
+     "how": "Submission, armbar",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Amanda Nunes": {
+   "rec": {
+    "W": 23,
+    "L": 5,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Orthodox",
+   "dob": "1988-05-30",
+   "fights": [
+    {
+     "d": "2023-06-10",
+     "opp": "Irene Aldana",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2022-07-30",
+     "opp": "Julianna Pena",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2021-12-11",
+     "opp": "Julianna Pena",
+     "r": "L",
+     "how": "Submission, rear naked choke",
+     "rd": 2,
+     "t": "3:26",
+     "ufc": true
+    },
+    {
+     "d": "2021-03-06",
+     "opp": "Megan Anderson",
+     "r": "W",
+     "how": "Submission, triangle armbar from back control",
+     "rd": 1,
+     "t": "2:03",
+     "ufc": true
+    },
+    {
+     "d": "2020-06-06",
+     "opp": "Felicia Spencer",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2019-12-14",
+     "opp": "Germaine de Randamie",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2019-07-06",
+     "opp": "Holly Holm",
+     "r": "W",
+     "how": "KO/TKO, kick to head at distance",
+     "rd": 1,
+     "t": "4:10",
+     "ufc": true
+    },
+    {
+     "d": "2018-12-29",
+     "opp": "Cristiane Justino",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 1,
+     "t": "0:51",
+     "ufc": true
+    },
+    {
+     "d": "2018-05-12",
+     "opp": "Raquel Pennington",
+     "r": "W",
+     "how": "KO/TKO, punches to head from back control",
+     "rd": 5,
+     "t": "2:36",
+     "ufc": true
+    },
+    {
+     "d": "2017-09-09",
+     "opp": "Valentina Shevchenko",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2016-12-30",
+     "opp": "Ronda Rousey",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 1,
+     "t": "0:48",
+     "ufc": true
+    },
+    {
+     "d": "2016-07-09",
+     "opp": "Miesha Tate",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 1,
+     "t": "3:16",
+     "ufc": true
+    },
+    {
+     "d": "2016-03-05",
+     "opp": "Valentina Shevchenko",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2015-08-08",
+     "opp": "Sara McMann",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 1,
+     "t": "2:53",
+     "ufc": true
+    },
+    {
+     "d": "2015-03-21",
+     "opp": "Shayna Baszler",
+     "r": "W",
+     "how": "KO/TKO, kick to leg at distance",
+     "rd": 1,
+     "t": "1:56",
+     "ufc": true
+    },
+    {
+     "d": "2014-09-27",
+     "opp": "Cat Zingano",
+     "r": "L",
+     "how": "KO/TKO, punches to head from mount",
+     "rd": 3,
+     "t": "1:21",
+     "ufc": true
+    },
+    {
+     "d": "2013-11-06",
+     "opp": "Germaine de Randamie",
+     "r": "W",
+     "how": "KO/TKO, elbows to head from mount",
+     "rd": 1,
+     "t": "3:56",
+     "ufc": true
+    },
+    {
+     "d": "2013-08-03",
+     "opp": "Sheila Gaff",
+     "r": "W",
+     "how": "KO/TKO, elbows to head from guard",
+     "rd": 1,
+     "t": "2:08",
+     "ufc": true
+    },
+    {
+     "d": "2013-01-05",
+     "opp": "Sarah D'Alelio",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2012-07-28",
+     "opp": "Raquel Canuto",
+     "r": "W",
+     "how": "Technical Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2011-09-10",
+     "opp": "Alexis Davis",
+     "r": "L",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2011-01-07",
+     "opp": "Julia Budd",
+     "r": "W",
+     "how": "KO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2010-02-25",
+     "opp": "Ediane Gomes",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2009-12-12",
+     "opp": "Vanessa Porto",
+     "r": "W",
+     "how": "TKO, corner stoppage",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2009-09-12",
+     "opp": "Deise Lee Rocha",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2008-07-01",
+     "opp": "Nadja Nadja",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2008-05-24",
+     "opp": "Paty Barbosa",
+     "r": "W",
+     "how": "TKO, corner stoppage",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2008-03-08",
+     "opp": "Ana Maria",
+     "r": "L",
+     "how": "Submission, armbar",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Caio Borralho": {
+   "rec": {
+    "W": 18,
+    "L": 2,
+    "D": 0,
+    "NC": 1
+   },
+   "stance": "Southpaw",
+   "dob": "1993-01-16",
+   "fights": [
+    {
+     "d": "2026-03-07",
+     "opp": "Reinier de Ridder",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2025-09-06",
+     "opp": "Nassourdine Imavov",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2024-08-24",
+     "opp": "Jared Cannonier",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2024-05-04",
+     "opp": "Paul Craig",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 2,
+     "t": "2:10",
+     "ufc": true
+    },
+    {
+     "d": "2023-11-04",
+     "opp": "Abus Magomedov",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2023-04-29",
+     "opp": "Michal Oleksiejczuk",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 2,
+     "t": "2:49",
+     "ufc": true
+    },
+    {
+     "d": "2022-10-22",
+     "opp": "Makhmud Muradov",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2022-07-09",
+     "opp": "Armen Petrosyan",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2022-04-16",
+     "opp": "Gadzhi Omargadzhiev",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "3:56",
+     "ufc": true
+    },
+    {
+     "d": "2021-10-19",
+     "opp": "Jesse Murray",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-09-28",
+     "opp": "Aaron Jeffery",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2020-10-16",
+     "opp": "Wildemar Souza Santos",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-12-06",
+     "opp": "Ykaro Queiroz",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-08-23",
+     "opp": "Otavio Sagas",
+     "r": "W",
+     "how": "Submission, guillotine choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-06-22",
+     "opp": "Luiz Carlos Alves",
+     "r": "W",
+     "how": "Submission, anaconda choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-09-08",
+     "opp": "Douglas Nascimento",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-06-16",
+     "opp": "Raylander Marques",
+     "r": "NC",
+     "how": "No Contest",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-09-16",
+     "opp": "Luiz Carlos Alves",
+     "r": "W",
+     "how": "TKO",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-09-30",
+     "opp": "Edson Junior",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2015-07-18",
+     "opp": "Joao Carvalho",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2014-12-13",
+     "opp": "Cleiton Rafael",
+     "r": "W",
+     "how": "KO, punch",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Yousri Belgaroui": {
+   "rec": {
+    "W": 11,
+    "L": 3,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Orthodox",
+   "dob": "1992-06-02",
+   "fights": [
+    {
+     "d": "2026-09-12",
+     "opp": "Djorden Santos",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "4:25",
+     "ufc": true
+    },
+    {
+     "d": "2026-03-28",
+     "opp": "Mansur Abdul-Malik",
+     "r": "W",
+     "how": "KO/TKO, knee to head in clinch",
+     "rd": 3,
+     "t": "3:39",
+     "ufc": true
+    },
+    {
+     "d": "2025-10-18",
+     "opp": "Azamat Bekoev",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 3,
+     "t": "0:55",
+     "ufc": true
+    },
+    {
+     "d": "2024-09-10",
+     "opp": "Taiga Iwasaki",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-02-18",
+     "opp": "Ahmed Sami",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-10-29",
+     "opp": "Giorgi Kvelidze",
+     "r": "W",
+     "how": "TKO, knee to the body and punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-08-29",
+     "opp": "Marco Tulio",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-02-24",
+     "opp": "Stefan Pretorius",
+     "r": "W",
+     "how": "TKO, knee and punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-02-05",
+     "opp": "Bogdan Kotlovyanov",
+     "r": "W",
+     "how": "KO, punch to the body",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-07-03",
+     "opp": "Mohamad Osseili",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-03-25",
+     "opp": "Samir Zaidi",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-02-25",
+     "opp": "Ahmed Sami",
+     "r": "L",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-03-19",
+     "opp": "Sallah Dekhissi",
+     "r": "W",
+     "how": "TKO",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-01-22",
+     "opp": "Badreddine Diani",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Uros Medic": {
+   "rec": {
+    "W": 14,
+    "L": 3,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Southpaw",
+   "dob": "1993-04-25",
+   "fights": [
+    {
+     "d": "2026-08-01",
+     "opp": "Daniel Rodriguez",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 1,
+     "t": "0:30",
+     "ufc": true
+    },
+    {
+     "d": "2026-02-21",
+     "opp": "Geoff Neal",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "1:19",
+     "ufc": true
+    },
+    {
+     "d": "2025-11-08",
+     "opp": "Muslim Salikhov",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "1:03",
+     "ufc": true
+    },
+    {
+     "d": "2025-08-09",
+     "opp": "Gilbert Urbina",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "1:03",
+     "ufc": true
+    },
+    {
+     "d": "2025-01-11",
+     "opp": "Punahele Soriano",
+     "r": "L",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "0:31",
+     "ufc": true
+    },
+    {
+     "d": "2024-04-27",
+     "opp": "Tim Means",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "2:09",
+     "ufc": true
+    },
+    {
+     "d": "2023-11-18",
+     "opp": "Myktybek Orolbai",
+     "r": "L",
+     "how": "Submission, neck crank from back control",
+     "rd": 2,
+     "t": "4:12",
+     "ufc": true
+    },
+    {
+     "d": "2023-07-29",
+     "opp": "Matthew Semelsberger",
+     "r": "W",
+     "how": "KO/TKO, spinning back elbow to head at distance",
+     "rd": 3,
+     "t": "2:36",
+     "ufc": true
+    },
+    {
+     "d": "2022-05-21",
+     "opp": "Omar Morales",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 2,
+     "t": "3:05",
+     "ufc": true
+    },
+    {
+     "d": "2021-09-25",
+     "opp": "Jalin Turner",
+     "r": "L",
+     "how": "Submission, rear naked choke",
+     "rd": 1,
+     "t": "4:01",
+     "ufc": true
+    },
+    {
+     "d": "2021-03-06",
+     "opp": "Aalon Cruz",
+     "r": "W",
+     "how": "KO/TKO, punches to head on ground",
+     "rd": 1,
+     "t": "1:40",
+     "ufc": true
+    },
+    {
+     "d": "2020-08-04",
+     "opp": "Mikey Gonzalez",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-05-22",
+     "opp": "Alonzo Leisholm Jr.",
+     "r": "W",
+     "how": "TKO",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-10-17",
+     "opp": "Jason Flowers",
+     "r": "W",
+     "how": "Submission, triangle choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-03-28",
+     "opp": "Nathan Feitosa",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-01-17",
+     "opp": "Seth Kroll",
+     "r": "W",
+     "how": "Submission, triangle choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-06-10",
+     "opp": "Rob Rivera",
+     "r": "W",
+     "how": "TKO",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Kevin Holland": {
+   "rec": {
+    "W": 29,
+    "L": 15,
+    "D": 0,
+    "NC": 1
+   },
+   "stance": "Orthodox",
+   "dob": "1992-11-05",
+   "fights": [
+    {
+     "d": "2026-04-11",
+     "opp": "Randy Brown",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2025-10-18",
+     "opp": "Mike Malott",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2025-07-19",
+     "opp": "Daniel Rodriguez",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2025-06-07",
+     "opp": "Vicente Luque",
+     "r": "W",
+     "how": "Submission, anaconda choke on ground",
+     "rd": 2,
+     "t": "1:03",
+     "ufc": true
+    },
+    {
+     "d": "2025-03-22",
+     "opp": "Gunnar Nelson",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2025-01-18",
+     "opp": "Reinier de Ridder",
+     "r": "L",
+     "how": "Submission, rear naked choke",
+     "rd": 1,
+     "t": "3:31",
+     "ufc": true
+    },
+    {
+     "d": "2024-10-05",
+     "opp": "Roman Dolidze",
+     "r": "L",
+     "how": "KO/TKO, torib injury",
+     "rd": 1,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2024-06-01",
+     "opp": "Michal Oleksiejczuk",
+     "r": "W",
+     "how": "Submission, armbar from bottom guard",
+     "rd": 1,
+     "t": "1:34",
+     "ufc": true
+    },
+    {
+     "d": "2024-03-09",
+     "opp": "Michael Page",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2023-09-16",
+     "opp": "Jack Della Maddalena",
+     "r": "L",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2023-07-29",
+     "opp": "Michael Chiesa",
+     "r": "W",
+     "how": "Submission, d'arce choke on ground",
+     "rd": 1,
+     "t": "2:39",
+     "ufc": true
+    },
+    {
+     "d": "2023-04-08",
+     "opp": "Santiago Ponzinibbio",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 3,
+     "t": "3:16",
+     "ufc": true
+    },
+    {
+     "d": "2022-12-03",
+     "opp": "Stephen Thompson",
+     "r": "L",
+     "how": "KO/TKO, tocorner stoppage",
+     "rd": 4,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2022-09-10",
+     "opp": "Khamzat Chimaev",
+     "r": "L",
+     "how": "Submission, d'arce choke on ground",
+     "rd": 1,
+     "t": "2:13",
+     "ufc": true
+    },
+    {
+     "d": "2022-06-18",
+     "opp": "Tim Means",
+     "r": "W",
+     "how": "Submission, d'arce choke on ground",
+     "rd": 2,
+     "t": "1:28",
+     "ufc": true
+    },
+    {
+     "d": "2022-03-05",
+     "opp": "Alex Oliveira",
+     "r": "W",
+     "how": "KO/TKO, elbows to head from half guard",
+     "rd": 2,
+     "t": "0:38",
+     "ufc": true
+    },
+    {
+     "d": "2021-10-02",
+     "opp": "Kyle Daukaus",
+     "r": "NC",
+     "how": "Overturned, daukaus submission overturned on replay",
+     "rd": 1,
+     "t": "3:43",
+     "ufc": true
+    },
+    {
+     "d": "2021-04-10",
+     "opp": "Marvin Vettori",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2021-03-20",
+     "opp": "Derek Brunson",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2020-12-12",
+     "opp": "Jacare Souza",
+     "r": "W",
+     "how": "KO/TKO, punch to head from bottom",
+     "rd": 1,
+     "t": "1:45",
+     "ufc": true
+    },
+    {
+     "d": "2020-10-31",
+     "opp": "Charlie Ontiveros",
+     "r": "W",
+     "how": "Submission, injuryverbal submission",
+     "rd": 1,
+     "t": "2:39",
+     "ufc": true
+    },
+    {
+     "d": "2020-09-19",
+     "opp": "Darren Stewart",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2020-08-08",
+     "opp": "Joaquin Buckley",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 3,
+     "t": "0:32",
+     "ufc": true
+    },
+    {
+     "d": "2020-05-16",
+     "opp": "Anthony Hernandez",
+     "r": "W",
+     "how": "KO/TKO, knees to body in clinch",
+     "rd": 1,
+     "t": "0:39",
+     "ufc": true
+    },
+    {
+     "d": "2019-10-18",
+     "opp": "Brendan Allen",
+     "r": "L",
+     "how": "Submission, rear naked choke",
+     "rd": 2,
+     "t": "3:38",
+     "ufc": true
+    },
+    {
+     "d": "2019-06-22",
+     "opp": "Alessio Di Chirico",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2019-03-30",
+     "opp": "Gerald Meerschaert",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2018-11-24",
+     "opp": "John Phillips",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 3,
+     "t": "4:05",
+     "ufc": true
+    },
+    {
+     "d": "2018-08-04",
+     "opp": "Thiago Santos",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2018-06-12",
+     "opp": "Will Santiago Jr.",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-03-02",
+     "opp": "Teagan Dooley",
+     "r": "W",
+     "how": "Submission, triangle choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-01-06",
+     "opp": "Hayward Charles",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-09-01",
+     "opp": "Grady Hurley",
+     "r": "W",
+     "how": "TKO, knee and punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-06-02",
+     "opp": "Curtis Millender",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-03-18",
+     "opp": "David Gomez",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-01-28",
+     "opp": "Geoff Neal",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-11-05",
+     "opp": "Jose Alfredo Leija",
+     "r": "W",
+     "how": "TKO, submission to punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-09-18",
+     "opp": "Sam Liera",
+     "r": "W",
+     "how": "Submission, guillotine choke",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-03-05",
+     "opp": "Sam Liera",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2015-10-02",
+     "opp": "Rafael Lovato Jr.",
+     "r": "L",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2015-08-15",
+     "opp": "Ramil Mustapaev",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2015-06-27",
+     "opp": "Victor Reyna",
+     "r": "W",
+     "how": "Submission, guillotine choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2015-05-29",
+     "opp": "Aaron Reves",
+     "r": "W",
+     "how": "Submission",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2015-04-25",
+     "opp": "Jason Perrotta",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2015-03-28",
+     "opp": "Marcos Ayub",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Bilal Hasan": {
+   "rec": {
+    "W": 10,
+    "L": 0,
+    "D": 0,
+    "NC": 1
+   },
+   "stance": null,
+   "dob": "2001-07-16",
+   "fights": [
+    {
+     "d": "2026-08-29",
+     "opp": "Nilson Rojas",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 2,
+     "t": "2:28",
+     "ufc": true
+    },
+    {
+     "d": "2026-08-11",
+     "opp": "Mridul Saikia",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2025-12-20",
+     "opp": "Renaldy Manse",
+     "r": "W",
+     "how": "TKO, punch to the body",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2025-06-06",
+     "opp": "Jason Eastman",
+     "r": "W",
+     "how": "TKO, front kick to the body and punches",
+     "rd": 4,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2025-02-01",
+     "opp": "Brian Hauser",
+     "r": "W",
+     "how": "KO, punch to the body",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-09-27",
+     "opp": "Jose Leon",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-06-14",
+     "opp": "Shamel Findley",
+     "r": "W",
+     "how": "KO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-02-09",
+     "opp": "Jacob Romano",
+     "r": "W",
+     "how": "KO, spinning wheel kick",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-09-01",
+     "opp": "Orlando Ortega",
+     "r": "W",
+     "how": "TKO, body kick and punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-07-29",
+     "opp": "Sonny Suranjin",
+     "r": "NC",
+     "how": "No Contest",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-12-16",
+     "opp": "Xhelal Lleshi",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Luis Gurule": {
+   "rec": {
+    "W": 11,
+    "L": 4,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Orthodox",
+   "dob": "1993-11-16",
+   "fights": [
+    {
+     "d": "2026-05-30",
+     "opp": "Rei Tsuruya",
+     "r": "L",
+     "how": "Submission, rear naked choke",
+     "rd": 1,
+     "t": "3:19",
+     "ufc": true
+    },
+    {
+     "d": "2026-05-16",
+     "opp": "Daniel Barez",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2026-02-21",
+     "opp": "Alden Coria",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2025-09-13",
+     "opp": "Jesus Aguilar",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2025-04-05",
+     "opp": "Ode Osbourne",
+     "r": "L",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 2,
+     "t": "1:54",
+     "ufc": true
+    },
+    {
+     "d": "2024-10-15",
+     "opp": "Nick Piccininni",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-09-22",
+     "opp": "Jacob Silva",
+     "r": "W",
+     "how": "Technical Submission, arm-triangle choke",
+     "rd": 4,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-04-21",
+     "opp": "Alberto Trujillo",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-10-22",
+     "opp": "Gerardo Graniel",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-08-27",
+     "opp": "Jonathan Davis",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-05-07",
+     "opp": "Carlos Lozoya",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-12-09",
+     "opp": "Ryan Mondala",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-11-11",
+     "opp": "Jayson Scott",
+     "r": "W",
+     "how": "TKO, strikes",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-09-09",
+     "opp": "Josiah Reyes",
+     "r": "W",
+     "how": "TKO, knee and punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-06-03",
+     "opp": "Anthony Valenzuela",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Stephen Thompson": {
+   "rec": {
+    "W": 17,
+    "L": 9,
+    "D": 1,
+    "NC": 0
+   },
+   "stance": "Orthodox",
+   "dob": "1983-02-11",
+   "fights": [
+    {
+     "d": "2025-07-12",
+     "opp": "Gabriel Bonfim",
+     "r": "L",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2024-10-05",
+     "opp": "Joaquin Buckley",
+     "r": "L",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 3,
+     "t": "2:17",
+     "ufc": true
+    },
+    {
+     "d": "2023-12-16",
+     "opp": "Shavkat Rakhmonov",
+     "r": "L",
+     "how": "Submission, rear naked choke",
+     "rd": 2,
+     "t": "4:56",
+     "ufc": true
+    },
+    {
+     "d": "2022-12-03",
+     "opp": "Kevin Holland",
+     "r": "W",
+     "how": "KO/TKO, tocorner stoppage",
+     "rd": 4,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2021-12-18",
+     "opp": "Belal Muhammad",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2021-07-10",
+     "opp": "Gilbert Burns",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2020-12-19",
+     "opp": "Geoff Neal",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2019-11-02",
+     "opp": "Vicente Luque",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2019-03-23",
+     "opp": "Anthony Pettis",
+     "r": "L",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 2,
+     "t": "4:55",
+     "ufc": true
+    },
+    {
+     "d": "2018-05-27",
+     "opp": "Darren Till",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2017-11-04",
+     "opp": "Jorge Masvidal",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2017-03-04",
+     "opp": "Tyron Woodley",
+     "r": "L",
+     "how": "Decision, majority",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2016-11-12",
+     "opp": "Tyron Woodley",
+     "r": "D",
+     "how": "Decision, majority",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2016-06-18",
+     "opp": "Rory MacDonald",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2016-02-06",
+     "opp": "Johny Hendricks",
+     "r": "W",
+     "how": "KO/TKO, punch to head in clinch",
+     "rd": 1,
+     "t": "3:31",
+     "ufc": true
+    },
+    {
+     "d": "2015-07-12",
+     "opp": "Jake Ellenberger",
+     "r": "W",
+     "how": "KO/TKO, kick to head at distancewheel kick",
+     "rd": 1,
+     "t": "4:29",
+     "ufc": true
+    },
+    {
+     "d": "2014-09-27",
+     "opp": "Patrick Cote",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2014-02-22",
+     "opp": "Robert Whittaker",
+     "r": "W",
+     "how": "KO/TKO, punches to head in clinch",
+     "rd": 1,
+     "t": "3:43",
+     "ufc": true
+    },
+    {
+     "d": "2013-09-21",
+     "opp": "Chris Clements",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 2,
+     "t": "1:27",
+     "ufc": true
+    },
+    {
+     "d": "2013-05-25",
+     "opp": "Nah-Shon Burrell",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2012-04-21",
+     "opp": "Matt Brown",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2012-02-04",
+     "opp": "Dan Stittgen",
+     "r": "W",
+     "how": "KO/TKO, kick to head at distance",
+     "rd": 1,
+     "t": "4:13",
+     "ufc": true
+    },
+    {
+     "d": "2011-10-01",
+     "opp": "Patrick Mandio",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2011-07-15",
+     "opp": "William Kuhn",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2010-09-18",
+     "opp": "Marques  Worrell",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2010-05-22",
+     "opp": "Danny Finz",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2010-02-05",
+     "opp": "Jeremy Joles",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Charles Radtke": {
+   "rec": {
+    "W": 12,
+    "L": 5,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Orthodox",
+   "dob": "1990-07-09",
+   "fights": [
+    {
+     "d": "2026-04-11",
+     "opp": "Francisco Prado",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2025-11-01",
+     "opp": "Daniel Frunza",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 3,
+     "t": "4:29",
+     "ufc": true
+    },
+    {
+     "d": "2025-05-10",
+     "opp": "Mike Malott",
+     "r": "L",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 2,
+     "t": "0:26",
+     "ufc": true
+    },
+    {
+     "d": "2024-11-09",
+     "opp": "Matthew Semelsberger",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 1,
+     "t": "0:51",
+     "ufc": true
+    },
+    {
+     "d": "2024-06-08",
+     "opp": "Carlos Prates",
+     "r": "L",
+     "how": "KO/TKO, knee to body at distance",
+     "rd": 1,
+     "t": "4:47",
+     "ufc": true
+    },
+    {
+     "d": "2024-02-03",
+     "opp": "Gilbert Urbina",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "4:47",
+     "ufc": true
+    },
+    {
+     "d": "2023-09-09",
+     "opp": "Blood Diamond",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2023-04-01",
+     "opp": "Raheam Forest",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-07-14",
+     "opp": "Caleb Crump",
+     "r": "W",
+     "how": "KO, punch",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-03-17",
+     "opp": "Jonathan Piersma",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-09-16",
+     "opp": "Brandon Lopez",
+     "r": "W",
+     "how": "KO, punch",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-03-27",
+     "opp": "Justin Montalvo",
+     "r": "L",
+     "how": "KO, punch to the body",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-01-30",
+     "opp": "Geralbert Castillo",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-05-11",
+     "opp": "Christopher Gonzalez",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-03-10",
+     "opp": "Austin Hubbard",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-03-25",
+     "opp": "Jeffrey Pelton",
+     "r": "W",
+     "how": "KO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2012-11-17",
+     "opp": "Jimmy Kim",
+     "r": "W",
+     "how": "Submission, triangle choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Drew Dober": {
+   "rec": {
+    "W": 29,
+    "L": 14,
+    "D": 0,
+    "NC": 1
+   },
+   "stance": "Southpaw",
+   "dob": "1988-10-19",
+   "fights": [
+    {
+     "d": "2026-03-07",
+     "opp": "Michael Johnson",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 2,
+     "t": "1:53",
+     "ufc": true
+    },
+    {
+     "d": "2025-10-18",
+     "opp": "Kyle Prepolec",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 3,
+     "t": "1:16",
+     "ufc": true
+    },
+    {
+     "d": "2025-03-29",
+     "opp": "Manuel Torres",
+     "r": "L",
+     "how": "KO/TKO, punches to head on ground",
+     "rd": 1,
+     "t": "1:45",
+     "ufc": true
+    },
+    {
+     "d": "2024-02-03",
+     "opp": "Renato Moicano",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2023-10-07",
+     "opp": "Ricky Glenn",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 1,
+     "t": "2:36",
+     "ufc": true
+    },
+    {
+     "d": "2023-05-06",
+     "opp": "Matt Frevola",
+     "r": "L",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "4:08",
+     "ufc": true
+    },
+    {
+     "d": "2022-12-17",
+     "opp": "King Green",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 2,
+     "t": "2:45",
+     "ufc": true
+    },
+    {
+     "d": "2022-07-30",
+     "opp": "Rafael Alves",
+     "r": "W",
+     "how": "KO/TKO, punch to body at distance",
+     "rd": 3,
+     "t": "1:30",
+     "ufc": true
+    },
+    {
+     "d": "2022-03-12",
+     "opp": "Terrance McKinney",
+     "r": "W",
+     "how": "KO/TKO, punches to head on ground",
+     "rd": 1,
+     "t": "3:17",
+     "ufc": true
+    },
+    {
+     "d": "2021-06-12",
+     "opp": "Brad Riddell",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2021-03-06",
+     "opp": "Islam Makhachev",
+     "r": "L",
+     "how": "Submission, arm triangle from half guard",
+     "rd": 3,
+     "t": "1:37",
+     "ufc": true
+    },
+    {
+     "d": "2020-05-13",
+     "opp": "Alexander Hernandez",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 2,
+     "t": "4:25",
+     "ufc": true
+    },
+    {
+     "d": "2020-01-18",
+     "opp": "Nasrat Haqparast",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "1:10",
+     "ufc": true
+    },
+    {
+     "d": "2019-06-29",
+     "opp": "Marco Polo Reyes",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 1,
+     "t": "1:07",
+     "ufc": true
+    },
+    {
+     "d": "2019-03-09",
+     "opp": "Beneil Dariush",
+     "r": "L",
+     "how": "Submission, armbar on ground",
+     "rd": 2,
+     "t": "4:41",
+     "ufc": true
+    },
+    {
+     "d": "2018-08-25",
+     "opp": "Jon Tuck",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2018-01-27",
+     "opp": "Frank Camacho",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2017-07-29",
+     "opp": "Joshua Burkman",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "3:04",
+     "ufc": true
+    },
+    {
+     "d": "2016-12-10",
+     "opp": "Olivier Aubin-Mercier",
+     "r": "L",
+     "how": "Submission, rear naked choke",
+     "rd": 2,
+     "t": "2:57",
+     "ufc": true
+    },
+    {
+     "d": "2016-09-10",
+     "opp": "Jason Gonzalez",
+     "r": "W",
+     "how": "KO/TKO, punch to head in clinch",
+     "rd": 1,
+     "t": "1:45",
+     "ufc": true
+    },
+    {
+     "d": "2016-01-02",
+     "opp": "Scott Holtzman",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2015-06-13",
+     "opp": "Efrain Escudero",
+     "r": "L",
+     "how": "Submission, guillotine choke on ground",
+     "rd": 1,
+     "t": "0:54",
+     "ufc": true
+    },
+    {
+     "d": "2015-03-21",
+     "opp": "Leandro Silva",
+     "r": "NC",
+     "how": "Overturned, early stoppage",
+     "rd": 2,
+     "t": "2:45",
+     "ufc": true
+    },
+    {
+     "d": "2014-12-13",
+     "opp": "Jamie Varner",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 1,
+     "t": "1:52",
+     "ufc": true
+    },
+    {
+     "d": "2014-05-31",
+     "opp": "Nick Hein",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2013-11-30",
+     "opp": "Sean Spencer",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2013-10-18",
+     "opp": "Tony Sims",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2013-07-27",
+     "opp": "T.J. O'Brien",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2013-03-01",
+     "opp": "Aaron Derrow",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2013-01-26",
+     "opp": "Sean Wilson",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2012-12-15",
+     "opp": "Robert Rojas Jr.",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2012-08-10",
+     "opp": "Will Brooks",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2012-04-13",
+     "opp": "Ted Worthington",
+     "r": "W",
+     "how": "TKO, retirement",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2011-11-04",
+     "opp": "Jordan    Johnson",
+     "r": "W",
+     "how": "TKO, submission to punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2011-07-30",
+     "opp": "Sam Jackson",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2011-04-01",
+     "opp": "Ramiro Hernandez",
+     "r": "L",
+     "how": "KO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2011-01-28",
+     "opp": "Bobby    Cooper",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2010-12-11",
+     "opp": "Kody Frank",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2010-11-12",
+     "opp": "Steve Simmons",
+     "r": "W",
+     "how": "TKO, submission to punches",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2010-07-30",
+     "opp": "Jimmy Seipel",
+     "r": "W",
+     "how": "TKO, submission to punches and elbows",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2010-04-29",
+     "opp": "Nick Nolte",
+     "r": "W",
+     "how": "Submission, arm-triangle choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2009-11-13",
+     "opp": "Brandon Girtz",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2009-09-12",
+     "opp": "Chase Hackett",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2009-07-24",
+     "opp": "Frank Caraballo",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Chris Duncan": {
+   "rec": {
+    "W": 15,
+    "L": 3,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Orthodox",
+   "dob": "1993-05-10",
+   "fights": [
+    {
+     "d": "2026-04-04",
+     "opp": "Renato Moicano",
+     "r": "L",
+     "how": "Submission, rear naked choke",
+     "rd": 2,
+     "t": "3:14",
+     "ufc": true
+    },
+    {
+     "d": "2025-12-06",
+     "opp": "Terrance McKinney",
+     "r": "W",
+     "how": "Submission, anaconda choke on ground",
+     "rd": 1,
+     "t": "2:30",
+     "ufc": true
+    },
+    {
+     "d": "2025-08-02",
+     "opp": "Mateusz Rebecki",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2025-03-22",
+     "opp": "Jordan Vucenic",
+     "r": "W",
+     "how": "Submission, guillotine choke after drop to guard",
+     "rd": 2,
+     "t": "3:42",
+     "ufc": true
+    },
+    {
+     "d": "2024-09-28",
+     "opp": "Bolaji Oki",
+     "r": "W",
+     "how": "Submission, guillotine choke from guard",
+     "rd": 1,
+     "t": "3:34",
+     "ufc": true
+    },
+    {
+     "d": "2024-02-24",
+     "opp": "Manuel Torres",
+     "r": "L",
+     "how": "Submission, rear naked choke",
+     "rd": 1,
+     "t": "1:46",
+     "ufc": true
+    },
+    {
+     "d": "2023-07-22",
+     "opp": "Yanal Ashmouz",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2023-03-18",
+     "opp": "Omar Morales",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2022-08-02",
+     "opp": "Charlie Campbell",
+     "r": "W",
+     "how": "KO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-02-05",
+     "opp": "Jonathan Carlos",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-10-12",
+     "opp": "Viacheslav Borshchev",
+     "r": "L",
+     "how": "KO, punch",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2020-10-01",
+     "opp": "Iamik Furtado",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2020-02-22",
+     "opp": "Mateusz Piskorz",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-08-04",
+     "opp": "Leandro Souza",
+     "r": "W",
+     "how": "TKO, head kick and punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-02-23",
+     "opp": "Sam Slater",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-11-17",
+     "opp": "Niall Smith",
+     "r": "W",
+     "how": "TKO",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-06-02",
+     "opp": "Steven Moore",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-04-07",
+     "opp": "Pietro Colonna",
+     "r": "W",
+     "how": "Submission, guillotine choke",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Jim Miller": {
+   "rec": {
+    "W": 39,
+    "L": 19,
+    "D": 0,
+    "NC": 1
+   },
+   "stance": "Southpaw",
+   "dob": "1983-08-30",
+   "fights": [
+    {
+     "d": "2026-05-09",
+     "opp": "Jared Gordon",
+     "r": "W",
+     "how": "Submission, guillotine choke from bottom guard",
+     "rd": 1,
+     "t": "3:29",
+     "ufc": true
+    },
+    {
+     "d": "2025-04-12",
+     "opp": "Chase Hooper",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2024-11-16",
+     "opp": "Damon Jackson",
+     "r": "W",
+     "how": "Submission, guillotine choke after drop to guard",
+     "rd": 1,
+     "t": "2:44",
+     "ufc": true
+    },
+    {
+     "d": "2024-04-13",
+     "opp": "King Green",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2024-01-13",
+     "opp": "Gabriel Benitez",
+     "r": "W",
+     "how": "Submission, neck crank from back control",
+     "rd": 3,
+     "t": "3:25",
+     "ufc": true
+    },
+    {
+     "d": "2023-06-03",
+     "opp": "Jesse Butler",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "0:23",
+     "ufc": true
+    },
+    {
+     "d": "2023-02-18",
+     "opp": "Alexander Hernandez",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2022-07-02",
+     "opp": "Donald Cerrone",
+     "r": "W",
+     "how": "Submission, guillotine choke after drop to guard",
+     "rd": 2,
+     "t": "1:32",
+     "ufc": true
+    },
+    {
+     "d": "2022-02-19",
+     "opp": "Nikolas Motta",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 2,
+     "t": "1:58",
+     "ufc": true
+    },
+    {
+     "d": "2021-10-16",
+     "opp": "Erick Gonzalez",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 2,
+     "t": "0:14",
+     "ufc": true
+    },
+    {
+     "d": "2021-04-10",
+     "opp": "Joe Solecki",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2020-08-15",
+     "opp": "Vinc Pichel",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2020-06-20",
+     "opp": "Roosevelt Roberts",
+     "r": "W",
+     "how": "Submission, armbar from bottom guard",
+     "rd": 1,
+     "t": "2:25",
+     "ufc": true
+    },
+    {
+     "d": "2020-02-15",
+     "opp": "Scott Holtzman",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2019-08-03",
+     "opp": "Clay Guida",
+     "r": "W",
+     "how": "Submission, guillotine choke after drop to guard",
+     "rd": 1,
+     "t": "0:58",
+     "ufc": true
+    },
+    {
+     "d": "2019-04-27",
+     "opp": "Jason Gonzalez",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 1,
+     "t": "2:12",
+     "ufc": true
+    },
+    {
+     "d": "2018-12-15",
+     "opp": "Charles Oliveira",
+     "r": "L",
+     "how": "Submission, rear naked choke",
+     "rd": 1,
+     "t": "1:15",
+     "ufc": true
+    },
+    {
+     "d": "2018-09-08",
+     "opp": "Alex White",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 1,
+     "t": "1:29",
+     "ufc": true
+    },
+    {
+     "d": "2018-04-21",
+     "opp": "Dan Hooker",
+     "r": "L",
+     "how": "KO/TKO, knee to head in clinch",
+     "rd": 1,
+     "t": "3:00",
+     "ufc": true
+    },
+    {
+     "d": "2017-10-28",
+     "opp": "Francisco Trinaldo",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2017-07-08",
+     "opp": "Anthony Pettis",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2017-02-11",
+     "opp": "Dustin Poirier",
+     "r": "L",
+     "how": "Decision, majority",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2016-11-12",
+     "opp": "Thiago Alves",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2016-08-27",
+     "opp": "Joe Lauzon",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2016-07-09",
+     "opp": "Takanori Gomi",
+     "r": "W",
+     "how": "KO/TKO, punches to head from back control",
+     "rd": 1,
+     "t": "2:18",
+     "ufc": true
+    },
+    {
+     "d": "2016-03-05",
+     "opp": "Diego Sanchez",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2015-12-10",
+     "opp": "Michael Chiesa",
+     "r": "L",
+     "how": "Submission, rear naked choke",
+     "rd": 2,
+     "t": "2:57",
+     "ufc": true
+    },
+    {
+     "d": "2015-07-25",
+     "opp": "Danny Castillo",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2015-04-18",
+     "opp": "Beneil Dariush",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2014-07-16",
+     "opp": "Donald Cerrone",
+     "r": "L",
+     "how": "KO/TKO, kick to head at distance",
+     "rd": 2,
+     "t": "3:31",
+     "ufc": true
+    },
+    {
+     "d": "2014-04-26",
+     "opp": "Yancy Medeiros",
+     "r": "W",
+     "how": "Submission, guillotine choke after drop to half guard",
+     "rd": 1,
+     "t": "3:18",
+     "ufc": true
+    },
+    {
+     "d": "2013-12-28",
+     "opp": "Fabricio Camoes",
+     "r": "W",
+     "how": "Submission, armbar from bottom guard",
+     "rd": 1,
+     "t": "3:42",
+     "ufc": true
+    },
+    {
+     "d": "2013-04-27",
+     "opp": "Pat Healy",
+     "r": "NC",
+     "how": "Overturned, failed drug test by healy",
+     "rd": 3,
+     "t": "4:02",
+     "ufc": true
+    },
+    {
+     "d": "2012-12-29",
+     "opp": "Joe Lauzon",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2012-05-05",
+     "opp": "Nate Diaz",
+     "r": "L",
+     "how": "Submission, guillotine choke after drop to ground",
+     "rd": 2,
+     "t": "4:09",
+     "ufc": true
+    },
+    {
+     "d": "2012-01-20",
+     "opp": "Melvin Guillard",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 1,
+     "t": "3:04",
+     "ufc": true
+    },
+    {
+     "d": "2011-08-14",
+     "opp": "Benson Henderson",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2011-03-19",
+     "opp": "Kamal Shalorus",
+     "r": "W",
+     "how": "KO/TKO, knee to head in clinch",
+     "rd": 3,
+     "t": "2:15",
+     "ufc": true
+    },
+    {
+     "d": "2010-12-11",
+     "opp": "Charles Oliveira",
+     "r": "W",
+     "how": "Submission, kneebar on ground",
+     "rd": 1,
+     "t": "1:59",
+     "ufc": true
+    },
+    {
+     "d": "2010-09-15",
+     "opp": "Gleison Tibau",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2010-03-27",
+     "opp": "Mark Bocek",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2010-01-02",
+     "opp": "Duane Ludwig",
+     "r": "W",
+     "how": "Submission, armbar from mount",
+     "rd": 1,
+     "t": "2:31",
+     "ufc": true
+    },
+    {
+     "d": "2009-09-19",
+     "opp": "Steve Lopez",
+     "r": "W",
+     "how": "KO/TKO, toshoulder injury",
+     "rd": 2,
+     "t": "0:48",
+     "ufc": true
+    },
+    {
+     "d": "2009-07-11",
+     "opp": "Mac Danzig",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2009-03-07",
+     "opp": "Gray Maynard",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2008-12-10",
+     "opp": "Matt Wiman",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2008-10-18",
+     "opp": "David Baron",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 3,
+     "t": "3:19",
+     "ufc": true
+    },
+    {
+     "d": "2008-04-04",
+     "opp": "Bart Palaszewski",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2008-03-07",
+     "opp": "Chris Liguori",
+     "r": "W",
+     "how": "Submission, guillotine choke",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2007-11-30",
+     "opp": "Chris Liguori",
+     "r": "W",
+     "how": "TKO, doctor stoppage",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2007-10-20",
+     "opp": "Nuri Shakir",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2007-06-23",
+     "opp": "Anthony Morrison",
+     "r": "W",
+     "how": "Submission, triangle choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2007-04-13",
+     "opp": "Al Buck",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2006-11-18",
+     "opp": "Frankie Edgar",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2006-09-30",
+     "opp": "James Jones",
+     "r": "W",
+     "how": "Submission, triangle choke",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2006-08-05",
+     "opp": "Muhsin Corbbrey",
+     "r": "W",
+     "how": "Submission, armbar",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2006-04-29",
+     "opp": "Joseph Andujar",
+     "r": "W",
+     "how": "Submission, arm-triangle choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2006-02-11",
+     "opp": "Kevin Roddy",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2005-11-19",
+     "opp": "Eddie Fyvie",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Terrance McKinney": {
+   "rec": {
+    "W": 18,
+    "L": 9,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Switch",
+   "dob": "1994-09-15",
+   "fights": [
+    {
+     "d": "2026-07-11",
+     "opp": "King Green",
+     "r": "L",
+     "how": "KO/TKO, punch to body at distance",
+     "rd": 1,
+     "t": "4:59",
+     "ufc": true
+    },
+    {
+     "d": "2026-03-28",
+     "opp": "Kyle Nelson",
+     "r": "W",
+     "how": "KO/TKO, punches to head from half guard",
+     "rd": 1,
+     "t": "0:24",
+     "ufc": true
+    },
+    {
+     "d": "2025-12-06",
+     "opp": "Chris Duncan",
+     "r": "L",
+     "how": "Submission, anaconda choke on ground",
+     "rd": 1,
+     "t": "2:30",
+     "ufc": true
+    },
+    {
+     "d": "2025-06-28",
+     "opp": "Viacheslav Borshchev",
+     "r": "W",
+     "how": "Submission, guillotine choke from mount",
+     "rd": 1,
+     "t": "0:55",
+     "ufc": true
+    },
+    {
+     "d": "2025-02-01",
+     "opp": "Damir Hadzovic",
+     "r": "W",
+     "how": "KO/TKO, punches to head from back control",
+     "rd": 1,
+     "t": "2:01",
+     "ufc": true
+    },
+    {
+     "d": "2024-05-11",
+     "opp": "Esteban Ribovics",
+     "r": "L",
+     "how": "KO/TKO, kick to head at distance",
+     "rd": 1,
+     "t": "0:37",
+     "ufc": true
+    },
+    {
+     "d": "2023-10-14",
+     "opp": "Brendon Marotte",
+     "r": "W",
+     "how": "KO/TKO, knee to head in clinch",
+     "rd": 1,
+     "t": "0:20",
+     "ufc": true
+    },
+    {
+     "d": "2023-08-12",
+     "opp": "Mike Breeden",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 1,
+     "t": "1:25",
+     "ufc": true
+    },
+    {
+     "d": "2023-07-15",
+     "opp": "Nazim Sadykhov",
+     "r": "L",
+     "how": "Submission, rear naked choke",
+     "rd": 2,
+     "t": "1:07",
+     "ufc": true
+    },
+    {
+     "d": "2023-01-21",
+     "opp": "Ismael Bonfim",
+     "r": "L",
+     "how": "KO/TKO, flying knee head",
+     "rd": 2,
+     "t": "2:17",
+     "ufc": true
+    },
+    {
+     "d": "2022-08-06",
+     "opp": "Erick Gonzalez",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 1,
+     "t": "2:17",
+     "ufc": true
+    },
+    {
+     "d": "2022-03-12",
+     "opp": "Drew Dober",
+     "r": "L",
+     "how": "KO/TKO, punches to head on ground",
+     "rd": 1,
+     "t": "3:17",
+     "ufc": true
+    },
+    {
+     "d": "2022-02-26",
+     "opp": "Fares Ziam",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 1,
+     "t": "2:11",
+     "ufc": true
+    },
+    {
+     "d": "2021-06-12",
+     "opp": "Matt Frevola",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "0:07",
+     "ufc": true
+    },
+    {
+     "d": "2021-06-04",
+     "opp": "Michael Irizarry",
+     "r": "W",
+     "how": "KO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-04-30",
+     "opp": "Luiz Antonio Lobo Gavinho",
+     "r": "W",
+     "how": "KO, head kick",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-03-06",
+     "opp": "Dedrek Sanders",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-10-19",
+     "opp": "Darrick Minner",
+     "r": "L",
+     "how": "Submission, triangle choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-07-23",
+     "opp": "Sean Woodson",
+     "r": "L",
+     "how": "KO, flying knee",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-05-18",
+     "opp": "Charon Spain",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-04-19",
+     "opp": "Bobby McIntyre",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-02-08",
+     "opp": "Jeff Coleman",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-07-21",
+     "opp": "Tyrone Henderson",
+     "r": "L",
+     "how": "TKO, leg injury",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-04-28",
+     "opp": "Brandon Todd",
+     "r": "W",
+     "how": "Submission, kneebar",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-02-10",
+     "opp": "Tyrone Henderson",
+     "r": "W",
+     "how": "Submission, armbar",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-12-16",
+     "opp": "Armando Best",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-10-14",
+     "opp": "Armando Best",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Donte Johnson": {
+   "rec": {
+    "W": 9,
+    "L": 0,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Southpaw",
+   "dob": "1999-01-25",
+   "fights": [
+    {
+     "d": "2026-08-15",
+     "opp": "Eric McConico",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "1:38",
+     "ufc": true
+    },
+    {
+     "d": "2026-03-07",
+     "opp": "Cody Brundage",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2025-11-01",
+     "opp": "Sedriques Dumas",
+     "r": "W",
+     "how": "Submission, guillotine choke on ground",
+     "rd": 2,
+     "t": "1:25",
+     "ufc": true
+    },
+    {
+     "d": "2025-08-26",
+     "opp": "Darion Abbey",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2025-07-27",
+     "opp": "James Ford",
+     "r": "W",
+     "how": "KO, punch",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2025-06-14",
+     "opp": "Ryan Parker",
+     "r": "W",
+     "how": "TKO, strikes",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2025-04-19",
+     "opp": "Jordan Seufzer",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2025-03-23",
+     "opp": "Deontre Butts",
+     "r": "W",
+     "how": "KO, punch",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-08-17",
+     "opp": "Gabriel Sayeg",
+     "r": "W",
+     "how": "TKO, strikes",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Cesar Almeida": {
+   "rec": {
+    "W": 7,
+    "L": 3,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Orthodox",
+   "dob": "1988-03-28",
+   "fights": [
+    {
+     "d": "2026-07-11",
+     "opp": "Damian Pinas",
+     "r": "L",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "4:44",
+     "ufc": true
+    },
+    {
+     "d": "2025-12-13",
+     "opp": "Cezary Oleksiejczuk",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2025-01-11",
+     "opp": "Abdul Razak Alhassan",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "4:16",
+     "ufc": true
+    },
+    {
+     "d": "2024-10-05",
+     "opp": "Ihor Potieria",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2024-06-01",
+     "opp": "Roman Kopylov",
+     "r": "L",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2024-04-06",
+     "opp": "Dylan Budka",
+     "r": "W",
+     "how": "KO/TKO, elbows to head in clinch",
+     "rd": 2,
+     "t": "2:13",
+     "ufc": true
+    },
+    {
+     "d": "2023-08-08",
+     "opp": "Lucas Fernando",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-12-18",
+     "opp": "Danilo de Souza Martins",
+     "r": "W",
+     "how": "KO, punch",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-06-27",
+     "opp": "Vitor Costa",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-02-13",
+     "opp": "Thiago Araujo",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Jared Gordon": {
+   "rec": {
+    "W": 21,
+    "L": 9,
+    "D": 0,
+    "NC": 1
+   },
+   "stance": "Orthodox",
+   "dob": "1988-09-06",
+   "fights": [
+    {
+     "d": "2026-05-09",
+     "opp": "Jim Miller",
+     "r": "L",
+     "how": "Submission, guillotine choke from bottom guard",
+     "rd": 1,
+     "t": "3:29",
+     "ufc": true
+    },
+    {
+     "d": "2025-09-13",
+     "opp": "Rafa Garcia",
+     "r": "L",
+     "how": "KO/TKO, elbows to head from side control",
+     "rd": 3,
+     "t": "2:27",
+     "ufc": true
+    },
+    {
+     "d": "2025-05-17",
+     "opp": "Thiago Moises",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "3:37",
+     "ufc": true
+    },
+    {
+     "d": "2024-06-22",
+     "opp": "Nasrat Haqparast",
+     "r": "L",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2023-11-11",
+     "opp": "Mark Madsen",
+     "r": "W",
+     "how": "KO/TKO, punch to head in clinch",
+     "rd": 1,
+     "t": "4:42",
+     "ufc": true
+    },
+    {
+     "d": "2023-04-22",
+     "opp": "King Green",
+     "r": "NC",
+     "how": "Could Not Continue, head butt from green",
+     "rd": 1,
+     "t": "4:35",
+     "ufc": true
+    },
+    {
+     "d": "2022-12-10",
+     "opp": "Paddy Pimblett",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2022-08-20",
+     "opp": "Leonardo Santos",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2022-04-30",
+     "opp": "Grant Dawson",
+     "r": "L",
+     "how": "Submission, rear naked choke",
+     "rd": 3,
+     "t": "4:11",
+     "ufc": true
+    },
+    {
+     "d": "2021-10-02",
+     "opp": "Joe Solecki",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2021-02-20",
+     "opp": "Danny Chavez",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2020-07-15",
+     "opp": "Chris Fishgold",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2019-11-16",
+     "opp": "Charles Oliveira",
+     "r": "L",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "1:26",
+     "ufc": true
+    },
+    {
+     "d": "2019-06-29",
+     "opp": "Dan Moret",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2018-12-15",
+     "opp": "Joaquim Silva",
+     "r": "L",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 3,
+     "t": "2:39",
+     "ufc": true
+    },
+    {
+     "d": "2018-02-18",
+     "opp": "Diego Ferreira",
+     "r": "L",
+     "how": "KO/TKO, punch to head in clinch",
+     "rd": 1,
+     "t": "1:58",
+     "ufc": true
+    },
+    {
+     "d": "2017-10-28",
+     "opp": "Hacran Dias",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2017-06-25",
+     "opp": "Michel Quinones",
+     "r": "W",
+     "how": "KO/TKO, punches to head on ground",
+     "rd": 2,
+     "t": "4:24",
+     "ufc": true
+    },
+    {
+     "d": "2017-02-18",
+     "opp": "Bill Algeo",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 4,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-08-06",
+     "opp": "Dawond Pickney",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-07-09",
+     "opp": "Anthony Morrison",
+     "r": "W",
+     "how": "KO, head kick",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2015-05-09",
+     "opp": "Jeff Lentz",
+     "r": "L",
+     "how": "TKO, doctor stoppage",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2015-02-07",
+     "opp": "Jay Coleman",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2014-12-13",
+     "opp": "Corey Bleaken",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2013-10-26",
+     "opp": "Johnson Jajoute",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2013-06-22",
+     "opp": "Alejandro Roman",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2013-06-15",
+     "opp": "Luiz Gustavo Felix dos Santos",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2013-06-08",
+     "opp": "Oscar De La Parra",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2013-06-02",
+     "opp": "Alvaro Enriquez",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2013-02-02",
+     "opp": "Robert Fabrizi",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2011-02-05",
+     "opp": "Anthony D'Agostino",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Melquizael Costa": {
+   "rec": {
+    "W": 26,
+    "L": 8,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Southpaw",
+   "dob": "1996-09-14",
+   "fights": [
+    {
+     "d": "2026-05-16",
+     "opp": "Arnold Allen",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2026-02-21",
+     "opp": "Dan Ige",
+     "r": "W",
+     "how": "KO/TKO, spinning back kick head",
+     "rd": 1,
+     "t": "4:56",
+     "ufc": true
+    },
+    {
+     "d": "2025-12-13",
+     "opp": "Morgan Charriere",
+     "r": "W",
+     "how": "KO/TKO, kick to head at distance",
+     "rd": 1,
+     "t": "1:14",
+     "ufc": true
+    },
+    {
+     "d": "2025-05-17",
+     "opp": "Julian Erosa",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2025-03-29",
+     "opp": "Christian Rodriguez",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2025-02-22",
+     "opp": "Andre Fili",
+     "r": "W",
+     "how": "Submission, guillotine choke from bottom half guard",
+     "rd": 1,
+     "t": "4:30",
+     "ufc": true
+    },
+    {
+     "d": "2024-06-15",
+     "opp": "Shayilan Nuerdanbieke",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 3,
+     "t": "1:50",
+     "ufc": true
+    },
+    {
+     "d": "2023-12-09",
+     "opp": "Steve Garcia",
+     "r": "L",
+     "how": "KO/TKO, elbows to head from mount",
+     "rd": 2,
+     "t": "1:01",
+     "ufc": true
+    },
+    {
+     "d": "2023-07-15",
+     "opp": "Austin Lingo",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2023-01-21",
+     "opp": "Thiago Moises",
+     "r": "L",
+     "how": "Submission, rear naked choke",
+     "rd": 2,
+     "t": "4:05",
+     "ufc": true
+    },
+    {
+     "d": "2022-11-18",
+     "opp": "Jose Cleiton de Melo Jr.",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-08-20",
+     "opp": "Tom Santos",
+     "r": "W",
+     "how": "TKO",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-05-13",
+     "opp": "Italo Gomes",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-03-19",
+     "opp": "Angel Rodriguez",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-09-24",
+     "opp": "Leandro       Santos da Silva",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2020-02-29",
+     "opp": "Anderson Ferreira",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-06-28",
+     "opp": "Jose Santana Bastos da Siqueira",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-05-18",
+     "opp": "Marcelo Costa",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-12-21",
+     "opp": "Marcos Vinicius",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-11-23",
+     "opp": "Alexandre Araujo",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-08-18",
+     "opp": "Rafael     Barbosa",
+     "r": "L",
+     "how": "Submission, arm-triangle choke",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-12-30",
+     "opp": "Antonio Monteiro",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-09-30",
+     "opp": "Max Douglas",
+     "r": "W",
+     "how": "TKO, retirement",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-07-28",
+     "opp": "Willian Santos",
+     "r": "W",
+     "how": "Submission, heel hook",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-06-17",
+     "opp": "Jeconias Dias Sandes",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-03-10",
+     "opp": "Elismar Lima",
+     "r": "L",
+     "how": "TKO, doctor stoppage",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-12-17",
+     "opp": "Joao Ferreira Junior",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-11-10",
+     "opp": "Vitor Leandro",
+     "r": "W",
+     "how": "Submission, anaconda choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-03-11",
+     "opp": "Severino Ramalho da Silva Junior",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-01-29",
+     "opp": "Jonas dos Santos",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2015-12-19",
+     "opp": "Sergio Silva",
+     "r": "W",
+     "how": "KO, head kick",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2015-05-09",
+     "opp": "Erwin Filho de Andrade Furtado",
+     "r": "W",
+     "how": "KO, head kick",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2014-05-17",
+     "opp": "Adriel Santos Abreu",
+     "r": "W",
+     "how": "Submission, heel hook",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2014-03-08",
+     "opp": "Benjamin Junior Coelho Pantoja",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Macy Chiasson": {
+   "rec": {
+    "W": 10,
+    "L": 6,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Orthodox",
+   "dob": "1991-07-27",
+   "fights": [
+    {
+     "d": "2026-02-28",
+     "opp": "Ailin Perez",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2025-10-04",
+     "opp": "Yana Santos",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2025-05-31",
+     "opp": "Ketlen Vieira",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2024-06-29",
+     "opp": "Mayra Bueno Silva",
+     "r": "W",
+     "how": "TKO, doctor's stoppage, cut",
+     "rd": 2,
+     "t": "1:58",
+     "ufc": true
+    },
+    {
+     "d": "2024-03-16",
+     "opp": "Pannie Kianzad",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 1,
+     "t": "3:54",
+     "ufc": true
+    },
+    {
+     "d": "2022-09-10",
+     "opp": "Irene Aldana",
+     "r": "L",
+     "how": "KO/TKO, kick to body from bottomupkick",
+     "rd": 3,
+     "t": "2:21",
+     "ufc": true
+    },
+    {
+     "d": "2022-05-07",
+     "opp": "Norma Dumont",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2021-12-18",
+     "opp": "Raquel Pennington",
+     "r": "L",
+     "how": "Submission, guillotine choke on ground",
+     "rd": 2,
+     "t": "3:07",
+     "ufc": true
+    },
+    {
+     "d": "2021-03-20",
+     "opp": "Marion Reneau",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2020-02-15",
+     "opp": "Shanna Young",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2019-09-28",
+     "opp": "Lina Lansberg",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2019-05-04",
+     "opp": "Sarah Moras",
+     "r": "W",
+     "how": "KO/TKO, punches to head from mount",
+     "rd": 2,
+     "t": "2:22",
+     "ufc": true
+    },
+    {
+     "d": "2019-03-02",
+     "opp": "Gina Mazany",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "1:49",
+     "ufc": true
+    },
+    {
+     "d": "2018-11-30",
+     "opp": "Pannie Kianzad",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 2,
+     "t": "2:11",
+     "ufc": true
+    },
+    {
+     "d": "2018-05-04",
+     "opp": "Allison Schmidt",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-10-21",
+     "opp": "Miranda Dearing",
+     "r": "W",
+     "how": "Submission, armbar",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Bia Mesquita": {
+   "rec": {
+    "W": 8,
+    "L": 0,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Orthodox",
+   "dob": "1991-04-07",
+   "fights": [
+    {
+     "d": "2026-06-20",
+     "opp": "Melissa Mullins",
+     "r": "W",
+     "how": "Submission, armbar from guard",
+     "rd": 1,
+     "t": "3:16",
+     "ufc": true
+    },
+    {
+     "d": "2026-03-14",
+     "opp": "Montse Rendon",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 1,
+     "t": "2:07",
+     "ufc": true
+    },
+    {
+     "d": "2025-10-11",
+     "opp": "Irina Alekseeva",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 2,
+     "t": "2:14",
+     "ufc": true
+    },
+    {
+     "d": "2025-06-20",
+     "opp": "Sierra Lee Dinwoodie",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2025-03-06",
+     "opp": "Hope Chase",
+     "r": "W",
+     "how": "Disqualification, illegal upkick",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-12-06",
+     "opp": "Fernanda Araujo",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-10-18",
+     "opp": "Shannel Butler",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-06-15",
+     "opp": "Jorgina Ramos",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Adrian Yanez": {
+   "rec": {
+    "W": 18,
+    "L": 6,
+    "D": 1,
+    "NC": 0
+   },
+   "stance": "Orthodox",
+   "dob": "1993-11-29",
+   "fights": [
+    {
+     "d": "2026-07-11",
+     "opp": "Cody Garbrandt",
+     "r": "W",
+     "how": "KO/TKO, punches to head in clinch",
+     "rd": 1,
+     "t": "2:47",
+     "ufc": true
+    },
+    {
+     "d": "2026-03-28",
+     "opp": "Ricky Simon",
+     "r": "D",
+     "how": "Decision, majority",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2024-12-14",
+     "opp": "Daniel Marcos",
+     "r": "L",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2024-05-18",
+     "opp": "Vinicius Salvador",
+     "r": "W",
+     "how": "KO/TKO, punches to head on ground",
+     "rd": 1,
+     "t": "2:47",
+     "ufc": true
+    },
+    {
+     "d": "2023-10-14",
+     "opp": "Jonathan Martinez",
+     "r": "L",
+     "how": "KO/TKO, kicks to leg at distance",
+     "rd": 2,
+     "t": "2:26",
+     "ufc": true
+    },
+    {
+     "d": "2023-04-08",
+     "opp": "Rob Font",
+     "r": "L",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 1,
+     "t": "2:57",
+     "ufc": true
+    },
+    {
+     "d": "2022-06-18",
+     "opp": "Tony Kelley",
+     "r": "W",
+     "how": "KO/TKO, punches to head at distance",
+     "rd": 1,
+     "t": "3:49",
+     "ufc": true
+    },
+    {
+     "d": "2021-11-20",
+     "opp": "Davey Grant",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2021-07-24",
+     "opp": "Randy Costa",
+     "r": "W",
+     "how": "KO/TKO, punches to head on ground",
+     "rd": 2,
+     "t": "2:11",
+     "ufc": true
+    },
+    {
+     "d": "2021-03-20",
+     "opp": "Gustavo Lopez",
+     "r": "W",
+     "how": "KO/TKO, punch to head at distance",
+     "rd": 3,
+     "t": "0:27",
+     "ufc": true
+    },
+    {
+     "d": "2020-10-31",
+     "opp": "Victor Rodriguez",
+     "r": "W",
+     "how": "KO/TKO, kick to head at distance",
+     "rd": 1,
+     "t": "2:46",
+     "ufc": true
+    },
+    {
+     "d": "2020-08-11",
+     "opp": "Brady Huang",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-11-15",
+     "opp": "Kyle Estrada",
+     "r": "W",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-06-29",
+     "opp": "Michael Rodriguez",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-01-25",
+     "opp": "Warren Stewart",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-11-30",
+     "opp": "Miles Johns",
+     "r": "L",
+     "how": "Decision, split",
+     "rd": 5,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-03-09",
+     "opp": "Nathan Trepagnier",
+     "r": "W",
+     "how": "KO, punch",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-11-03",
+     "opp": "Trent Meaux",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-03-24",
+     "opp": "Domingo Pilarte",
+     "r": "L",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-09-16",
+     "opp": "Colin Wright",
+     "r": "W",
+     "how": "Submission, armbar",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-02-19",
+     "opp": "Ryan Hollis",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2015-07-11",
+     "opp": "D'Nearon Seymore",
+     "r": "W",
+     "how": "Submission, triangle choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2015-05-22",
+     "opp": "Jake Snyder",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2014-11-14",
+     "opp": "Levi Mowles",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2014-03-14",
+     "opp": "Richard Delfin",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Juan Diaz": {
+   "rec": {
+    "W": 16,
+    "L": 1,
+    "D": 1,
+    "NC": 0
+   },
+   "stance": null,
+   "dob": "1998-06-03",
+   "fights": [
+    {
+     "d": "2026-05-16",
+     "opp": "Malcolm Wellmaker",
+     "r": "W",
+     "how": "Submission, rear naked choke",
+     "rd": 2,
+     "t": "4:08",
+     "ufc": true
+    },
+    {
+     "d": "2025-10-14",
+     "opp": "Won Il Kwon",
+     "r": "W",
+     "how": "KO, spinning back elbow",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2025-02-21",
+     "opp": "Uriel Cossio",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-11-01",
+     "opp": "Jose Roura",
+     "r": "W",
+     "how": "TKO, doctor stoppage",
+     "rd": 4,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-04-26",
+     "opp": "Abraham Nava",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-12-01",
+     "opp": "Jose Roura",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 5,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-07-21",
+     "opp": "Luis Guerrero",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-02-03",
+     "opp": "Irvin Amaya",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-04-29",
+     "opp": "Andres Leal",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-10-23",
+     "opp": "Rodrigo Vera",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-08-13",
+     "opp": "Juan Campos",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2020-12-10",
+     "opp": "Carlos Huachin",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-12-06",
+     "opp": "Javier Guzman",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-09-28",
+     "opp": "Ramon Cardozo",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-06-15",
+     "opp": "Arturo Lemus",
+     "r": "W",
+     "how": "Submission, armbar",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-12-08",
+     "opp": "Juan da Silva",
+     "r": "D",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-09-14",
+     "opp": "Francisco Alessandria",
+     "r": "W",
+     "how": "TKO, doctor stoppage",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-10-14",
+     "opp": "Nahuel Alejandro Farias",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Evan Elder": {
+   "rec": {
+    "W": 10,
+    "L": 2,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Switch",
+   "dob": "1997-04-11",
+   "fights": [
+    {
+     "d": "2025-04-26",
+     "opp": "Gauge Young",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2024-07-13",
+     "opp": "Darrius Flowers",
+     "r": "W",
+     "how": "Submission, arm triangle from side control",
+     "rd": 2,
+     "t": "1:46",
+     "ufc": true
+    },
+    {
+     "d": "2023-07-15",
+     "opp": "Genaro Valdez",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2023-02-18",
+     "opp": "Nazim Sadykhov",
+     "r": "L",
+     "how": "TKO, doctor's stoppage",
+     "rd": 3,
+     "t": "0:38",
+     "ufc": true
+    },
+    {
+     "d": "2022-04-23",
+     "opp": "Preston Parsons",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2021-12-10",
+     "opp": "Marcus Andrusia",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-09-25",
+     "opp": "Paris Padilla",
+     "r": "W",
+     "how": "KO, knee",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-06-25",
+     "opp": "CJay Hunter",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2020-08-21",
+     "opp": "Kegan Gennrich",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2020-01-11",
+     "opp": "Orell Fisher",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-03-15",
+     "opp": "Tremiere Hollie",
+     "r": "W",
+     "how": "Submission, straight armbar",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-09-07",
+     "opp": "Antonio Atkins",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "Samuel Sanches": {
+   "rec": {
+    "W": 11,
+    "L": 1,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Orthodox",
+   "dob": "2003-01-28",
+   "fights": [
+    {
+     "d": "2025-09-09",
+     "opp": "Chasen Blair",
+     "r": "W",
+     "how": "KO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2025-03-30",
+     "opp": "Evaldo dos Santos",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-06-01",
+     "opp": "Severino Neto",
+     "r": "W",
+     "how": "TKO, punch",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-04-28",
+     "opp": "Sergio de Jesus Santos",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-01-27",
+     "opp": "Bruno Justo",
+     "r": "W",
+     "how": "TKO, punch",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-07-29",
+     "opp": "Sergio Mario  Conceicao dos Santos",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-03-25",
+     "opp": "Paulo Roberto",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-11-05",
+     "opp": "Walef Pereira da Silva",
+     "r": "W",
+     "how": "TKO, punch",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-07-09",
+     "opp": "Hugo Vargas",
+     "r": "L",
+     "how": "Submission",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-03-27",
+     "opp": "William Paiva",
+     "r": "W",
+     "how": "KO, knee and punch",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-11-07",
+     "opp": "Emerson Conceicao",
+     "r": "W",
+     "how": "TKO",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-08-14",
+     "opp": "Joao Pedro",
+     "r": "W",
+     "how": "TKO",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  }
+ },
+ "bouts": [
+  {
+   "order": 1,
+   "f1": "Ciryl Gane",
+   "f2": "Josh Hokit",
+   "weightclass": "Heavyweight",
+   "is_title": true,
+   "scheduled_rounds": 5,
+   "section": "main",
+   "p_f1": 0.4509,
+   "book_p_f1": 0.6626,
+   "book_n": 5,
+   "pick": "Josh Hokit",
+   "confidence": 0.5491,
+   "low_data": false,
+   "method_pick": "KO",
+   "method_probs": {
+    "KO": 0.558,
+    "SUB": 0.1409,
+    "DEC": 0.3011
+   },
+   "finish_prob": 0.6989,
+   "round_pick": 5,
+   "round_probs": {
+    "1": 0.4115,
+    "2": 0.2525,
+    "3": 0.1232,
+    "4": 0.1015,
+    "5": 0.1113
+   },
+   "stats": {
+    "reach": [
+     81.0,
+     73.0
+    ],
+    "height": [
+     76.0,
+     73.0
+    ],
+    "age": [
+     36.5914,
+     29.0048
+    ],
+    "winpct": [
+     0.875,
+     1.0
+    ],
+    "finish_rate": [
+     0.5882,
+     0.9
+    ],
+    "streak": [
+     3.0,
+     10.0
+    ],
+    "experience": [
+     17.0,
+     10.0
+    ],
+    "slpm": [
+     5.4031,
+     10.2772
+    ],
+    "sapm": [
+     2.3085,
+     6.1197
+    ],
+    "str_acc": [
+     0.6171,
+     0.6384
+    ],
+    "str_def": [
+     0.6086,
+     0.4831
+    ],
+    "td_per15": [
+     0.6596,
+     1.4967
+    ],
+    "td_acc": [
+     0.2353,
+     0.5
+    ],
+    "td_def": [
+     0.4706,
+     0.7778
+    ],
+    "sub_per15": [
+     0.5771,
+     0.4989
+    ],
+    "ctrl_frac": [
+     0.0893,
+     0.2827
+    ],
+    "kd_per15": [
+     0.3298,
+     1.4967
+    ],
+    "days_since": [
+     153.0,
+     153.0
+    ],
+    "activity365": [
+     1.0,
+     3.0
+    ],
+    "southpaw": [
+     0.0,
+     0.0
+    ],
+    "ko_win_share": [
+     0.5,
+     0.6
+    ],
+    "sub_win_share": [
+     0.2143,
+     0.3
+    ],
+    "koed_rate": [
+     0.0,
+     0.0
+    ],
+    "subbed_rate": [
+     0.0588,
+     0.0
+    ],
+    "avg_fight_min": [
+     12.9952,
+     7.5167
+    ],
+    "early_win_share": [
+     0.0909,
+     0.5
+    ],
+    "ufc_n": [
+     14.0,
+     4.0
+    ],
+    "dwcs": [
+     0.0,
+     1.0
+    ],
+    "major_share": [
+     0.0,
+     0.8333
+    ],
+    "ufcvet_wins": [
+     0.0,
+     0.0
+    ],
+    "elo": [
+     1809.5193,
+     1646.0097
+    ]
+   },
+   "why": [
+    {
+     "m": "age",
+     "v": -0.4806
+    },
+    {
+     "m": "major_share",
+     "v": -0.3554
+    },
+    {
+     "m": "elo",
+     "v": 0.3459
+    },
+    {
+     "m": "sapm",
+     "v": 0.2656
+    },
+    {
+     "m": "reach",
+     "v": 0.1626
+    },
+    {
+     "m": "str_def",
+     "v": 0.1416
+    },
+    {
+     "m": "activity365",
+     "v": -0.1064
+    },
+    {
+     "m": "ufc_n",
+     "v": 0.0907
+    },
+    {
+     "m": "subbed_rate",
+     "v": -0.0712
+    },
+    {
+     "m": "streak",
+     "v": -0.0707
+    },
+    {
+     "m": "td_per15",
+     "v": -0.0702
+    },
+    {
+     "m": "ctrl_frac",
+     "v": 0.0674
+    },
+    {
+     "m": "td_def",
+     "v": -0.0657
+    },
+    {
+     "m": "winpct",
+     "v": -0.0625
+    },
+    {
+     "m": "td_acc",
+     "v": 0.0488
+    },
+    {
+     "m": "slpm",
+     "v": -0.0431
+    },
+    {
+     "m": "experience",
+     "v": 0.0421
+    },
+    {
+     "m": "avg_fight_min",
+     "v": 0.0333
+    },
+    {
+     "m": "dwcs",
+     "v": -0.0319
+    },
+    {
+     "m": "ko_win_share",
+     "v": -0.0238
+    },
+    {
+     "m": "early_win_share",
+     "v": -0.006
+    },
+    {
+     "m": "finish_rate",
+     "v": -0.0045
+    },
+    {
+     "m": "str_acc",
+     "v": -0.0044
+    },
+    {
+     "m": "sub_per15",
+     "v": 0.0038
+    },
+    {
+     "m": "kd_per15",
+     "v": -0.0027
+    },
+    {
+     "m": "sub_win_share",
+     "v": 0.0007
+    },
+    {
+     "m": "height",
+     "v": -0.0003
+    },
+    {
+     "m": "days_since",
+     "v": 0.0
+    },
+    {
+     "m": "southpaw",
+     "v": 0.0
+    },
+    {
+     "m": "koed_rate",
+     "v": 0.0
+    },
+    {
+     "m": "ufcvet_wins",
+     "v": 0.0
+    }
+   ],
+   "result": null
+  },
+  {
+   "order": 2,
+   "f1": "Kayla Harrison",
+   "f2": "Amanda Nunes",
+   "weightclass": "Women's Bantamweight",
+   "is_title": true,
+   "scheduled_rounds": 5,
+   "section": "main",
+   "p_f1": 0.5697,
+   "book_p_f1": 0.6368,
+   "book_n": 5,
+   "pick": "Kayla Harrison",
+   "confidence": 0.5697,
+   "low_data": false,
+   "method_pick": "SUB",
+   "method_probs": {
+    "KO": 0.1957,
+    "SUB": 0.428,
+    "DEC": 0.3763
+   },
+   "finish_prob": 0.6237,
+   "round_pick": 5,
+   "round_probs": {
+    "1": 0.3474,
+    "2": 0.2898,
+    "3": 0.1751,
+    "4": 0.0956,
+    "5": 0.0921
+   },
+   "stats": {
+    "reach": [
+     66.0,
+     69.0
+    ],
+    "height": [
+     68.0,
+     68.0
+    ],
+    "age": [
+     36.3696,
+     38.4586
+    ],
+    "winpct": [
+     0.95,
+     0.8214
+    ],
+    "finish_rate": [
+     0.7,
+     0.6071
+    ],
+    "streak": [
+     4.0,
+     2.0
+    ],
+    "experience": [
+     20.0,
+     28.0
+    ],
+    "slpm": [
+     4.2902,
+     4.5401
+    ],
+    "sapm": [
+     1.1041,
+     2.4413
+    ],
+    "str_acc": [
+     0.621,
+     0.5202
+    ],
+    "str_def": [
+     0.6602,
+     0.593
+    ],
+    "td_per15": [
+     2.8391,
+     2.7886
+    ],
+    "td_acc": [
+     0.375,
+     0.5672
+    ],
+    "td_def": [
+     1.0,
+     0.8125
+    ],
+    "sub_per15": [
+     0.9464,
+     0.7339
+    ],
+    "ctrl_frac": [
+     0.5941,
+     0.3423
+    ],
+    "kd_per15": [
+     0.0,
+     0.5871
+    ],
+    "days_since": [
+     525.0,
+     1253.0
+    ],
+    "activity365": [
+     0.0,
+     0.0
+    ],
+    "southpaw": [
+     1.0,
+     0.0
+    ],
+    "ko_win_share": [
+     0.3158,
+     0.5652
+    ],
+    "sub_win_share": [
+     0.4211,
+     0.1739
+    ],
+    "koed_rate": [
+     0.0,
+     0.0714
+    ],
+    "subbed_rate": [
+     0.0,
+     0.0714
+    ],
+    "avg_fight_min": [
+     10.5667,
+     11.3556
+    ],
+    "early_win_share": [
+     0.0,
+     0.5625
+    ],
+    "ufc_n": [
+     3.0,
+     18.0
+    ],
+    "dwcs": [
+     0.0,
+     0.0
+    ],
+    "major_share": [
+     1.0,
+     0.4
+    ],
+    "ufcvet_wins": [
+     4.0,
+     0.0
+    ],
+    "elo": [
+     1621.3974,
+     1798.8269
+    ]
+   },
+   "why": [
+    {
+     "m": "elo",
+     "v": -0.407
+    },
+    {
+     "m": "major_share",
+     "v": 0.2201
+    },
+    {
+     "m": "age",
+     "v": 0.1406
+    },
+    {
+     "m": "ufc_n",
+     "v": -0.1275
+    },
+    {
+     "m": "sapm",
+     "v": 0.1148
+    },
+    {
+     "m": "str_def",
+     "v": 0.1117
+    },
+    {
+     "m": "koed_rate",
+     "v": 0.081
+    },
+    {
+     "m": "subbed_rate",
+     "v": 0.0763
+    },
+    {
+     "m": "winpct",
+     "v": 0.0746
+    },
+    {
+     "m": "ko_win_share",
+     "v": -0.0647
+    },
+    {
+     "m": "ufcvet_wins",
+     "v": 0.0608
+    },
+    {
+     "m": "southpaw",
+     "v": 0.0496
+    },
+    {
+     "m": "reach",
+     "v": -0.0441
+    },
+    {
+     "m": "ctrl_frac",
+     "v": -0.0355
+    },
+    {
+     "m": "td_acc",
+     "v": 0.0278
+    },
+    {
+     "m": "td_def",
+     "v": 0.026
+    },
+    {
+     "m": "days_since",
+     "v": -0.0259
+    },
+    {
+     "m": "str_acc",
+     "v": 0.0231
+    },
+    {
+     "m": "streak",
+     "v": 0.0178
+    },
+    {
+     "m": "avg_fight_min",
+     "v": -0.0148
+    },
+    {
+     "m": "early_win_share",
+     "v": -0.0135
+    },
+    {
+     "m": "kd_per15",
+     "v": -0.0062
+    },
+    {
+     "m": "sub_per15",
+     "v": 0.0061
+    },
+    {
+     "m": "slpm",
+     "v": -0.0053
+    },
+    {
+     "m": "td_per15",
+     "v": 0.0046
+    },
+    {
+     "m": "finish_rate",
+     "v": -0.0043
+    },
+    {
+     "m": "sub_win_share",
+     "v": -0.0043
+    },
+    {
+     "m": "experience",
+     "v": -0.0009
+    },
+    {
+     "m": "height",
+     "v": 0.0
+    },
+    {
+     "m": "activity365",
+     "v": 0.0
+    },
+    {
+     "m": "dwcs",
+     "v": 0.0
+    }
+   ],
+   "result": null
+  },
+  {
+   "order": 3,
+   "f1": "Caio Borralho",
+   "f2": "Yousri Belgaroui",
+   "weightclass": "Middleweight",
+   "is_title": false,
+   "scheduled_rounds": 3,
+   "section": "main",
+   "p_f1": 0.4837,
+   "book_p_f1": 0.5877,
+   "book_n": 5,
+   "pick": "Yousri Belgaroui",
+   "confidence": 0.5163,
+   "low_data": false,
+   "method_pick": "KO",
+   "method_probs": {
+    "KO": 0.5102,
+    "SUB": 0.0134,
+    "DEC": 0.4763
+   },
+   "finish_prob": 0.5237,
+   "round_pick": 3,
+   "round_probs": {
+    "1": 0.522,
+    "2": 0.3136,
+    "3": 0.1644,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stats": {
+    "reach": [
+     75.0,
+     79.0
+    ],
+    "height": [
+     73.0,
+     77.0
+    ],
+    "age": [
+     33.8261,
+     34.4504
+    ],
+    "winpct": [
+     0.9,
+     0.7857
+    ],
+    "finish_rate": [
+     0.4286,
+     0.6429
+    ],
+    "streak": [
+     1.0,
+     6.0
+    ],
+    "experience": [
+     21.0,
+     14.0
+    ],
+    "slpm": [
+     3.3041,
+     8.3496
+    ],
+    "sapm": [
+     2.6347,
+     1.9321
+    ],
+    "str_acc": [
+     0.551,
+     0.6453
+    ],
+    "str_def": [
+     0.5982,
+     0.6973
+    ],
+    "td_per15": [
+     1.0798,
+     0.5175
+    ],
+    "td_acc": [
+     0.4545,
+     1.0
+    ],
+    "td_def": [
+     0.7368,
+     0.5625
+    ],
+    "sub_per15": [
+     0.4319,
+     0.0
+    ],
+    "ctrl_frac": [
+     0.2685,
+     0.0569
+    ],
+    "kd_per15": [
+     0.3239,
+     1.5526
+    ],
+    "days_since": [
+     252.0,
+     63.0
+    ],
+    "activity365": [
+     1.0,
+     2.0
+    ],
+    "southpaw": [
+     1.0,
+     0.0
+    ],
+    "ko_win_share": [
+     0.2778,
+     0.8182
+    ],
+    "sub_win_share": [
+     0.2222,
+     0.0
+    ],
+    "koed_rate": [
+     0.0,
+     0.0
+    ],
+    "subbed_rate": [
+     0.0,
+     0.0
+    ],
+    "avg_fight_min": [
+     15.4352,
+     9.6611
+    ],
+    "early_win_share": [
+     0.0,
+     0.3333
+    ],
+    "ufc_n": [
+     9.0,
+     3.0
+    ],
+    "dwcs": [
+     2.0,
+     1.0
+    ],
+    "major_share": [
+     0.0,
+     0.5455
+    ],
+    "ufcvet_wins": [
+     0.0,
+     0.0
+    ],
+    "elo": [
+     1704.4647,
+     1596.7693
+    ]
+   },
+   "why": [
+    {
+     "m": "elo",
+     "v": 0.2674
+    },
+    {
+     "m": "major_share",
+     "v": -0.2497
+    },
+    {
+     "m": "days_since",
+     "v": 0.206
+    },
+    {
+     "m": "ko_win_share",
+     "v": -0.1432
+    },
+    {
+     "m": "str_def",
+     "v": -0.13
+    },
+    {
+     "m": "ufc_n",
+     "v": 0.0999
+    },
+    {
+     "m": "slpm",
+     "v": -0.0976
+    },
+    {
+     "m": "activity365",
+     "v": -0.0953
+    },
+    {
+     "m": "reach",
+     "v": -0.0873
+    },
+    {
+     "m": "sapm",
+     "v": -0.0844
+    },
+    {
+     "m": "td_acc",
+     "v": 0.0788
+    },
+    {
+     "m": "winpct",
+     "v": 0.0746
+    },
+    {
+     "m": "ctrl_frac",
+     "v": -0.0715
+    },
+    {
+     "m": "southpaw",
+     "v": 0.0496
+    },
+    {
+     "m": "td_per15",
+     "v": 0.0453
+    },
+    {
+     "m": "td_def",
+     "v": 0.0433
+    },
+    {
+     "m": "streak",
+     "v": -0.0423
+    },
+    {
+     "m": "avg_fight_min",
+     "v": 0.0419
+    },
+    {
+     "m": "age",
+     "v": 0.041
+    },
+    {
+     "m": "sub_win_share",
+     "v": -0.0365
+    },
+    {
+     "m": "experience",
+     "v": 0.0341
+    },
+    {
+     "m": "sub_per15",
+     "v": 0.0248
+    },
+    {
+     "m": "str_acc",
+     "v": -0.0193
+    },
+    {
+     "m": "finish_rate",
+     "v": -0.0169
+    },
+    {
+     "m": "dwcs",
+     "v": 0.0045
+    },
+    {
+     "m": "early_win_share",
+     "v": -0.0028
+    },
+    {
+     "m": "height",
+     "v": 0.0017
+    },
+    {
+     "m": "kd_per15",
+     "v": -0.0016
+    },
+    {
+     "m": "koed_rate",
+     "v": 0.0
+    },
+    {
+     "m": "subbed_rate",
+     "v": 0.0
+    },
+    {
+     "m": "ufcvet_wins",
+     "v": 0.0
+    }
+   ],
+   "result": null
+  },
+  {
+   "order": 4,
+   "f1": "Uros Medic",
+   "f2": "Kevin Holland",
+   "weightclass": "Welterweight",
+   "is_title": false,
+   "scheduled_rounds": 3,
+   "section": "main",
+   "p_f1": 0.4868,
+   "book_p_f1": 0.5755,
+   "book_n": 5,
+   "pick": "Kevin Holland",
+   "confidence": 0.5132,
+   "low_data": false,
+   "method_pick": "SUB",
+   "method_probs": {
+    "KO": 0.3742,
+    "SUB": 0.471,
+    "DEC": 0.1548
+   },
+   "finish_prob": 0.8452,
+   "round_pick": 2,
+   "round_probs": {
+    "1": 0.4973,
+    "2": 0.346,
+    "3": 0.1567,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stats": {
+    "reach": [
+     71.0,
+     81.0
+    ],
+    "height": [
+     73.0,
+     75.0
+    ],
+    "age": [
+     33.5551,
+     34.0233
+    ],
+    "winpct": [
+     0.8235,
+     0.6591
+    ],
+    "finish_rate": [
+     0.8235,
+     0.5111
+    ],
+    "streak": [
+     4.0,
+     1.0
+    ],
+    "experience": [
+     17.0,
+     45.0
+    ],
+    "slpm": [
+     5.3144,
+     4.1766
+    ],
+    "sapm": [
+     3.535,
+     3.2978
+    ],
+    "str_acc": [
+     0.5818,
+     0.5025
+    ],
+    "str_def": [
+     0.5579,
+     0.4995
+    ],
+    "td_per15": [
+     0.3559,
+     0.8269
+    ],
+    "td_acc": [
+     0.5,
+     0.3953
+    ],
+    "td_def": [
+     0.5556,
+     0.5776
+    ],
+    "sub_per15": [
+     0.0,
+     0.6323
+    ],
+    "ctrl_frac": [
+     0.038,
+     0.1322
+    ],
+    "kd_per15": [
+     3.2028,
+     0.3405
+    ],
+    "days_since": [
+     105.0,
+     217.0
+    ],
+    "activity365": [
+     2.0,
+     1.0
+    ],
+    "southpaw": [
+     1.0,
+     0.0
+    ],
+    "ko_win_share": [
+     0.8571,
+     0.4138
+    ],
+    "sub_win_share": [
+     0.1429,
+     0.3793
+    ],
+    "koed_rate": [
+     0.0588,
+     0.0444
+    ],
+    "subbed_rate": [
+     0.1176,
+     0.0889
+    ],
+    "avg_fight_min": [
+     3.8318,
+     10.6339
+    ],
+    "early_win_share": [
+     0.75,
+     0.3125
+    ],
+    "ufc_n": [
+     11.0,
+     29.0
+    ],
+    "dwcs": [
+     1.0,
+     1.0
+    ],
+    "major_share": [
+     0.0,
+     0.1875
+    ],
+    "ufcvet_wins": [
+     0.0,
+     0.0
+    ],
+    "elo": [
+     1665.648,
+     1618.0576
+    ]
+   },
+   "why": [
+    {
+     "m": "reach",
+     "v": -0.2128
+    },
+    {
+     "m": "major_share",
+     "v": -0.1181
+    },
+    {
+     "m": "elo",
+     "v": 0.1177
+    },
+    {
+     "m": "ko_win_share",
+     "v": 0.1087
+    },
+    {
+     "m": "days_since",
+     "v": -0.0982
+    },
+    {
+     "m": "activity365",
+     "v": 0.0953
+    },
+    {
+     "m": "winpct",
+     "v": 0.0784
+    },
+    {
+     "m": "str_def",
+     "v": 0.055
+    },
+    {
+     "m": "avg_fight_min",
+     "v": -0.0506
+    },
+    {
+     "m": "southpaw",
+     "v": 0.0496
+    },
+    {
+     "m": "ufc_n",
+     "v": -0.0465
+    },
+    {
+     "m": "td_per15",
+     "v": -0.0406
+    },
+    {
+     "m": "subbed_rate",
+     "v": -0.0361
+    },
+    {
+     "m": "kd_per15",
+     "v": -0.0331
+    },
+    {
+     "m": "ctrl_frac",
+     "v": 0.0318
+    },
+    {
+     "m": "sub_per15",
+     "v": -0.0314
+    },
+    {
+     "m": "age",
+     "v": 0.0308
+    },
+    {
+     "m": "streak",
+     "v": 0.0288
+    },
+    {
+     "m": "slpm",
+     "v": 0.0238
+    },
+    {
+     "m": "str_acc",
+     "v": 0.0205
+    },
+    {
+     "m": "early_win_share",
+     "v": 0.0162
+    },
+    {
+     "m": "sapm",
+     "v": -0.016
+    },
+    {
+     "m": "koed_rate",
+     "v": -0.0159
+    },
+    {
+     "m": "td_acc",
+     "v": -0.0147
+    },
+    {
+     "m": "finish_rate",
+     "v": 0.0135
+    },
+    {
+     "m": "experience",
+     "v": -0.0101
+    },
+    {
+     "m": "sub_win_share",
+     "v": 0.0073
+    },
+    {
+     "m": "td_def",
+     "v": -0.0053
+    },
+    {
+     "m": "height",
+     "v": -0.001
+    },
+    {
+     "m": "dwcs",
+     "v": 0.0
+    },
+    {
+     "m": "ufcvet_wins",
+     "v": 0.0
+    }
+   ],
+   "result": null
+  },
+  {
+   "order": 5,
+   "f1": "Bilal Hasan",
+   "f2": "Luis Gurule",
+   "weightclass": "Flyweight",
+   "is_title": false,
+   "scheduled_rounds": 3,
+   "section": "main",
+   "p_f1": 0.7771,
+   "book_p_f1": 0.863,
+   "book_n": 5,
+   "pick": "Bilal Hasan",
+   "confidence": 0.7771,
+   "low_data": false,
+   "method_pick": "KO",
+   "method_probs": {
+    "KO": 0.5122,
+    "SUB": 0.106,
+    "DEC": 0.3818
+   },
+   "finish_prob": 0.6182,
+   "round_pick": 1,
+   "round_probs": {
+    "1": 0.5631,
+    "2": 0.2989,
+    "3": 0.138,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stats": {
+    "reach": [
+     70.0,
+     64.0
+    ],
+    "height": [
+     67.0,
+     65.0
+    ],
+    "age": [
+     25.3306,
+     32.9938
+    ],
+    "winpct": [
+     1.0,
+     0.7333
+    ],
+    "finish_rate": [
+     0.8182,
+     0.4
+    ],
+    "streak": [
+     10.0,
+     -1.0
+    ],
+    "experience": [
+     11.0,
+     15.0
+    ],
+    "slpm": [
+     7.0982,
+     5.0166
+    ],
+    "sapm": [
+     4.4196,
+     5.6505
+    ],
+    "str_acc": [
+     0.4109,
+     0.4128
+    ],
+    "str_def": [
+     0.5,
+     0.5702
+    ],
+    "td_per15": [
+     2.0089,
+     0.815
+    ],
+    "td_acc": [
+     1.0,
+     0.1765
+    ],
+    "td_def": [
+     null,
+     0.7333
+    ],
+    "sub_per15": [
+     0.0,
+     0.2717
+    ],
+    "ctrl_frac": [
+     0.1406,
+     0.1162
+    ],
+    "kd_per15": [
+     2.0089,
+     0.0
+    ],
+    "days_since": [
+     77.0,
+     168.0
+    ],
+    "activity365": [
+     3.0,
+     3.0
+    ],
+    "southpaw": [
+     null,
+     0.0
+    ],
+    "ko_win_share": [
+     0.8,
+     0.4545
+    ],
+    "sub_win_share": [
+     0.1,
+     0.0909
+    ],
+    "koed_rate": [
+     0.0,
+     0.0667
+    ],
+    "subbed_rate": [
+     0.0,
+     0.0667
+    ],
+    "avg_fight_min": [
+     7.4667,
+     11.0433
+    ],
+    "early_win_share": [
+     0.0,
+     0.0
+    ],
+    "ufc_n": [
+     1.0,
+     5.0
+    ],
+    "dwcs": [
+     1.0,
+     1.0
+    ],
+    "major_share": [
+     0.8889,
+     0.2
+    ],
+    "ufcvet_wins": [
+     0.0,
+     0.0
+    ],
+    "elo": [
+     1532.0,
+     1423.387
+    ]
+   },
+   "why": [
+    {
+     "m": "age",
+     "v": 0.4449
+    },
+    {
+     "m": "elo",
+     "v": 0.379
+    },
+    {
+     "m": "major_share",
+     "v": 0.253
+    },
+    {
+     "m": "ufc_n",
+     "v": -0.157
+    },
+    {
+     "m": "days_since",
+     "v": -0.1368
+    },
+    {
+     "m": "td_acc",
+     "v": -0.1359
+    },
+    {
+     "m": "winpct",
+     "v": 0.1342
+    },
+    {
+     "m": "td_per15",
+     "v": 0.1179
+    },
+    {
+     "m": "streak",
+     "v": 0.1165
+    },
+    {
+     "m": "reach",
+     "v": 0.0868
+    },
+    {
+     "m": "ko_win_share",
+     "v": 0.0843
+    },
+    {
+     "m": "str_def",
+     "v": -0.0773
+    },
+    {
+     "m": "koed_rate",
+     "v": 0.0762
+    },
+    {
+     "m": "subbed_rate",
+     "v": 0.0744
+    },
+    {
+     "m": "avg_fight_min",
+     "v": -0.0422
+    },
+    {
+     "m": "finish_rate",
+     "v": 0.0307
+    },
+    {
+     "m": "sapm",
+     "v": 0.03
+    },
+    {
+     "m": "experience",
+     "v": -0.0259
+    },
+    {
+     "m": "sub_per15",
+     "v": -0.0246
+    },
+    {
+     "m": "slpm",
+     "v": 0.0243
+    },
+    {
+     "m": "ctrl_frac",
+     "v": -0.009
+    },
+    {
+     "m": "height",
+     "v": 0.0032
+    },
+    {
+     "m": "kd_per15",
+     "v": 0.0022
+    },
+    {
+     "m": "str_acc",
+     "v": -0.0004
+    },
+    {
+     "m": "sub_win_share",
+     "v": 0.0002
+    },
+    {
+     "m": "activity365",
+     "v": 0.0
+    },
+    {
+     "m": "early_win_share",
+     "v": 0.0
+    },
+    {
+     "m": "dwcs",
+     "v": 0.0
+    },
+    {
+     "m": "ufcvet_wins",
+     "v": 0.0
+    }
+   ],
+   "result": null
+  },
+  {
+   "order": 6,
+   "f1": "Stephen Thompson",
+   "f2": "Charles Radtke",
+   "weightclass": "Welterweight",
+   "is_title": false,
+   "scheduled_rounds": 3,
+   "section": "prelims",
+   "p_f1": 0.3542,
+   "book_p_f1": 0.569,
+   "book_n": 5,
+   "pick": "Charles Radtke",
+   "confidence": 0.6458,
+   "low_data": false,
+   "method_pick": "DEC",
+   "method_probs": {
+    "KO": 0.3302,
+    "SUB": 0.1284,
+    "DEC": 0.5414
+   },
+   "finish_prob": 0.4586,
+   "round_pick": null,
+   "round_probs": {
+    "1": 0.5534,
+    "2": 0.3066,
+    "3": 0.14,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stats": {
+    "reach": [
+     75.0,
+     72.0
+    ],
+    "height": [
+     72.0,
+     69.0
+    ],
+    "age": [
+     43.7563,
+     36.3504
+    ],
+    "winpct": [
+     0.6538,
+     0.7059
+    ],
+    "finish_rate": [
+     0.3333,
+     0.4706
+    ],
+    "streak": [
+     -3.0,
+     2.0
+    ],
+    "experience": [
+     27.0,
+     17.0
+    ],
+    "slpm": [
+     4.0467,
+     2.5028
+    ],
+    "sapm": [
+     3.0014,
+     2.453
+    ],
+    "str_acc": [
+     0.4601,
+     0.5393
+    ],
+    "str_def": [
+     0.5489,
+     0.5474
+    ],
+    "td_per15": [
+     0.2347,
+     1.989
+    ],
+    "td_acc": [
+     0.3571,
+     0.4444
+    ],
+    "td_def": [
+     0.6329,
+     1.0
+    ],
+    "sub_per15": [
+     0.0,
+     0.4972
+    ],
+    "ctrl_frac": [
+     0.0604,
+     0.5138
+    ],
+    "kd_per15": [
+     0.4695,
+     0.4972
+    ],
+    "days_since": [
+     490.0,
+     217.0
+    ],
+    "activity365": [
+     0.0,
+     1.0
+    ],
+    "southpaw": [
+     0.0,
+     0.0
+    ],
+    "ko_win_share": [
+     0.4706,
+     0.4167
+    ],
+    "sub_win_share": [
+     0.0588,
+     0.25
+    ],
+    "koed_rate": [
+     0.0741,
+     0.1765
+    ],
+    "subbed_rate": [
+     0.037,
+     0.0
+    ],
+    "avg_fight_min": [
+     14.5235,
+     8.619
+    ],
+    "early_win_share": [
+     0.3333,
+     0.4
+    ],
+    "ufc_n": [
+     22.0,
+     7.0
+    ],
+    "dwcs": [
+     0.0,
+     0.0
+    ],
+    "major_share": [
+     0.0,
+     0.5
+    ],
+    "ufcvet_wins": [
+     0.0,
+     0.0
+    ],
+    "elo": [
+     1584.7278,
+     1570.6662
+    ]
+   },
+   "why": [
+    {
+     "m": "age",
+     "v": -0.3065
+    },
+    {
+     "m": "major_share",
+     "v": -0.233
+    },
+    {
+     "m": "td_per15",
+     "v": -0.1668
+    },
+    {
+     "m": "koed_rate",
+     "v": 0.1061
+    },
+    {
+     "m": "sapm",
+     "v": -0.1024
+    },
+    {
+     "m": "ctrl_frac",
+     "v": 0.1008
+    },
+    {
+     "m": "streak",
+     "v": -0.0778
+    },
+    {
+     "m": "slpm",
+     "v": 0.0685
+    },
+    {
+     "m": "td_def",
+     "v": -0.0638
+    },
+    {
+     "m": "ufc_n",
+     "v": 0.0578
+    },
+    {
+     "m": "activity365",
+     "v": -0.0554
+    },
+    {
+     "m": "subbed_rate",
+     "v": -0.0537
+    },
+    {
+     "m": "reach",
+     "v": 0.0534
+    },
+    {
+     "m": "avg_fight_min",
+     "v": 0.0386
+    },
+    {
+     "m": "elo",
+     "v": 0.0368
+    },
+    {
+     "m": "str_acc",
+     "v": -0.0333
+    },
+    {
+     "m": "sub_per15",
+     "v": -0.0249
+    },
+    {
+     "m": "td_acc",
+     "v": 0.0192
+    },
+    {
+     "m": "days_since",
+     "v": 0.0192
+    },
+    {
+     "m": "sub_win_share",
+     "v": 0.0192
+    },
+    {
+     "m": "winpct",
+     "v": -0.0141
+    },
+    {
+     "m": "experience",
+     "v": 0.0124
+    },
+    {
+     "m": "ko_win_share",
+     "v": 0.0111
+    },
+    {
+     "m": "finish_rate",
+     "v": -0.0095
+    },
+    {
+     "m": "early_win_share",
+     "v": -0.003
+    },
+    {
+     "m": "height",
+     "v": -0.0015
+    },
+    {
+     "m": "str_def",
+     "v": 0.0014
+    },
+    {
+     "m": "kd_per15",
+     "v": 0.0009
+    },
+    {
+     "m": "southpaw",
+     "v": 0.0
+    },
+    {
+     "m": "dwcs",
+     "v": 0.0
+    },
+    {
+     "m": "ufcvet_wins",
+     "v": 0.0
+    }
+   ],
+   "result": null
+  },
+  {
+   "order": 7,
+   "f1": "Drew Dober",
+   "f2": "Chris Duncan",
+   "weightclass": "Lightweight",
+   "is_title": false,
+   "scheduled_rounds": 3,
+   "section": "prelims",
+   "p_f1": 0.3422,
+   "book_p_f1": 0.4088,
+   "book_n": 5,
+   "pick": "Chris Duncan",
+   "confidence": 0.6578,
+   "low_data": false,
+   "method_pick": "DEC",
+   "method_probs": {
+    "KO": 0.4081,
+    "SUB": 0.1836,
+    "DEC": 0.4083
+   },
+   "finish_prob": 0.5917,
+   "round_pick": null,
+   "round_probs": {
+    "1": 0.5377,
+    "2": 0.3207,
+    "3": 0.1417,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stats": {
+    "reach": [
+     70.0,
+     71.0
+    ],
+    "height": [
+     68.0,
+     70.0
+    ],
+    "age": [
+     38.0698,
+     33.514
+    ],
+    "winpct": [
+     0.6744,
+     0.8333
+    ],
+    "finish_rate": [
+     0.5,
+     0.6111
+    ],
+    "streak": [
+     2.0,
+     -1.0
+    ],
+    "experience": [
+     44.0,
+     18.0
+    ],
+    "slpm": [
+     4.4429,
+     4.6011
+    ],
+    "sapm": [
+     4.3098,
+     4.2284
+    ],
+    "str_acc": [
+     0.4108,
+     0.4619
+    ],
+    "str_def": [
+     0.5318,
+     0.5234
+    ],
+    "td_per15": [
+     0.6415,
+     2.795
+    ],
+    "td_acc": [
+     0.1837,
+     0.4062
+    ],
+    "td_def": [
+     0.5821,
+     0.5556
+    ],
+    "sub_per15": [
+     0.0713,
+     0.645
+    ],
+    "ctrl_frac": [
+     0.1369,
+     0.2183
+    ],
+    "kd_per15": [
+     0.7128,
+     0.43
+    ],
+    "days_since": [
+     252.0,
+     224.0
+    ],
+    "activity365": [
+     1.0,
+     2.0
+    ],
+    "southpaw": [
+     1.0,
+     0.0
+    ],
+    "ko_win_share": [
+     0.4828,
+     0.4667
+    ],
+    "sub_win_share": [
+     0.2759,
+     0.2667
+    ],
+    "koed_rate": [
+     0.0682,
+     0.0556
+    ],
+    "subbed_rate": [
+     0.0909,
+     0.1111
+    ],
+    "avg_fight_min": [
+     8.0942,
+     8.7208
+    ],
+    "early_win_share": [
+     0.4667,
+     0.3333
+    ],
+    "ufc_n": [
+     26.0,
+     8.0
+    ],
+    "dwcs": [
+     0.0,
+     1.0
+    ],
+    "major_share": [
+     0.0556,
+     0.3
+    ],
+    "ufcvet_wins": [
+     0.0,
+     0.0
+    ],
+    "elo": [
+     1621.9119,
+     1616.6935
+    ]
+   },
+   "why": [
+    {
+     "m": "age",
+     "v": -0.3042
+    },
+    {
+     "m": "td_per15",
+     "v": -0.2083
+    },
+    {
+     "m": "major_share",
+     "v": -0.1179
+    },
+    {
+     "m": "activity365",
+     "v": -0.0953
+    },
+    {
+     "m": "winpct",
+     "v": -0.0828
+    },
+    {
+     "m": "ufc_n",
+     "v": 0.0541
+    },
+    {
+     "m": "southpaw",
+     "v": 0.0496
+    },
+    {
+     "m": "td_acc",
+     "v": 0.0468
+    },
+    {
+     "m": "streak",
+     "v": 0.0347
+    },
+    {
+     "m": "dwcs",
+     "v": -0.0319
+    },
+    {
+     "m": "subbed_rate",
+     "v": 0.0297
+    },
+    {
+     "m": "ctrl_frac",
+     "v": 0.0289
+    },
+    {
+     "m": "reach",
+     "v": -0.0271
+    },
+    {
+     "m": "sub_per15",
+     "v": -0.025
+    },
+    {
+     "m": "str_acc",
+     "v": -0.0197
+    },
+    {
+     "m": "elo",
+     "v": 0.0135
+    },
+    {
+     "m": "koed_rate",
+     "v": -0.0127
+    },
+    {
+     "m": "finish_rate",
+     "v": -0.0112
+    },
+    {
+     "m": "str_def",
+     "v": 0.0076
+    },
+    {
+     "m": "avg_fight_min",
+     "v": -0.0068
+    },
+    {
+     "m": "td_def",
+     "v": 0.0064
+    },
+    {
+     "m": "early_win_share",
+     "v": 0.0062
+    },
+    {
+     "m": "kd_per15",
+     "v": 0.006
+    },
+    {
+     "m": "sapm",
+     "v": -0.0057
+    },
+    {
+     "m": "days_since",
+     "v": 0.0047
+    },
+    {
+     "m": "experience",
+     "v": 0.0039
+    },
+    {
+     "m": "slpm",
+     "v": -0.0038
+    },
+    {
+     "m": "height",
+     "v": 0.0034
+    },
+    {
+     "m": "ko_win_share",
+     "v": 0.0027
+    },
+    {
+     "m": "sub_win_share",
+     "v": 0.001
+    },
+    {
+     "m": "ufcvet_wins",
+     "v": 0.0
+    }
+   ],
+   "result": null
+  },
+  {
+   "order": 8,
+   "f1": "Jim Miller",
+   "f2": "Terrance McKinney",
+   "weightclass": "Lightweight",
+   "is_title": false,
+   "scheduled_rounds": 3,
+   "section": "prelims",
+   "p_f1": 0.4254,
+   "book_p_f1": 0.3419,
+   "book_n": 5,
+   "pick": "Terrance McKinney",
+   "confidence": 0.5746,
+   "low_data": false,
+   "method_pick": "KO",
+   "method_probs": {
+    "KO": 0.4958,
+    "SUB": 0.2248,
+    "DEC": 0.2794
+   },
+   "finish_prob": 0.7206,
+   "round_pick": 1,
+   "round_probs": {
+    "1": 0.7612,
+    "2": 0.1966,
+    "3": 0.0422,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stats": {
+    "reach": [
+     71.0,
+     73.0
+    ],
+    "height": [
+     68.0,
+     70.0
+    ],
+    "age": [
+     43.2088,
+     32.1643
+    ],
+    "winpct": [
+     0.6724,
+     0.6667
+    ],
+    "finish_rate": [
+     0.4915,
+     0.6667
+    ],
+    "streak": [
+     1.0,
+     -1.0
+    ],
+    "experience": [
+     59.0,
+     27.0
+    ],
+    "slpm": [
+     2.9186,
+     7.9536
+    ],
+    "sapm": [
+     3.4308,
+     4.7605
+    ],
+    "str_acc": [
+     0.4214,
+     0.558
+    ],
+    "str_def": [
+     0.5675,
+     0.4164
+    ],
+    "td_per15": [
+     1.4902,
+     3.0479
+    ],
+    "td_acc": [
+     0.45,
+     0.4667
+    ],
+    "td_def": [
+     0.4762,
+     0.7273
+    ],
+    "sub_per15": [
+     1.722,
+     2.1771
+    ],
+    "ctrl_frac": [
+     0.208,
+     0.4514
+    ],
+    "kd_per15": [
+     0.1987,
+     1.3062
+    ],
+    "days_since": [
+     189.0,
+     126.0
+    ],
+    "activity365": [
+     1.0,
+     3.0
+    ],
+    "southpaw": [
+     1.0,
+     0.0
+    ],
+    "ko_win_share": [
+     0.1795,
+     0.5
+    ],
+    "sub_win_share": [
+     0.5641,
+     0.5
+    ],
+    "koed_rate": [
+     0.0339,
+     0.2222
+    ],
+    "subbed_rate": [
+     0.0508,
+     0.1111
+    ],
+    "avg_fight_min": [
+     9.6372,
+     2.4607
+    ],
+    "early_win_share": [
+     0.4643,
+     1.0
+    ],
+    "ufc_n": [
+     47.0,
+     14.0
+    ],
+    "dwcs": [
+     0.0,
+     0.0
+    ],
+    "major_share": [
+     0.1667,
+     0.1538
+    ],
+    "ufcvet_wins": [
+     2.0,
+     0.0
+    ],
+    "elo": [
+     1621.8382,
+     1550.3246
+    ]
+   },
+   "why": [
+    {
+     "m": "age",
+     "v": -0.5764
+    },
+    {
+     "m": "elo",
+     "v": 0.1863
+    },
+    {
+     "m": "koed_rate",
+     "v": 0.1849
+    },
+    {
+     "m": "td_per15",
+     "v": -0.1603
+    },
+    {
+     "m": "activity365",
+     "v": -0.1064
+    },
+    {
+     "m": "str_def",
+     "v": 0.1034
+    },
+    {
+     "m": "slpm",
+     "v": -0.0985
+    },
+    {
+     "m": "ko_win_share",
+     "v": -0.0862
+    },
+    {
+     "m": "sapm",
+     "v": 0.0794
+    },
+    {
+     "m": "subbed_rate",
+     "v": 0.0637
+    },
+    {
+     "m": "td_def",
+     "v": -0.0599
+    },
+    {
+     "m": "str_acc",
+     "v": -0.0544
+    },
+    {
+     "m": "days_since",
+     "v": 0.0529
+    },
+    {
+     "m": "reach",
+     "v": -0.0502
+    },
+    {
+     "m": "southpaw",
+     "v": 0.0496
+    },
+    {
+     "m": "avg_fight_min",
+     "v": 0.0434
+    },
+    {
+     "m": "ufcvet_wins",
+     "v": 0.0425
+    },
+    {
+     "m": "ctrl_frac",
+     "v": 0.0407
+    },
+    {
+     "m": "ufc_n",
+     "v": 0.0373
+    },
+    {
+     "m": "streak",
+     "v": 0.0237
+    },
+    {
+     "m": "early_win_share",
+     "v": -0.0138
+    },
+    {
+     "m": "kd_per15",
+     "v": -0.0075
+    },
+    {
+     "m": "major_share",
+     "v": 0.0048
+    },
+    {
+     "m": "sub_per15",
+     "v": 0.0045
+    },
+    {
+     "m": "height",
+     "v": 0.0034
+    },
+    {
+     "m": "finish_rate",
+     "v": -0.0033
+    },
+    {
+     "m": "experience",
+     "v": -0.0026
+    },
+    {
+     "m": "sub_win_share",
+     "v": -0.0026
+    },
+    {
+     "m": "td_acc",
+     "v": 0.0011
+    },
+    {
+     "m": "winpct",
+     "v": -0.0
+    },
+    {
+     "m": "dwcs",
+     "v": 0.0
+    }
+   ],
+   "result": null
+  },
+  {
+   "order": 9,
+   "f1": "Donte Johnson",
+   "f2": "Cesar Almeida",
+   "weightclass": "Middleweight",
+   "is_title": false,
+   "scheduled_rounds": 3,
+   "section": "prelims",
+   "p_f1": 0.7875,
+   "book_p_f1": 0.6043,
+   "book_n": 5,
+   "pick": "Donte Johnson",
+   "confidence": 0.7875,
+   "low_data": false,
+   "method_pick": "KO",
+   "method_probs": {
+    "KO": 0.579,
+    "SUB": 0.0717,
+    "DEC": 0.3493
+   },
+   "finish_prob": 0.6507,
+   "round_pick": 1,
+   "round_probs": {
+    "1": 0.6044,
+    "2": 0.2852,
+    "3": 0.1104,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stats": {
+    "reach": [
+     74.0,
+     74.0
+    ],
+    "height": [
+     68.0,
+     73.0
+    ],
+    "age": [
+     27.8029,
+     38.6311
+    ],
+    "winpct": [
+     1.0,
+     0.7
+    ],
+    "finish_rate": [
+     0.8889,
+     0.5
+    ],
+    "streak": [
+     9.0,
+     -2.0
+    ],
+    "experience": [
+     9.0,
+     10.0
+    ],
+    "slpm": [
+     2.8633,
+     3.4794
+    ],
+    "sapm": [
+     1.8221,
+     2.3196
+    ],
+    "str_acc": [
+     0.4258,
+     0.6
+    ],
+    "str_def": [
+     0.6316,
+     0.432
+    ],
+    "td_per15": [
+     1.9523,
+     0.245
+    ],
+    "td_acc": [
+     1.0,
+     0.3333
+    ],
+    "td_def": [
+     0.7692,
+     0.4848
+    ],
+    "sub_per15": [
+     0.6508,
+     0.245
+    ],
+    "ctrl_frac": [
+     0.2863,
+     0.0577
+    ],
+    "kd_per15": [
+     0.6508,
+     0.245
+    ],
+    "days_since": [
+     91.0,
+     126.0
+    ],
+    "activity365": [
+     2.0,
+     2.0
+    ],
+    "southpaw": [
+     1.0,
+     0.0
+    ],
+    "ko_win_share": [
+     0.7778,
+     0.7143
+    ],
+    "sub_win_share": [
+     0.1111,
+     0.0
+    ],
+    "koed_rate": [
+     0.0,
+     0.1
+    ],
+    "subbed_rate": [
+     0.0,
+     0.0
+    ],
+    "avg_fight_min": [
+     7.6833,
+     10.2028
+    ],
+    "early_win_share": [
+     0.3333,
+     0.3333
+    ],
+    "ufc_n": [
+     3.0,
+     6.0
+    ],
+    "dwcs": [
+     1.0,
+     1.0
+    ],
+    "major_share": [
+     0.0,
+     0.5
+    ],
+    "ufcvet_wins": [
+     1.0,
+     0.0
+    ],
+    "elo": [
+     1584.2786,
+     1490.3968
+    ]
+   },
+   "why": [
+    {
+     "m": "age",
+     "v": 0.6901
+    },
+    {
+     "m": "elo",
+     "v": 0.3056
+    },
+    {
+     "m": "major_share",
+     "v": -0.233
+    },
+    {
+     "m": "str_def",
+     "v": 0.2036
+    },
+    {
+     "m": "td_per15",
+     "v": 0.1614
+    },
+    {
+     "m": "winpct",
+     "v": 0.1602
+    },
+    {
+     "m": "streak",
+     "v": 0.1254
+    },
+    {
+     "m": "koed_rate",
+     "v": 0.1194
+    },
+    {
+     "m": "td_acc",
+     "v": -0.103
+    },
+    {
+     "m": "ctrl_frac",
+     "v": -0.0776
+    },
+    {
+     "m": "days_since",
+     "v": -0.0704
+    },
+    {
+     "m": "ufc_n",
+     "v": -0.066
+    },
+    {
+     "m": "str_acc",
+     "v": -0.0622
+    },
+    {
+     "m": "td_def",
+     "v": 0.0611
+    },
+    {
+     "m": "southpaw",
+     "v": 0.0496
+    },
+    {
+     "m": "sapm",
+     "v": 0.0457
+    },
+    {
+     "m": "ufcvet_wins",
+     "v": 0.0333
+    },
+    {
+     "m": "sub_win_share",
+     "v": -0.0259
+    },
+    {
+     "m": "avg_fight_min",
+     "v": -0.025
+    },
+    {
+     "m": "slpm",
+     "v": -0.0186
+    },
+    {
+     "m": "finish_rate",
+     "v": 0.0171
+    },
+    {
+     "m": "ko_win_share",
+     "v": 0.0167
+    },
+    {
+     "m": "sub_per15",
+     "v": 0.0082
+    },
+    {
+     "m": "experience",
+     "v": -0.0036
+    },
+    {
+     "m": "height",
+     "v": -0.0025
+    },
+    {
+     "m": "kd_per15",
+     "v": 0.0001
+    },
+    {
+     "m": "reach",
+     "v": 0.0
+    },
+    {
+     "m": "activity365",
+     "v": 0.0
+    },
+    {
+     "m": "subbed_rate",
+     "v": 0.0
+    },
+    {
+     "m": "early_win_share",
+     "v": 0.0
+    },
+    {
+     "m": "dwcs",
+     "v": 0.0
+    }
+   ],
+   "result": null
+  },
+  {
+   "order": 10,
+   "f1": "Jared Gordon",
+   "f2": "Melquizael Costa",
+   "weightclass": "Lightweight",
+   "is_title": false,
+   "scheduled_rounds": 3,
+   "section": "early",
+   "p_f1": 0.2961,
+   "book_p_f1": 0.249,
+   "book_n": 5,
+   "pick": "Melquizael Costa",
+   "confidence": 0.7039,
+   "low_data": false,
+   "method_pick": "KO",
+   "method_probs": {
+    "KO": 0.4463,
+    "SUB": 0.1874,
+    "DEC": 0.3664
+   },
+   "finish_prob": 0.6336,
+   "round_pick": 1,
+   "round_probs": {
+    "1": 0.5365,
+    "2": 0.3181,
+    "3": 0.1454,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stats": {
+    "reach": [
+     68.0,
+     71.0
+    ],
+    "height": [
+     69.0,
+     70.0
+    ],
+    "age": [
+     38.1875,
+     30.1656
+    ],
+    "winpct": [
+     0.7,
+     0.7647
+    ],
+    "finish_rate": [
+     0.3226,
+     0.5
+    ],
+    "streak": [
+     -2.0,
+     -1.0
+    ],
+    "experience": [
+     31.0,
+     34.0
+    ],
+    "slpm": [
+     5.5713,
+     4.2937
+    ],
+    "sapm": [
+     4.1121,
+     3.1877
+    ],
+    "str_acc": [
+     0.5374,
+     0.47
+    ],
+    "str_def": [
+     0.5549,
+     0.5036
+    ],
+    "td_per15": [
+     1.9102,
+     1.5335
+    ],
+    "td_acc": [
+     0.3478,
+     0.3548
+    ],
+    "td_def": [
+     0.6047,
+     0.5094
+    ],
+    "sub_per15": [
+     0.0,
+     0.8364
+    ],
+    "ctrl_frac": [
+     0.338,
+     0.1676
+    ],
+    "kd_per15": [
+     0.1592,
+     0.2788
+    ],
+    "days_since": [
+     189.0,
+     182.0
+    ],
+    "activity365": [
+     1.0,
+     3.0
+    ],
+    "southpaw": [
+     0.0,
+     1.0
+    ],
+    "ko_win_share": [
+     0.381,
+     0.3462
+    ],
+    "sub_win_share": [
+     0.0952,
+     0.3077
+    ],
+    "koed_rate": [
+     0.1613,
+     0.0588
+    ],
+    "subbed_rate": [
+     0.0645,
+     0.0588
+    ],
+    "avg_fight_min": [
+     10.4704,
+     10.76
+    ],
+    "early_win_share": [
+     0.2222,
+     0.4286
+    ],
+    "ufc_n": [
+     18.0,
+     10.0
+    ],
+    "dwcs": [
+     0.0,
+     0.0
+    ],
+    "major_share": [
+     0.6923,
+     0.0833
+    ],
+    "ufcvet_wins": [
+     0.0,
+     0.0
+    ],
+    "elo": [
+     1546.3347,
+     1645.4684
+    ]
+   },
+   "why": [
+    {
+     "m": "age",
+     "v": -0.5121
+    },
+    {
+     "m": "elo",
+     "v": -0.2555
+    },
+    {
+     "m": "major_share",
+     "v": 0.2405
+    },
+    {
+     "m": "koed_rate",
+     "v": -0.1097
+    },
+    {
+     "m": "activity365",
+     "v": -0.1064
+    },
+    {
+     "m": "sapm",
+     "v": -0.0657
+    },
+    {
+     "m": "reach",
+     "v": -0.0574
+    },
+    {
+     "m": "southpaw",
+     "v": -0.0496
+    },
+    {
+     "m": "str_def",
+     "v": 0.0467
+    },
+    {
+     "m": "td_per15",
+     "v": 0.0444
+    },
+    {
+     "m": "ctrl_frac",
+     "v": -0.0442
+    },
+    {
+     "m": "sub_per15",
+     "v": -0.0414
+    },
+    {
+     "m": "winpct",
+     "v": -0.0343
+    },
+    {
+     "m": "str_acc",
+     "v": 0.0252
+    },
+    {
+     "m": "slpm",
+     "v": 0.0249
+    },
+    {
+     "m": "ufc_n",
+     "v": 0.0242
+    },
+    {
+     "m": "streak",
+     "v": -0.0216
+    },
+    {
+     "m": "td_def",
+     "v": 0.0211
+    },
+    {
+     "m": "finish_rate",
+     "v": -0.0173
+    },
+    {
+     "m": "ko_win_share",
+     "v": 0.0121
+    },
+    {
+     "m": "sub_win_share",
+     "v": 0.0088
+    },
+    {
+     "m": "days_since",
+     "v": 0.0067
+    },
+    {
+     "m": "avg_fight_min",
+     "v": -0.0054
+    },
+    {
+     "m": "height",
+     "v": 0.0049
+    },
+    {
+     "m": "early_win_share",
+     "v": -0.0024
+    },
+    {
+     "m": "subbed_rate",
+     "v": -0.0023
+    },
+    {
+     "m": "kd_per15",
+     "v": -0.0018
+    },
+    {
+     "m": "td_acc",
+     "v": 0.0013
+    },
+    {
+     "m": "experience",
+     "v": 0.0004
+    },
+    {
+     "m": "dwcs",
+     "v": 0.0
+    },
+    {
+     "m": "ufcvet_wins",
+     "v": 0.0
+    }
+   ],
+   "result": null
+  },
+  {
+   "order": 11,
+   "f1": "Macy Chiasson",
+   "f2": "Bia Mesquita",
+   "weightclass": "Women's Bantamweight",
+   "is_title": false,
+   "scheduled_rounds": 3,
+   "section": "early",
+   "p_f1": 0.2816,
+   "book_p_f1": 0.3182,
+   "book_n": 5,
+   "pick": "Bia Mesquita",
+   "confidence": 0.7184,
+   "low_data": false,
+   "method_pick": "SUB",
+   "method_probs": {
+    "KO": 0.0884,
+    "SUB": 0.5236,
+    "DEC": 0.388
+   },
+   "finish_prob": 0.612,
+   "round_pick": 1,
+   "round_probs": {
+    "1": 0.5792,
+    "2": 0.2924,
+    "3": 0.1284,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stats": {
+    "reach": [
+     72.0,
+     67.5
+    ],
+    "height": [
+     71.0,
+     66.0
+    ],
+    "age": [
+     35.3018,
+     35.6057
+    ],
+    "winpct": [
+     0.625,
+     1.0
+    ],
+    "finish_rate": [
+     0.375,
+     0.875
+    ],
+    "streak": [
+     -3.0,
+     8.0
+    ],
+    "experience": [
+     16.0,
+     8.0
+    ],
+    "slpm": [
+     3.2089,
+     4.5178
+    ],
+    "sapm": [
+     2.757,
+     1.2682
+    ],
+    "str_acc": [
+     0.4605,
+     0.57
+    ],
+    "str_def": [
+     0.449,
+     0.7143
+    ],
+    "td_per15": [
+     1.8664,
+     3.5667
+    ],
+    "td_acc": [
+     0.3585,
+     0.75
+    ],
+    "td_def": [
+     0.625,
+     0.0
+    ],
+    "sub_per15": [
+     0.3929,
+     3.5667
+    ],
+    "ctrl_frac": [
+     0.3415,
+     0.5429
+    ],
+    "kd_per15": [
+     0.1965,
+     0.0
+    ],
+    "days_since": [
+     259.0,
+     147.0
+    ],
+    "activity365": [
+     1.0,
+     2.0
+    ],
+    "southpaw": [
+     0.0,
+     0.0
+    ],
+    "ko_win_share": [
+     0.3,
+     0.125
+    ],
+    "sub_win_share": [
+     0.3,
+     0.75
+    ],
+    "koed_rate": [
+     0.0625,
+     0.0
+    ],
+    "subbed_rate": [
+     0.0625,
+     0.0
+    ],
+    "avg_fight_min": [
+     10.9071,
+     4.2056
+    ],
+    "early_win_share": [
+     0.25,
+     0.6667
+    ],
+    "ufc_n": [
+     14.0,
+     3.0
+    ],
+    "dwcs": [
+     0.0,
+     0.0
+    ],
+    "major_share": [
+     0.5,
+     0.8
+    ],
+    "ufcvet_wins": [
+     0.0,
+     0.0
+    ],
+    "elo": [
+     1527.6299,
+     1587.5036
+    ]
+   },
+   "why": [
+    {
+     "m": "str_def",
+     "v": -0.2844
+    },
+    {
+     "m": "winpct",
+     "v": -0.1696
+    },
+    {
+     "m": "elo",
+     "v": -0.1631
+    },
+    {
+     "m": "sapm",
+     "v": -0.1622
+    },
+    {
+     "m": "td_per15",
+     "v": -0.1451
+    },
+    {
+     "m": "streak",
+     "v": -0.1343
+    },
+    {
+     "m": "ufc_n",
+     "v": 0.1161
+    },
+    {
+     "m": "major_share",
+     "v": -0.1102
+    },
+    {
+     "m": "activity365",
+     "v": -0.0953
+    },
+    {
+     "m": "td_def",
+     "v": 0.0901
+    },
+    {
+     "m": "reach",
+     "v": 0.09
+    },
+    {
+     "m": "subbed_rate",
+     "v": -0.0727
+    },
+    {
+     "m": "koed_rate",
+     "v": -0.072
+    },
+    {
+     "m": "td_acc",
+     "v": 0.0579
+    },
+    {
+     "m": "avg_fight_min",
+     "v": 0.0543
+    },
+    {
+     "m": "ko_win_share",
+     "v": 0.0514
+    },
+    {
+     "m": "days_since",
+     "v": 0.0494
+    },
+    {
+     "m": "slpm",
+     "v": -0.0491
+    },
+    {
+     "m": "experience",
+     "v": 0.041
+    },
+    {
+     "m": "str_acc",
+     "v": -0.0402
+    },
+    {
+     "m": "finish_rate",
+     "v": -0.0322
+    },
+    {
+     "m": "ctrl_frac",
+     "v": 0.0266
+    },
+    {
+     "m": "age",
+     "v": 0.0205
+    },
+    {
+     "m": "early_win_share",
+     "v": -0.0136
+    },
+    {
+     "m": "height",
+     "v": -0.0098
+    },
+    {
+     "m": "kd_per15",
+     "v": 0.0094
+    },
+    {
+     "m": "sub_win_share",
+     "v": 0.0086
+    },
+    {
+     "m": "sub_per15",
+     "v": 0.002
+    },
+    {
+     "m": "southpaw",
+     "v": 0.0
+    },
+    {
+     "m": "dwcs",
+     "v": 0.0
+    },
+    {
+     "m": "ufcvet_wins",
+     "v": 0.0
+    }
+   ],
+   "result": null
+  },
+  {
+   "order": 12,
+   "f1": "Adrian Yanez",
+   "f2": "Juan Diaz",
+   "weightclass": "Bantamweight",
+   "is_title": false,
+   "scheduled_rounds": 3,
+   "section": "early",
+   "p_f1": 0.43,
+   "book_p_f1": null,
+   "book_n": null,
+   "pick": "Juan Diaz",
+   "confidence": 0.57,
+   "low_data": false,
+   "method_pick": "DEC",
+   "method_probs": {
+    "KO": 0.2108,
+    "SUB": 0.1721,
+    "DEC": 0.6171
+   },
+   "finish_prob": 0.3829,
+   "round_pick": null,
+   "round_probs": {
+    "1": 0.485,
+    "2": 0.3409,
+    "3": 0.174,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stats": {
+    "reach": [
+     70.0,
+     69.5
+    ],
+    "height": [
+     67.0,
+     68.5
+    ],
+    "age": [
+     32.9582,
+     28.449
+    ],
+    "winpct": [
+     0.75,
+     0.9412
+    ],
+    "finish_rate": [
+     0.56,
+     0.4444
+    ],
+    "streak": [
+     1.0,
+     9.0
+    ],
+    "experience": [
+     25.0,
+     18.0
+    ],
+    "slpm": [
+     5.9178,
+     1.4234
+    ],
+    "sapm": [
+     5.225,
+     1.6423
+    ],
+    "str_acc": [
+     0.4176,
+     0.52
+    ],
+    "str_def": [
+     0.5654,
+     0.5455
+    ],
+    "td_per15": [
+     0.0,
+     8.2117
+    ],
+    "td_acc": [
+     0.0,
+     0.625
+    ],
+    "td_def": [
+     0.75,
+     null
+    ],
+    "sub_per15": [
+     0.0,
+     1.6423
+    ],
+    "ctrl_frac": [
+     0.0243,
+     0.4161
+    ],
+    "kd_per15": [
+     1.409,
+     0.0
+    ],
+    "days_since": [
+     126.0,
+     182.0
+    ],
+    "activity365": [
+     2.0,
+     1.0
+    ],
+    "southpaw": [
+     0.0,
+     null
+    ],
+    "ko_win_share": [
+     0.6667,
+     0.3125
+    ],
+    "sub_win_share": [
+     0.1111,
+     0.1875
+    ],
+    "koed_rate": [
+     0.08,
+     0.0
+    ],
+    "subbed_rate": [
+     0.0,
+     0.0
+    ],
+    "avg_fight_min": [
+     7.7424,
+     9.1333
+    ],
+    "early_win_share": [
+     0.5714,
+     0.0
+    ],
+    "ufc_n": [
+     11.0,
+     1.0
+    ],
+    "dwcs": [
+     1.0,
+     1.0
+    ],
+    "major_share": [
+     0.4286,
+     0.0
+    ],
+    "ufcvet_wins": [
+     0.0,
+     1.0
+    ],
+    "elo": [
+     1605.37,
+     1533.8483
+    ]
+   },
+   "why": [
+    {
+     "m": "td_per15",
+     "v": -0.4693
+    },
+    {
+     "m": "sapm",
+     "v": -0.3123
+    },
+    {
+     "m": "age",
+     "v": -0.2765
+    },
+    {
+     "m": "ufc_n",
+     "v": 0.2131
+    },
+    {
+     "m": "major_share",
+     "v": 0.2069
+    },
+    {
+     "m": "elo",
+     "v": 0.1907
+    },
+    {
+     "m": "slpm",
+     "v": 0.139
+    },
+    {
+     "m": "winpct",
+     "v": -0.108
+    },
+    {
+     "m": "ctrl_frac",
+     "v": 0.0996
+    },
+    {
+     "m": "td_acc",
+     "v": 0.0974
+    },
+    {
+     "m": "activity365",
+     "v": 0.0953
+    },
+    {
+     "m": "ko_win_share",
+     "v": 0.0928
+    },
+    {
+     "m": "koed_rate",
+     "v": -0.0909
+    },
+    {
+     "m": "streak",
+     "v": -0.0802
+    },
+    {
+     "m": "days_since",
+     "v": -0.0462
+    },
+    {
+     "m": "str_acc",
+     "v": -0.0449
+    },
+    {
+     "m": "sub_per15",
+     "v": -0.0417
+    },
+    {
+     "m": "ufcvet_wins",
+     "v": -0.0333
+    },
+    {
+     "m": "str_def",
+     "v": 0.0311
+    },
+    {
+     "m": "finish_rate",
+     "v": 0.0213
+    },
+    {
+     "m": "kd_per15",
+     "v": 0.0148
+    },
+    {
+     "m": "avg_fight_min",
+     "v": -0.0147
+    },
+    {
+     "m": "early_win_share",
+     "v": 0.014
+    },
+    {
+     "m": "experience",
+     "v": 0.0077
+    },
+    {
+     "m": "reach",
+     "v": 0.0076
+    },
+    {
+     "m": "sub_win_share",
+     "v": 0.0048
+    },
+    {
+     "m": "height",
+     "v": -0.0
+    },
+    {
+     "m": "subbed_rate",
+     "v": 0.0
+    },
+    {
+     "m": "dwcs",
+     "v": 0.0
+    }
+   ],
+   "result": null
+  },
+  {
+   "order": 13,
+   "f1": "Evan Elder",
+   "f2": "Samuel Sanches",
+   "weightclass": "Lightweight",
+   "is_title": false,
+   "scheduled_rounds": 3,
+   "section": "early",
+   "p_f1": 0.5258,
+   "book_p_f1": 0.5,
+   "book_n": 5,
+   "pick": "Evan Elder",
+   "confidence": 0.5258,
+   "low_data": false,
+   "method_pick": "DEC",
+   "method_probs": {
+    "KO": 0.256,
+    "SUB": 0.1957,
+    "DEC": 0.5483
+   },
+   "finish_prob": 0.4517,
+   "round_pick": null,
+   "round_probs": {
+    "1": 0.4358,
+    "2": 0.344,
+    "3": 0.2202,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stats": {
+    "reach": [
+     72.0,
+     74.0
+    ],
+    "height": [
+     70.0,
+     70.0
+    ],
+    "age": [
+     29.5934,
+     23.7947
+    ],
+    "winpct": [
+     0.8333,
+     0.9167
+    ],
+    "finish_rate": [
+     0.5,
+     0.75
+    ],
+    "streak": [
+     3.0,
+     8.0
+    ],
+    "experience": [
+     12.0,
+     12.0
+    ],
+    "slpm": [
+     5.6571,
+     null
+    ],
+    "sapm": [
+     4.9359,
+     null
+    ],
+    "str_acc": [
+     0.5094,
+     null
+    ],
+    "str_def": [
+     0.574,
+     null
+    ],
+    "td_per15": [
+     0.4808,
+     null
+    ],
+    "td_acc": [
+     0.1538,
+     null
+    ],
+    "td_def": [
+     0.4,
+     null
+    ],
+    "sub_per15": [
+     0.4808,
+     null
+    ],
+    "ctrl_frac": [
+     0.0916,
+     null
+    ],
+    "kd_per15": [
+     0.4808,
+     null
+    ],
+    "days_since": [
+     567.0,
+     431.0
+    ],
+    "activity365": [
+     0.0,
+     0.0
+    ],
+    "southpaw": [
+     0.0,
+     0.0
+    ],
+    "ko_win_share": [
+     0.4,
+     0.7273
+    ],
+    "sub_win_share": [
+     0.2,
+     0.0909
+    ],
+    "koed_rate": [
+     0.0833,
+     0.0
+    ],
+    "subbed_rate": [
+     0.0,
+     0.0833
+    ],
+    "avg_fight_min": [
+     12.48,
+     null
+    ],
+    "early_win_share": [
+     0.0,
+     null
+    ],
+    "ufc_n": [
+     5.0,
+     0.0
+    ],
+    "dwcs": [
+     0.0,
+     1.0
+    ],
+    "major_share": [
+     0.1429,
+     0.0
+    ],
+    "ufcvet_wins": [
+     0.0,
+     0.0
+    ],
+    "elo": [
+     1530.9636,
+     1500.0
+    ]
+   },
+   "why": [
+    {
+     "m": "ufc_n",
+     "v": 0.467
+    },
+    {
+     "m": "age",
+     "v": -0.3272
+    },
+    {
+     "m": "elo",
+     "v": 0.1316
+    },
+    {
+     "m": "major_share",
+     "v": 0.1014
+    },
+    {
+     "m": "koed_rate",
+     "v": -0.0957
+    },
+    {
+     "m": "subbed_rate",
+     "v": 0.0909
+    },
+    {
+     "m": "ko_win_share",
+     "v": -0.0793
+    },
+    {
+     "m": "winpct",
+     "v": -0.0576
+    },
+    {
+     "m": "streak",
+     "v": -0.0455
+    },
+    {
+     "m": "reach",
+     "v": -0.0366
+    },
+    {
+     "m": "dwcs",
+     "v": -0.0319
+    },
+    {
+     "m": "finish_rate",
+     "v": -0.0159
+    },
+    {
+     "m": "days_since",
+     "v": 0.0084
+    },
+    {
+     "m": "sub_win_share",
+     "v": -0.0064
+    },
+    {
+     "m": "height",
+     "v": 0.0
+    },
+    {
+     "m": "experience",
+     "v": 0.0
+    },
+    {
+     "m": "activity365",
+     "v": 0.0
+    },
+    {
+     "m": "southpaw",
+     "v": 0.0
+    },
+    {
+     "m": "ufcvet_wins",
+     "v": 0.0
+    }
+   ],
+   "result": null
+  }
+ ]
+}
