@@ -226,6 +226,43 @@
     .wi-pickers > .vs { padding: 0; text-align: center; }
     .wi-pick.r .wi-sub { text-align: left; }
   }
+  /* ---- The model: one curve per stat with two made-up fighters on it; a fighter's value pill drags along its curve ---- */
+  .mx .A { color: var(--ca); } .mx .B { color: var(--cb); }
+  .mx-lede { margin: 0; max-width: 62ch; line-height: 1.5; }
+  .mx-body { display: grid; gap: 14px; }
+  .mx-bar { position: sticky; top: 8px; z-index: 20; padding: .6em 1.1em .8em; display: grid; gap: 6px; background: rgba(14,17,32,.92); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+  .mx-names { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 10px; font-weight: 800; }
+  .mx-names span { overflow-wrap: anywhere; } .mx-names span:last-child { text-align: right; }
+  .mx-names .fd-btn { margin: 0; visibility: hidden; } .mx-names .fd-btn.on { visibility: visible; }
+  .mx-line { display: grid; grid-template-columns: 3em minmax(0, 1fr) 3em; align-items: center; gap: 10px; font-weight: 800; }
+  .mx-line > span:last-child { text-align: right; }
+  .mx-tug { display: flex; height: 8px; gap: 2px; }
+  .mx-tug b { display: block; border-radius: 4px; background: var(--blue); opacity: .35; }
+  .mx-tug b.fav { background: var(--magenta); opacity: 1; box-shadow: 0 0 10px rgba(214,64,230,.6); }
+  .mx-grid { display: grid; gap: 14px; grid-template-columns: minmax(0, 1fr); }
+  @media (min-width: 760px) { .mx-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .mx-card { padding: .85em 1em .55em; display: grid; gap: 4px; min-width: 0; }
+  .mx-card.x { display: none; } .mx-grid.all .mx-card.x { display: grid; }
+  .mx-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .mx-top h3 { margin: 0; font-size: .95rem; font-weight: 800; line-height: 1.25; }
+  .mx-term { font-weight: 800; font-size: .84rem; text-align: right; white-space: nowrap; }
+  .mx-chart { position: relative; height: 204px; touch-action: pan-y; -webkit-user-select: none; user-select: none; }
+  .mx-chart.drag { cursor: ew-resize; }
+  .mx-chart svg { position: absolute; top: 0; left: 0; z-index: 1; overflow: visible; }   /* over the fighters' lines, so labels stay clear */
+  .mx-chart text { fill: var(--text); font: 600 10.5px var(--font); paint-order: stroke; stroke: var(--menu); stroke-width: 4px; stroke-linejoin: round; }
+  .mx-chart .mx-read { font-weight: 800; font-size: 11.5px; paint-order: stroke; stroke: var(--bg); stroke-width: 4px; stroke-linejoin: round; }
+  .mx-gl { stroke: rgba(255,255,255,.08); stroke-width: 1; } .mx-zero { stroke: rgba(255,255,255,.3); stroke-width: 1; }
+  .mx-curve { fill: none; stroke: var(--text); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+  .mx-area { fill: rgba(255,255,255,.07); }
+  .mx-hair { stroke: rgba(255,255,255,.45); stroke-width: 1; }
+  .mx-rule, .mx-lvl, .mx-thumb { position: absolute; top: 0; left: 0; }
+  .mx-rule { width: 2px; margin-left: -1px; border-radius: 1px; background: var(--c); pointer-events: none; }
+  .mx-lvl { z-index: 1; width: 14px; height: 4px; margin: -2px 0 0 -7px; border-radius: 2px; background: var(--c); box-shadow: 0 0 0 2px var(--menu); pointer-events: none; }
+  .mx-thumb { z-index: 2; height: 24px; display: inline-flex; align-items: center; padding: 0 .8em; border: 1px solid var(--c); border-radius: 999px; background: var(--menu); color: var(--text); font: 700 .74rem var(--font); white-space: nowrap; cursor: ew-resize; touch-action: none; box-shadow: 0 0 12px -5px var(--c); }
+  .mx-thumb:hover, .mx-thumb.on { box-shadow: 0 0 16px -2px var(--c); }
+  .mx-thumb:focus-visible { outline: 2px solid var(--neon); outline-offset: 2px; }
+  .mx-more { display: flex; justify-content: center; }
+  @media (max-width: 400px) { .views .tabbar a { padding: .55em 1em; } }
   /* Motion: story slides up in / down out, cards and sections rise in as they scroll into view, bars grow. */
   @media (prefers-reduced-motion: no-preference) {
     html { scroll-behavior: smooth; }
@@ -251,6 +288,10 @@
     .wi-card .pc, .wi-card .n, .wi-card .what { transition: opacity .2s; }
     .wi-pop:not([hidden]) { animation: fd-fade .18s ease; }
     .wi-in { transition: border-color .15s, box-shadow .15s; }
+    /* The model: fighters' lines glide to new values and the bar follows the drag (the curves draw in from script). */
+    .mx-rule, .mx-lvl, .mx-thumb { transition: transform .45s cubic-bezier(.2,.8,.2,1), height .45s cubic-bezier(.2,.8,.2,1), box-shadow .15s; }
+    .mx-chart.drag .mx-rule, .mx-chart.drag .mx-lvl, .mx-chart.drag .mx-thumb, .mx-chart.still * { transition: none; }
+    .mx-tug b { transition: flex-grow .3s cubic-bezier(.2,.8,.2,1), opacity .3s, box-shadow .3s; }
   }
 </style>
 </head>
@@ -258,7 +299,7 @@
 <header class="hero">
   <h1>UFC <em>predictions</em></h1>
   <p id="blurb">Powered by TabICL v2, a tabular foundation model reading the full modern history of the UFC.</p>
-  <nav class="views" aria-label="Sections"><div class="tabbar"><a href="#" data-view="picks" aria-current="page">Picks</a><a href="#whatif" data-view="whatif">What if</a></div></nav>
+  <nav class="views" aria-label="Sections"><div class="tabbar"><a href="#" data-view="picks" aria-current="page">Picks</a><a href="#whatif" data-view="whatif">What if</a><a href="#model" data-view="model">The model</a></div></nav>
 </header>
 <main>
   <div class="view" id="view-picks">
@@ -267,6 +308,14 @@
   </div>
   <div class="view" id="view-whatif" hidden>
     <section class="glass whatif" id="whatif" aria-labelledby="wi-h"><p class="empty">Loading fighters…</p></section>
+  </div>
+  <div class="view mx" id="view-model" hidden>
+    <section class="glass whatif" id="model" aria-labelledby="mx-h"><p class="empty">Loading the model…</p></section>
+    <div class="mx-body" id="mx-body" hidden>
+      <div class="glass mx-bar" id="mx-bar"></div>
+      <div class="mx-grid" id="mx-grid"></div>
+      <div class="mx-more"><button type="button" class="fd-btn quiet sm" id="mx-all">All stats</button></div>
+    </div>
   </div>
   <footer><a class="fd-btn" href="/">reijojaakkola.github.io</a></footer>
 </main>
@@ -417,6 +466,7 @@
     is_title: ['Title fight', (x) => (x ? 'yes' : 'no')], scheduled_rounds: ['Scheduled rounds', String],
     is_womens: ["Women's bout", (x) => (x ? 'yes' : 'no')], weightclass_lbs: ['Weight class', (x) => x + ' lb'],
   };
+  window.fdFact = FACT;   // The model labels its curves with these
   // A why row is one fact, or a pair of facts the model reads together (f.pair = their keys).
   const factLabel = (f) => (f.pair ? (f.pair.every((k) => FACT[k]) ? f.pair.map((k) => FACT[k][0]).join(' × ') : null)
     : FACT[f.m] ? FACT[f.m][0] : null);
@@ -487,7 +537,7 @@
   let opener = null;
   // Reveal-on-scroll: anything with .rv rises in the first time it enters the viewport.
   const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
-  const tag = () => document.querySelectorAll('main .event, main .bout:not(.wi-card), main .whatif, main .record:not([hidden]) > h2, main .strip, main details').forEach((n) => {
+  const tag = () => document.querySelectorAll('main .event, main .bout:not(.wi-card), main .whatif, main .mx-card, main .record:not([hidden]) > h2, main .strip, main details').forEach((n) => {
     if (!n.classList.contains('rv')) { n.classList.add('rv'); io.observe(n); }
   });
   tag();
@@ -538,6 +588,263 @@
   // Used by the what-if section: open a pairing's story, and re-read the hash once its data has loaded.
   window.fdOpen = (hash, from) => { opener = from || null; location.hash = hash; };
   window.fdSync = sync;
+})();
+</script>
+<script>
+// ---- The model: every stat's curve with two made-up fighters on it. Both start as the median active fighter on every stat,
+// so the bar opens at 50%. Dragging a fighter's value pill (or arrow keys on it) changes that value and the bar follows.
+// Each curve is linear between its knots and flat past the ends; the win chance is the logistic of the summed gaps. ----
+(() => {
+  const STEP = { reach: 0.5, height: 0.5, age: 1, winpct: 0.01, finish_rate: 0.01, streak: 1, experience: 1, slpm: 0.1, sapm: 0.1,
+    str_acc: 0.01, str_def: 0.01, td_per15: 0.1, td_acc: 0.01, td_def: 0.01, sub_per15: 0.1, ctrl_frac: 0.01, kd_per15: 0.1,
+    days_since: 7, activity365: 1, southpaw: 1, ko_win_share: 0.01, sub_win_share: 0.01, koed_rate: 0.01, subbed_rate: 0.01,
+    avg_fight_min: 0.1, early_win_share: 0.01, ufc_n: 1, dwcs: 1, major_share: 0.01, ufcvet_wins: 1, elo: 5 };
+  const SHOWN = 8;                                       // curves before "All N stats"
+  const ML = 36, MR = 12, PT = 10, PH = 116, H = 204;    // chart box: y labels, plot, x labels, a row of value pills per fighter
+  const ROW = [PT + PH + 26, PT + PH + 54];
+  const NAME = ['Fighter A', 'Fighter B'], TAG = ['A', 'B'];
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const pct = (x) => Math.round(x * 100) + '%';
+  const signed = (v, d = 2) => (v < 0 ? '−' : '+') + Math.abs(v).toFixed(d);
+  const dec = (s) => (String(s).split('.')[1] || '').length;
+  const sec = document.getElementById('model');
+  function curveAt(c, x) {
+    const kx = c.x, g = c.g, n = kx.length;
+    if (x <= kx[0]) return g[0];
+    if (x >= kx[n - 1]) return g[n - 1];
+    let j = 1;
+    while (kx[j] < x) j++;
+    return g[j - 1] + ((x - kx[j - 1]) / (kx[j] - kx[j - 1])) * (g[j] - g[j - 1]);
+  }
+  // Round-number ticks inside [lo, hi], about n of them and never fewer than two.
+  function ticks(lo, hi, n, whole) {
+    const raw = (hi - lo) / n, p = 10 ** Math.floor(Math.log10(raw)), r = raw / p;
+    const steps = [1, 2, 5, 10, 20].map((m) => m * p).filter((s) => s <= (r < 1.5 ? 1 : r < 3.5 ? 2 : r < 7.5 ? 5 : 10) * p).reverse();
+    let out = [];
+    for (let s of steps) {
+      if (whole) s = Math.max(1, Math.round(s));
+      out = [];
+      for (let t = Math.ceil(lo / s - 1e-9) * s; t <= hi + 1e-9; t += s) out.push(+t.toFixed(9));
+      if (out.length >= 2) break;
+    }
+    return out;
+  }
+
+  // M = data/model.json: {date, c: [{m: stat, x: knots, g: g at the knots, t: median active fighter}]}, widest spread of g first.
+  function build(M) {
+    const C = M.c, n = C.length;
+    if (!Array.isArray(C) || !n) throw new Error('data/model.json has no curves');
+    const FACT = window.fdFact || {};
+    const label = (j) => (FACT[C[j].m] ? FACT[C[j].m][0] : C[j].m);
+    const fmt = (j, x) => { const v = +x.toFixed(6); return FACT[C[j].m] ? FACT[C[j].m][1](v) : String(v); };
+    // Each axis spans the knots, widened to whole steps; the fighters' values snap to those steps.
+    const span = C.map((c, j) => {
+      const s = STEP[c.m];
+      let lo = c.x[0], hi = c.x[c.x.length - 1];
+      if (s) { lo = +(Math.floor(lo / s + 1e-9) * s).toFixed(dec(s)); hi = +(Math.ceil(hi / s - 1e-9) * s).toFixed(dec(s)); }
+      if (!(hi > lo)) hi = lo + (s || 1);
+      return { lo, hi, s };
+    });
+    const snap = (j, x) => {
+      const { lo, hi, s } = span[j], v = s ? +(Math.round(x / s) * s).toFixed(dec(s)) : x;
+      return Math.min(hi, Math.max(lo, v));
+    };
+    const start = C.map((c, j) => snap(j, c.t));
+    const val = [start.slice(), start.slice()];   // val[fighter][stat]
+    const gap = (j) => curveAt(C[j], val[0][j]) - curveAt(C[j], val[1][j]);
+    const prob = () => { let z = 0; for (let j = 0; j < n; j++) z += gap(j); return 1 / (1 + Math.exp(-z)); };
+    const changed = () => val.some((v) => v.some((x, j) => x !== start[j]));
+    const Y = Math.ceil(Math.max(0.1, ...C.flatMap((c) => c.g.map(Math.abs))) * 10 - 1e-9) / 10;   // one y scale for every curve
+    const ys = (v) => PT + PH / 2 - (v / Y) * (PH / 2);
+    const ystep = Y >= 0.6 ? 0.5 : 0.2;
+    const yticks = [];
+    for (let t = ystep; t < Y - 1e-9; t += ystep) yticks.push(+t.toFixed(2), -t.toFixed(2));
+
+    sec.innerHTML = `<div class="wi-head"><h2 id="mx-h">Inspect the model</h2>
+        <p class="mx-lede">Each win pick adds up the gaps between the two fighters on these ${n} curves, one per stat, distilled from TabICL v2.</p></div>`;
+    const view = document.getElementById('view-model'), body = document.getElementById('mx-body');
+    const bar = document.getElementById('mx-bar'), grid = document.getElementById('mx-grid'), all = document.getElementById('mx-all');
+    bar.innerHTML = `<div class="mx-names"><span class="A">${NAME[0]}</span><button type="button" class="fd-btn quiet sm" id="mx-reset">Reset stats</button><span class="B">${NAME[1]}</span></div>
+      <div class="mx-line num"><span class="A"></span><div class="mx-tug" role="img"><b></b><b></b></div><span class="B"></span></div>`;
+    grid.innerHTML = C.map((c, j) => `<article class="glass mx-card${j >= SHOWN ? ' x' : ''}" data-j="${j}">
+        <div class="mx-top"><h3>${esc(label(j))}</h3><span class="mx-term"></span></div>
+        <div class="mx-chart"><svg aria-hidden="true"></svg>${[0, 1].map((i) => `<div class="mx-rule"></div><div class="mx-lvl"></div>
+          <div class="mx-thumb" data-i="${i}" role="slider" tabindex="0" aria-label="${NAME[i]}, ${esc(label(j))}"></div>`).join('')}</div></article>`).join('');
+    all.textContent = `All ${n} stats`;
+    all.hidden = n <= SHOWN;
+    const reset = document.getElementById('mx-reset'), tug = bar.querySelector('.mx-tug');
+    const [pa, pb] = bar.querySelectorAll('.mx-line > span'), [ba, bb] = tug.querySelectorAll('b');
+    const cards = [...grid.children].map((el) => {
+      const ch = el.querySelector('.mx-chart'), q = (s) => ch.querySelectorAll(s);
+      const [ru, lv, th] = ['.mx-rule', '.mx-lvl', '.mx-thumb'].map(q);
+      return { j: +el.dataset.j, el, ch, svg: ch.querySelector('svg'), term: el.querySelector('.mx-term'), W: 0, ...span[+el.dataset.j],
+        sides: [0, 1].map((i) => ({ rule: ru[i], lvl: lv[i], thumb: th[i] })) };
+    });
+    const byEl = new Map(cards.map((c) => [c.el, c]));
+    let fav = -1;
+
+    // Draw a card's axes and curve for its current width; false while the card is not displayed.
+    function layout(c) {
+      const W = c.ch.clientWidth;
+      if (!W) return false;
+      if (W === c.W) return true;
+      c.W = W;
+      c.ch.classList.add('still');   // no glide from the old geometry
+      requestAnimationFrame(() => requestAnimationFrame(() => c.ch.classList.remove('still')));
+      const j = c.j, { x: kx, g } = C[j], { lo, hi } = c, x0 = ML, x1 = W - MR;
+      Object.assign(c, { x0, x1,
+        xs: (v) => x0 + ((Math.min(hi, Math.max(lo, v)) - lo) / (hi - lo)) * (x1 - x0),
+        xi: (px) => lo + ((Math.min(x1, Math.max(x0, px)) - x0) / (x1 - x0)) * (hi - lo) });
+      const pts = [[lo, g[0]], ...kx.map((x, k) => [x, g[k]]), [hi, g[g.length - 1]]];
+      const line = pts.map(([x, v], k) => `${k ? 'L' : 'M'}${c.xs(x).toFixed(1)} ${ys(v).toFixed(1)}`).join('');
+      const z = ys(0).toFixed(1);
+      const gl = yticks.map((t) => `<line class="mx-gl" x1="${x0}" x2="${x1}" y1="${ys(t)}" y2="${ys(t)}"/><text x="${x0 - 7}" y="${ys(t) + 3.5}" text-anchor="end">${signed(t, 1)}</text>`).join('');
+      const xt = ticks(lo, hi, Math.max(2, Math.min(5, Math.round((x1 - x0) / 85))), c.s >= 1).map((t) => {
+        const x = c.xs(t), a = x - x0 < 16 ? 'start' : x1 - x < 16 ? 'end' : 'middle';
+        return `<text x="${x.toFixed(1)}" y="${PT + PH + 16}" text-anchor="${a}">${esc(fmt(j, t))}</text>`;
+      }).join('');
+      c.svg.setAttribute('width', W); c.svg.setAttribute('height', H); c.svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      c.svg.innerHTML = `${gl}<line class="mx-zero" x1="${x0}" x2="${x1}" y1="${z}" y2="${z}"/><text x="${x0 - 7}" y="${(+z + 3.5).toFixed(1)}" text-anchor="end">0</text>
+        <path class="mx-area" d="${line}L${x1} ${z}L${x0} ${z}Z"/><path class="mx-curve" d="${line}" pathLength="1"/>${xt}
+        <line class="mx-hair" y1="${PT}" y2="${PT + PH}" visibility="hidden"/><text class="mx-read" y="${PT + 2}" visibility="hidden"></text>`;
+      c.hair = c.svg.querySelector('.mx-hair'); c.read = c.svg.querySelector('.mx-read');
+      if (c.draw) draw(c);
+      return true;
+    }
+    // The curve draws in the first time its card scrolls into view; at rest it is always fully drawn.
+    const calm = matchMedia('(prefers-reduced-motion: reduce)');
+    function draw(c) {
+      c.draw = false;
+      if (calm.matches || !c.svg.firstChild) return;
+      const ease = 'cubic-bezier(.2,.8,.2,1)';
+      c.svg.querySelector('.mx-curve').animate([{ strokeDasharray: '1 1', strokeDashoffset: 1 }, { strokeDasharray: '1 1', strokeDashoffset: 0 }],
+        { duration: 1100, delay: 250, easing: ease, fill: 'backwards' });
+      c.svg.querySelector('.mx-area').animate([{ opacity: 0 }, { opacity: 1 }], { duration: 800, delay: 650, easing: 'ease', fill: 'backwards' });
+    }
+    const seen = new IntersectionObserver((es) => es.forEach((e) => {
+      if (!e.isIntersecting) return;
+      seen.unobserve(e.target);
+      const c = byEl.get(e.target);
+      c.draw = true;
+      if (c.W) draw(c);   // else layout draws it once the card has a width
+    }), { threshold: 0.12 });
+    cards.forEach((c) => seen.observe(c.el));
+    // Put each fighter on a card: line at the value, tick where it meets the curve, value pill in its own row.
+    // A card that has never been displayed gets its text now and its geometry when layout gives it a width.
+    function place(c) {
+      const j = c.j;
+      for (const i of [0, 1]) {
+        const sd = c.sides[i], v = val[i][j], col = i === fav ? 'var(--magenta)' : 'var(--blue)';
+        for (const e of Object.values(sd)) e.style.setProperty('--c', col);
+        const t = `${TAG[i]} ${fmt(j, v)}`;
+        if (sd.thumb.textContent !== t) sd.thumb.textContent = t;
+        sd.thumb.setAttribute('aria-valuenow', +v.toFixed(6)); sd.thumb.setAttribute('aria-valuetext', fmt(j, v));
+        sd.thumb.setAttribute('aria-valuemin', c.lo); sd.thumb.setAttribute('aria-valuemax', c.hi);
+        if (!c.W) continue;
+        const x = c.xs(v);
+        sd.rule.style.height = `${ROW[i] + 12 - PT}px`;
+        sd.rule.style.transform = `translate(${x}px, ${PT}px)`;
+        sd.lvl.style.transform = `translate(${x}px, ${ys(curveAt(C[j], v))}px)`;
+        const w = Math.ceil(sd.thumb.getBoundingClientRect().width);
+        sd.thumb.style.transform = `translate(${Math.max(0, Math.min(c.W - w, x - w / 2))}px, ${ROW[i]}px)`;
+      }
+      const d = gap(j), w = d > 0 ? 0 : 1;
+      c.term.className = Math.abs(d) < 0.005 ? 'mx-term' : `mx-term ${TAG[w]}`;
+      c.term.textContent = Math.abs(d) < 0.005 ? 'Even' : `${TAG[w]} +${Math.abs(d).toFixed(2)}`;
+    }
+    // The bar and the cards; "only" = the one card whose value changed (all of them when the pick flips colour).
+    function paint(only) {
+      const p = prob(), f = p > 0.5 ? 0 : p < 0.5 ? 1 : Math.max(fav, 0), flip = f !== fav;   // a dead heat keeps the colours
+      fav = f;
+      view.style.setProperty('--ca', f === 0 ? 'var(--magenta)' : 'var(--blue)');
+      view.style.setProperty('--cb', f === 0 ? 'var(--blue)' : 'var(--magenta)');
+      pa.textContent = pct(p); pb.textContent = pct(1 - p);
+      ba.className = f === 0 ? 'fav' : ''; bb.className = f === 1 ? 'fav' : '';
+      ba.style.flex = `${p} 1 0%`; bb.style.flex = `${1 - p} 1 0%`;
+      tug.setAttribute('aria-label', `${NAME[0]} ${pct(p)}, ${NAME[1]} ${pct(1 - p)}`);
+      reset.classList.toggle('on', changed());
+      (only && !flip ? [only] : cards).forEach((c) => { layout(c); place(c); });
+    }
+    const relayout = () => cards.forEach((c) => { if (layout(c)) place(c); });
+    const setVal = (c, i, v) => { if (v !== val[i][c.j]) { val[i][c.j] = v; paint(c); } };
+    const nearest = (c, px) => {   // the fighter whose line is within reach of the pointer, else -1
+      let best = -1, bd = 18;
+      for (const i of [0, 1]) { const d = Math.abs(c.xs(val[i][c.j]) - px); if (d < bd) { bd = d; best = i; } }
+      return best;
+    };
+    const hideHair = (c) => { if (c && c.hair) { c.hair.setAttribute('visibility', 'hidden'); c.read.setAttribute('visibility', 'hidden'); c.ch.style.cursor = ''; } };
+    function hover(c, e) {
+      if (!c.W || !c.hair) return;
+      const r = c.ch.getBoundingClientRect(), px = e.clientX - r.left, py = e.clientY - r.top, onThumb = e.target.closest('.mx-thumb');
+      c.ch.style.cursor = !onThumb && py <= PT + PH + 8 && nearest(c, px) >= 0 ? 'ew-resize' : '';
+      if (onThumb || px < c.x0 - 4 || px > c.x1 + 4 || py > PT + PH + 8) return hideHair(c);
+      const v = snap(c.j, c.xi(px)), x = c.xs(v), right = x > (c.x0 + c.x1) / 2;
+      c.hair.setAttribute('x1', x); c.hair.setAttribute('x2', x); c.hair.setAttribute('visibility', 'visible');
+      c.read.setAttribute('x', right ? x - 6 : x + 6); c.read.setAttribute('text-anchor', right ? 'end' : 'start');
+      c.read.textContent = `${fmt(c.j, v)}: ${signed(curveAt(C[c.j], v))}`; c.read.setAttribute('visibility', 'visible');
+    }
+    let drag = null;
+    grid.addEventListener('pointerdown', (e) => {
+      const ch = e.target.closest('.mx-chart');
+      if (!ch || e.button > 0) return;
+      const c = byEl.get(ch.closest('.mx-card')), px = e.clientX - ch.getBoundingClientRect().left, th = e.target.closest('.mx-thumb');
+      const i = th ? +th.dataset.i : nearest(c, px);
+      if (i < 0 || !c.W) return;
+      e.preventDefault();
+      try { ch.setPointerCapture(e.pointerId); } catch (err) { /* the drag still follows moves over the cards */ }
+      drag = { c, i, id: e.pointerId, dx: c.xs(val[i][c.j]) - px };   // grab without a jump
+      ch.classList.add('drag'); c.sides[i].thumb.classList.add('on'); hideHair(c);
+      if (th) th.focus({ preventScroll: true });
+    });
+    grid.addEventListener('pointermove', (e) => {
+      if (drag && e.pointerId === drag.id) {
+        const c = drag.c;
+        return setVal(c, drag.i, snap(c.j, c.xi(e.clientX - c.ch.getBoundingClientRect().left + drag.dx)));
+      }
+      const ch = e.target.closest('.mx-chart');
+      if (ch && e.pointerType === 'mouse') hover(byEl.get(ch.closest('.mx-card')), e);
+    });
+    const end = (e) => {
+      if (!drag || e.pointerId !== drag.id) return;
+      drag.c.ch.classList.remove('drag'); drag.c.sides[drag.i].thumb.classList.remove('on');
+      drag = null;
+    };
+    grid.addEventListener('pointerup', end);
+    grid.addEventListener('pointercancel', end);
+    grid.addEventListener('pointerout', (e) => {
+      const ch = e.target.closest('.mx-chart');
+      if (ch && !drag && !ch.contains(e.relatedTarget)) hideHair(byEl.get(ch.closest('.mx-card')));
+    });
+    grid.addEventListener('keydown', (e) => {
+      const th = e.target.closest('.mx-thumb');
+      if (!th) return;
+      const c = byEl.get(th.closest('.mx-card')), i = +th.dataset.i, s = c.s || (c.hi - c.lo) / 100, v = val[i][c.j];
+      const to = { ArrowRight: v + s, ArrowUp: v + s, ArrowLeft: v - s, ArrowDown: v - s, PageUp: v + 10 * s, PageDown: v - 10 * s, Home: c.lo, End: c.hi }[e.key];
+      if (to === undefined) return;
+      e.preventDefault();
+      setVal(c, i, snap(c.j, to));
+    });
+    reset.addEventListener('click', () => { val.forEach((v) => start.forEach((x, j) => { v[j] = x; })); paint(); });
+    all.addEventListener('click', () => { all.textContent = grid.classList.toggle('all') ? 'Fewer stats' : `All ${n} stats`; relayout(); });
+    // Widths change when the view opens or the window resizes; redraw what changed (the cards' height is fixed, so no loop).
+    new ResizeObserver(relayout).observe(grid);
+    body.hidden = false;
+    paint();
+  }
+
+  // The curves (a few KB) load when The model is first opened.
+  let loading = null;
+  window.mxLoad = () => loading || (loading = (async () => {
+    try {
+      const r = await fetch('data/model.json', { cache: 'no-cache' });
+      if (!r.ok) throw new Error('data/model.json: ' + r.status);
+      build(await r.json());
+    } catch (err) {
+      sec.innerHTML = `<p class="empty">Couldn't load the model right now. Try again in a minute.</p>`;
+      loading = null;   // try again the next time the view opens
+      console.error(err);
+    }
+  })());
 })();
 </script>
 <script>
@@ -700,16 +1007,19 @@
     }
   })());
 
-  // Views: the picks (default) and What if (#whatif; #whatif-<a>--<b> is a matchup's story on top of it).
-  const views = { picks: document.getElementById('view-picks'), whatif: document.getElementById('view-whatif') };
+  // Views: the picks (default), What if (#whatif; #whatif-<a>--<b> is a matchup's story on top of it) and The model (#model).
+  const views = { picks: document.getElementById('view-picks'), whatif: document.getElementById('view-whatif'),
+    model: document.getElementById('view-model') };
   const route = () => {
-    const v = location.hash.startsWith('#whatif') ? 'whatif' : 'picks';
+    const h = location.hash, v = h.startsWith('#whatif') ? 'whatif' : h === '#model' ? 'model' : 'picks';
     views.picks.hidden = v !== 'picks';
     views.whatif.hidden = v !== 'whatif';
+    views.model.hidden = v !== 'model';
     document.querySelectorAll('.views [data-view]').forEach((a) => {
       if (a.dataset.view === v) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
     if (v === 'whatif') window.wiLoad();
+    if (v === 'model') window.mxLoad();
   };
   addEventListener('hashchange', route);
   route();
