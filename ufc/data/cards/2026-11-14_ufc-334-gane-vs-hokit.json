@@ -4,7 +4,7 @@
   "name": "UFC 334: Gane vs. Hokit",
   "date": "2026-11-14"
  },
- "generated_at": "2026-11-09T22:28:16+00:00",
+ "generated_at": "2026-11-11T14:10:08+00:00",
  "sections": {
   "main": 1794708000,
   "prelims": 1794700800,
@@ -4758,82 +4758,91 @@
     }
    ]
   },
-  "Adrian Yanez": {
+  "Alatengheili": {
    "rec": {
     "W": 18,
-    "L": 6,
-    "D": 1,
+    "L": 10,
+    "D": 2,
     "NC": 0
    },
    "stance": "Orthodox",
-   "dob": "1993-11-29",
+   "dob": "1991-12-14",
    "fights": [
     {
-     "d": "2026-07-11",
-     "opp": "Cody Garbrandt",
+     "d": "2026-09-26",
+     "opp": "John Castaneda",
      "r": "W",
-     "how": "KO/TKO, punches to head in clinch",
-     "rd": 1,
-     "t": "2:47",
-     "ufc": true
-    },
-    {
-     "d": "2026-03-28",
-     "opp": "Ricky Simon",
-     "r": "D",
-     "how": "Decision, majority",
+     "how": "Decision, split",
      "rd": 3,
      "t": "5:00",
      "ufc": true
     },
     {
-     "d": "2024-12-14",
-     "opp": "Daniel Marcos",
+     "d": "2025-04-26",
+     "opp": "Da'Mon Blackshear",
      "r": "L",
-     "how": "Decision, split",
+     "how": "Decision, unanimous",
      "rd": 3,
      "t": "5:00",
      "ufc": true
     },
     {
      "d": "2024-05-18",
-     "opp": "Vinicius Salvador",
+     "opp": "Kleydson Rodrigues",
      "r": "W",
-     "how": "KO/TKO, punches to head on ground",
-     "rd": 1,
-     "t": "2:47",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
      "ufc": true
     },
     {
      "d": "2023-10-14",
-     "opp": "Jonathan Martinez",
+     "opp": "Chris Gutierrez",
      "r": "L",
-     "how": "KO/TKO, kicks to leg at distance",
-     "rd": 2,
-     "t": "2:26",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
      "ufc": true
     },
     {
-     "d": "2023-04-08",
-     "opp": "Rob Font",
-     "r": "L",
-     "how": "KO/TKO, punch to head at distance",
-     "rd": 1,
-     "t": "2:57",
+     "d": "2022-09-10",
+     "opp": "Chad Anheliger",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
      "ufc": true
     },
     {
-     "d": "2022-06-18",
-     "opp": "Tony Kelley",
+     "d": "2022-04-16",
+     "opp": "Kevin Croom",
      "r": "W",
      "how": "KO/TKO, punches to head at distance",
      "rd": 1,
-     "t": "3:49",
+     "t": "0:47",
      "ufc": true
     },
     {
-     "d": "2021-11-20",
-     "opp": "Davey Grant",
+     "d": "2021-09-18",
+     "opp": "Gustavo Lopez",
+     "r": "D",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2020-10-03",
+     "opp": "Casey Kenney",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": "5:00",
+     "ufc": true
+    },
+    {
+     "d": "2019-12-21",
+     "opp": "Ryan Benoit",
      "r": "W",
      "how": "Decision, split",
      "rd": 3,
@@ -4841,62 +4850,17 @@
      "ufc": true
     },
     {
-     "d": "2021-07-24",
-     "opp": "Randy Costa",
+     "d": "2019-08-31",
+     "opp": "Batgerel Danaa",
      "r": "W",
-     "how": "KO/TKO, punches to head on ground",
-     "rd": 2,
-     "t": "2:11",
-     "ufc": true
-    },
-    {
-     "d": "2021-03-20",
-     "opp": "Gustavo Lopez",
-     "r": "W",
-     "how": "KO/TKO, punch to head at distance",
+     "how": "Decision, unanimous",
      "rd": 3,
-     "t": "0:27",
+     "t": "5:00",
      "ufc": true
     },
     {
-     "d": "2020-10-31",
-     "opp": "Victor Rodriguez",
-     "r": "W",
-     "how": "KO/TKO, kick to head at distance",
-     "rd": 1,
-     "t": "2:46",
-     "ufc": true
-    },
-    {
-     "d": "2020-08-11",
-     "opp": "Brady Huang",
-     "r": "W",
-     "how": "TKO, punches",
-     "rd": 1,
-     "t": null,
-     "ufc": false
-    },
-    {
-     "d": "2019-11-15",
-     "opp": "Kyle Estrada",
-     "r": "W",
-     "how": "Decision, split",
-     "rd": 3,
-     "t": null,
-     "ufc": false
-    },
-    {
-     "d": "2019-06-29",
-     "opp": "Michael Rodriguez",
-     "r": "W",
-     "how": "TKO, punches",
-     "rd": 1,
-     "t": null,
-     "ufc": false
-    },
-    {
-     "d": "2019-01-25",
-     "opp": "Warren Stewart",
+     "d": "2018-05-12",
+     "opp": "Jong Hyun Kwak",
      "r": "W",
      "how": "TKO, punches",
      "rd": 2,
@@ -4904,26 +4868,53 @@
      "ufc": false
     },
     {
-     "d": "2018-11-30",
-     "opp": "Miles Johns",
-     "r": "L",
-     "how": "Decision, split",
-     "rd": 5,
-     "t": null,
-     "ufc": false
-    },
-    {
-     "d": "2018-03-09",
-     "opp": "Nathan Trepagnier",
+     "d": "2018-03-10",
+     "opp": "Ik Hwan Jang",
      "r": "W",
-     "how": "KO, punch",
+     "how": "KO, punches",
      "rd": 1,
      "t": null,
      "ufc": false
     },
     {
-     "d": "2017-11-03",
-     "opp": "Trent Meaux",
+     "d": "2017-03-11",
+     "opp": "Kai Asakura",
+     "r": "L",
+     "how": "KO, knee and punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-11-19",
+     "opp": "Nam Jin Jo",
+     "r": "D",
+     "how": "Draw, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-05-14",
+     "opp": "Mu Song Choi",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-04-16",
+     "opp": "Fumiya Sasaki",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-02-21",
+     "opp": "Kana Hyatt",
      "r": "W",
      "how": "Decision, unanimous",
      "rd": 3,
@@ -4931,26 +4922,17 @@
      "ufc": false
     },
     {
-     "d": "2017-03-24",
-     "opp": "Domingo Pilarte",
-     "r": "L",
+     "d": "2016-01-31",
+     "opp": "Min Seok Kwon",
+     "r": "W",
      "how": "Decision, split",
      "rd": 3,
      "t": null,
      "ufc": false
     },
     {
-     "d": "2016-09-16",
-     "opp": "Colin Wright",
-     "r": "W",
-     "how": "Submission, armbar",
-     "rd": 3,
-     "t": null,
-     "ufc": false
-    },
-    {
-     "d": "2016-02-19",
-     "opp": "Ryan Hollis",
+     "d": "2016-01-13",
+     "opp": "Emil Abbasov",
      "r": "W",
      "how": "Decision, unanimous",
      "rd": 3,
@@ -4958,26 +4940,44 @@
      "ufc": false
     },
     {
-     "d": "2015-07-11",
-     "opp": "D'Nearon Seymore",
+     "d": "2015-09-28",
+     "opp": "Jessie Rafols",
      "r": "W",
-     "how": "Submission, triangle choke",
-     "rd": 1,
+     "how": "Submission, guillotine choke",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2015-06-05",
+     "opp": "Nam Jin Jo",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
      "t": null,
      "ufc": false
     },
     {
      "d": "2015-05-22",
-     "opp": "Jake Snyder",
+     "opp": "Stephen Langdown",
      "r": "W",
-     "how": "TKO, punches",
+     "how": "TKO, punches and soccer kicks",
      "rd": 2,
      "t": null,
      "ufc": false
     },
     {
-     "d": "2014-11-14",
-     "opp": "Levi Mowles",
+     "d": "2015-04-04",
+     "opp": "Altynbek Bazhimov",
+     "r": "L",
+     "how": "Submission, armbar",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2014-12-23",
+     "opp": "Zhikang Zhao",
      "r": "L",
      "how": "Decision, unanimous",
      "rd": 3,
@@ -4985,11 +4985,56 @@
      "ufc": false
     },
     {
-     "d": "2014-03-14",
-     "opp": "Richard Delfin",
-     "r": "W",
+     "d": "2014-11-16",
+     "opp": "Denis Puric",
+     "r": "L",
      "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2014-11-11",
+     "opp": "Chao Huang",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2014-06-07",
+     "opp": "Baasankhuu Damnlanpurev",
+     "r": "L",
+     "how": "TKO, punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2014-03-29",
+     "opp": "Tom Ni",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2013-11-30",
+     "opp": "Yadong Song",
+     "r": "L",
+     "how": "Decision, unanimous",
      "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2013-10-20",
+     "opp": "Woong Hee Lee",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 2,
      "t": null,
      "ufc": false
     }
@@ -5420,7 +5465,7 @@
    "scheduled_rounds": 5,
    "section": "main",
    "p_f1": 0.4509,
-   "book_p_f1": 0.6626,
+   "book_p_f1": 0.6341,
    "book_n": 5,
    "pick": "Josh Hokit",
    "confidence": 0.5491,
@@ -5703,7 +5748,7 @@
    "scheduled_rounds": 5,
    "section": "main",
    "p_f1": 0.5697,
-   "book_p_f1": 0.6368,
+   "book_p_f1": 0.6276,
    "book_n": 5,
    "pick": "Kayla Harrison",
    "confidence": 0.5697,
@@ -6269,7 +6314,7 @@
    "scheduled_rounds": 3,
    "section": "main",
    "p_f1": 0.4868,
-   "book_p_f1": 0.5755,
+   "book_p_f1": 0.5776,
    "book_n": 5,
    "pick": "Kevin Holland",
    "confidence": 0.5132,
@@ -6552,7 +6597,7 @@
    "scheduled_rounds": 3,
    "section": "main",
    "p_f1": 0.7771,
-   "book_p_f1": 0.863,
+   "book_p_f1": 0.8642,
    "book_n": 5,
    "pick": "Bilal Hasan",
    "confidence": 0.7771,
@@ -6827,7 +6872,7 @@
    "scheduled_rounds": 3,
    "section": "prelims",
    "p_f1": 0.3542,
-   "book_p_f1": 0.569,
+   "book_p_f1": 0.5931,
    "book_n": 5,
    "pick": "Charles Radtke",
    "confidence": 0.6458,
@@ -7110,7 +7155,7 @@
    "scheduled_rounds": 3,
    "section": "prelims",
    "p_f1": 0.3422,
-   "book_p_f1": 0.4088,
+   "book_p_f1": 0.4138,
    "book_n": 5,
    "pick": "Chris Duncan",
    "confidence": 0.6578,
@@ -7393,7 +7438,7 @@
    "scheduled_rounds": 3,
    "section": "prelims",
    "p_f1": 0.4254,
-   "book_p_f1": 0.3419,
+   "book_p_f1": 0.3632,
    "book_n": 5,
    "pick": "Terrance McKinney",
    "confidence": 0.5746,
@@ -7676,7 +7721,7 @@
    "scheduled_rounds": 3,
    "section": "prelims",
    "p_f1": 0.7875,
-   "book_p_f1": 0.6043,
+   "book_p_f1": 0.6023,
    "book_n": 5,
    "pick": "Donte Johnson",
    "confidence": 0.7875,
@@ -7959,7 +8004,7 @@
    "scheduled_rounds": 3,
    "section": "early",
    "p_f1": 0.2961,
-   "book_p_f1": 0.249,
+   "book_p_f1": 0.2451,
    "book_n": 5,
    "pick": "Melquizael Costa",
    "confidence": 0.7039,
@@ -8242,7 +8287,7 @@
    "scheduled_rounds": 3,
    "section": "early",
    "p_f1": 0.2816,
-   "book_p_f1": 0.3182,
+   "book_p_f1": 0.3146,
    "book_n": 5,
    "pick": "Bia Mesquita",
    "confidence": 0.7184,
@@ -8518,52 +8563,52 @@
   },
   {
    "order": 12,
-   "f1": "Adrian Yanez",
+   "f1": "Alatengheili",
    "f2": "Juan Diaz",
    "weightclass": "Bantamweight",
    "is_title": false,
    "scheduled_rounds": 3,
    "section": "early",
-   "p_f1": 0.43,
-   "book_p_f1": null,
-   "book_n": null,
+   "p_f1": 0.2143,
+   "book_p_f1": 0.2567,
+   "book_n": 2,
    "pick": "Juan Diaz",
-   "confidence": 0.57,
+   "confidence": 0.7857,
    "low_data": false,
    "method_pick": "DEC",
    "method_probs": {
-    "KO": 0.2108,
-    "SUB": 0.1721,
-    "DEC": 0.6171
+    "KO": 0.1609,
+    "SUB": 0.1304,
+    "DEC": 0.7088
    },
-   "finish_prob": 0.3829,
+   "finish_prob": 0.2912,
    "round_pick": null,
    "round_probs": {
-    "1": 0.485,
-    "2": 0.3409,
-    "3": 0.174,
+    "1": 0.4884,
+    "2": 0.3279,
+    "3": 0.1837,
     "4": 0.0,
     "5": 0.0
    },
    "stats": {
     "reach": [
-     70.0,
+     66.0,
      69.5
     ],
     "height": [
-     67.0,
+     65.0,
      68.5
     ],
     "age": [
-     32.9582,
+     34.9185,
      28.449
     ],
     "winpct": [
-     0.75,
+     0.6429,
      0.9412
     ],
     "finish_rate": [
-     0.56,
+     0.2667,
      0.4444
     ],
     "streak": [
@@ -8571,31 +8616,31 @@
      9.0
     ],
     "experience": [
-     25.0,
+     30.0,
      18.0
     ],
     "slpm": [
-     5.9178,
+     2.7102,
      1.4234
     ],
     "sapm": [
-     5.225,
+     4.9638,
      1.6423
     ],
     "str_acc": [
-     0.4176,
+     0.3189,
      0.52
     ],
     "str_def": [
-     0.5654,
+     0.5652,
      0.5455
     ],
     "td_per15": [
-     0.0,
+     1.878,
      8.2117
     ],
     "td_acc": [
-     0.0,
+     0.425,
      0.625
     ],
     "td_def": [
@@ -8607,19 +8652,19 @@
      1.6423
     ],
     "ctrl_frac": [
-     0.0243,
+     0.1556,
      0.4161
     ],
     "kd_per15": [
-     1.409,
+     0.1105,
      0.0
     ],
     "days_since": [
-     126.0,
+     49.0,
      182.0
     ],
     "activity365": [
-     2.0,
+     1.0,
      1.0
     ],
     "southpaw": [
@@ -8627,39 +8672,39 @@
      null
     ],
     "ko_win_share": [
-     0.6667,
+     0.2778,
      0.3125
     ],
     "sub_win_share": [
-     0.1111,
+     0.1667,
      0.1875
     ],
     "koed_rate": [
-     0.08,
+     0.1,
      0.0
     ],
     "subbed_rate": [
-     0.0,
+     0.0333,
      0.0
     ],
     "avg_fight_min": [
-     7.7424,
+     13.5783,
      9.1333
     ],
     "early_win_share": [
-     0.5714,
+     0.1667,
      0.0
     ],
     "ufc_n": [
-     11.0,
+     10.0,
      1.0
     ],
     "dwcs": [
-     1.0,
+     0.0,
      1.0
     ],
     "major_share": [
-     0.4286,
+     0.0526,
      0.0
     ],
     "ufcvet_wins": [
@@ -8667,125 +8712,125 @@
      1.0
     ],
     "elo": [
-     1605.37,
+     1574.065,
      1533.8483
     ]
    },
    "why": [
     {
-     "m": "td_per15",
-     "v": -0.4693
+     "m": "age",
+     "v": -0.4053
     },
     {
      "m": "sapm",
-     "v": -0.3123
+     "v": -0.3087
     },
     {
-     "m": "age",
-     "v": -0.2765
+     "m": "td_per15",
+     "v": -0.2933
+    },
+    {
+     "m": "days_since",
+     "v": -0.2175
     },
     {
      "m": "ufc_n",
-     "v": 0.2131
-    },
-    {
-     "m": "major_share",
-     "v": 0.2069
-    },
-    {
-     "m": "elo",
-     "v": 0.1907
-    },
-    {
-     "m": "slpm",
-     "v": 0.139
+     "v": 0.2096
     },
     {
      "m": "winpct",
-     "v": -0.108
-    },
-    {
-     "m": "ctrl_frac",
-     "v": 0.0996
-    },
-    {
-     "m": "td_acc",
-     "v": 0.0974
-    },
-    {
-     "m": "activity365",
-     "v": 0.0953
-    },
-    {
-     "m": "ko_win_share",
-     "v": 0.0928
+     "v": -0.1489
     },
     {
      "m": "koed_rate",
-     "v": -0.0909
+     "v": -0.1194
+    },
+    {
+     "m": "elo",
+     "v": 0.1096
     },
     {
      "m": "streak",
      "v": -0.0802
     },
     {
-     "m": "days_since",
-     "v": -0.0462
+     "m": "str_acc",
+     "v": -0.0598
     },
     {
-     "m": "str_acc",
-     "v": -0.0449
+     "m": "ctrl_frac",
+     "v": 0.0529
+    },
+    {
+     "m": "slpm",
+     "v": 0.0521
+    },
+    {
+     "m": "reach",
+     "v": -0.0517
+    },
+    {
+     "m": "subbed_rate",
+     "v": -0.0483
     },
     {
      "m": "sub_per15",
      "v": -0.0417
     },
     {
+     "m": "major_share",
+     "v": 0.0399
+    },
+    {
      "m": "ufcvet_wins",
      "v": -0.0333
     },
     {
+     "m": "dwcs",
+     "v": -0.0319
+    },
+    {
      "m": "str_def",
-     "v": 0.0311
+     "v": 0.0306
     },
     {
-     "m": "finish_rate",
-     "v": 0.0213
-    },
-    {
-     "m": "kd_per15",
-     "v": 0.0148
+     "m": "td_acc",
+     "v": 0.0232
     },
     {
      "m": "avg_fight_min",
-     "v": -0.0147
+     "v": 0.0227
+    },
+    {
+     "m": "ko_win_share",
+     "v": -0.0105
+    },
+    {
+     "m": "finish_rate",
+     "v": -0.0096
     },
     {
      "m": "early_win_share",
-     "v": 0.014
+     "v": 0.0084
     },
     {
      "m": "experience",
-     "v": 0.0077
+     "v": 0.0057
     },
     {
-     "m": "reach",
-     "v": 0.0076
+     "m": "kd_per15",
+     "v": 0.0057
     },
     {
      "m": "sub_win_share",
-     "v": 0.0048
+     "v": 0.0035
     },
     {
      "m": "height",
-     "v": -0.0
+     "v": -0.0032
     },
     {
-     "m": "subbed_rate",
-     "v": 0.0
-    },
-    {
-     "m": "dwcs",
+     "m": "activity365",
      "v": 0.0
     }
    ],
@@ -8800,7 +8845,7 @@
    "scheduled_rounds": 3,
    "section": "early",
    "p_f1": 0.5258,
-   "book_p_f1": 0.5,
+   "book_p_f1": 0.4783,
    "book_n": 5,
    "pick": "Evan Elder",
    "confidence": 0.5258,
