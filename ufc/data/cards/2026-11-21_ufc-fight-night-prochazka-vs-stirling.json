@@ -4,7 +4,7 @@
   "name": "UFC Fight Night: Prochazka vs. Stirling",
   "date": "2026-11-21"
  },
- "generated_at": "2026-11-18T15:41:21+00:00",
+ "generated_at": "2026-11-20T15:07:37+00:00",
  "sections": {
   "main": 1795284000,
   "prelims": 1795273200
@@ -4405,6 +4405,309 @@
      "ufc": false
     }
    ]
+  },
+  "Shoaib Yousaf": {
+   "rec": {
+    "W": 14,
+    "L": 3,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": "Orthodox",
+   "dob": "1995-08-07",
+   "fights": [
+    {
+     "d": "2026-09-26",
+     "opp": "Tariel Abbasov",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2026-02-14",
+     "opp": "Arley Figueiredo Vaz",
+     "r": "W",
+     "how": "TKO, punch",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2025-10-18",
+     "opp": "Cristiano Cruz",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-11-04",
+     "opp": "Konmon Deh",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-03-18",
+     "opp": "Christiano Marques",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-05-27",
+     "opp": "Michal Folc",
+     "r": "W",
+     "how": "KO, knees",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-12-19",
+     "opp": "Matthew Camilleri",
+     "r": "L",
+     "how": "Decision, split",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-04-01",
+     "opp": "Steven Goncalves",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2020-08-24",
+     "opp": "Mochamed Machaev",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-12-27",
+     "opp": "Hassan Talal",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-07-13",
+     "opp": "Davide Gregorio la Torre",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-03-23",
+     "opp": "Martin Fouda",
+     "r": "W",
+     "how": "TKO, doctor stoppage",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-11-30",
+     "opp": "Ricardo Morais",
+     "r": "W",
+     "how": "KO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2018-02-23",
+     "opp": "Kadir Dalkiran",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-09-23",
+     "opp": "Jordan Vucenic",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2017-03-11",
+     "opp": "Javonne Morrison",
+     "r": "W",
+     "how": "TKO, head kick and punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2016-10-01",
+     "opp": "Denis Ahern",
+     "r": "W",
+     "how": "Submission, armbar",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    }
+   ]
+  },
+  "John Mitchell": {
+   "rec": {
+    "W": 11,
+    "L": 3,
+    "D": 0,
+    "NC": 0
+   },
+   "stance": null,
+   "dob": "1995-07-21",
+   "fights": [
+    {
+     "d": "2026-07-04",
+     "opp": "Kallew dos Santos",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2025-10-03",
+     "opp": "Makkasharip Zaynukov",
+     "r": "L",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2025-01-25",
+     "opp": "Souhil Tairi",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2024-05-04",
+     "opp": "Adham Mohamed",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-12-08",
+     "opp": "Jakub Kaszuba",
+     "r": "L",
+     "how": "TKO, knees and punches",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-09-30",
+     "opp": "Geisym Derouiche",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-07-08",
+     "opp": "Geisym Derouiche",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2023-03-31",
+     "opp": "Srikant Sekhar",
+     "r": "W",
+     "how": "KO, punches",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-11-26",
+     "opp": "Basel Ahmed Shalaan",
+     "r": "W",
+     "how": "TKO, punches",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2022-03-26",
+     "opp": "Mariusz Mazur",
+     "r": "L",
+     "how": "Submission, guillotine choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-10-29",
+     "opp": "Konstantinos Ntelis",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2021-06-19",
+     "opp": "Arbi Emiev",
+     "r": "W",
+     "how": "TKO, doctor stoppage",
+     "rd": 2,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2020-09-24",
+     "opp": "Alan Brykalski",
+     "r": "W",
+     "how": "Submission, rear-naked choke",
+     "rd": 1,
+     "t": null,
+     "ufc": false
+    },
+    {
+     "d": "2019-11-09",
+     "opp": "Eric  Nolan",
+     "r": "W",
+     "how": "Decision, unanimous",
+     "rd": 3,
+     "t": null,
+     "ufc": false
+    }
+   ]
   }
  },
  "bouts": [
@@ -4700,7 +5003,7 @@
    "scheduled_rounds": 3,
    "section": "main",
    "p_f1": 0.4539,
-   "book_p_f1": 0.4573,
+   "book_p_f1": 0.4592,
    "book_n": 5,
    "pick": "Kevin Vallejos",
    "confidence": 0.5461,
@@ -5549,7 +5852,7 @@
    "scheduled_rounds": 3,
    "section": "main",
    "p_f1": 0.21,
-   "book_p_f1": 0.2861,
+   "book_p_f1": 0.2847,
    "book_n": 5,
    "pick": "Ikram Aliskerov",
    "confidence": 0.79,
@@ -6115,7 +6418,7 @@
    "scheduled_rounds": 3,
    "section": "prelims",
    "p_f1": 0.2792,
-   "book_p_f1": 0.6368,
+   "book_p_f1": 0.6387,
    "book_n": 5,
    "pick": "Tallison Teixeira",
    "confidence": 0.7208,
@@ -6394,7 +6697,7 @@
    "scheduled_rounds": 3,
    "section": "prelims",
    "p_f1": 0.4975,
-   "book_p_f1": 0.5146,
+   "book_p_f1": 0.5,
    "book_n": 5,
    "pick": "Alessandro Costa",
    "confidence": 0.5025,
@@ -6677,7 +6980,7 @@
    "scheduled_rounds": 3,
    "section": "prelims",
    "p_f1": 0.4928,
-   "book_p_f1": 0.6792,
+   "book_p_f1": 0.6878,
    "book_n": 5,
    "pick": "Tahir Abdullayev",
    "confidence": 0.5072,
@@ -6960,7 +7263,7 @@
    "scheduled_rounds": 3,
    "section": "prelims",
    "p_f1": 0.4594,
-   "book_p_f1": 0.4204,
+   "book_p_f1": 0.417,
    "book_n": 5,
    "pick": "Dom Mar Fan",
    "confidence": 0.5406,
@@ -7460,6 +7763,233 @@
     },
     {
      "m": "dwcs",
+     "v": 0.0
+    }
+   ],
+   "result": null
+  },
+  {
+   "order": 12,
+   "f1": "Shoaib Yousaf",
+   "f2": "John Mitchell",
+   "weightclass": "Lightweight",
+   "is_title": false,
+   "scheduled_rounds": 3,
+   "section": "prelims",
+   "p_f1": 0.5573,
+   "book_p_f1": 0.444,
+   "book_n": 5,
+   "pick": "Shoaib Yousaf",
+   "confidence": 0.5573,
+   "low_data": false,
+   "method_pick": "KO",
+   "method_probs": {
+    "KO": 0.447,
+    "SUB": 0.1183,
+    "DEC": 0.4347
+   },
+   "finish_prob": 0.5653,
+   "round_pick": 1,
+   "round_probs": {
+    "1": 0.544,
+    "2": 0.3056,
+    "3": 0.1504,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stats": {
+    "reach": [
+     null,
+     null
+    ],
+    "height": [
+     71.0,
+     72.0
+    ],
+    "age": [
+     31.2909,
+     31.3374
+    ],
+    "winpct": [
+     0.8235,
+     0.7857
+    ],
+    "finish_rate": [
+     0.5882,
+     0.4286
+    ],
+    "streak": [
+     6.0,
+     1.0
+    ],
+    "experience": [
+     17.0,
+     14.0
+    ],
+    "slpm": [
+     null,
+     null
+    ],
+    "sapm": [
+     null,
+     null
+    ],
+    "str_acc": [
+     null,
+     null
+    ],
+    "str_def": [
+     null,
+     null
+    ],
+    "td_per15": [
+     null,
+     null
+    ],
+    "td_acc": [
+     null,
+     null
+    ],
+    "td_def": [
+     null,
+     null
+    ],
+    "sub_per15": [
+     null,
+     null
+    ],
+    "ctrl_frac": [
+     null,
+     null
+    ],
+    "kd_per15": [
+     null,
+     null
+    ],
+    "days_since": [
+     56.0,
+     140.0
+    ],
+    "activity365": [
+     2.0,
+     1.0
+    ],
+    "southpaw": [
+     0.0,
+     null
+    ],
+    "ko_win_share": [
+     0.5714,
+     0.3636
+    ],
+    "sub_win_share": [
+     0.1429,
+     0.1818
+    ],
+    "koed_rate": [
+     0.0,
+     0.0714
+    ],
+    "subbed_rate": [
+     0.0,
+     0.0714
+    ],
+    "avg_fight_min": [
+     null,
+     null
+    ],
+    "early_win_share": [
+     null,
+     null
+    ],
+    "ufc_n": [
+     0.0,
+     0.0
+    ],
+    "dwcs": [
+     0.0,
+     0.0
+    ],
+    "major_share": [
+     0.5294,
+     0.5714
+    ],
+    "ufcvet_wins": [
+     0.0,
+     0.0
+    ],
+    "elo": [
+     1500.0,
+     1500.0
+    ]
+   },
+   "why": [
+    {
+     "m": "days_since",
+     "v": -0.1702
+    },
+    {
+     "m": "activity365",
+     "v": 0.0957
+    },
+    {
+     "m": "koed_rate",
+     "v": 0.0816
+    },
+    {
+     "m": "subbed_rate",
+     "v": 0.0769
+    },
+    {
+     "m": "ko_win_share",
+     "v": 0.0504
+    },
+    {
+     "m": "streak",
+     "v": 0.0429
+    },
+    {
+     "m": "winpct",
+     "v": 0.0254
+    },
+    {
+     "m": "finish_rate",
+     "v": 0.0242
+    },
+    {
+     "m": "experience",
+     "v": 0.0202
+    },
+    {
+     "m": "major_share",
+     "v": -0.0155
+    },
+    {
+     "m": "height",
+     "v": -0.0081
+    },
+    {
+     "m": "sub_win_share",
+     "v": 0.0043
+    },
+    {
+     "m": "age",
+     "v": 0.0026
+    },
+    {
+     "m": "ufc_n",
+     "v": 0.0
+    },
+    {
+     "m": "dwcs",
+     "v": 0.0
+    },
+    {
+     "m": "ufcvet_wins",
+     "v": 0.0
+    },
+    {
+     "m": "elo",
      "v": 0.0
     }
    ],
