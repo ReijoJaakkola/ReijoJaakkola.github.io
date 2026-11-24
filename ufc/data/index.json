@@ -1,73 +1,82 @@
 {
- "updated_at": "2026-11-20T15:07:43+00:00",
+ "updated_at": "2026-11-24T00:02:24+00:00",
  "brand": "Prior Cage",
  "handle": "@priorcage",
  "blurb": "Powered by TabICL v2, a tabular foundation model reading the full modern history of the UFC.",
  "disclaimer": "Not betting advice. 18+.",
  "record": {
-  "n_events": 5,
-  "n_bouts": 65,
-  "n_correct": 41,
-  "accuracy": 0.6308,
+  "n_events": 6,
+  "n_bouts": 77,
+  "n_correct": 50,
+  "accuracy": 0.6494,
   "accuracy_ci95": [
-   0.5092,
-   0.7377
+   0.538,
+   0.7465
   ],
-  "parlay_accuracy": 0.3538,
+  "parlay_accuracy": 0.3896,
   "confidence_buckets": [
    {
     "min_confidence": 0.5,
-    "n": 65,
+    "n": 77,
     "coverage": 1.0,
-    "accuracy": 0.631
+    "accuracy": 0.649
    },
    {
     "min_confidence": 0.55,
-    "n": 49,
-    "coverage": 0.754,
-    "accuracy": 0.633
-   },
-   {
-    "min_confidence": 0.6,
-    "n": 34,
-    "coverage": 0.523,
-    "accuracy": 0.647
-   },
-   {
-    "min_confidence": 0.65,
-    "n": 29,
-    "coverage": 0.446,
+    "n": 55,
+    "coverage": 0.714,
     "accuracy": 0.655
    },
    {
+    "min_confidence": 0.6,
+    "n": 38,
+    "coverage": 0.494,
+    "accuracy": 0.684
+   },
+   {
+    "min_confidence": 0.65,
+    "n": 33,
+    "coverage": 0.429,
+    "accuracy": 0.697
+   },
+   {
     "min_confidence": 0.7,
-    "n": 17,
-    "coverage": 0.262,
-    "accuracy": 0.588
+    "n": 20,
+    "coverage": 0.26,
+    "accuracy": 0.65
    },
    {
     "min_confidence": 0.75,
-    "n": 9,
-    "coverage": 0.138,
-    "accuracy": 0.667
+    "n": 10,
+    "coverage": 0.13,
+    "accuracy": 0.7
    },
    {
     "min_confidence": 0.8,
     "n": 5,
-    "coverage": 0.077,
+    "coverage": 0.065,
     "accuracy": 1.0
    }
   ]
  },
  "cards": [
   {
-   "slug": "2026-11-21_ufc-fight-night-prochazka-vs-stirling",
-   "name": "UFC Fight Night: Prochazka vs. Stirling",
-   "date": "2026-11-21",
+   "slug": "2026-12-05_ufc-fight-night-adesanya-vs-magomedov",
+   "name": "UFC Fight Night: Adesanya vs. Magomedov",
+   "date": "2026-12-05",
    "n_bouts": 12,
    "graded": false,
    "n_correct": null,
    "n_graded": null
+  },
+  {
+   "slug": "2026-11-21_ufc-fight-night-prochazka-vs-stirling",
+   "name": "UFC Fight Night: Prochazka vs. Stirling",
+   "date": "2026-11-21",
+   "n_bouts": 12,
+   "graded": true,
+   "n_correct": 9,
+   "n_graded": 12
   },
   {
    "slug": "2026-11-14_ufc-334-gane-vs-hokit",
